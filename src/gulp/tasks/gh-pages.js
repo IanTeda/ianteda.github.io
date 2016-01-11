@@ -17,5 +17,7 @@ var jekyll = require('../gulp-config').jekyll;
  */
 gulp.task('gh-pages', function() {
   return gulp.src(jekyll.deploy)
-    .pipe(ghPages());
+    .pipe(ghPages({
+      branch: 'master'
+    }));
 });
