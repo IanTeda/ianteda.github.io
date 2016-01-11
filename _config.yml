@@ -1,0 +1,147 @@
+# Title, decription, tagline and URL for your site
+# Can be used in your theme by calling 'site.title' and so on
+name: "Ian Teda"
+description: "Husband, Father, Engineer, Explorer & Creator"
+url: www.ianteda.com
+# Set timezone for site generation
+timezone: Australia/Sydney
+
+# LOCATION
+# Where things are
+# Used so Jekyll outputs the site correctly so Gulp can do what it wants
+source: ./src
+destination: ./build
+plugins_dir: ./_plugins
+layouts_dir: ./_layouts
+data_dir: ./_data
+includes_dir: ./_includes
+include:
+  - ".htaccess"
+exclude:
+  - assets
+  - bower_components
+  - gulp
+  - README.md
+  - Rakefile
+  - Gemfile
+  - Gemfile.lock
+  - changelog.md
+  - "*.Rmd"
+  - vendor
+  - .travis.yml
+
+
+# FILTERING CONTENT
+# _config.build.yml overwrites these options when you run `gulp build`
+show_drafts: true
+# Only make the last 10 posts so generating isn't slow
+limit_posts: 10
+# Enables future posts (posts with dates in the future) and drafts
+future:      true
+# Disables the more accurate related posts for faster generating of the site
+lsi: false
+unpublished: false
+
+# OUTPUTTING
+# List of links in the navigation bar
+navbar-links:
+  Engineering: 'engineering'
+  Management: 'management'
+  Software: 'software'
+  Creativity: 'creativity'
+
+# Permalinks - Global settings
+# Permalinks and be set in post/page front matter
+permalink: /:categories/:title/
+
+# Pagination
+paginate: 10
+paginate_path: 'page-:num'
+
+# Show more
+excerpt_separator: '<!--more-->'
+
+# CONVERSION
+# Markdown library and options
+markdown: redcarpet
+redcarpet:
+  extensions: ['no_intra_emphasis', 'tables', 'fenced_code_blocks', 'autolink', 'smart',
+              'strikethrough', 'superscript', 'underline', 'highlight', 'footnotes']
+highlighter: true
+
+# JEKYLL PLUGINS
+# Extending Jekyll functionality
+gems:
+  - jekyll-archives
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-sitemap
+
+# JEKYLL ARCHIVES
+# Archive pages for your Jekyll tags and categories
+# REF: https://github.com/jekyll/jekyll-archives
+# TODO: Do I need this when I have permalinks?
+jekyll-archives:
+  enabled:
+    - year
+    - month
+    - categories
+    - tags
+  layouts:
+    category: 'archive-category'
+    month: 'archive-month'
+    tag: 'archive-tag'
+    year: 'archive-year'
+  permalinks:
+    year: '/archive/:year/'
+    month: '/archive/:year/:month/'
+    category: '/category/:name/'
+    tags: '/tag/:name/'
+
+# JEKYLL FEED
+# A Jekyll plugin to generate an Atom (RSS-like) feed of your Jekyll posts
+# REF: https://github.com/jekyll/jekyll-feed
+feed:
+  path: rss.xml
+
+# JEKYLL GIST
+# Liquid tag for displaying GitHub Gists in Jekyll sites
+# REF: https://github.com/jekyll/jekyll-gist
+gist:
+  noscript: true
+
+# DEFAULT
+# Default YAML Front Matter
+# Same as the title etc for your site but can instead be
+# called by using 'site.author.name' and so on
+# NOTE: Don't use @ in front of your Twitter username
+author:
+  name: Ian Teda
+  nickname: Ian
+  url: 'http://biomadeira.github.io/jasper/'
+  image: 'assets/images/casper.png'
+  email: 'ian@teda.id.au'
+  bio: I&#39;m Ian Teda
+  location: Australia
+  facebook: ian.teda
+  github: IanTeda
+  twitter: IanTeda
+  linkedin: in/ianteda
+  stackoverflow: 882279/ianteda
+  vimeo: ianteda
+
+# Select which links to show in the footer
+footer-links-active:
+  rss: false
+  email: true
+  facebook: false
+  github: true
+  twitter: true
+  linkedin: false
+  stackoverflow: false
+  vimeo: true
+
+# What is the unique google analytics reference
+google_analytics: UA-00000000-1
+disqus: username

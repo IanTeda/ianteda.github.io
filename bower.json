@@ -1,0 +1,25 @@
+{
+  "name": "IanTeda2016",
+  "version": "0.0.0",
+  "authors": [
+    "Ian Teda <ian@teda.id.au>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "holderjs": "~2.9.0",
+    "jquery": "~2.1.4",
+    "fontawesome": "~4.4.0",
+    "headroom.js": "~0.7.0",
+    "fullpage.js": "~2.7.4",
+    "animate.css": "~3.4.0",
+    "wow": "~1.1.2"
+  }
+}

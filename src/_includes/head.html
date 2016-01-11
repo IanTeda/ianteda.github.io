@@ -1,0 +1,23 @@
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>{% if page.title %}{{ page.title }}{% elsif site.name %}{{ site.name }}{% endif %}</title>
+    <meta name="description" content="{{ site.name }} - {{ site.description }}" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="{{ site.baseurl }}assets/images/favicon.ico" >
+
+    <link rel="canonical" href="{{ site.baseurl }}" />
+    <meta name="referrer" content="origin" />
+    <link rel="next" href="{{ site.baseurl }}page2/" />
+
+    <meta name="generator" content="Jekyll 3.0.1" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.baseurl }}rss.xml" />
+
+    {% include styles.html %}
+
+</head>

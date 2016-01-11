@@ -1,0 +1,24 @@
+<!-- default.html -->
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body class="{% if page.url contains 'page2' %}paged archive-template{% elsif page.class %}{{ page.class }}{% else %}home-template{% endif %} nav-closed">
+
+    {% include navigation.html %}
+
+    <div class="site-wrapper">
+
+        {{ content }}
+
+        {% include footer.html %}
+    </div>
+
+    <!-- Add javascripts -->
+    {% include scripts.html %}
+
+    <!-- Add Google Analytics  -->
+    {% include analytics.html %}
+</body>
+</html>
