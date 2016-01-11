@@ -18,6 +18,7 @@ includes_dir: ./_includes
 #baseurl: localhost:3000
 include:
   - ".htaccess"
+  - CNAME
 exclude:
   - assets
   - bower_components
@@ -53,7 +54,7 @@ navbar-links:
 
 # Permalinks - Global settings
 # Permalinks and be set in post/page front matter
-permalink: /:categories/:title/
+permalink: none
 
 # Pagination
 paginate: 10
@@ -87,14 +88,15 @@ jekyll-archives:
   enabled:
     - year
     - tags
+    - categories
   layouts:
-    category: 'archive-category'
     tag: 'archive-tag'
+    category: 'archive-category'
     year: 'archive-year'
   permalinks:
+    category: ':name/index.html'
     year: 'archive/:year/'
-    category: '/:name/'
-    tags: '/tag/:name/'
+    tags: 'tag/:name/'
 
 # JEKYLL FEED
 # A Jekyll plugin to generate an Atom (RSS-like) feed of your Jekyll posts
