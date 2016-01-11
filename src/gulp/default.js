@@ -29,8 +29,8 @@ gulp.task('serve', function() {
   });
 
   // Watch various files for changes and do the needful
-  gulp.watch(['src/**/*.md', 'src/**/*.html', 'src/**/*.yml'], gulp.series('jekyll:build', reload));
-  gulp.watch(['src/**/*.xml', 'src/**/*.txt'], gulp.series('jekyll:build'));
+  gulp.watch(['src/**/*.md', 'src/**/*.html', 'src/**/*.yml'], gulp.series('jekyll:rebuild', reload));
+  gulp.watch(['src/**/*.xml', 'src/**/*.txt'], gulp.series('jekyll:rebuild'));
   gulp.watch('src/assets/scripts/**/*.js', gulp.series('scripts:rebuild'));
   gulp.watch(['src/assets/scss/**/*.scss', 'src/assets/styles/**/*.css'], gulp.series('styles:rebuild'));
   gulp.watch('src/assets/images/**/*', reload);

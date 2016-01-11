@@ -15,6 +15,7 @@ plugins_dir: ./_plugins
 layouts_dir: ./_layouts
 data_dir: ./_data
 includes_dir: ./_includes
+#baseurl: localhost:3000
 include:
   - ".htaccess"
 exclude:
@@ -85,18 +86,14 @@ gems:
 jekyll-archives:
   enabled:
     - year
-    - month
-    - categories
     - tags
   layouts:
     category: 'archive-category'
-    month: 'archive-month'
     tag: 'archive-tag'
     year: 'archive-year'
   permalinks:
-    year: '/archive/:year/'
-    month: '/archive/:year/:month/'
-    category: '/category/:name/'
+    year: 'archive/:year/'
+    category: '/:name/'
     tags: '/tag/:name/'
 
 # JEKYLL FEED

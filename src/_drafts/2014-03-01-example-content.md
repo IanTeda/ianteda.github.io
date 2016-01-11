@@ -3,7 +3,7 @@ layout: post
 cover: 'assets/images/cover7.jpg'
 date: 2014-03-01
 title: Example content
-categories: jekyll example
+categories: 'creativity'
 logo: 'assets/images/ghost.png'
 ---
 
