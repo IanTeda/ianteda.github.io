@@ -19,6 +19,7 @@ includes_dir: ./_includes
 include:
   - ".htaccess"
   - CNAME
+  - _pages
 exclude:
   - assets
   - bower_components
