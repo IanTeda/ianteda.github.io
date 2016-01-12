@@ -32,6 +32,7 @@ exclude:
   - "*.Rmd"
   - vendor
   - .travis.yml
+  - _excludes
 
 
 # FILTERING CONTENT

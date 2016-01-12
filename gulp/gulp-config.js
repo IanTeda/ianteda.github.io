@@ -10,12 +10,13 @@ var src = 'src/';
 var assets = 'assets/';
 var build = 'build/';
 var tmp = '.tmp/';
+var exlcudes = '_excludes';
 var bower = 'bower_components/';
 
 module.exports = {
   fonts: {
     src: [
-			src + bower + 'fontawesome/fonts/**/*.{eot,svg,ttf,woff,woff2,otf}',
+			src + exlcudes + bower + 'fontawesome/fonts/**/*.{eot,svg,ttf,woff,woff2,otf}',
       src + assets + 'fonts/**/*.{eot,svg,ttf,woff,woff2,otf}'
 		],
     dest: tmp + assets + 'fonts'
@@ -74,12 +75,12 @@ module.exports = {
   scripts: {
     filename: 'main.js',
     src: [
-				src + bower + 'jquery/dist/jquery.js',
-				src + bower + 'bootstrap/dist/js/bootstrap.js',
-				src + bower + 'headroom.js/dist/headroom.js',
-				src + bower + 'headroom.js/dist/jQuery.headroom.js',
-				src + bower + 'holderjs/holder.js',
-				src + bower + 'wow/dist/wow.js',
+				src + exlcudes + bower + 'jquery/dist/jquery.js',
+				src + exlcudes + bower + 'bootstrap/dist/js/bootstrap.js',
+				src + exlcudes + bower + 'headroom.js/dist/headroom.js',
+				src + exlcudes + bower + 'headroom.js/dist/jQuery.headroom.js',
+				src + exlcudes + bower + 'holderjs/holder.js',
+				src + exlcudes + bower + 'wow/dist/wow.js',
         src + assets + '/scripts/jquery.fitvids.js',
 				src + assets + '/scripts/main.js'
 			],
@@ -98,8 +99,8 @@ module.exports = {
     filename: 'main.css',
     src: [
 		//bower + 'bootstrap/dist/css/bootstrap.css',
-		src + bower + 'animate.css/animate.css',
-		src + bower + 'fontawesome/css/font-awesome.css',
+		src + exlcudes + bower + 'animate.css/animate.css',
+		src + exlcudes + bower + 'fontawesome/css/font-awesome.css',
     src + assets + 'styles/screen.css',
     src + assets + 'styles/syntax.css',
     //src + assets + 'styles/ghost.min.css'
