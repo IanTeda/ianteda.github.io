@@ -1,14 +1,39 @@
 ---
-layout: default
+layout: page
 disqus: false
 title: Down The Rabbit Hole
+navigation: true
+logo: assets/images/ghost.png
+cover: assets/images/intro-background.jpg
 ---
-<h1>Archive of posts with {{ page.type }} '{{ page.title }}'</h1>
-<ul class="posts">
-  {% for post in page.posts %}
-    <li>
-      <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+<!--archive-category.html -->
+<header class="main-header post-head{% if page.cover %}" style="background-image: url({{ site.baseurl }}/{{ page.cover }}) {% else %}no-cover{% endif %}">
+    <nav class="main-nav {% if page.cover %} overlay {% endif %} clearfix">
+        {% if page.logo %}<a class="blog-logo" href="{{ site.baseurl }}"><img src="{{ site.baseurl }}/{{ page.logo }}" alt="Blog Logo" /></a>{% endif %}
+        {% if page.navigation %}
+            <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
+        {% endif %}
+    </nav>
+</header>
+
+<main class="content" role="main">
+    <article class="post">
+
+        <header class="post-header">
+            <h1>Archive of posts with {{ page.type }} '{{ page.title }}'</h1>
+        </header>
+
+        <section class="post-content">
+          <ul class="posts">
+            {% for post in page.posts %}
+              <li>
+                <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </section>
+
+    </article>
+
+</main>

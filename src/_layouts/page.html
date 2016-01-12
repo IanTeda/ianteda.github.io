@@ -1,6 +1,7 @@
 ---
 layout: default
-class: 'page-template'
+navigation: True
+logo: 'assets/images/ghost.png'
 ---
 <!-- page.html -->
 <header class="main-header post-head {% if page.cover %}" style="background-image: url({{ site.baseurl }}{{ page.cover }}){% else %}no-cover{% endif %}">
@@ -14,7 +15,7 @@ class: 'page-template'
 </header>
 
 <main class="content" role="main">
-    <article class="post">
+    <article class="post  {{ page.subclass }}">
 
         <header class="post-header">
             <h1 class="post-title">{{ page.title }}</h1>

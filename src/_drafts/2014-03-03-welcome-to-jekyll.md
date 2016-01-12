@@ -3,6 +3,7 @@ layout: post
 date: 2015-02-03
 title:  Welcome to Jekyll!
 categories: 'management'
+navigation: True
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build
