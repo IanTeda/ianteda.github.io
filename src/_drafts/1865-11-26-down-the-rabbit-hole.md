@@ -7,7 +7,7 @@ tags: fiction
 subclass: 'post tag-fiction'
 categories: 'management'
 navigation: True
-logo: 'assets/images/ghost.png'
+logo: 'assets/images/logo-light.png'
 cover: 'assets/images/cover1.jpg'
 ---
 

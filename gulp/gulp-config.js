@@ -10,7 +10,7 @@ var src = 'src/';
 var assets = 'assets/';
 var build = 'build/';
 var tmp = '.tmp/';
-var exlcudes = '_excludes';
+var exlcudes = '_excludes/';
 var bower = 'bower_components/';
 
 module.exports = {
