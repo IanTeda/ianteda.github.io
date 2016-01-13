@@ -74,10 +74,26 @@ highlighter: true
 # JEKYLL PLUGINS
 # Extending Jekyll functionality
 gems:
+  - jekyll-archives
   - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
   - jekyll-sitemap
+
+# JEKYLL ARCHIVES
+# Archive pages for your Jekyll tags and categories
+# REF: https://github.com/jekyll/jekyll-archives
+# TODO: Do I need this when I have permalinks?
+jekyll-archives:
+  enabled:
+    - tags
+    - categories
+  layouts:
+    tag: 'tag'
+    category: 'category'
+  permalinks:
+    category: ':name/index.html'
+    tags: 'tag/:name/'
 
 # JEKYLL FEED
 # A Jekyll plugin to generate an Atom (RSS-like) feed of your Jekyll posts

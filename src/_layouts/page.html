@@ -1,18 +1,32 @@
 ---
 layout: default
-navigation: True
 logo: 'assets/images/logo-light.png'
 class: 'page-template'
 ---
+
+{% if page.url contains 'creativity' %}
+   {% assign page_title = 'Creative' %}
+   {% assign page_description = 'A spirit for creativity, imagination and adventure' %}
+   {% assign page_cover = 'assets/images/cover3.jpg' %}
+{% elsif page.url contains 'engineering' %}
+   {% assign page_title = 'Engineering' %}
+   {% assign page_description = 'A spirit for creativity, imagination and adventure' %}
+   {% assign page_cover = 'assets/images/cover7.jpg' %}
+{% elsif page.url contains 'management' %}
+   {% assign page_title = 'Project Management' %}
+   {% assign page_description = 'A spirit for creativity, imagination and adventure' %}
+   {% assign page_cover = 'assets/images/cover4.jpg' %}
+{% elsif page.url contains 'programming' %}
+   {% assign page_title = 'Programming' %}
+   {% assign page_description = 'A spirit for creativity, imagination and adventure' %}
+   {% assign page_cover = 'assets/images/cover4.jpg' %}
+{% endif %}
+
 {% include header.html %}
 
 <!-- page.html -->
 <main class="content" role="main">
     <article class="post">
-
-        <header class="post-header">
-            <h1 class="post-title">{{ page.title }}</h1>
-        </header>
 
         <section class="post-content">
           {{content}}
