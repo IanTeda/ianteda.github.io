@@ -57,6 +57,9 @@
   <url>
     <loc>localhost:3000//tests/</loc>
   </url>
+  <url>
+    <loc>localhost:3000//page-2/</loc>
+  </url>
     <url>
       <loc>localhost:3000//engineering/gettysburg-address.html</loc>
     </url>
