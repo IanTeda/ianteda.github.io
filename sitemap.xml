@@ -1,90 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>localhost:3000//management/welcome-to-jekyll.html</loc>
-    <lastmod>2015-02-03T00:00:00+11:00</lastmod>
+    <loc>ianteda.com//404.html</loc>
   </url>
   <url>
-    <loc>localhost:3000//engineering/a-full-and-comprehensive-style-test.html</loc>
-    <lastmod>2014-09-27T20:18:00+10:00</lastmod>
+    <loc>ianteda.com//about.html</loc>
   </url>
   <url>
-    <loc>localhost:3000//programming/the-businessman-and-fisherman.html</loc>
-    <lastmod>2014-08-12T20:18:00+10:00</lastmod>
+    <loc>ianteda.com//tests/bootstrap.html</loc>
   </url>
   <url>
-    <loc>localhost:3000//management/i-have-a-dream.html</loc>
-    <lastmod>1963-08-28T20:18:00+10:00</lastmod>
+    <loc>ianteda.com//tests/colors.html</loc>
   </url>
   <url>
-    <loc>localhost:3000//engineering/the-purpose-of-education.html</loc>
-    <lastmod>1948-12-12T20:18:00+10:00</lastmod>
+    <loc>ianteda.com//</loc>
   </url>
   <url>
-    <loc>localhost:3000//engineering/out-to-sea.html</loc>
-    <lastmod>1912-07-24T20:18:00+10:00</lastmod>
+    <loc>ianteda.com//now.html</loc>
   </url>
   <url>
-    <loc>localhost:3000//creativity/looking-glass-house.html</loc>
-    <lastmod>1871-03-18T20:18:00+10:00</lastmod>
+    <loc>ianteda.com//tests/</loc>
   </url>
-  <url>
-    <loc>localhost:3000//management/down-the-rabbit-hole.html</loc>
-    <lastmod>1865-11-26T20:18:00+10:00</lastmod>
-  </url>
-  <url>
-    <loc>localhost:3000//engineering/gettysburg-address.html</loc>
-    <lastmod>1863-11-19T20:18:00+10:00</lastmod>
-  </url>
-  <url>
-    <loc>localhost:3000//404.html</loc>
-  </url>
-  <url>
-    <loc>localhost:3000//about.html</loc>
-  </url>
-  <url>
-    <loc>localhost:3000//tests/bootstrap.html</loc>
-  </url>
-  <url>
-    <loc>localhost:3000//tests/colors.html</loc>
-  </url>
-  <url>
-    <loc>localhost:3000//</loc>
-  </url>
-  <url>
-    <loc>localhost:3000//now.html</loc>
-  </url>
-  <url>
-    <loc>localhost:3000//tests/</loc>
-  </url>
-  <url>
-    <loc>localhost:3000//page-2/</loc>
-  </url>
-    <url>
-      <loc>localhost:3000//engineering/gettysburg-address.html</loc>
-    </url>
-    <url>
-      <loc>localhost:3000//management/down-the-rabbit-hole.html</loc>
-    </url>
-    <url>
-      <loc>localhost:3000//creativity/looking-glass-house.html</loc>
-    </url>
-    <url>
-      <loc>localhost:3000//engineering/out-to-sea.html</loc>
-    </url>
-    <url>
-      <loc>localhost:3000//engineering/the-purpose-of-education.html</loc>
-    </url>
-    <url>
-      <loc>localhost:3000//management/i-have-a-dream.html</loc>
-    </url>
-    <url>
-      <loc>localhost:3000//programming/the-businessman-and-fisherman.html</loc>
-    </url>
-    <url>
-      <loc>localhost:3000//engineering/a-full-and-comprehensive-style-test.html</loc>
-    </url>
-    <url>
-      <loc>localhost:3000//management/welcome-to-jekyll.html</loc>
-    </url>
 </urlset>
