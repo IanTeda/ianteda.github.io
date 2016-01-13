@@ -5,6 +5,7 @@ date: 2014-03-01
 title: Example content
 category: creativity
 logo: 'assets/images/logo-light.png'
+published: false
 ---
 
 <div class="message"> Howdy! This is an example blog post that shows several

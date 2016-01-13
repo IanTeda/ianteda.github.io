@@ -4,13 +4,13 @@
         <span class="hidden">Close</span>
     </a>
     <ul>
-        <li class="nav-home {% if page.current == 'home' %} nav-current{% endif %}" role="presentation"><a href="/">Home</a></li>
-        <li class="nav-about {% if page.current == 'about' %} nav-current{% endif %}" role="presentation"><a href="/about.html">About</a></li>
-        <li class="nav-now {% if page.current == 'now' %} nav-current{% endif %}" role="presentation"><a href="/now.html">Now</a></li>
-        <li class="nav-creativity {% if page.url contains 'creativity' %} nav-current{% endif %}" role="presentation"><a href="/creativity">Creativity</a></li>
-        <li class="nav-engineering {% if page.url contains 'engineering' %} nav-current{% endif %}" role="presentation"><a href="/engineering">Engineering</a></li>
-        <li class="nav-management {% if page.url contains 'management' %} nav-current{% endif %}" role="presentation"><a href="/management">Management</a></li>
-        <li class="nav-programming {% if page.current == 'programming' %} nav-current{% endif %}" role="presentation"><a href="/programming">Programming</a></li>
+        <li class="nav-home {% if page.current == 'home' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}">Home</a></li>
+        <li class="nav-about {% if page.current == 'about' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}about.html">About</a></li>
+        <li class="nav-now {% if page.current == 'now' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}now.html">Now</a></li>
+        <li class="nav-creativity {% if page.url contains 'creativity' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}creativity">Creativity</a></li>
+        <li class="nav-engineering {% if page.url contains 'engineering' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}engineering">Engineering</a></li>
+        <li class="nav-management {% if page.url contains 'management' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}management">Management</a></li>
+        <li class="nav-programming {% if page.current == 'programming' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}programming">Programming</a></li>
     </ul>
     <a class="subscribe-button icon-feed" href="{{ site.baseurl }}/rss.xml">Subscribe</a>
 </div>

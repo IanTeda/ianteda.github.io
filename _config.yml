@@ -2,7 +2,6 @@
 # Can be used in your theme by calling 'site.title' and so on
 name: "Ian Teda"
 description: "Husband, Father, Engineer, Explorer & Creator"
-url: www.ianteda.com
 # Set timezone for site generation
 timezone: Australia/Sydney
 
@@ -41,27 +40,24 @@ show_drafts: true
 # Only make the last 10 posts so generating isn't slow
 limit_posts: 10
 # Enables future posts (posts with dates in the future) and drafts
-future:      true
+future: true
 # Disables the more accurate related posts for faster generating of the site
 lsi: false
 unpublished: false
 
 # OUTPUTTING
-# List of links in the navigation bar
-navbar-links:
-  Engineering: 'engineering'
-  Management: 'management'
-  Software: 'software'
-  Creativity: 'creativity'
-
 # Permalinks - Global settings
 # Permalinks and be set in post/page front matter
 permalink: none
 
+# What should we append to the host url
+url: "localhost:3000"
+baseurl: "/"
+
 encoding: "utf-8"
 
 # Pagination
-paginate: 10
+paginate: 5
 paginate_path: 'page-:num'
 
 # Show more
@@ -78,29 +74,10 @@ highlighter: true
 # JEKYLL PLUGINS
 # Extending Jekyll functionality
 gems:
-  - jekyll-archives
   - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
   - jekyll-sitemap
-
-# JEKYLL ARCHIVES
-# Archive pages for your Jekyll tags and categories
-# REF: https://github.com/jekyll/jekyll-archives
-# TODO: Do I need this when I have permalinks?
-jekyll-archives:
-  enabled:
-    - year
-    - tags
-    - categories
-  layouts:
-    tag: 'archive-tag'
-    category: 'archive-category'
-    year: 'archive-year'
-  permalinks:
-    category: ':name/index.html'
-    year: 'archive/:year/'
-    tags: 'tag/:name/'
 
 # JEKYLL FEED
 # A Jekyll plugin to generate an Atom (RSS-like) feed of your Jekyll posts
@@ -144,7 +121,3 @@ footer-links-active:
   linkedin: false
   stackoverflow: false
   vimeo: true
-
-# What is the unique google analytics reference
-google_analytics: UA-00000000-1
-disqus: username

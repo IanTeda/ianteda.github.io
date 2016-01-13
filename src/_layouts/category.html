@@ -1,12 +1,10 @@
 ---
 layout: default
 disqus: false
-title: Down The Rabbit Hole
 navigation: true
 logo: assets/images/logo-light.png
 main-header: true
 ---
-<!--archive-category.html -->
 
 {% if page.url contains 'creativity' %}
    {% assign page_title='Creative' %}
@@ -28,24 +26,10 @@ main-header: true
 
 {% include header.html %}
 
-<main class="content" role="main">
-    <article class="post">
+<!-- The main content area on the homepage -->
+<main id="content" class="content" role="main">
 
-        <header class="post-header">
-            <h3>Posts with the {{ page.type }} '{{ page_title }}'</h3>
-        </header>
-
-        <section class="post-content">
-          <ul class="posts">
-            {% for post in page.posts %}
-              <li>
-                <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-              </li>
-            {% endfor %}
-          </ul>
-        </section>
-
-    </article>
+    <!-- The tag below includes the post loop - partials/loop.hbs -->
+    {% include loop.html %}
 
 </main>
