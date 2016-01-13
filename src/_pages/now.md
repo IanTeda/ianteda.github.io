@@ -5,6 +5,7 @@ navigation: true
 permalink: /now.html
 logo: assets/images/ghost.png
 cover: assets/images/intro-background.jpg
+current: now
 ---
 
 *Projects, books and things of interest*

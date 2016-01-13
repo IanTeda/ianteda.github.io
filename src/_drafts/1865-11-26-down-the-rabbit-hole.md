@@ -3,9 +3,9 @@ layout: post
 cover: false
 title: Down The Rabbit Hole
 date:   1865-11-26 10:18:00
-tags: fiction
+tags: 'fiction, book'
 subclass: 'post tag-fiction'
-categories: 'management'
+category: management
 navigation: True
 logo: 'assets/images/logo-light.png'
 cover: 'assets/images/cover1.jpg'

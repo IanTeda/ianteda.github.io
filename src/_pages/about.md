@@ -5,6 +5,7 @@ navigation: true
 title: Ian Teda
 permalink: /about.html
 cover: assets/images/intro-background.jpg
+current: about
 ---
 ### About
 *The story so far*

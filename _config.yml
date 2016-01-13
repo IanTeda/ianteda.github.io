@@ -58,7 +58,7 @@ navbar-links:
 # Permalinks and be set in post/page front matter
 permalink: none
 
-encoding:     "utf-8"
+encoding: "utf-8"
 
 # Pagination
 paginate: 10

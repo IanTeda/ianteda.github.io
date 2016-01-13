@@ -2,7 +2,7 @@
 layout: post
 date: 2015-02-03
 title:  Welcome to Jekyll!
-categories: 'management'
+category: management
 navigation: True
 ---
 

@@ -3,11 +3,11 @@ layout: post
 cover: false
 title: I Have a Dream
 date:   1963-08-28 10:18:00
-tags: speeches
+tags: [speeches]
 subclass: 'post tag-speeches'
-categories: 'management'
+categories: management
 navigation: True
-logo: 'assets/images/ghost.png'
+logo: 'assets/images/logo-light.png'
 cover: 'assets/images/intro-background.jpg'
 ---
 
