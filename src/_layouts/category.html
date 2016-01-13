@@ -4,12 +4,53 @@ disqus: false
 navigation: true
 main-header: true
 ---
+<!-- Previous/next page links - only displayed on page 2+ -->
+<div class="extra-pagination inner">
+  {% if page.class == 'home-template' %}
+      {% include pagination-post.html %}
+  {% elsif page.class == 'page-template' %}
+      {% include pagination-post.html %}
+  {% elsif page.class == 'author-template' %}
+      {% include pagination-author.html %}
+  {% elsif page.class == 'tag-template' %}
+      {% include pagination-tag.html %}
+  {% else %}
+      {% include pagination-post.html %}
+  {% endif %}
+</div>
 
-<ul class="posts">
-  {% for post in page.posts %}
-    <li>
-      <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+{% for post in page.posts %}
+  <article class="post">
+      <header class="post-header">
+          <h2 class="post-title"><a href="http://{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
+      </header>
+      <section class="post-excerpt">
+          <p>{{ post.content | strip_html | truncatewords: 26 }} <a class="read-more" href="{{ post.url | prepend: site.baseurl }}">&raquo;</a></p>
+      </section>
+      <footer class="post-meta">
+        {% if post.categories.size > 0 %}
+            Filed Under:
+            {% for category in post.categories %}
+                {% if forloop.index == post.categories.size %}
+                   <a href='{{ site.baseurl }}{{ category }}'>{{ category | capitalize }}</a>
+                {% else %}
+                   <a href='{{ site.baseurl }}{{ category }}'>{{ category | capitalize }}</a>,
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+      </footer>
+  </article>
+{% endfor %}
+
+<!-- Previous/next page links - displayed on every page -->
+{% if page.class == 'home-template' %}
+    {% include pagination-post.html %}
+{% elsif page.class == 'page-template' %}
+    {% include pagination-post.html %}
+{% elsif page.class == 'author-template' %}
+    {% include pagination-author.html %}
+{% elsif page.class == 'tag-template' %}
+    {% include pagination-tag.html %}
+{% else %}
+    {% include pagination-post.html %}
+{% endif %}

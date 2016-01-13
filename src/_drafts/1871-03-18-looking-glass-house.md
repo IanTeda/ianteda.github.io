@@ -5,7 +5,7 @@ title: Looking-Glass house
 date:   1871-03-18 10:18:00
 tags: [fiction, non-fiction, writting]
 subclass: 'post tag-fiction'
-category: programming
+category: creativity
 cover: 'assets/images/cover2.jpg'
 navigation: True
 logo: 'assets/images/logo-light.png'

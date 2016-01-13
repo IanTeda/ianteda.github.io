@@ -45,18 +45,7 @@ class: 'post-template'
 
             <section class="author">
                 <h4><a href="{{ site.baseurl }}author/{{ site.author.nickname }}">{{ site.author.nickname }}</a></h4>
-
-                <time class="post-date" datetime="{{ page.date | date:'%Y-%m-%d' }}">{{ page.date | date_to_string }}</time>
-
-                {% if site.bio %}
-                    <p> {{ site.bio }}</p>
-                {% else %}
-                    <p>Read <a href="{{ site.baseurl }}author/{{ site.author.nickname }}">more posts</a> by this author.</p>
-                {% endif %}
-                <div class="author-meta">
-                    {% if site.author.location %}<span class="author-location icon-location"> {{ site.author.location }}</span>{% endif %}
-                    {% if site.author.url %}<span class="author-link icon-link"><a href="{{ site.author.url }}"> {{ site.short_url }}</a></span>{% endif %}
-                </div>
+                <time class="post-meta" datetime="{{ page.date | date:'%Y-%m-%d' }}">Posted on {{ page.date | date_to_string }}</time>
             </section>
 
             <!-- /author  -->
