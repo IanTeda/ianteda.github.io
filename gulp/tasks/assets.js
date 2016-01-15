@@ -33,3 +33,9 @@ gulp.task('assets:copy', function () {
  * Delete build assets folder contents then copy assets into build folder
  */
 gulp.task('assets:production', gulp.series('assets:clean', 'assets:copy'));
+
+gulp.task('assets', function (){
+  return gulp.src(jekyll.tmp)
+    .pipe($.size({title: 'Assets:'}))
+    .pipe(gulp.dest(jekyll.assets));
+})

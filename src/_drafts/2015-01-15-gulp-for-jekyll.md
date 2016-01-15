@@ -30,7 +30,9 @@ logo: 'assets/images/logo-light.png'
 * Inject
   - Styles
   - Scripts
-
+* Fonts
+  - Copy
+  - Flatten folder structure
 
 ### Production
 
