@@ -13,6 +13,6 @@ var reload = browsersync.reload;
  * During production assets are found in .tmp folder, for production they get copied in
  */
 gulp.task('default', gulp.series(
-  gulp.parallel('scripts:rebuild', 'styles:rebuild', 'fonts:rebuild', 'images', 'html:clean', 'assets:clean'),
+  gulp.parallel('scripts', 'styles', 'fonts:rebuild', 'images', 'html:clean', 'assets:clean'),
   gulp.series('jekyll:rebuild', 'serve')
 ));

@@ -114,7 +114,6 @@ module.exports = {
   },
   uglify: {
     options: {
-      preserveComments: 'license'
     }
   }
 };

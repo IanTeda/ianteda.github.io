@@ -24,10 +24,14 @@ logo: 'assets/images/logo-light.png'
   - Watch: Watch image folder for changes and copy changed images to temporary folder
   - Optimise: Optimise images in temporary folder
 
+* Scripts
+  - Concatinate
+  - Sourcemaps
 
+### Production
 
-  * Images
-    - Clean: Clean temporary folder of images
-    - Copy: Copy images from source to temporary folder for serve
-    - Watch: Watch image folder for changes and copy changed images to temporary folder
-    - Optimise: Optimise images in temporary folder
+* Images
+  - Clean: Clean temporary folder of images
+  - Copy: Copy images from source to temporary folder for serve
+  - Watch: Watch image folder for changes and copy changed images to temporary folder
+  - Optimise: Optimise images in temporary folder
