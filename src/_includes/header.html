@@ -1,7 +1,7 @@
-<header class="main-header post-head{% if page.cover %}" style="background-image: url({{ site.baseurl }}{{ page.cover }}){% elsif page_cover %}" style="background-image: url({{ site.baseurl }}{{ page_cover }}) {% else %}no-cover{% endif %}">
+<header class="main-header post-head{% if page.cover %}" style="background-image: url(/{{ page.cover }}){% elsif page_cover %}" style="background-image: url(/{{ page_cover }}) {% else %}no-cover{% endif %}">
 
   <nav class="main-nav {% if page.cover %} overlay {% elsif page_cover %} overlay {% endif %} clearfix">
-      {% if page.logo %}<a class="blog-logo" href="{{ "" | prepend: site.baseurl }}"><img src="{{ site.baseurl }}{{ page.logo }}" alt="Blog Logo" /></a>{% endif %}
+      {% if page.logo %}<a class="blog-logo" href="/"><img src="/{{ page.logo }}" alt="Blog Logo" /></a>{% endif %}
       {% if page.navigation %}
           <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
       {% endif %}
