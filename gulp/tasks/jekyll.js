@@ -12,7 +12,7 @@ var $ = require('gulp-load-plugins')({
 
 gulp.task('jekyll', function (callback) {
   if(argv.prod){
-    $.shelljs.exec('jekyll build  --config _config.yml,_config.production.ym');
+    $.shelljs.exec('jekyll build  --config _config.yml,_config.production.yml');
     callback();
   } else {
     $.shelljs.exec('jekyll build');

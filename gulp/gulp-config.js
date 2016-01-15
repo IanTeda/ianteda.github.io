@@ -61,7 +61,6 @@ module.exports = {
   jekyll: {
     build: [
       build,
-      publish,
       tmp
     ],
     deploy: build + '**/*',
@@ -114,7 +113,10 @@ module.exports = {
     inject: {
       target: src + '_includes/styles.html',
       dest: src + '_includes/',
-      files: tmp + assets + 'styles/*.css'
+      files: tmp + assets + 'styles/*.css',
+      options: {
+        read: false
+      }
     }
   },
   uglify: {
