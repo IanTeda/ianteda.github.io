@@ -11,6 +11,6 @@ var gulp = require('gulp');
  * During production assets are found in .tmp folder, for production they get copied in
  */
 gulp.task('default', gulp.series(
-  gulp.parallel('scripts', 'styles', 'fonts:rebuild', 'images', 'html:clean', 'assets:clean'),
-  gulp.series('jekyll', 'browsersync')
+  gulp.parallel('scripts', 'styles', 'fonts', 'images', 'html:clean', 'assets:clean'),
+  gulp.series('inject', 'jekyll', 'browsersync')
 ));

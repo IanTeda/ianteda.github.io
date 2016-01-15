@@ -27,6 +27,9 @@ logo: 'assets/images/logo-light.png'
 * Styles
   - Concatinate
   - Sourcemaps
+* Inject
+  - Styles
+  - Scripts
 
 
 ### Production
