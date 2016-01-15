@@ -11,3 +11,7 @@ limit_posts: 0
 
 google_analytics: UA-71253711-1
 disqus: username
+
+# What should we append to the host url
+url: "ianteda.com"
+baseurl: "/"
