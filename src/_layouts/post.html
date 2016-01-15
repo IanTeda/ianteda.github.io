@@ -20,9 +20,9 @@ class: 'post-template'
                     Filed Under:
                     {% for category in page.categories %}
                         {% if forloop.index == page.categories.size %}
-                           <a href='{{ site.baseurl }}{{ category }}'>{{ category | capitalize }}</a>
+                           <a href='/{{ category }}'>{{ category | capitalize }}</a>
                         {% else %}
-                           <a href='{{ site.baseurl }}{{ category }}'>{{ category | capitalize }}</a>,
+                           <a href='/{{ category }}'>{{ category | capitalize }}</a>,
                         {% endif %}
                     {% endfor %}
                 {% endif %}
@@ -36,19 +36,6 @@ class: 'post-template'
         </section>
 
         <footer class="post-footer">
-
-            {% if site.image %}
-            <figure class="author-image">
-                <a class="img" href="{{ site.baseurl }}author/{{ site.author.nickname }}" style="background-image: url({{ site.baseurl }}{{ site.author.image }})"><span class="hidden">{{ page.author }}'s Picture</span></a>
-            </figure>
-            {% endif %}
-
-            <section class="author">
-                <h4><a href="{{ site.baseurl }}author/{{ site.author.nickname }}">{{ site.author.nickname }}</a></h4>
-                <time class="post-meta" datetime="{{ page.date | date:'%Y-%m-%d' }}">Posted on {{ page.date | date_to_string }}</time>
-            </section>
-
-            <!-- /author  -->
 
             <section class="share">
                 <h4>Share this post</h4>
@@ -81,7 +68,7 @@ class: 'post-template'
 
     {{ post.url | remove: '/' }}
     {% if page.next %}
-        <a class="read-next-story {% if page.next.cover %}" style="background-image: url({{ site.baseurl }}{{ page.next.cover }}){% else %}no-cover{% endif %}" href="http://{{ site.url }}{{ page.next.url }}">
+        <a class="read-next-story {% if page.next.cover %}" style="background-image: url(/{{ page.next.cover }}){% else %}no-cover{% endif %}" href="{{ page.next.url }}">
             <section class="post">
                 <h2>{{ page.next.title }}</h2>
                 <p>{{ page.next.content | truncatewords:15 }}</p>
@@ -89,7 +76,7 @@ class: 'post-template'
         </a>
     {% endif %}
     {% if page.previous %}
-        <a class="read-next-story prev {% if page.previous.cover %}" style="background-image: url({{ site.baseurl }}{{ page.previous.cover }}){% else %}no-cover{% endif %}" href="http://{{ site.url }}{{ page.previous.url }}">
+        <a class="read-next-story prev {% if page.previous.cover %}" style="background-image: url(/{{ page.previous.cover }}){% else %}no-cover{% endif %}" href="{{ page.previous.url }}">
             <section class="post">
                 <h2>{{ page.previous.title }}</h2>
                 <p>{{ page.previous.content | truncatewords:15 }}</p>

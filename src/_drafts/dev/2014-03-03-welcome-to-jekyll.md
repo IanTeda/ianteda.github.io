@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2015-02-03
+date: 2015-01-03
 title:  Welcome to Jekyll!
 category: management
 navigation: True

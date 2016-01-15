@@ -51,8 +51,8 @@ unpublished: false
 permalink: none
 
 # What should we append to the host url
-url: "localhost:3000"
-baseurl: "/"
+#url: "localhost:3000"
+#baseurl: "/"
 
 encoding: "utf-8"
 
