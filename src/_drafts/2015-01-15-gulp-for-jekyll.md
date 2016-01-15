@@ -2,6 +2,7 @@
 title: Using Gulp with Jekyll
 date: 2016-01-15
 tags: [gulp, jekyll]
+lead: This is an excerpt or lead for this article
 subclass: 'post tag-speeches'
 layout: post
 category: programming
@@ -10,4 +11,23 @@ cover: 'assets/images/cover-gulp.jpg'
 logo: 'assets/images/logo-light.png'
 ---
 
-Testing
+### Structure
+
+1. Development
+2. Build
+3. Deployment
+
+### Development
+
+* Images
+  - Copy: Copy images from source to temporary folder for serve
+  - Watch: Watch image folder for changes and copy changed images to temporary folder
+  - Optimise: Optimise images in temporary folder
+
+
+
+  * Images
+    - Clean: Clean temporary folder of images
+    - Copy: Copy images from source to temporary folder for serve
+    - Watch: Watch image folder for changes and copy changed images to temporary folder
+    - Optimise: Optimise images in temporary folder
