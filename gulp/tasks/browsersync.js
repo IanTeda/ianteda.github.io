@@ -5,13 +5,21 @@
  */
 
 var gulp = require('gulp');
+var argv = require('yargs').argv;
 var browsersync = require('browser-sync');
 var reload = browsersync.reload;
 
 gulp.task('browsersync', function() {
+
+  if(argv.prod){
+    var baseDir = ['build']
+  } else {
+    var baseDir = ['.tmp', 'build']
+  }
+
   browsersync({
     server: {
-      baseDir: ['.tmp', 'build']
+      baseDir: baseDir
     }
   });
 

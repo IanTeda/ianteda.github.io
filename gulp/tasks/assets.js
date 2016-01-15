@@ -5,37 +5,14 @@
  */
 
 var gulp = require('gulp');
+var argv = require('yargs').argv;
 var $ = require('gulp-load-plugins')({
   pattern: ['gulp-*', 'gulp.*', 'del', 'shelljs']
 });
 var jekyll = require('../gulp-config').jekyll;
 
-/**
- * ASSETS CLEAN
- * Delete assets in Jekyll .build folder
- */
-gulp.task('assets:clean', function () {
-  return $.del(jekyll.assets);
-});
-
-/**
- * COPY CLEAN
- * Copy assets in Jekyll .build folder
- */
-gulp.task('assets:copy', function () {
-  return gulp.src(jekyll.tmp)
-    .pipe($.size({title: 'Assets:'}))
-    .pipe(gulp.dest(jekyll.assets));
-});
-
-/**
- * REBUILD ASSETS
- * Delete build assets folder contents then copy assets into build folder
- */
-gulp.task('assets:production', gulp.series('assets:clean', 'assets:copy'));
-
 gulp.task('assets', function (){
   return gulp.src(jekyll.tmp)
-    .pipe($.size({title: 'Assets:'}))
-    .pipe(gulp.dest(jekyll.assets));
+    .pipe($.if(argv.prod, $.size({title: 'Assets:'})))
+    .pipe($.if(argv.prod, gulp.dest(jekyll.assets)))
 })

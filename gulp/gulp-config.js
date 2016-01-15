@@ -12,6 +12,7 @@ var build = 'build/';
 var tmp = '.tmp/';
 var exlcudes = '_excludes/';
 var bower = 'bower_components/';
+var publish = '.publish';
 
 module.exports = {
   fonts: {
@@ -58,7 +59,11 @@ module.exports = {
     }
   },
   jekyll: {
-    build: build,
+    build: [
+      build,
+      publish,
+      tmp
+    ],
     deploy: build + '**/*',
     assets: build + assets,
     tmp: tmp + assets + '**/*'
