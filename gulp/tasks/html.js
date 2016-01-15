@@ -5,6 +5,7 @@
  */
 
 var gulp = require('gulp');
+var argv = require('yargs').argv;
 var $ = require('gulp-load-plugins')({
   pattern: ['gulp-*', 'gulp.*', 'del']
 });
@@ -17,37 +18,16 @@ var gzip = require('../gulp-config').gzip;
 var htmlmin = require('../gulp-config').htmlmin;
 
 /**
- * OPTIMISE GZIP
- * Delete the destination folder of gzip files
- */
-gulp.task('html:clean', function() {
-  return $.del(html.gziped);
-});
-
-/**
  * OPTIMISE HTML
  * Gzip html files in Jekyll dist folder
  */
-gulp.task('html:optimise', function() {
+gulp.task('html', function() {
   return gulp.src(html.optimise)
-    .pipe($.size({
-      title: 'Html:'
-    }))
-    //.pipe($.htmlmin(htmlmin.options))
-    .pipe($.size({
-      title: 'Minimised:'
-    }))
-    //.pipe(gulp.dest(html.dest))
-    .pipe($.gzip(gzip.options))
-    .pipe($.size({
-      title: 'GZiped:'
-    }))
-    .pipe(gulp.dest(html.dest));
+    .pipe($.if(argv.prod, $.size({title: 'Html:'})))
+    .pipe($.if(argv.prod, $.htmlmin(htmlmin.options)))
+    .pipe($.if(argv.prod, $.size({title: 'Minimised:'})))
+    .pipe($.if(argv.prod, gulp.dest(html.dest)))
+    .pipe($.if(argv.prod, $.gzip(gzip.options)))
+    .pipe($.if(argv.prod, $.size({title: 'GZiped:'})))
+    .pipe($.if(argv.prod, gulp.dest(html.dest)));
 });
-
-/**
- * PRODUCTION BUILD
- * Build style sheets for production
- * Clean .tmp directory, copy accross with optimisation then inject new reference
- */
-gulp.task('html:production', gulp.series('html:clean', 'html:optimise'));

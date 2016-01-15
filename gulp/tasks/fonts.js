@@ -19,7 +19,7 @@ var fonts = require('../gulp-config').fonts;
  * Flatten folder structure
  * Copy only fonts that have changed into destination folder
  */
-gulp.task('fonts:copy', function () {
+gulp.task('fonts', function () {
   return gulp.src(fonts.src)
     .pipe($.changed(fonts.dest))
     .pipe($.flatten())
