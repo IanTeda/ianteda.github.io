@@ -4,8 +4,6 @@
  */
 
 var gulp = require('gulp');
-var browsersync = require('browser-sync');
-var reload = browsersync.reload;
 
 /**
  * DEFAULT GULP TASK
@@ -14,5 +12,5 @@ var reload = browsersync.reload;
  */
 gulp.task('default', gulp.series(
   gulp.parallel('scripts', 'styles', 'fonts:rebuild', 'images', 'html:clean', 'assets:clean'),
-  gulp.series('jekyll:rebuild', 'serve')
+  gulp.series('jekyll', 'browsersync')
 ));

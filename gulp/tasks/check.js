@@ -16,3 +16,12 @@ gulp.task('scripts:check', function () {
     .pipe($.eslint.formatEach())
     .pipe($.eslint.failOnError());
 });
+
+/**
+ * CHECK JEKYLL
+ * Check Jekyll build for errors
+ */
+gulp.task('jekyll:check', function (callback) {
+  $.shelljs.exec('jekyll doctor');
+  callback();
+});

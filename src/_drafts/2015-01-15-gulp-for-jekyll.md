@@ -20,13 +20,14 @@ logo: 'assets/images/logo-light.png'
 ### Development
 
 * Images
-  - Copy: Copy images from source to temporary folder for serve
-  - Watch: Watch image folder for changes and copy changed images to temporary folder
-  - Optimise: Optimise images in temporary folder
-
+  - Copy images from source to temporary folder for serve, but only those changed or new
 * Scripts
   - Concatinate
   - Sourcemaps
+* Styles
+  - Concatinate
+  - Sourcemaps
+
 
 ### Production
 
