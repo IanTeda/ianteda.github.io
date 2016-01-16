@@ -14,5 +14,5 @@ var jekyll = require('../gulp-config').jekyll;
 gulp.task('assets', function (){
   return gulp.src(jekyll.tmp)
     .pipe($.if(argv.prod, $.size({title: 'Assets:'})))
-    .pipe($.if(argv.prod, gulp.dest(jekyll.assets)))
-})
+    .pipe($.if(argv.prod, gulp.dest(jekyll.assets)));
+});
