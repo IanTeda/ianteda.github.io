@@ -1,9 +1,13 @@
 /**
  * FONTS
- * Collect all fonts and copy into fonts folder in assets
- * Loads in gulp plugins using gulp-load-plugins and attaches them variable $.
+ * Lazy load gulp plugins using gulp-load-plugins and attach them variable $.
+ * Collect all fonts and copy only changed fonts into assets fonts folder, flattening any folder hierarchy
+ * --prod will do the same as above
  */
 
+/**
+ * REQUIRES
+ */
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')({
   pattern: ['gulp-*', 'gulp.*', 'del']

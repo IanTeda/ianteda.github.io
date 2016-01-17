@@ -1,14 +1,21 @@
 /**
- * SERVE
- * Tasks for managing images
- * Lazy loads in gulp plugins using gulp-load-plugins and attaches them variable $.
+ * BROWSERSYNC
+ * Start browsersync
+ * --prod will start browsersync from build directory only
  */
 
+/**
+ * REQUIRES
+ */
 var gulp = require('gulp');
 var argv = require('yargs').argv;
 var browsersync = require('browser-sync');
 var reload = browsersync.reload;
 
+
+/**
+ * BROWSERSYNC
+ */
 gulp.task('browsersync', function() {
 
   if (argv.prod){
@@ -23,7 +30,7 @@ gulp.task('browsersync', function() {
     }
   });
 
-  // Watch various files for changes and do the needful
+  // Watch files for changes and do the needful
   gulp.watch(['src/**/*.md', 'src/**/*.html', 'src/**/*.yml'], gulp.series('jekyll', reload));
   gulp.watch(['src/**/*.xml', 'src/**/*.txt'], gulp.series('jekyll', reload));
   gulp.watch('src/assets/scripts/**/*.js', gulp.series('scripts', reload));

@@ -1,9 +1,13 @@
 /**
  * HTML
- * Copy source images that have changed into the images folder in assets.
- * Loads in gulp plugins using gulp-load-plugins and attaches them variable $.
+ * Lazy load gulp plugins using gulp-load-plugins and attach them variable $.
+ * Default the task do not do anything
+ * --prod will uglify (minimise) html files and create a gziped copy
  */
 
+/**
+ * REQUIRES
+ */
 var gulp = require('gulp');
 var argv = require('yargs').argv;
 var $ = require('gulp-load-plugins')({
@@ -18,8 +22,7 @@ var gzip = require('../gulp-config').gzip;
 var htmlmin = require('../gulp-config').htmlmin;
 
 /**
- * OPTIMISE HTML
- * Gzip html files in Jekyll dist folder
+ * HTML
  */
 gulp.task('html', function() {
   return gulp.src(html.optimise)

@@ -1,9 +1,8 @@
 /**
  * IMAGES
- * Tasks for managing images
- * Lazy loads in gulp plugins using gulp-load-plugins and attaches them variable $.
+ * Lazy load gulp plugins using gulp-load-plugins and attaches them variable $.
+ * Copy changed files into .tmp folder
  * --prod optimises images with imagemin
- * If not production only pipe changed files
  */
 
 var gulp = require('gulp');
@@ -20,7 +19,7 @@ var images = require('../gulp-config').images;
 var imagemin = require('../gulp-config').imagemin;
 
  /**
-  * TASK
+  * IMAGES TASK
   */
 gulp.task('images', function () {
   return gulp.src(images.src)

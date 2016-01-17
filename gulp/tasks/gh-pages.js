@@ -3,6 +3,9 @@
  * Deploy generated pages to Github
  */
 
+/**
+ * CONFIG
+ */
 var gulp = require('gulp');
 var ghPages = require('gulp-gh-pages');
 
@@ -13,7 +16,6 @@ var jekyll = require('../gulp-config').jekyll;
 
 /**
  * GITHUB PAGES
- * Deploy to gh-pages branch
  */
 gulp.task('gh-pages', function() {
   return gulp.src(jekyll.deploy)
