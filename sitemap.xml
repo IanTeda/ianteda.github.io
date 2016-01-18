@@ -1,24 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>ianteda.com//404.html</loc>
+    <loc>/programming/why-jekyll-website.html</loc>
+    <lastmod>2016-01-17T00:00:00+11:00</lastmod>
   </url>
   <url>
-    <loc>ianteda.com//about.html</loc>
+    <loc>/programming/gulp-for-jekyll.html</loc>
+    <lastmod>2016-01-15T00:00:00+11:00</lastmod>
   </url>
   <url>
-    <loc>ianteda.com//tests/bootstrap.html</loc>
+    <loc>/engineering/a-full-and-comprehensive-style-test.html</loc>
+    <lastmod>2014-09-27T20:18:00+10:00</lastmod>
   </url>
   <url>
-    <loc>ianteda.com//tests/colors.html</loc>
+    <loc>/creativity/example-content.html</loc>
+    <lastmod>2014-03-01T00:00:00+11:00</lastmod>
   </url>
   <url>
-    <loc>ianteda.com//</loc>
+    <loc>/404.html</loc>
   </url>
   <url>
-    <loc>ianteda.com//now.html</loc>
+    <loc>/about.html</loc>
   </url>
   <url>
-    <loc>ianteda.com//tests/</loc>
+    <loc>/tests/bootstrap.html</loc>
   </url>
+  <url>
+    <loc>/tests/colors.html</loc>
+  </url>
+  <url>
+    <loc>/</loc>
+  </url>
+  <url>
+    <loc>/now.html</loc>
+  </url>
+  <url>
+    <loc>/tests/</loc>
+  </url>
+    <url>
+      <loc>/creativity/example-content.html</loc>
+    </url>
+    <url>
+      <loc>/engineering/a-full-and-comprehensive-style-test.html</loc>
+    </url>
+    <url>
+      <loc>/programming/gulp-for-jekyll.html</loc>
+    </url>
+    <url>
+      <loc>/programming/why-jekyll-website.html</loc>
+    </url>
 </urlset>
