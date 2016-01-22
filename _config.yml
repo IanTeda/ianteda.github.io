@@ -14,7 +14,8 @@ plugins_dir: ./_plugins
 layouts_dir: ./_layouts
 data_dir: ./_data
 includes_dir: ./_includes
-#baseurl: localhost:3000
+url: "ianteda.com"
+baseurl: ""
 include:
   - ".htaccess"
   - CNAME
@@ -115,7 +116,7 @@ gist:
 author:
   name: Ian Teda
   nickname: Ian
-  url: 'http://biomadeira.github.io/jasper/'
+  url: 'http://ianteda.com'
   image: 'assets/images/casper.png'
   email: 'ian@teda.id.au'
   bio: I&#39;m Ian Teda
@@ -126,6 +127,7 @@ author:
   linkedin: in/ianteda
   stackoverflow: 882279/ianteda
   vimeo: ianteda
+  gplus: u/0/+IanTeda
 
 # Select which links to show in the footer
 footer-links-active:

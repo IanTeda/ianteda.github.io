@@ -71,7 +71,7 @@ class: 'post-template'
         <a class="read-next-story {% if page.next.cover %}" style="background-image: url(/{{ page.next.cover }}){% else %}no-cover{% endif %}" href="{{ page.next.url }}">
             <section class="post">
                 <h2>{{ page.next.title }}</h2>
-                <p>{{ page.next.content | truncatewords:15 }}</p>
+                <p>{{ page.next.description | truncatewords:15 }}</p>
             </section>
         </a>
     {% endif %}
@@ -79,7 +79,7 @@ class: 'post-template'
         <a class="read-next-story prev {% if page.previous.cover %}" style="background-image: url(/{{ page.previous.cover }}){% else %}no-cover{% endif %}" href="{{ page.previous.url }}">
             <section class="post">
                 <h2>{{ page.previous.title }}</h2>
-                <p>{{ page.previous.content | truncatewords:15 }}</p>
+                <p>{{ page.previous.description | truncatewords:15 }}</p>
             </section>
         </a>
     {% endif %}

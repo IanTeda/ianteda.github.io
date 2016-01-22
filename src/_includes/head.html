@@ -4,7 +4,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <title>{% if page.title %}{{ page.title }}{% elsif site.name %}{{ site.name }}{% endif %}</title>
-    <meta name="description" content="{{ site.name }} - {{ site.description }}" />
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+
+    {% if site.author.gplus %}
+      <link rel="author" href="https://plus.google.com/{{ site.author.gplus }}"/>
+    {% endif %}
 
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />

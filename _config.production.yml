@@ -14,4 +14,4 @@ disqus: username
 
 # What should we append to the host url
 url: "ianteda.com"
-baseurl: "/"
+baseurl: ""
