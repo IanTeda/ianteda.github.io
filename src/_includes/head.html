@@ -3,8 +3,17 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <title>{% if page.title %}{{ page.title }}{% elsif site.name %}{{ site.name }}{% endif %}</title>
-    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+    <title>
+      {% if page.title %}
+        {{ page.title }}
+      {% else %}
+        {{ site.name }}
+      {% endif %}
+    </title>
+
+    {% if page.description %}
+      <meta name="description" content="{{ page.description }}" />
+    {% endif %}
 
     {% if site.author.gplus %}
       <link rel="author" href="https://plus.google.com/{{ site.author.gplus }}"/>

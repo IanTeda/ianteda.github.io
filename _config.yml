@@ -4,6 +4,7 @@ name: "Ian Teda"
 description: "Husband, Father, Engineer, Explorer & Creator"
 # Set timezone for site generation
 timezone: Australia/Sydney
+url: http://localhost:3000
 
 # LOCATION
 # Where things are
