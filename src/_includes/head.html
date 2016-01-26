@@ -1,8 +1,20 @@
 <head>
 
+    <!-- Basic Page Needs -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
+    <!-- Mobile Metas -->
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- RSS Feed -->
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name | xml_escape }}" href="/rss.xml" />
+
+    <!-- Favourite Icon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" >
+
+    <!-- Page Title -->
     <title>
       {% if page.title %}
         {{ page.title }}
@@ -11,23 +23,30 @@
       {% endif %}
     </title>
 
+    <!-- Page Description -->
     {% if page.description %}
       <meta name="description" content="{{ page.description }}" />
     {% endif %}
 
+    <!-- Page Author -->
     {% if site.author.gplus %}
       <link rel="author" href="https://plus.google.com/{{ site.author.gplus }}"/>
     {% endif %}
 
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="shortcut icon" href="assets/images/favicon.ico" >
-
-
-    <meta name="generator" content="Jekyll 3.0.1" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="/rss.xml" />
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
 
     {% include styles.html %}
+
+    {% if site.enforce_ssl }
+        <!-- Force HTTPS -->
+        {% include ssl-redirect.html %}
+    {% endif %}
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>

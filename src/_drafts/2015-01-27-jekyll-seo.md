@@ -28,7 +28,9 @@ logo: 'assets/images/logo-light.png'
 * Make use of free webmaster tools
 
 Mystery algorithm
+
 * Link to gPlus author
+* HTTPS
 
 ### Page Titles
 YAML front matter
@@ -103,6 +105,11 @@ Improve the structure of your URLs and navigation
 * Prepare two sitemaps: one for users, one for search engines
 * Use mostly text for navigation
 * Have a useful 404 page
+
+#### HTTPS
+
+1. Cloudflare / DNS records
+2. ssl-redirect / enforce_ssl
 
 ###### References
 http://jekyll.tips/tutorials/seo/

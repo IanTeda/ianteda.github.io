@@ -4,7 +4,9 @@ name: "Ian Teda"
 description: "Husband, Father, Engineer, Explorer & Creator"
 # Set timezone for site generation
 timezone: Australia/Sydney
+# Host informaiton for URLs
 url: http://localhost:3000
+baseurl: ""
 
 # LOCATION
 # Where things are
@@ -15,8 +17,6 @@ plugins_dir: ./_plugins
 layouts_dir: ./_layouts
 data_dir: ./_data
 includes_dir: ./_includes
-url: "ianteda.com"
-baseurl: ""
 include:
   - ".htaccess"
   - CNAME
@@ -51,10 +51,6 @@ unpublished: false
 # Permalinks - Global settings
 # Permalinks and be set in post/page front matter
 permalink: none
-
-# What should we append to the host url
-#url: "localhost:3000"
-#baseurl: "/"
 
 encoding: "utf-8"
 
@@ -117,7 +113,7 @@ gist:
 author:
   name: Ian Teda
   nickname: Ian
-  url: 'http://ianteda.com'
+  url: 'https://ianteda.com'
   image: 'assets/images/casper.png'
   email: 'ian@teda.id.au'
   bio: I&#39;m Ian Teda
