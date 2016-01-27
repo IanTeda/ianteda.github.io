@@ -12,11 +12,15 @@
               <h1 class="page-title">
                   {% if page_title %}
                       {{ page_title }}
+                  {% elsif page.title %}
+                      {{ page.title }}
                   {% endif %}
               </h1>
               <h2 class="page-description">
                   {% if page_description %}
                       {{ page_description }}
+                  {% elsif page.description %}
+                      {{ page.description }}
                   {% endif %}
               </h2>
           </div>

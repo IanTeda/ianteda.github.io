@@ -23,8 +23,8 @@ logo: 'assets/images/logo-light.png'
 * Use heading tags appropriately
 * Make effective use of robots.txt
 * Be aware of rel="nofollow" for links
-* Notify Google of mobile sites
-* Guide mobile users accurately
+* Notify Google of mobile sites <i class="fa fa-check"></i>
+* Guide mobile users accurately <i class="fa fa-check"></i>
 * Promote your website in the right ways
 * Make use of free webmaster tools
 * 404 meaningful
@@ -35,6 +35,7 @@ Mystery algorithm
 * Search Engines love fresh content
 * Search Engines don’t like duplicate content
 * Images should always have an alt attribute
+* HTTPS <i class="fa fa-check"></i>
 
 ### Page Titles
 YAML front matter
@@ -119,8 +120,13 @@ Improve the structure of your URLs and navigation
 * Use mostly text for navigation
 * Have a useful 404 page
 
+#### HTTPS
+
+1. Cloudflare / DNS records
+2. ssl-redirect / enforce_ssl
+
 ###### References
-http://jekyll.tips/tutorials/seo/
+[^n] http://jekyll.tips/tutorials/seo/
 http://sixrevisions.com/content-strategy/5-common-seo-mistakes-with-web-page-titles/
 http://vdaubry.github.io/2014/10/21/SEO-for-your-Jekyll-blog/
 https://moz.com/learn/seo/meta-description

@@ -101,14 +101,15 @@ module.exports = {
   },
   styles: {
     filename: 'main.css',
-    src: [
-		//bower + 'bootstrap/dist/css/bootstrap.css',
+    css: [
+		//src + exlcudes + bower + 'bootstrap/dist/css/bootstrap.css',
 		src + exlcudes + bower + 'animate.css/animate.css',
 		src + exlcudes + bower + 'fontawesome/css/font-awesome.css',
     src + assets + 'styles/screen.css',
     src + assets + 'styles/syntax.css',
     //src + assets + 'styles/ghost.min.css'
-  ],
+    ],
+    sass: src + assets + 'sass/main.scss',
     dest: tmp + assets + 'styles',
     inject: {
       target: src + '_includes/styles.html',

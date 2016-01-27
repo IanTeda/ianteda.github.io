@@ -10,8 +10,8 @@ lsi: true
 limit_posts: 0
 
 google_analytics: UA-71253711-1
-disqus: username
 
 # What should we append to the host url
-url: http://ianteda.com
+url: https://ianteda.com
+enforce_ssl: ianteda.com
 baseurl: ""
