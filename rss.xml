@@ -1,28 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.0.1">Jekyll</generator><link href="ianteda.com//rss.xml" rel="self" type="application/atom+xml" /><link href="ianteda.com//" rel="alternate" type="text/html" /><updated>2016-01-21T16:00:59+11:00</updated><id>ianteda.com//</id><title>Ian Teda</title><subtitle>Husband, Father, Engineer, Explorer &amp; Creator</subtitle><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><entry><title>Welcome to ianteda.com</title><link href="ianteda.com//management/ianteda-com.html" rel="alternate" type="text/html" title="Welcome to ianteda.com" /><published>2016-01-21T00:00:00+11:00</published><updated>2016-01-21T00:00:00+11:00</updated><id>ianteda.com//management/ianteda-com</id><content type="html" xml:base="ianteda.com//management/ianteda-com.html">&lt;p&gt;Hello and thank you for visiting &lt;a href=&quot;ianteda.com&quot;&gt;ianteda.com&lt;/a&gt;, my little corner of the internet. This Website was born out of a few ideas and insights:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.0.1">Jekyll</generator><link href="https://ianteda.com/rss.xml" rel="self" type="application/atom+xml" /><link href="https://ianteda.com/" rel="alternate" type="text/html" /><updated>2016-01-27T19:11:10+11:00</updated><id>https://ianteda.com/</id><title>Ian Teda</title><subtitle>Husband, Father, Engineer, Explorer &amp; Creator</subtitle><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><entry><title>Welcome to ianteda.com</title><link href="https://ianteda.com/management/ianteda-com.html" rel="alternate" type="text/html" title="Welcome to ianteda.com" /><published>2016-01-21T00:00:00+11:00</published><updated>2016-01-21T00:00:00+11:00</updated><id>https://ianteda.com/management/ianteda-com</id><content type="html" xml:base="https://ianteda.com/management/ianteda-com.html">&lt;p&gt;&lt;img src=&quot;/assets/images/head-shot.png&quot; alt=&quot;Ian Teda photo&quot; title=&quot;Optional Title&quot; class=&quot;img-circle&quot; /&gt;&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;A desire to be useful &lt;a href=&quot;http://blog.dilbert.com/post/130338537981/the-moist-robot-ethical-code&quot;&gt;Scott Adams&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Improve my writing (create content)&lt;/li&gt;
-&lt;li&gt;Explore ideas&lt;/li&gt;
-&lt;li&gt;Marketing and branding my own image&lt;/li&gt;
-&lt;li&gt;If you have an idea or work something out then put a URL to it &lt;a href=&quot;http://www.hanselman.com/blog/YourWordsAreWasted.aspx&quot;&gt;Scott Hanselman&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Hello and thank you for visiting &lt;a href=&quot;ianteda.com&quot;&gt;ianteda.com&lt;/a&gt;, my little corner of the Internet.&lt;/p&gt;
 
-&lt;p&gt;This Website is hosted on &lt;a href=&quot;https://pages.github.com/&quot;&gt;Github Pages&lt;/a&gt;, using &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; and &lt;a href=&quot;http://gulpjs.com/&quot;&gt;Gulp&lt;/a&gt; task runner.&lt;/p&gt;
+&lt;p&gt;I created &lt;a href=&quot;ianteda.com&quot;&gt;ianteda.com&lt;/a&gt; with the desire to be useful by providing content around ideas, thoughts and projects I am learning and working on. Second to being useful, I wanted to build and manage my professional image, brand and authority.&lt;/p&gt;
+
+&lt;p&gt;The concept of being useful came from &lt;a href=&quot;http://blog.dilbert.com/post/130338537981/the-moist-robot-ethical-code&quot;&gt;Scott Adams&lt;/a&gt; the creator of the &lt;a href=&quot;http://dilbert.com&quot;&gt;Dilbert Cartoons&lt;/a&gt;. The answer to the ultimate question of Life, the Universe, and Everything is not &lt;a href=&quot;http://www.urbandictionary.com/define.php?term=42&quot;&gt;42&lt;/a&gt; but “Be Useful”. Need a business idea? How can you be useful. What should I do in life? Be useful. How can I get people to like me? Be useful.&lt;/p&gt;
+
+&lt;p&gt;How can I be useful? By providing content around ideas, thoughts and projects, putting a URL to it ( thanks &lt;a href=&quot;http://www.hanselman.com/blog/YourWordsAreWasted.aspx&quot;&gt;Scott Hanselman&lt;/a&gt;) and sharing. It comes with the added bonuses of helping build a brand, authority, practice my writing and help develop ideas through the articulation of writing.&lt;/p&gt;
 
 &lt;p&gt;To find out more about me check out the &lt;a href=&quot;/about.html&quot;&gt;About&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;To find out what I am currently working on check out the &lt;a href=&quot;/now.html&quot;&gt;Now&lt;/a&gt;&lt;/p&gt;</content><category term="management" /><category term="Business" /><category term="Professional" /><summary>Hello and thank you for visiting ianteda.com, my little corner of the internet. This Website was born out of a few ideas and insights:
+&lt;p&gt;To find out what I am currently working on check out the &lt;a href=&quot;/now.html&quot;&gt;Now&lt;/a&gt;&lt;/p&gt;</content><category term="management" /><category term="Business" /><category term="Professional" /><summary>Hello and thank you for visiting ianteda.com, my little corner of the Internet.
 
+I created ianteda.com with the desire to be useful by providing content around ideas, thoughts and projects I am learning and working on. Second to being useful, I wanted to build and manage my professional image, brand and authority.
 
-A desire to be useful Scott Adams
-Improve my writing (create content)
-Explore ideas
-Marketing and branding my own image
-If you have an idea or work something out then put a URL to it Scott Hanselman
+The concept of being useful came from Scott Adams the creator of the Dilbert Cartoons. The answer to the ultimate question of Life, the Universe, and Everything is not 42 but “Be Useful”. Need a business idea? How can you be useful. What should I do in life? Be useful. How can I get people to like me? Be useful.
 
-
-This Website is hosted on Github Pages, using Jekyll and Gulp task runner.
+How can I be useful? By providing content around ideas, thoughts and projects, putting a URL to it ( thanks Scott Hanselman) and sharing. It comes with the added bonuses of helping build a brand, authority, practice my writing and help develop ideas through the articulation of writing.
 
 To find out more about me check out the About
 

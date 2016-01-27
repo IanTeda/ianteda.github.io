@@ -1,31 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>ianteda.com//management/ianteda-com.html</loc>
-    <lastmod>2016-01-21T00:00:00+11:00</lastmod>
-  </url>
-  <url>
-    <loc>ianteda.com//404.html</loc>
-  </url>
-  <url>
-    <loc>ianteda.com//about.html</loc>
-  </url>
-  <url>
-    <loc>ianteda.com//tests/bootstrap.html</loc>
-  </url>
-  <url>
-    <loc>ianteda.com//tests/colors.html</loc>
-  </url>
-  <url>
-    <loc>ianteda.com//</loc>
-  </url>
-  <url>
-    <loc>ianteda.com//now.html</loc>
-  </url>
-  <url>
-    <loc>ianteda.com//tests/</loc>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+    
     <url>
-      <loc>ianteda.com//management/ianteda-com.html</loc>
+      <loc>https://ianteda.com/management/ianteda-com.html</loc>
+      
+        <lastmod>2016-01-21T00:00:00+11:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
     </url>
+    
+  
+
+  
+    
+    
+
+    
+    <url>
+      <loc>https://ianteda.com404.html</loc>
+      
+        <lastmod>2016-01-27T19:11:10+11:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    
+
+    
+  
+    
+    
+
+    
+    <url>
+      <loc>https://ianteda.com/tests/bootstrap.html</loc>
+      
+        <lastmod>2016-01-27T19:11:10+11:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    
+
+    
+    <url>
+      <loc>https://ianteda.com/tests/colors.html</loc>
+      
+        <lastmod>2016-01-27T19:11:10+11:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    
+
+    
+    <url>
+      <loc>https://ianteda.com</loc>
+      
+        <lastmod>2016-01-27T19:11:10+11:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    
+
+    
+  
+    
+    
+
+    
+  
+    
+    
+
+    
+    <url>
+      <loc>https://ianteda.com/tests/</loc>
+      
+        <lastmod>2016-01-27T19:11:10+11:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    
+
+    
+  
+
+  
+    
+  
 </urlset>
