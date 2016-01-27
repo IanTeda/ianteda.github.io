@@ -63,11 +63,8 @@ excerpt_separator: '<!--more-->'
 
 # CONVERSION
 # Markdown library and options
-markdown: redcarpet
-redcarpet:
-  extensions: ['no_intra_emphasis', 'tables', 'fenced_code_blocks', 'autolink', 'smart',
-              'strikethrough', 'superscript', 'underline', 'highlight', 'footnotes']
-highlighter: true
+markdown:    kramdown
+highlighter: rouge
 
 # JEKYLL PLUGINS
 # Extending Jekyll functionality

@@ -16,21 +16,21 @@ logo: 'assets/images/logo-light.png'
 * Create unique, accurate page titles <i class="fa fa-check"></i>
 * Make use of the "description" meta tag <i class="fa fa-check"></i>
 * Improve the structure of your URLs and make your site easier to navigate -- Permalinks <i class="fa fa-check"></i>
-* Offer quality content and services -- Build your authority (back liks)
+* Offer quality content and services -- Build your authority (back links)
 * Write better anchor text
 * Optimize your use of images -- Image sitemap
 * Use heading tags appropriately
 * Make effective use of robots.txt
 * Be aware of rel="nofollow" for links
-* Notify Google of mobile sites
-* Guide mobile users accurately
+* Notify Google of mobile sites <i class="fa fa-check"></i>
+* Guide mobile users accurately <i class="fa fa-check"></i>
 * Promote your website in the right ways
 * Make use of free webmaster tools
 
 Mystery algorithm
 
-* Link to gPlus author
-* HTTPS
+* Link to gPlus author <i class="fa fa-check"></i>
+* HTTPS <i class="fa fa-check"></i>
 
 ### Page Titles
 YAML front matter
@@ -112,7 +112,7 @@ Improve the structure of your URLs and navigation
 2. ssl-redirect / enforce_ssl
 
 ###### References
-http://jekyll.tips/tutorials/seo/
+[^n] http://jekyll.tips/tutorials/seo/
 http://sixrevisions.com/content-strategy/5-common-seo-mistakes-with-web-page-titles/
 http://vdaubry.github.io/2014/10/21/SEO-for-your-Jekyll-blog/
 https://moz.com/learn/seo/meta-description
