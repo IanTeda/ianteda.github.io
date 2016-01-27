@@ -5,9 +5,12 @@ description: Who is this Ian Teda character? What makes him tick?
 main-header: True
 navigation: True
 permalink: /about.html
-cover: assets/images/intro-background.jpg
+cover: assets/images/cover-cat-gear.jpg
 current: about
 ---
+
+![Ian Teda photo](/assets/images/head-shot.png "Optional Title"){: .img-circle }
+
 ### About
 *The story so far*
 

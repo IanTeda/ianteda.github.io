@@ -6,6 +6,7 @@ description: "Husband, Father, Engineer, Explorer & Creator"
 timezone: Australia/Sydney
 # Host informaiton for URLs
 url: http://localhost:3000
+baseurl: ""
 keywords: "ian teda, engineering, project management, software development, programming, video editing, video production"
 
 # LOCATION

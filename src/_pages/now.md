@@ -6,7 +6,7 @@ navigation: True
 main-header: True
 permalink: /now.html
 logo: assets/images/ghost.png
-cover: assets/images/intro-background.jpg
+cover: assets/images/cover-cat-gear.jpg
 current: now
 ---
 ### Now
@@ -26,7 +26,7 @@ I am currently living in [Coffs Harbour](https://www.wikiwand.com/en/Coffs_Harbo
 *What is getting my creativity juices flowing:*
 
 - ianteda.com
-- Making Content
+- Making content
 - JavaScript
 - Cinemagraphs
 
