@@ -9,3 +9,18 @@ Add extra styles here
 .img-circle {
     border-radius: 50%;
 }
+
+/* Social links in about.html, list horizontal */
+.about-list-social {
+    padding: 0;
+    margin: 0;
+    display: inline;
+    a {
+        text-decoration: none;
+    }
+    li {
+        list-style-type: none;
+        display: inline;
+        padding-right: 20px;
+    }
+}
