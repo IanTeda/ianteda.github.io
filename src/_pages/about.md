@@ -2,8 +2,8 @@
 layout: page
 title: Ian Teda
 description: Who is this Ian Teda character? What makes him tick?
-main-header: true
-navigation: true
+main-header: True
+navigation: True
 permalink: /about.html
 cover: assets/images/intro-background.jpg
 current: about
