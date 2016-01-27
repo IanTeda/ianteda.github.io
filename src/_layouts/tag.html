@@ -6,7 +6,7 @@ navigation: True
 logo: 'assets/images/ghost.png'
 current: tag
 ---
-
+<!-- Start _layout/tag.html -->
 <!-- < dynamically overriding backgrounds for tags as well as descriptions -->
 {% if page.url contains 'fables' %}
    {% assign tag_description='A series of short stories that make you think.' %}
@@ -26,3 +26,4 @@ current: tag
     {% include loop.html %}
 
 </main>
+<!-- End _layout/tag.html -->
