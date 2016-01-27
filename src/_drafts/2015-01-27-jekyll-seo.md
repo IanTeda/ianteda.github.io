@@ -1,6 +1,7 @@
 ---
 title: Jekyll and Search Engine Optimisation
 description: Optimising your Jekyll Website for SEO
+keywords: "Jekyll, SEO, Search Engine Optimization, Search Engine Optimisation"
 date: 2016-01-27
 tags: [jekyll, seo]
 subclass: 'post tag-speeches'
@@ -17,7 +18,7 @@ logo: 'assets/images/logo-light.png'
 * Make use of the "description" meta tag <i class="fa fa-check"></i>
 * Improve the structure of your URLs and make your site easier to navigate -- Permalinks <i class="fa fa-check"></i>
 * Offer quality content and services -- Build your authority (back liks)
-* Write better anchor text
+* Write better anchor text. Use descriptive text when linking:
 * Optimize your use of images -- Image sitemap
 * Use heading tags appropriately
 * Make effective use of robots.txt
@@ -26,23 +27,31 @@ logo: 'assets/images/logo-light.png'
 * Guide mobile users accurately
 * Promote your website in the right ways
 * Make use of free webmaster tools
+* 404 meaningful
 
 Mystery algorithm
+
 * Link to gPlus author
+* Search Engines love fresh content
+* Search Engines don’t like duplicate content
+* Images should always have an alt attribute
 
 ### Page Titles
 YAML front matter
+
 ```
 title: Jekyll and Search Engine Optimisation
 ```
 
 config.yml
+
 ```
 name: "Ian Teda"
 ```
 
 the \<title> tag should be placed within the \<head> tag
 
+{% raw  %}
 ```
 <head>
 ...
@@ -56,6 +65,7 @@ the \<title> tag should be placed within the \<head> tag
 ...
 </head>
 ```
+{% endraw %}
 
 * The contents of the title tag will usually appear in the first line of the results
 * Create a unique title for each page on your site
@@ -67,10 +77,12 @@ the \<title> tag should be placed within the \<head> tag
 Make use of the "description" meta tag
 
 YAML front matter
+
 ```
 description: Optimising your Jekyll Website for SEO
 ```
 
+{% raw  %}
 ```
 <head>
 ...
@@ -80,6 +92,9 @@ description: Optimising your Jekyll Website for SEO
 ...
 </head>
 ```
+{% endraw %}
+
+
 * Words in the snippet are bolded when they appear in the user's query
 * Google might use them as snippets for your pages
 * Write a description that would both inform and interest users if they saw your description meta tag as a snippet in a search result
