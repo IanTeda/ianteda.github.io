@@ -89,7 +89,7 @@ jekyll-archives:
     category: 'category'
   permalinks:
     category: ':name/index.html'
-    tags: 'tag/:name/'
+    tags: ':name/index.html'
 
 # JEKYLL FEED
 # A Jekyll plugin to generate an Atom (RSS-like) feed of your Jekyll posts

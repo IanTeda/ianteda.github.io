@@ -69,7 +69,7 @@ class: 'post-template'
 
     {{ post.url | remove: '/' }}
     {% if page.next %}
-        <a class="read-next-story {% if page.next.cover %}" style="background-image: url(/{{ page.next.cover }}){% else %}no-cover{% endif %}" href="{{ page.next.url }}">
+        <a class="read-next-story {% if page.next.cover %}" style="background-image: url({{ page.next.cover | prepend:site.baseurl }}){% else %}no-cover{% endif %}" href="{{ page.next.url | prepend:site.baseurl }}">
             <section class="post">
                 <h2>{{ page.next.title }}</h2>
                 <p>{{ page.next.description | truncatewords:15 }}</p>
@@ -77,7 +77,7 @@ class: 'post-template'
         </a>
     {% endif %}
     {% if page.previous %}
-        <a class="read-next-story prev {% if page.previous.cover %}" style="background-image: url(/{{ page.previous.cover }}){% else %}no-cover{% endif %}" href="{{ page.previous.url }}">
+        <a class="read-next-story prev {% if page.previous.cover %}" style="background-image: url({{ page.previous.cover | prepend:site.baseurl }}){% else %}no-cover{% endif %}" href="{{ page.previous.url | prepend:site.baseurl }}">
             <section class="post">
                 <h2>{{ page.previous.title }}</h2>
                 <p>{{ page.previous.description | truncatewords:15 }}</p>

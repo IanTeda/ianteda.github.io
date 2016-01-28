@@ -21,14 +21,14 @@ main-header: true
 </div>
 
 {% for post in page.posts %}
-  <article class="post">
-      <header class="post-header">
-          <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      </header>
-      <section class="post-excerpt">
-          <p>{{ post.content | strip_html | truncatewords: 26 }} <a class="read-more" href="{{ post.url }}">&raquo;</a></p>
-      </section>
-  </article>
+    <article class="post">
+        <header class="post-header">
+            <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        </header>
+        <section class="post-excerpt">
+            <p>{{ post.description | strip_html | truncatewords: 26 }} <a class="read-more" href="{{ post.url }}">&raquo;</a></p>
+        </section>
+    </article>
 {% endfor %}
 
 <!-- Previous/next page links - displayed on every page -->

@@ -8,8 +8,8 @@ subclass: 'post tag-speeches'
 layout: post
 category: programming
 navigation: True
-cover: 'assets/images/cover-jekyll.jpg'
-logo: 'assets/images/logo-light.png'
+cover: /assets/images/cover-jekyll.jpg
+logo: /assets/images/logo-light.png
 ---
 
 ### Basics
