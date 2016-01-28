@@ -7,8 +7,9 @@ subclass: 'blog'
 layout: post
 category: management
 navigation: True
+main-header: False
 cover: /assets/images/cover-old-typewriter.jpg
-logo: assets/images/logo-light.png
+logo: /assets/images/logo-light.png
 ---
 ![Ian Teda photo](/assets/images/head-shot.png "Optional Title"){: .img-circle }
 
