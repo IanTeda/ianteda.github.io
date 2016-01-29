@@ -4,6 +4,10 @@ name: "Ian Teda"
 description: "Husband, Father, Engineer, Explorer & Creator"
 # Set timezone for site generation
 timezone: Australia/Sydney
+# Host informaiton for URLs
+url: http://localhost:3000
+baseurl: ""
+keywords: "ian teda, engineering, project management, software development, programming, video editing, video production"
 
 # LOCATION
 # Where things are
@@ -14,7 +18,6 @@ plugins_dir: ./_plugins
 layouts_dir: ./_layouts
 data_dir: ./_data
 includes_dir: ./_includes
-#baseurl: localhost:3000
 include:
   - ".htaccess"
   - CNAME
@@ -50,10 +53,6 @@ unpublished: false
 # Permalinks and be set in post/page front matter
 permalink: none
 
-# What should we append to the host url
-#url: "localhost:3000"
-#baseurl: "/"
-
 encoding: "utf-8"
 
 # Pagination
@@ -65,11 +64,8 @@ excerpt_separator: '<!--more-->'
 
 # CONVERSION
 # Markdown library and options
-markdown: redcarpet
-redcarpet:
-  extensions: ['no_intra_emphasis', 'tables', 'fenced_code_blocks', 'autolink', 'smart',
-              'strikethrough', 'superscript', 'underline', 'highlight', 'footnotes']
-highlighter: true
+markdown:    kramdown
+highlighter: rouge
 
 # JEKYLL PLUGINS
 # Extending Jekyll functionality
@@ -93,7 +89,7 @@ jekyll-archives:
     category: 'category'
   permalinks:
     category: ':name/index.html'
-    tags: 'tag/:name/'
+    tags: ':name/index.html'
 
 # JEKYLL FEED
 # A Jekyll plugin to generate an Atom (RSS-like) feed of your Jekyll posts
@@ -115,7 +111,7 @@ gist:
 author:
   name: Ian Teda
   nickname: Ian
-  url: 'http://biomadeira.github.io/jasper/'
+  url: 'https://ianteda.com'
   image: 'assets/images/casper.png'
   email: 'ian@teda.id.au'
   bio: I&#39;m Ian Teda
@@ -126,6 +122,7 @@ author:
   linkedin: in/ianteda
   stackoverflow: 882279/ianteda
   vimeo: ianteda
+  gplus: u/0/+IanTeda
 
 # Select which links to show in the footer
 footer-links-active:

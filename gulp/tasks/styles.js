@@ -10,6 +10,7 @@
  */
 var gulp = require('gulp');
 var argv = require('yargs').argv;
+var merge = require('merge2');
 var $ = require('gulp-load-plugins')({
   pattern: ['gulp-*', 'gulp.*', 'del'],
   lazy: true
@@ -27,16 +28,23 @@ var inject = require('../gulp-config').inject;
  * STYLES TASK
  */
 gulp.task('styles', function () {
-  return gulp.src(styles.src)
+  return merge(
+    gulp.src(styles.css)
+      .pipe($.if(!argv.prod, $.sourcemaps.init())),
+    gulp.src(styles.sass)
       .pipe($.if(!argv.prod, $.sourcemaps.init()))
-      .pipe($.concat(styles.filename))
-      .pipe($.if(!argv.prod, $.sourcemaps.write('./')))
-      .pipe($.size({title: 'Concatinated:'}))
-      .pipe($.if(argv.prod, $.postcss(postcss.processors)))
-      .pipe($.if(argv.prod, $.rename({suffix: '.min'})))
-      .pipe($.if(argv.prod, $.size({title: 'PostCSS:'})))
-      .pipe($.if(argv.prod, gulp.dest(styles.dest)))
-      .pipe($.if(argv.prod, $.gzip(gzip.options)))
-      .pipe($.if(argv.prod, $.size({title: 'GZiped:'})))
-      .pipe(gulp.dest(styles.dest));
+      .pipe($.sass({
+        precision: 10
+      }).on('error', $.sass.logError))
+    )
+    .pipe($.concat(styles.filename))
+    .pipe($.if(!argv.prod, $.sourcemaps.write('./')))
+    .pipe($.size({title: 'Concatinated:'}))
+    .pipe($.if(argv.prod, $.postcss(postcss.processors)))
+    .pipe($.if(argv.prod, $.rename({suffix: '.min'})))
+    .pipe($.if(argv.prod, $.size({title: 'PostCSS:'})))
+    .pipe($.if(argv.prod, gulp.dest(styles.dest)))
+    .pipe($.if(argv.prod, $.gzip(gzip.options)))
+    .pipe($.if(argv.prod, $.size({title: 'GZiped:'})))
+    .pipe(gulp.dest(styles.dest));
 });

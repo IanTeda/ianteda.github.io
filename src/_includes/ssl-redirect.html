@@ -1,0 +1,9 @@
+<!-- Start _includes/ssl-redirect.html -->
+{% if site.enforce_ssl %}
+  <script>
+    var host = "ianteda.com";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+      window.location.protocol = "https";
+  </script>
+{% endif %}
+<!-- End _includes/sssl-redirect.html -->

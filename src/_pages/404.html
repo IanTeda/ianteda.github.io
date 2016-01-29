@@ -4,34 +4,36 @@ title: "404 - Page Not Found"
 permalink: 404.html
 ---
 
-<!doctype html>
+<!DOCTYPE html>
+<html>
 
 {% include head.html %}
 
 <body>
-    <main role="main" id="main">
-        <div class="gh-app">
-            <div class="gh-viewport">
-                <div class="gh-view">
-                    <section class="error-content error-404 js-error-container">
-                        <section class="error-details">
-                            <img
-                                    class="error-ghost"
-                                    src="/assets/images/404.png"
-                                    srcset="/assets/images/404.png"/>
-                            <section class="error-message">
-                                <h1 class="error-code">404</h1>
-                                <h2 class="error-description">Page not found</h2>
-                                <a class="error-link" href="/">Go to the front page →</a>
-                            </section>
-                        </section>
-                    </section>
-                </div>
-            </div>
+  <main role="main" id="main">
+    <div class="gh-app">
+      <div class="gh-viewport">
+        <div class="gh-view">
+          <section class="error-content error-404 js-error-container">
+            <section class="error-details">
+              <img class="error-ghost" src="/assets/images/404.png" srcset="/assets/images/404.png" />
+              <section class="error-message">
+                <h1 class="error-code">404</h1>
+                <h2 class="error-description">Page not found</h2>
+                <a class="error-link" href="/">Go to the front page →</a>
+              </section>
+            </section>
+          </section>
         </div>
-    </main>
+      </div>
+    </div>
+  </main>
 
-    <!-- Add Google Analytics  -->
-    {% include analytics.html %}
+  <!-- Add javascripts -->
+  {% include scripts.html %}
+
+  <!-- Add Google Analytics  -->
+  {% include analytics.html %}
 </body>
+
 </html>

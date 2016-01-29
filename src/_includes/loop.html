@@ -1,3 +1,4 @@
+<!-- Start _includes/loop.html -->
 <!-- Previous/next page links - only displayed on page 2+ -->
 <div class="extra-pagination inner">
   {% if page.class == 'home-template' %}
@@ -20,7 +21,7 @@
           <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
       </header>
       <section class="post-excerpt">
-          <p>{{ post.content | strip_html | truncatewords: 26 }} <a class="read-more" href="{{ post.url }}">&raquo;</a></p>
+          <p>{{ post.description | strip_html | truncatewords: 26 }} <a class="read-more" href="{{ post.url }}">&raquo;</a></p>
       </section>
       <footer class="post-meta">
         {% if post.categories.size > 0 %}
@@ -49,3 +50,4 @@
 {% else %}
     {% include pagination-post.html %}
 {% endif %}
+<!-- End _includes/loop.html -->

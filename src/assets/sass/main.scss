@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/*!
+main.scss
+Add extra styles here
+*/
+
+/* Turn a square image into a circle */
+.img-circle {
+    border-radius: 50%;
+}
+
+/* Social links in about.html, list horizontal */
+.about-list-social {
+    padding: 0;
+    margin: 0;
+    display: inline;
+    a {
+        text-decoration: none;
+    }
+    li {
+        list-style-type: none;
+        display: inline;
+        padding-right: 20px;
+    }
+}

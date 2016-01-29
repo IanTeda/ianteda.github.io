@@ -288,7 +288,7 @@ gulp.task('browsersync', function() {
 });
 ```
 
-##### Github Pages
+##### Github pages
 ```
 /**
  * GITHUB PAGES

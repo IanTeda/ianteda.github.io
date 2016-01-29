@@ -28,7 +28,8 @@ var styles = require('../gulp-config').styles;
 gulp.task('inject:styles', function () {
   return gulp.src(styles.inject.target)
     .pipe($.inject(gulp.src(styles.inject.files, inject.options), {
-      ignorePath: '.tmp/',
+      ignorePath: '.tmp/'
+      //addRootSlash: false
     }))
     .pipe(gulp.dest(styles.inject.dest));
 });
@@ -43,7 +44,8 @@ gulp.task('inject:scripts', function () {
     .pipe($.inject(gulp.src(scripts.inject.files, {
       read: false
     }), {
-      ignorePath: '.tmp/',
+      ignorePath: '.tmp/'
+      //addRootSlash: false
     }))
     .pipe(gulp.dest(scripts.inject.dest));
 });
