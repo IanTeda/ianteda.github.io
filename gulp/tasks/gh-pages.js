@@ -20,6 +20,7 @@ var jekyll = require('../gulp-config').jekyll;
 gulp.task('gh-pages', function() {
   return gulp.src(jekyll.deploy)
     .pipe(ghPages({
-      branch: 'master'
+      branch: 'master',
+      remoteUrl: 'git@github.com:IanTeda/ianteda.github.io.git'
     }));
 });
