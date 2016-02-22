@@ -26,8 +26,13 @@ Add extra styles here
 }
 
 .featured {
-    margin-top:0;
-    margin-bottom: 1.7em;
+    margin:0 -5rem 1.7em -5rem;
+}
+
+@media only screen and (max-width: 500px) {
+    .featured {
+        margin:0 0 1.7em 0;
+    }
 }
 
 .featured-story .post:before {
