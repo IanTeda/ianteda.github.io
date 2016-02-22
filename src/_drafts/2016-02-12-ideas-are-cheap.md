@@ -7,6 +7,7 @@ layout: post
 category: creativity
 navigation: True
 main-header: True
+featured: true
 cover: /assets/images/cover-machiavelli.jpg
 logo: /assets/images/logo-light.png
 ---

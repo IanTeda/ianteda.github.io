@@ -6,6 +6,7 @@ date: 2016-01-27
 tags: [jekyll, seo]
 subclass: 'post tag-speeches'
 layout: post
+featured: true
 category: programming
 navigation: True
 cover: /assets/images/cover-jekyll.jpg

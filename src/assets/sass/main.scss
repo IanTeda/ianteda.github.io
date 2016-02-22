@@ -24,3 +24,95 @@ Add extra styles here
         padding-right: 20px;
     }
 }
+
+.featured {
+    display: flex;
+    align-items: stretch;
+    margin-left: -10rem;
+    margin-right: -10rem;
+}
+
+.featured-story {
+    display: flex;
+    flex-grow: 1;
+    min-width: 50%;
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    background: #222 no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.featured-story:hover:before {
+    background: rgba(0,0,0,0.8);
+    transition: all 0.2s ease;
+}
+.featured-story:hover .post:before {
+    color: #222;
+    background: #fff;
+    transition: all 0.2s ease;
+}
+
+.featured-story:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.3);
+    transition: all 0.5s ease;
+}
+
+.featured-story .post {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+
+.featured-story.prev .post:before {
+    content: "You Might Enjoy";
+}
+
+.featured-story h5 {
+    margin-top: 1rem;
+    color: #fff;
+}
+
+.featured-story p {
+    margin: 0;
+    color: rgba(255,255,255,0.8);
+}
+
+/* Special styles for posts with no cover images */
+.featured-story.no-cover {
+    background: #f5f8fa;
+}
+
+.featured-story.no-cover:before {
+    display: none;
+}
+
+.featured-story.no-cover .post:before {
+    color: rgba(0,0,0,0.5);
+    border-color: rgba(0,0,0,0.2);
+}
+
+.featured-story.no-cover h2 {
+    color: rgba(0,0,0,0.8);
+}
+
+.featured-story.no-cover p {
+    color: rgba(0,0,0,0.5);
+}
+
+/* if there are two posts without covers, put a border between them */
+.featured-story.no-cover + .featured-story.no-cover {
+    border-left: rgba(0,0,100,0.04) 1px solid;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}

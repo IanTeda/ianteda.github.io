@@ -7,6 +7,7 @@ subclass: 'post tag-speeches'
 layout: post
 category: programming
 navigation: True
+featured: true
 cover: 'assets/images/cover-jekyll.jpg'
 logo: 'assets/images/logo-light.png'
 ---
