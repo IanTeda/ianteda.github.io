@@ -1335,7 +1335,7 @@ body:not(.post-template) .post-title {
    7. Read More - Next/Prev Post Links
    ========================================================================== */
 
-.read-next {
+. {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
