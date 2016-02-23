@@ -6,7 +6,7 @@ lead: This is an excerpt or lead for this article
 subclass: 'post tag-speeches'
 layout: post
 category: programming
-featured: true
+featured: False
 navigation: True
 cover: 'assets/images/cover-gulp.jpg'
 logo: 'assets/images/logo-light.png'
