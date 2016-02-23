@@ -3,9 +3,9 @@ title: Mastermind Brief
 description: A Mastermind Group can be thought of as a peer advisory board that meets with the aim of sharpening the groups personal and business skills so they can achieve optimum outcomes
 date: 2016-02-17
 tags: [Business, Mastermind]
-subclass: blog
 layout: post
 category: management
+featured: True
 navigation: True
 main-header: True
 cover: /assets/images/cover-franklin.jpg

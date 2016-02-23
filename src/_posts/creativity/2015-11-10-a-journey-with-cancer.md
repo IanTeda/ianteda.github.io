@@ -1,7 +1,7 @@
 ---
 title: A Journey With Cancer
 description: He lives on in all of those he touched, in the valves he taught his children, the receding hair line he passed onto his sons, the love he showed his wife and the things that he made.
-date: 2016-01-29
+date: 2015-11-10
 tags: [life]
 subclass: 'blog'
 layout: post

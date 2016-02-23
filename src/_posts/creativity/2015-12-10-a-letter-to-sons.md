@@ -1,7 +1,7 @@
 ---
 title: A Letter to my Sons
 description: Live, love, be generous, show respect and give thanks.
-date: 2016-01-29
+date: 2015-12-10
 tags: [Philosophy]
 subclass: 'blog'
 layout: post

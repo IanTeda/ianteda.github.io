@@ -1,7 +1,7 @@
 ---
 title: Leadership Styles
 description: The Authoritarian (Autocratic), The Participator (Democratic) and The Delegator (Laissez-faire).
-date: 2016-01-29
+date: 2015-09-29
 tags: [leadership]
 subclass: 'blog'
 layout: post
