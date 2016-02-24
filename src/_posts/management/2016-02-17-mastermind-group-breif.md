@@ -1,5 +1,5 @@
 ---
-title: Mastermind Brief
+title: Mastermind Group Brief
 description: A Mastermind Group can be thought of as a peer advisory board that meets with the aim of sharpening the groups personal and business skills so they can achieve optimum outcomes
 date: 2016-02-17
 tags: [Business, Mastermind]
@@ -11,10 +11,8 @@ main-header: True
 cover: /assets/images/cover-franklin.jpg
 logo: /assets/images/logo-light.png
 ---
-
-### Introduction
-
-”No two minds ever come together without thereby creating a third, invisible intangible force, which may be likened to a third mind [the master mind].” — Napoleon Hill
+> No two minds ever come together without thereby creating a third, invisible intangible force, which may be likened to a third mind [the master mind].
+> <cite> -- Napoleon Hill </cite>
 
 The phrase Mastermind Group (MMG) was first coined by Napoleon Hill in his 1937 book "Think and Grow Rich". A MMG is not a group coaching session but can be thought of as a peer advisory board that meets with the aim of sharpening the groups personal and business skills so they can achieve optimum outcomes.
 
