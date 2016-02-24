@@ -6,6 +6,7 @@
     </a>
     <ul>
         <li class="nav-home {% if page.current == 'home' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}/">Home</a></li>
+        <li class="nav-posts {% if page.current == 'posts' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}/posts">Posts</a></li>
         <li class="nav-now {% if page.current == 'now' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}/now.html">Now</a></li>
         <li class="nav-creativity {% if page.url contains 'creativity' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}/creativity">Creativity</a></li>
         <li class="nav-engineering {% if page.url contains 'engineering' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}/engineering">Engineering</a></li>
