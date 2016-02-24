@@ -3,54 +3,9 @@
   
     
     <url>
-      <loc>https://ianteda.com/management/mastermind-breif.html</loc>
+      <loc>https://ianteda.com/management/mastermind-group-breif.html</loc>
       
         <lastmod>2016-02-17T00:00:00+11:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>https://ianteda.com/management/leadership-styles.html</loc>
-      
-        <lastmod>2016-01-29T00:00:00+11:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>https://ianteda.com/creativity/a-journey-with-cancer.html</loc>
-      
-        <lastmod>2016-01-29T00:00:00+11:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>https://ianteda.com/creativity/a-letter-to-sons.html</loc>
-      
-        <lastmod>2016-01-29T00:00:00+11:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -91,6 +46,51 @@
     </url>
     
   
+    
+    <url>
+      <loc>https://ianteda.com/creativity/a-letter-to-sons.html</loc>
+      
+        <lastmod>2015-12-10T00:00:00+11:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://ianteda.com/creativity/a-journey-with-cancer.html</loc>
+      
+        <lastmod>2015-11-10T00:00:00+11:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://ianteda.com/management/leadership-styles.html</loc>
+      
+        <lastmod>2015-09-29T00:00:00+10:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
 
   
     
@@ -100,7 +100,7 @@
     <url>
       <loc>https://ianteda.com404.html</loc>
       
-        <lastmod>2016-02-17T21:06:38+11:00</lastmod>
+        <lastmod>2016-02-24T20:17:07+11:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -115,15 +115,10 @@
     
 
     
-  
-    
-    
-
-    
     <url>
       <loc>https://ianteda.com/tests/bootstrap.html</loc>
       
-        <lastmod>2016-02-17T21:06:38+11:00</lastmod>
+        <lastmod>2016-02-24T20:17:07+11:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -141,7 +136,7 @@
     <url>
       <loc>https://ianteda.com/tests/colors.html</loc>
       
-        <lastmod>2016-02-17T21:06:38+11:00</lastmod>
+        <lastmod>2016-02-24T20:17:07+11:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -159,7 +154,25 @@
     <url>
       <loc>https://ianteda.com</loc>
       
-        <lastmod>2016-02-17T21:06:38+11:00</lastmod>
+        <lastmod>2016-02-24T20:17:07+11:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    
+
+    
+    <url>
+      <loc>https://ianteda.com</loc>
+      
+        <lastmod>2016-02-24T20:17:07+11:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -187,7 +200,7 @@
     <url>
       <loc>https://ianteda.com/tests/</loc>
       
-        <lastmod>2016-02-17T21:06:38+11:00</lastmod>
+        <lastmod>2016-02-24T20:17:07+11:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -205,7 +218,7 @@
     <url>
       <loc>https://ianteda.com</loc>
       
-        <lastmod>2016-02-17T21:06:38+11:00</lastmod>
+        <lastmod>2016-02-24T20:17:07+11:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
