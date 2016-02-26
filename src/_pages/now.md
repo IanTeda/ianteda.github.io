@@ -18,7 +18,7 @@ I am currently living in [Coffs Harbour](https://www.wikiwand.com/en/Coffs_Harbo
 ### Books
 *Books I'm reading and why:*
 
-* <a rel="nofollow" href="http://www.amazon.com/gp/product/030746363X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=030746363X&linkCode=as2&tag=iate-20&linkId=MNOWY23YSI6B2MHN" target="_blank">The 4 Hour Body</a> -- Cut the graph and give me the facts
+* <a rel="nofollow" href="http://www.amazon.com/gp/product/030746363X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=030746363X&linkCode=as2&tag=iate-20&linkId=MNOWY23YSI6B2MHN" target="_blank">The 4 Hour Body</a> -- Cut the crap and give me the facts
 * <a rel="nofollow" href="http://www.amazon.com/gp/product/0691156662/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0691156662&linkCode=as2&tag=iate-20&linkId=DZJ7RBNLHQ57OQNX" target="_blank">The 5 Elements of Effective Thinking</a> -- Thinking and decision frameworks interest me
 * <a rel="nofollow" href="http://www.amazon.com/gp/product/1491924462/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1491924462&linkCode=as2&tag=iate-20&linkId=IZGABPUKDJRHKFKZ" target="_blank">You Don't Know JS: Up & Going</a> -- Learning JavaScript
 
@@ -31,7 +31,7 @@ I am currently living in [Coffs Harbour](https://www.wikiwand.com/en/Coffs_Harbo
 - Cinemagraphs
 
 ### Interest
-*What topics and ideas am I diving deeper into:*x
+*What topics and ideas am I diving deeper into:*
 
 - Marketing
 - Business
