@@ -24,7 +24,7 @@ var imagemin = require('../gulp-config').imagemin;
 gulp.task('images', function () {
   return gulp.src(images.src)
 		.pipe($.size({title: 'Images:'}))
-    //.pipe($.if(argv.prod, $.cache($.imagemin(imagemin.options))))
+    //.pipe($.if(argv.prod, $.cache($.imagemin())))
     .pipe($.if(argv.prod, $.size({title: 'Optimised:'})))
 		.pipe(gulp.dest(images.dest));
 })
