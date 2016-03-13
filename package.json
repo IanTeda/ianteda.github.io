@@ -8,8 +8,9 @@
     "email": "ian@teda.id.au"
   },
   "scripts": {
-    "start": "gulp",
-    "postinstall": "bower install"
+    "deploy": "gulp deploy --prod",
+    "gulp": "gulp",
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
