@@ -22,13 +22,13 @@
     <!-- Page Title -->
     <title>
       
-        Be Bold & Make Mistakes
+        4 Reasons Why I Decided to Use Jekyll
       
     </title>
 
     <!-- Page Description -->
     
-      <meta name="description" content="All courses of action are risky, so prudence is not in avoiding danger (it's impossible), but calculating risk and acting decisively." />
+      <meta name="description" content="I decide to use Jekyll for speed, simplicity, security profile and quality free hosting (Github)." />
     
 
     <!-- Page Author -->
@@ -36,7 +36,7 @@
       <link rel="author" href="https://plus.google.com/u/0/+IanTeda"/>
     
 
-    <link rel="canonical" href="http://localhost:3000/creativity/bold-mistakes.html" />
+    <link rel="canonical" href="http://localhost:3000/programming/why-jekyll-website.html" />
 
     <!-- Style Sheets -->
     <!-- Start _includes/styles.html -->
@@ -75,7 +75,7 @@
         <li class="nav-home " role="presentation"><a href="/">Home</a></li>
         <li class="nav-posts " role="presentation"><a href="/posts">Posts</a></li>
         <li class="nav-now " role="presentation"><a href="/now.html">Now</a></li>
-        <li class="nav-creativity  nav-current" role="presentation"><a href="/creativity">Creativity</a></li>
+        <li class="nav-creativity " role="presentation"><a href="/creativity">Creativity</a></li>
         <li class="nav-engineering " role="presentation"><a href="/engineering">Engineering</a></li>
         <li class="nav-management " role="presentation"><a href="/management">Management</a></li>
         <li class="nav-programming " role="presentation"><a href="/programming">Programming</a></li>
@@ -90,31 +90,16 @@
 
         <!-- Start _layout/post.html -->
 <!-- Start _includes/header.html -->
-<header class="main-header post-head" style="background-image: url(/assets/images/cover-machiavelli.jpg)">
+<header class="main-header post-head" style="background-image: url(assets/images/cover-jekyll.jpg)">
 
   <nav class="main-nav  overlay  clearfix">
       
-        <a class="blog-logo" href="/"><img src="/assets/images/logo-light.png" alt="Blog Logo" /></a>
+        <a class="blog-logo" href="/"><img src="assets/images/logo-light.png" alt="Blog Logo" /></a>
       
       
           <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
       
   </nav>
-  
-      <div class="vertical">
-          <div class="main-header-content inner">
-              <h1 class="page-title">
-                  
-                      Be Bold & Make Mistakes
-                  
-              </h1>
-              <h2 class="page-description">
-                  
-                      All courses of action are risky, so prudence is not in avoiding danger (it's impossible), but calculating risk and acting decisively.
-                  
-              </h2>
-          </div>
-      </div>
   
 </header>
 <!-- End _includes/header.html -->
@@ -131,7 +116,7 @@
                     Filed Under:
                     
                         
-                           <a href='/creativity'>Creativity</a>
+                           <a href='/programming'>Programming</a>
                         
                     
                 
@@ -140,18 +125,42 @@
 
         <section class="post-content">
 
-            <blockquote>
-  <p>All courses of action are risky, so prudence is not in avoiding danger (it’s impossible), but calculating risk and acting decisively. Make mistakes of ambition and not mistakes of sloth. Develop the strength to do bold things, not the strength to suffer.
-<cite>– Chapter III: Of Mixed Princedoms</cite></p>
-</blockquote>
+            <p>I decide to use <a href="http://jekyllrb.com/">Jekyll</a> for speed, simplicity, security profile and quality free hosting (Github).</p>
 
-<p>There is risk with all things in life. It cannot be avoided so do not let the possibility of failure prevent action. An indecision is still a decision. Move forward knowing that the decision you made was the right one, based on the knowledge you had at the time. Whether or not it turns out to be right is besides the point, considered action is.</p>
+<p>It occurred to me, while assessing options for <a href="ianteda.com">ianteda.com</a> any platform (<a href="https://en.wikipedia.org/wiki/Content_management_system">CMS</a>) worth its salt would use a cache system. And a cache system turns a dynamic site into a static site. The main reason I would want a CMS would be for others authors to add content, which I don’t need since <a href="ianteda.com">ianteda.com</a> is all about me. Lets skip the whole CMS and go straight to the static Website. Enter <a href="http://jekyllrb.com/">Jekyll</a>.</p>
 
-<p>Becoming successful requires risk and with risk comes mistakes. It is through these mistakes that we learn and grow. We can try and avoid risk but in the end we will make mistakes. However, there are mistakes of sloth (mistakes) and mistakes of ambition. Mistake of sloth lead to missed opportunity and regret. While, for the most part mistakes of ambition will be forgiven because they come from good intentions. Mistakes of sloth are not so easily forgiven and often it is ourselves that are the last to forget, because of our regret.</p>
+<h4 id="jekyll">Jekyll</h4>
+<p>Question: What is Jekyll? Answer: Well, it is a Website generator.</p>
 
-<p>Success for the most part is subjective, but what ever your measure may be it still requires action. It is comfortable to stay on the path of least resistance, because it is well walked. But be bold and walk the road less traveled.</p>
+<p>Jekyll calls it self:
+&gt; [A] simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.</p>
 
-<p>[^] <a rel="nofollow" href="http://www.amazon.com/gp/product/0486272745/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0486272745&amp;linkCode=as2&amp;tag=iate-20&amp;linkId=XF6OTL2R2FAENV6H">The Prince</a> by Niccolò Machiavelli. Written in the 16th century, it is about acquiring power and maintaining it (pre democracy).</p>
+<h4 id="speed">Speed</h4>
+<p>No database means speed
+To get speed any dynamic Website builds a cache of static files, removing the need for database calls.</p>
+
+<h4 id="simplicity">Simplicity</h4>
+<p>No database calls
+Control of the system
+Predicable, the static files are what you get means peace of mind</p>
+
+<h4 id="security">Security</h4>
+<p>Moving parts
+No database calls
+No login to CMS</p>
+
+<h4 id="free-hosting">Free hosting</h4>
+<p>Static means no database, which means cheep hosting
+Github pages
+Developed by xyz the creator of Github. Github provides free hosting through its Github Pages</p>
+
+<h4 id="who-else-is-using-jekyll">Who Else is Using Jekyll</h4>
+<p>Obama campaign
+Bootstrap</p>
+
+<h4 id="getting-a-jekyll-website-up-and-running">Getting a Jekyll Website Up and Running</h4>
+<p>Github pages
+Another post</p>
 
 
         </section>
@@ -160,15 +169,15 @@
 
             <section class="share">
                 <h4>Share this post</h4>
-                <a class="icon-twitter" href="http://twitter.com/share?text=Be Bold & Make Mistakes&amp;url=http://localhost:3000creativitybold-mistakes.html"
+                <a class="icon-twitter" href="http://twitter.com/share?text=4 Reasons Why I Decided to Use Jekyll&amp;url=http://localhost:3000programmingwhy-jekyll-website.html"
                     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <span class="hidden">Twitter</span>
                 </a>
-                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:3000creativitybold-mistakes.html"
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:3000programmingwhy-jekyll-website.html"
                     onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                     <span class="hidden">Facebook</span>
                 </a>
-                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:3000creativitybold-mistakes.html"
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:3000programmingwhy-jekyll-website.html"
                    onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                     <span class="hidden">Google+</span>
                 </a>
@@ -187,18 +196,18 @@
 
     
     
-        <a class="read-next-story " style="background-image: url(/assets/images/cover-old-typewriter.jpg)" href="/management/ianteda-com.html">
+        <a class="read-next-story " style="background-image: url(/assets/images/cover-machiavelli.jpg)" href="/creativity/bold-mistakes.html">
             <section class="post">
-                <h2>Welcome to ianteda.com</h2>
-                <p>Why I created ianteda.com and what I am hoping to achieve.</p>
+                <h2>Be Bold & Make Mistakes</h2>
+                <p>All courses of action are risky, so prudence is not in avoiding danger (it's impossible),...</p>
             </section>
         </a>
     
     
-        <a class="read-next-story prev " style="background-image: url(assets/images/cover-jekyll.jpg)" href="/programming/why-jekyll-website.html">
+        <a class="read-next-story prev " style="background-image: url(assets/images/cover-gulp.jpg)" href="/programming/gulp-for-jekyll.html">
             <section class="post">
-                <h2>4 Reasons Why I Decided to Use Jekyll</h2>
-                <p>I decide to use Jekyll for speed, simplicity, security profile and quality free hosting (Github)....</p>
+                <h2>Using Gulp with Jekyll</h2>
+                <p></p>
             </section>
         </a>
     

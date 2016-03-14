@@ -1,0 +1,540 @@
+<!-- Start _layout/default.html -->
+<!DOCTYPE html>
+<html>
+
+<!-- Start _inludes/head.html -->
+<head>
+
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Mobile Metas -->
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- RSS Feed -->
+    <link rel="alternate" type="application/rss+xml" title="Ian Teda" href="http://localhost:3000/rss.xml" />
+
+    <!-- Favourite Icon -->
+    <link rel="shortcut icon" href="http://localhost:3000/assets/images/favicon.ico" >
+
+    <!-- Page Title -->
+    <title>
+      
+        Using Gulp with Jekyll
+      
+    </title>
+
+    <!-- Page Description -->
+    
+
+    <!-- Page Author -->
+    
+      <link rel="author" href="https://plus.google.com/u/0/+IanTeda"/>
+    
+
+    <link rel="canonical" href="http://localhost:3000/programming/gulp-for-jekyll.html" />
+
+    <!-- Style Sheets -->
+    <!-- Start _includes/styles.html -->
+<!-- inject:css -->
+<link rel="stylesheet" href="/assets/styles/main.min.css">
+<!-- endinject -->
+<!-- End _includes/styles.html -->
+
+
+    <!-- Force HTTPS -->
+    <!-- Start _includes/ssl-redirect.html -->
+
+<!-- End _includes/sssl-redirect.html -->
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<!-- End _includes/head.html -->
+
+
+<body class="home-template nav-closed">
+
+    <!-- Start _includes/navigation.html -->
+<div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        <li class="nav-home " role="presentation"><a href="/">Home</a></li>
+        <li class="nav-posts " role="presentation"><a href="/posts">Posts</a></li>
+        <li class="nav-now " role="presentation"><a href="/now.html">Now</a></li>
+        <li class="nav-creativity " role="presentation"><a href="/creativity">Creativity</a></li>
+        <li class="nav-engineering " role="presentation"><a href="/engineering">Engineering</a></li>
+        <li class="nav-management " role="presentation"><a href="/management">Management</a></li>
+        <li class="nav-programming " role="presentation"><a href="/programming">Programming</a></li>
+    </ul>
+    <a class="subscribe-button icon-feed" href="/rss.xml">Subscribe</a>
+</div>
+<span class="nav-cover"></span>
+<!-- End _includes/navigation.html -->
+
+
+    <div class="site-wrapper">
+
+        <!-- Start _layout/post.html -->
+<!-- Start _includes/header.html -->
+<header class="main-header post-head" style="background-image: url(assets/images/cover-gulp.jpg)">
+
+  <nav class="main-nav  overlay  clearfix">
+      
+        <a class="blog-logo" href="/"><img src="assets/images/logo-light.png" alt="Blog Logo" /></a>
+      
+      
+          <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
+      
+  </nav>
+  
+</header>
+<!-- End _includes/header.html -->
+
+
+<main class="content" role="main">
+
+    <article class="post ">
+
+        <header class="post-header">
+            
+            <section class="post-meta">
+                
+                    Filed Under:
+                    
+                        
+                           <a href='/programming'>Programming</a>
+                        
+                    
+                
+            </section>
+        </header>
+
+        <section class="post-content">
+
+            <h3 id="structure">Structure</h3>
+
+<ol>
+  <li>Development</li>
+  <li>Build</li>
+  <li>Deployment</li>
+</ol>
+
+<h3 id="development">Development</h3>
+
+<ul>
+  <li>Images
+    <ul>
+      <li>Copy images from source to temporary folder for serve, but only those changed or new</li>
+    </ul>
+  </li>
+  <li>Scripts
+    <ul>
+      <li>Concatinate</li>
+      <li>Sourcemaps</li>
+    </ul>
+  </li>
+  <li>Styles
+    <ul>
+      <li>Concatinate</li>
+      <li>Sourcemaps</li>
+    </ul>
+  </li>
+  <li>Inject
+    <ul>
+      <li>Styles</li>
+      <li>Scripts</li>
+    </ul>
+  </li>
+  <li>Fonts
+    <ul>
+      <li>Copy</li>
+      <li>Flatten folder structure</li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="images-task">Images Task</h5>
+<p>```
+/**
+ * IMAGES
+ * Lazy load gulp plugins using gulp-load-plugins and attaches them variable $.
+ * Copy changed files into .tmp folder
+ * –prod optimises images with imagemin
+ */</p>
+
+<p>var gulp = require(‘gulp’);
+var argv = require(‘yargs’).argv;
+var $ = require(‘gulp-load-plugins’)({
+  pattern: [‘gulp-<em>’, ‘gulp.</em>’, ‘del’],
+	lazy: true
+});</p>
+
+<p>/**
+ * CONFIG
+ */
+var images = require(‘../gulp-config’).images;
+var imagemin = require(‘../gulp-config’).imagemin;</p>
+
+<p>/**
+  * IMAGES TASK
+  */
+gulp.task(‘images’, function () {
+  return gulp.src(images.src)
+		.pipe($.if(!argv.prod, $.changed(images.dest)))
+		.pipe($.size({title: ‘Images:’}))
+    .pipe($.if(argv.prod, $.cache($.imagemin(imagemin.options))))
+    .pipe($.if(argv.prod, $.size({title: ‘Optimised:’})))
+		.pipe(gulp.dest(images.dest));
+})
+```</p>
+
+<h5 id="scripts-task">Scripts Task</h5>
+<p>```
+/**
+ * SCRIPTS
+ * Lazy load gulp plugins using gulp-load-plugins and attaches them variable $.
+ * Create a sourcemap of each javascript file, concatinate, ungilify
+ * –prod will skip the sourcemaps, uglify (minimise), add a min suffix and create a gziped copy
+ */</p>
+
+<p>var gulp = require(‘gulp’);
+var argv = require(‘yargs’).argv;
+var $ = require(‘gulp-load-plugins’)({
+  pattern: [‘gulp-<em>’, ‘gulp.</em>’, ‘del’],
+	lazy: true
+});</p>
+
+<p>/**
+ * CONFIG
+ */
+var scripts = require(‘../gulp-config’).scripts;
+var uglify = require(‘../gulp-config’).uglify;
+var gzip = require(‘../gulp-config’).gzip;</p>
+
+<p>gulp.task(‘scripts’, function (){
+  return gulp.src(scripts.src)
+    .pipe($.if(!argv.prod, $.sourcemaps.init()))
+    .pipe($.concat(scripts.filename))
+    .pipe($.size({title: ‘Concatinated:’}))
+    .pipe($.if(!argv.prod, $.sourcemaps.write(‘./’)))
+    .pipe($.if(argv.prod, $.uglify(uglify.options)))
+    .pipe($.if(argv.prod, $.rename({suffix: ‘.min’})))
+    .pipe($.if(argv.prod, $.size({title: ‘Uglified:’})))
+    .pipe($.if(argv.prod, gulp.dest(scripts.dest)))
+    .pipe($.if(argv.prod, $.gzip(gzip.options)))
+    .pipe($.if(argv.prod, $.size({title: ‘GZiped:’})))
+    .pipe(gulp.dest(scripts.dest));
+})
+```</p>
+
+<h5 id="inject">Inject</h5>
+<p>```
+/**
+ * INJECT
+ * Lazy load gulp plugins using gulp-load-plugins and attach them variable $.
+ * Inject styles and scripts into include files, ignoring the .tmp/ folder in path
+ */</p>
+
+<p>/**
+ * REQUIRES
+ <em>/
+var gulp = require(‘gulp’);
+var $ = require(‘gulp-load-plugins’)({
+  pattern: [‘gulp-</em>’, ‘gulp.*’, ‘del’],
+ lazy: true
+});</p>
+
+<p>/**
+ * CONFIG
+ */
+var inject = require(‘../gulp-config’).inject;
+var scripts = require(‘../gulp-config’).scripts;
+var styles = require(‘../gulp-config’).styles;</p>
+
+<p>/**
+ * INJECT STYLE SHEETS
+ * Inject style sheet reference into _includes/styles.html
+ */
+gulp.task(‘inject:styles’, function () {
+  return gulp.src(styles.inject.target)
+    .pipe($.inject(gulp.src(styles.inject.files, inject.options), {
+      ignorePath: ‘.tmp/’,
+    }))
+    .pipe(gulp.dest(styles.inject.dest));
+});</p>
+
+<p>/**
+ * INJECT SCRIPTS
+ * Inject javascript reference into _includes/scripts.html
+ */
+gulp.task(‘inject:scripts’, function () {
+  return gulp.src(scripts.inject.target)
+    .pipe($.inject(gulp.src(scripts.inject.files, {
+      read: false
+    }), {
+      ignorePath: ‘.tmp/’,
+    }))
+    .pipe(gulp.dest(scripts.inject.dest));
+});</p>
+
+<p>/**
+ * INJECT
+ */
+gulp.task(‘inject’, gulp.parallel(‘inject:styles’, ‘inject:scripts’));
+```</p>
+
+<h5 id="html">Html</h5>
+<p>```
+/**
+ * HTML
+ * Lazy load gulp plugins using gulp-load-plugins and attach them variable $.
+ * Default the task do not do anything
+ * –prod will uglify (minimise) html files and create a gziped copy
+ */</p>
+
+<p>/**
+ * REQUIRES
+ <em>/
+var gulp = require(‘gulp’);
+var argv = require(‘yargs’).argv;
+var $ = require(‘gulp-load-plugins’)({
+  pattern: [‘gulp-</em>’, ‘gulp.*’, ‘del’]
+});</p>
+
+<p>/**
+ * CONFIG
+ */
+var html = require(‘../gulp-config’).html;
+var gzip = require(‘../gulp-config’).gzip;
+var htmlmin = require(‘../gulp-config’).htmlmin;</p>
+
+<p>/**
+ * OPTIMISE HTML
+ */
+gulp.task(‘html’, function() {
+  return gulp.src(html.optimise)
+    .pipe($.if(argv.prod, $.size({title: ‘Html:’})))
+    .pipe($.if(argv.prod, $.htmlmin(htmlmin.options)))
+    .pipe($.if(argv.prod, $.size({title: ‘Minimised:’})))
+    .pipe($.if(argv.prod, gulp.dest(html.dest)))
+    .pipe($.if(argv.prod, $.gzip(gzip.options)))
+    .pipe($.if(argv.prod, $.size({title: ‘GZiped:’})))
+    .pipe($.if(argv.prod, gulp.dest(html.dest)));
+});
+```</p>
+
+<h5 id="fonts">Fonts</h5>
+<p>```
+/**
+ * FONTS
+ * Lazy load gulp plugins using gulp-load-plugins and attach them variable $.
+ * Collect all fonts and copy only changed fonts into assets fonts folder, flattening any folder hierarchy
+ * –prod will do the same as above
+ */</p>
+
+<p>/**
+ * REQUIRES
+ <em>/
+var gulp = require(‘gulp’);
+var $ = require(‘gulp-load-plugins’)({
+  pattern: [‘gulp-</em>’, ‘gulp.*’, ‘del’]
+});</p>
+
+<p>/**
+ * CONFIG
+ */
+var fonts = require(‘../gulp-config’).fonts;</p>
+
+<p>/**
+ * COPY FONTS
+ * Flatten folder structure
+ * Copy only fonts that have changed into destination folder
+ */
+gulp.task(‘fonts’, function () {
+  return gulp.src(fonts.src)
+    .pipe($.changed(fonts.dest))
+    .pipe($.flatten())
+    .pipe(gulp.dest(fonts.dest))
+    .pipe($.size({
+      title: ‘Fonts size:’,
+      showFiles: false
+    }));
+});
+```</p>
+
+<h5 id="browser-sync">Browser Sync</h5>
+<p>```
+/**
+ * BROWSERSYNC
+ * Start browsersync
+ * –prod will start browsersync from build directory only
+ */</p>
+
+<p>/**
+ * REQUIRES
+ */
+var gulp = require(‘gulp’);
+var argv = require(‘yargs’).argv;
+var browsersync = require(‘browser-sync’);
+var reload = browsersync.reload;</p>
+
+<p>/**
+ * BROWSERSYNC
+ */
+gulp.task(‘browsersync’, function() {</p>
+
+<p>if (argv.prod){
+    var baseDir = [‘build’];
+  } else {
+    var baseDir = [‘.tmp’, ‘build’];
+  }</p>
+
+<p>browsersync({
+    server: {
+      baseDir: baseDir
+    }
+  });</p>
+
+<p>// Watch files for changes and do the needful
+  gulp.watch([‘src/<strong>/<em>.md’, ‘src/**/</em>.html’, ‘src/</strong>/<em>.yml’], gulp.series(‘jekyll’, reload));
+  gulp.watch([‘src/<strong>/*.xml’, ‘src/</strong>/</em>.txt’], gulp.series(‘jekyll’, reload));
+  gulp.watch(‘src/assets/scripts/<strong>/<em>.js’, gulp.series(‘scripts’, reload));
+  gulp.watch([‘src/assets/scss/**/</em>.scss’, ‘src/assets/styles/</strong>/<em>.css’], gulp.series(‘styles’, reload));
+  gulp.watch(‘src/assets/images/**/</em>’, gulp.series(‘images’, reload));
+});
+```</p>
+
+<h5 id="github-pages">Github pages</h5>
+<p>```
+/**
+ * GITHUB PAGES
+ * Deploy generated pages to Github
+ */</p>
+
+<p>/**
+ * CONFIG
+ */
+var gulp = require(‘gulp’);
+var ghPages = require(‘gulp-gh-pages’);</p>
+
+<p>/**
+ * CONFIG
+ */
+var jekyll = require(‘../gulp-config’).jekyll;</p>
+
+<p>/**
+ * GITHUB PAGES
+ */
+gulp.task(‘gh-pages’, function() {
+  return gulp.src(jekyll.deploy)
+    .pipe(ghPages({
+      branch: ‘master’
+    }));
+});
+```</p>
+
+<h3 id="production">Production</h3>
+
+<ul>
+  <li>Images
+    <ul>
+      <li>Clean: Clean temporary folder of images</li>
+      <li>Copy: Copy images from source to temporary folder for serve</li>
+      <li>Watch: Watch image folder for changes and copy changed images to temporary folder</li>
+      <li>Optimise: Optimise images in temporary folder</li>
+    </ul>
+  </li>
+</ul>
+
+
+        </section>
+
+        <footer class="post-footer">
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="http://twitter.com/share?text=Using Gulp with Jekyll&amp;url=http://localhost:3000programminggulp-for-jekyll.html"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:3000programminggulp-for-jekyll.html"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:3000programminggulp-for-jekyll.html"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+            <!-- Add Disqus Comments -->
+            
+
+        </footer>
+
+    </article>
+
+</main>
+
+<aside class="read-next">
+
+    
+    
+        <a class="read-next-story " style="background-image: url(assets/images/cover-jekyll.jpg)" href="/programming/why-jekyll-website.html">
+            <section class="post">
+                <h2>4 Reasons Why I Decided to Use Jekyll</h2>
+                <p>I decide to use Jekyll for speed, simplicity, security profile and quality free hosting (Github)....</p>
+            </section>
+        </a>
+    
+    
+        <a class="read-next-story prev " style="background-image: url(/assets/images/cover-slinky.jpg)" href="/creativity/a-letter-to-sons.html">
+            <section class="post">
+                <h2>A Letter to my Sons</h2>
+                <p>Live, love, be generous, show respect and give thanks.</p>
+            </section>
+        </a>
+    
+</aside>
+<!-- End _layout/post.html -->
+
+
+        <!-- Start _includes/footer.html -->
+<footer class="site-footer clearfix">
+  <section class="copyright"><a href="/">Ian Teda</a> &copy; 2016</section>
+  <section class="poweredby">Proudly published with <a href="https://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/biomadeira/jasper">Jasper</a></section>
+</footer>
+<!-- End _includes/footer.html -->
+
+    </div>
+
+    <!-- Add javascripts -->
+    <!-- Start _includes/scripts.html -->
+<!-- inject:js -->
+<script src="/assets/scripts/main.min.js"></script>
+<!-- endinject -->
+<!-- End _includes/scriptions.html -->
+
+
+    <!-- Add Google Analytics  -->
+    <!-- Start _includes/analytics.html -->
+
+
+
+<!-- End _includes/analytics.html -->
+
+</body>
+</html>
+<!-- end _layout/default.html -->

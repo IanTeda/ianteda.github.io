@@ -22,7 +22,7 @@
     <!-- Page Title -->
     <title>
       
-        Mastermind
+        programming
       
     </title>
 
@@ -34,7 +34,7 @@
       <link rel="author" href="https://plus.google.com/u/0/+IanTeda"/>
     
 
-    <link rel="canonical" href="http://localhost:3000/tag/mastermind/" />
+    <link rel="canonical" href="http://localhost:3000/programming/index.html" />
 
     <!-- Style Sheets -->
     <!-- Start _includes/styles.html -->
@@ -61,7 +61,7 @@
 <!-- End _includes/head.html -->
 
 
-<body class="tag-template nav-closed">
+<body class="home-template nav-closed">
 
     <!-- Start _includes/navigation.html -->
 <div class="nav">
@@ -86,64 +86,116 @@
 
     <div class="site-wrapper">
 
-        <!-- Start _layout/tag.html -->
-<!-- < dynamically overriding backgrounds for tags as well as descriptions -->
+        <!-- Start _layout/page.html -->
 
 
 <!-- Start _includes/header.html -->
-<header class="main-header post-head" style="background-image: url(assets/images/cover2.jpg)">
+<header class="main-header post-head" style="background-image: url(/assets/images/cover-old-typewriter.jpg) ">
 
   <nav class="main-nav  overlay  clearfix">
       
-        <a class="blog-logo" href="/"><img src="assets/images/ghost.png" alt="Blog Logo" /></a>
+        <a class="blog-logo" href="/"><img src="/assets/images/logo-light.png" alt="Blog Logo" /></a>
       
       
           <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
       
   </nav>
   
+      <div class="vertical">
+          <div class="main-header-content inner">
+              <h1 class="page-title">
+                  
+                      Programming
+                  
+              </h1>
+              <h2 class="page-description">
+                  
+                      Be useful by adding value
+                  
+              </h2>
+          </div>
+      </div>
+  
 </header>
 <!-- End _includes/header.html -->
 
 
-<!-- The main content area on the homepage -->
-<main id="content" class="content" role="main">
+<main class="content" role="main">
+    <article class="post">
 
-    <!-- The tag below includes the post loop - partials/loop.hbs -->
-    <!-- Start _includes/loop.html -->
+        <section class="post-content">
+          <!-- Start _layout/category.html -->
 <!-- Previous/next page links - only displayed on page 2+ -->
 <div class="extra-pagination inner">
   
-      <!-- Start _includes/pagination-tag.html -->
+      <!-- Start _includes/pagination-post.html -->
 <nav class="pagination" role="pagination">
     
     <span class="page-number"> Page  of  </span>
     
 </nav>
-<!-- End _includes/pagination-tag.html -->
+<!-- End _includes/paginatoin-post.html -->
 
   
 </div>
 
-<!-- This is the post loop - each post will be output using this markup -->
+
+    <article class="post">
+        <header class="post-header">
+            <h2 class="post-title"><a href="/programming/gulp-jekyll-github-pages-cloudflare.html">Gulp, Jekyll, Github Pages & Cloudflare</a></h2>
+        </header>
+        <section class="post-excerpt">
+            <p>Simple, fast, flexible, secure & https. Total cost, $15AUD for domain registration. <a class="read-more" href="/programming/gulp-jekyll-github-pages-cloudflare.html">&raquo;</a></p>
+        </section>
+    </article>
+
+    <article class="post">
+        <header class="post-header">
+            <h2 class="post-title"><a href="/programming/jekyll-seo.html">Jekyll and Search Engine Optimisation</a></h2>
+        </header>
+        <section class="post-excerpt">
+            <p>Optimising your Jekyll Website for SEO <a class="read-more" href="/programming/jekyll-seo.html">&raquo;</a></p>
+        </section>
+    </article>
+
+    <article class="post">
+        <header class="post-header">
+            <h2 class="post-title"><a href="/programming/why-jekyll-website.html">4 Reasons Why I Decided to Use Jekyll</a></h2>
+        </header>
+        <section class="post-excerpt">
+            <p>I decide to use Jekyll for speed, simplicity, security profile and quality free hosting (Github). <a class="read-more" href="/programming/why-jekyll-website.html">&raquo;</a></p>
+        </section>
+    </article>
+
+    <article class="post">
+        <header class="post-header">
+            <h2 class="post-title"><a href="/programming/gulp-for-jekyll.html">Using Gulp with Jekyll</a></h2>
+        </header>
+        <section class="post-excerpt">
+            <p> <a class="read-more" href="/programming/gulp-for-jekyll.html">&raquo;</a></p>
+        </section>
+    </article>
 
 
 <!-- Previous/next page links - displayed on every page -->
 
-    <!-- Start _includes/pagination-tag.html -->
+    <!-- Start _includes/pagination-post.html -->
 <nav class="pagination" role="pagination">
     
     <span class="page-number"> Page  of  </span>
     
 </nav>
-<!-- End _includes/pagination-tag.html -->
+<!-- End _includes/paginatoin-post.html -->
 
 
-<!-- End _includes/loop.html -->
+<!-- End _layout/category.html -->
 
+        </section>
+
+    </article>
 
 </main>
-<!-- End _layout/tag.html -->
+<!-- End _layout/page.html -->
 
 
         <!-- Start _includes/footer.html -->
