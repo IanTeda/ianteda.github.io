@@ -9,6 +9,7 @@
   },
   "scripts": {
     "deploy": "gulp gh-pages",
+    "eslint": "eslint",
     "build": "gulp build --prod",
     "gulp": "gulp",
     "package-update": "npm-check-updates -u",
@@ -51,6 +52,7 @@
     "gulp-if": "^2.0.0",
     "gulp-imagemin": "^2.1.0",
     "gulp-inject": "^3.0.0",
+    "gulp-jsdoc3": "^0.2.1",
     "gulp-load-plugins": "^1.0.0",
     "gulp-minify-css": "^1.2.0",
     "gulp-newer": "^1.0.0",
@@ -87,17 +89,6 @@
       "es6": true,
       "node": true,
       "mocha": true
-    },
-    "rules": {
-      "linebreak-style": [
-        2,
-        "windows"
-      ],
-      "quotes": [
-        2,
-        "single"
-      ],
-      "indent": 2
     }
   }
 }
