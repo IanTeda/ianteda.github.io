@@ -57,7 +57,7 @@ permalink: none
 encoding: "utf-8"
 
 # Pagination
-paginate: 5
+paginate: 10
 paginate_path: "posts/page-:num"
 
 # Show more
