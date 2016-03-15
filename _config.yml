@@ -36,7 +36,6 @@ exclude:
   - .travis.yml
   - _excludes
 
-
 # FILTERING CONTENT
 # _config.build.yml overwrites these options when you run `gulp build`
 show_drafts: true
