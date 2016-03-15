@@ -8,14 +8,12 @@ var plugins = require("gulp-load-plugins")(config.gulpLoadPlugins.options);
 
 /**
  * Require Gulp task
- * @return {task} task - Return back function exported from task module
- * @param {gulp} gulp - Pass in Gulp
- * @param {config} config - Pass in Gulp config
- * @param {argv} argv - Pass in arguments set at CLI
- * @param {plugins} plugins - Pass in gulp-load-plugins
+ * @param {task} task - What Gulp task do you require
+ * @return {function} function - Returns task function from module export
  */
-function getTask(task) {
-  return require("./src/_gulp/tasks/gulp." + task + ".task.js")(
+function requireTask(task) {
+  // Require Gulp task file, passing in Gulp, config, argv and plugin objects
+  return require("./src/_gulp/tasks/" + task + ".babel.js")(
     gulp,
     config,
     argv,
@@ -23,4 +21,4 @@ function getTask(task) {
   );
 }
 
-gulp.task('scripts', getTask('scripts'));
+gulp.task('scripts', requireTask("scripts"));
