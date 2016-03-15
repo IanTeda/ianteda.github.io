@@ -1,16 +1,18 @@
-import yargs from 'yargs';
+import yargs from "yargs";
 
 export default () => {
     let argv;
 
     argv = yargs
-        .help('help')
+        .help("help")
+        .showHelpOnFail(false, 'Specify --help for available options')
         .strict()
         .alias( "?", "help" )
+        .alias( "h", "help" )
         .epilog( "Made with fun Ian Teda" )
         .argv;
 
-    console.log('argv._', argv._);
+    console.log("argv._", argv._);
 };
 
 var options = require( "yargs" )  
@@ -27,7 +29,7 @@ var options = require( "yargs" )
     .help( "?" )
     .alias( "?", "help" )
     .example( "$0 https://example.com/api/posts", "Get a list of posts" )
-    .example( "$0 https://example.com/api/posts --post --data \"{ 'title': 'Avast ye!', 'body': 'Thar be a post hyar!'}\"", "Create a new post" )
+    .example( "$0 https://example.com/api/posts --post --data \"{ "title": "Avast ye!", "body": "Thar be a post hyar!"}\"", "Create a new post" )
     .epilog( "Copyright 2015 ReverentGeek" )
     .argv;
 
