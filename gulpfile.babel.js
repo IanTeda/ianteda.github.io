@@ -83,3 +83,13 @@ gulp.task("jekyll", gulp.series("jekyll:clean", "jekyll:build"));
 gulp.task("html:clean", requireCleanTask(config.jekyll.dest + "/**/*.{html,gz}"));
 gulp.task("html:build", requireTask("html"));
 gulp.task("html", gulp.series("html:clean", "html:build"));
+
+/**
+ * Images Tasks
+ * Usage: gulp images:clean - Clean images from build folder
+ * Usage: gulp images:build - Copy and minify images to build folder
+ * Usage: gulp images - Clean build folder, then minify and copy images to build folder
+*/
+gulp.task("images:clean", requireCleanTask(config.images.dest + "/**/*"));
+gulp.task("images:build", requireTask("images"));
+gulp.task("images", gulp.series("images:clean", "images:build"));

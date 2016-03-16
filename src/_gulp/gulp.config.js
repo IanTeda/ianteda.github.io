@@ -3,6 +3,7 @@
 var autoprefixer = require("autoprefixer");
 var mqpacker = require("css-mqpacker");
 var csswring = require("csswring");
+var pngquant = require("imagemin-pngquant");
 
 const src = "src/";
 const assets = "assets/";
@@ -44,6 +45,17 @@ module.exports = {
       collapseBooleanAttributes: true,
       removeAttributeQuotes: false,
       removeRedundantAttributes: false
+    }
+  },
+  images: {
+    src: src + assets + 'images/**/*',
+    dest: tmp + assets + 'images'
+  },
+  imagemin: {
+    options: {
+      progressive: true,
+      svgoPlugins: [{removeViewBox: false}],
+      use: [pngquant()]
     }
   },
   jekyll: {
