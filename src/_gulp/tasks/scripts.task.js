@@ -12,12 +12,12 @@ module.exports = (gulp, config, argv, $) => {
     gulp
       // JavaScript source files
       .src(config.scripts.src)
-      // Initate sourcemaps if not in production mode
+      // Initate sourcemaps when not in production mode
       .pipe($.if(!argv.p, $.sourcemaps.init()))
       // Always concatinate files, order is important
       .pipe($.concat(config.scripts.filename))
       .pipe($.size({title: 'Concatinated:'}))
-      // Write source maps for easier debugging in browser
+      // Write source maps when not in production mode for easier debugging in browser
       .pipe($.if(!argv.p, $.sourcemaps.write('./')))
       .pipe($.if(!argv.p, $.size({title: 'Source mapped:'})))
       // Unglify JavaScript (remove unneeded characters)

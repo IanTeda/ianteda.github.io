@@ -1,5 +1,9 @@
 "use strict";
 
+var autoprefixer = require("autoprefixer");
+var mqpacker = require("css-mqpacker");
+var csswring = require("csswring");
+
 const src = "src/";
 const assets = "assets/";
 const build = "build/";
@@ -12,7 +16,7 @@ module.exports = {
   gulpLoadPlugins: {
     options: {
       DEBUG: false, // when set to true, the plugin will log info to console
-      pattern: ["gulp-*", "gulp.*", "del"], // the glob(s) to search for in package.json
+      pattern: ["gulp-*", "gulp.*", "del", "merge2", "shelljs"], // the glob(s) to search for in package.json
       camelize: true, // if true, transforms hyphenated plugins names to camel case
       lazy: true // whether the plugins should be lazy loaded on demand
     }
@@ -21,6 +25,15 @@ module.exports = {
     options: {
       append: true
     }
+  },
+  postcss: {
+    processors: [
+      autoprefixer({
+        browsers: ["last 1 version"]
+      }),
+      mqpacker,
+      csswring
+    ]
   },
   scripts: {
     filename: "main.js",
@@ -31,6 +44,17 @@ module.exports = {
       src + assets + "/scripts/main.js"
     ],
     dest: tmp + assets + "scripts"
+  },
+  styles: {
+    filename: "main.css",
+    css: [
+      nodeModules + "/animate.css/animate.css",
+      nodeModules + "/font-awesome/css/font-awesome.css",
+      src + assets + "styles/screen.css",
+      src + assets + "styles/syntax.css"
+    ],
+    sass: src + assets + "sass/main.scss",
+    dest: tmp + assets + "styles"
   },
   uglify: {
     options: {
