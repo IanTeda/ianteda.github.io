@@ -53,3 +53,13 @@ gulp.task("scripts", gulp.series("scripts:clean", "scripts:build"));
 gulp.task("styles:clean", requireCleanTask(config.styles.dest + "/**/*"));
 gulp.task("styles:build", requireTask("styles"));
 gulp.task("styles", gulp.series("styles:clean", "styles:build"));
+
+/**
+ * Styles Tasks
+ * Usage: gulp styles:clean - Clean main.css from styles build folder
+ * Usage: gulp styles:build - Build main.css from source into build folder
+ * Usage: gulp styles - Clean build folder, then build from source into build folder
+*/
+gulp.task("fonts:clean", requireCleanTask(config.fonts.dest + "/**/*"));
+gulp.task("fonts:build", requireTask("fonts"));
+gulp.task("fonts", gulp.series("fonts:clean", "fonts:build"));

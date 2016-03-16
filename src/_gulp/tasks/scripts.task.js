@@ -31,7 +31,9 @@ module.exports = (gulp, config, argv, $) => {
       .pipe($.if(argv.p, $.gzip(config.gzip.options)))
       .pipe($.if(argv.p, $.size({title: 'Ziped:'})))
       // Write stream to destination folder
-      .pipe(gulp.dest(config.scripts.dest));
+      .pipe(gulp.dest(config.scripts.dest))
+      .pipe($.size({title: 'Scripts copied:'}));
+
     // Let async know things have finished
     callback();
   };

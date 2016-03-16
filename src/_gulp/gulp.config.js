@@ -13,6 +13,13 @@ const nodeModules = "node_modules/";
 const deployment = "deployment";
 
 module.exports = {
+  fonts: {
+    src: [
+      nodeModules + 'font-awesome/fonts/**/*.{eot,svg,ttf,woff,woff2,otf}',
+      src + assets + 'fonts/**/*.{eot,svg,ttf,woff,woff2,otf}'
+    ],
+    dest: tmp + assets + 'fonts'
+  },
   gulpLoadPlugins: {
     options: {
       DEBUG: false, // when set to true, the plugin will log info to console

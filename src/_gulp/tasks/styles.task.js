@@ -28,17 +28,24 @@ module.exports = (gulp, config, argv, $) => {
         )
       )
       .pipe($.size({title: 'Merged CSS & SASS streams:'}))
+      // Concatinate css, since order is important
       .pipe($.concat(config.styles.filename))
-      .pipe($.if(!argv.p, $.size({title: 'Source Maps Written:'})))
       .pipe($.size({title: 'Concatinated:'}))
+      // Apply PostCSS processors to the stream
       .pipe($.postcss(config.postcss.processors))
       .pipe($.rename({suffix: '.min'}))
       .pipe($.size({title: 'PostCSS:'}))
+      // Write source maps for easier debuging, since we are concatinating
       .pipe($.if(!argv.p, $.sourcemaps.write('./')))
+      .pipe($.if(!argv.p, $.size({title: 'Source Maps Written:'})))
+      // Write stream (copy) to drive before we zip
       .pipe($.if(argv.p, gulp.dest(config.styles.dest)))
+      // Zip stream for faster transfer
       .pipe($.if(argv.p, $.gzip(config.gzip.options)))
       .pipe($.if(argv.p, $.size({title: 'GZiped:'})))
-      .pipe(gulp.dest(config.styles.dest));
+      // Write stream to drive
+      .pipe(gulp.dest(config.styles.dest))
+      .pipe($.size({title: 'Styles copied:'}));
 
     // Let async know we have finished
     callback();
