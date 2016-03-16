@@ -33,6 +33,25 @@ module.exports = {
       append: true
     }
   },
+  html: {
+    src: build + '**/*.html',
+    dest: build
+  },
+  htmlmin: {
+    options: {
+      removeComments: true,
+      collapseWhitespace: true,
+      collapseBooleanAttributes: true,
+      removeAttributeQuotes: false,
+      removeRedundantAttributes: false
+    }
+  },
+  jekyll: {
+    dest: build,
+    deploy: build + '**/*',
+    assets: build + assets,
+    tmp: tmp + assets + '**/*'
+  },
   postcss: {
     processors: [
       autoprefixer({

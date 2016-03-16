@@ -63,3 +63,23 @@ gulp.task("styles", gulp.series("styles:clean", "styles:build"));
 gulp.task("fonts:clean", requireCleanTask(config.fonts.dest + "/**/*"));
 gulp.task("fonts:build", requireTask("fonts"));
 gulp.task("fonts", gulp.series("fonts:clean", "fonts:build"));
+
+/**
+ * Jekyll Tasks
+ * Usage: gulp jekyll:clean - Clean generated pages from build folder
+ * Usage: gulp jekyll:build - Build generated pages
+ * Usage: gulp jekyll - Clean build folder, then build generated pages from source
+*/
+gulp.task("jekyll:clean", requireCleanTask(config.jekyll.dest + "/**/*"));
+gulp.task("jekyll:build", requireTask("jekyll"));
+gulp.task("jekyll", gulp.series("jekyll:clean", "jekyll:build"));
+
+/**
+ * HTML Tasks
+ * Usage: gulp html:clean - Clean zipped pages from build folder
+ * Usage: gulp html:build - Build minified and zipped pages
+ * Usage: gulp html - Clean build folder, then minify and zip pages from source
+*/
+gulp.task("html:clean", requireCleanTask(config.jekyll.dest + "/**/*.{html,gz}"));
+gulp.task("html:build", requireTask("html"));
+gulp.task("html", gulp.series("html:clean", "html:build"));
