@@ -34,6 +34,17 @@ function requireCleanTask(directory) {
   );
 }
 
+function requireInjectTask(target, references) {
+  // Require gulp task module
+  return require("./src/_gulp/tasks/inject.task")(
+    target,
+    references,
+    gulp,
+    config,
+    plugins
+  );
+}
+
 /**
  * Scripts Tasks
  * Usage: gulp scripts:clean - Clean main.js from the JavaScripts build folder
@@ -93,3 +104,5 @@ gulp.task("html", gulp.series("html:clean", "html:build"));
 gulp.task("images:clean", requireCleanTask(config.images.dest + "/**/*"));
 gulp.task("images:build", requireTask("images"));
 gulp.task("images", gulp.series("images:clean", "images:build"));
+
+gulp.task("inject:scripts", requireInjectTask(config.injects.scripts.target, config.injects.scripts.references));

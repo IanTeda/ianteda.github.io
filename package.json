@@ -44,6 +44,7 @@
     "flatten": "1.0.2",
     "gulp": "git://github.com/gulpjs/gulp.git#4.0",
     "gulp-babel": "6.1.2",
+    "gulp-cache": "^0.4.3",
     "gulp-changed": "^1.3.0",
     "gulp-concat": "^2.6.0",
     "gulp-eslint": "^2.0.0",

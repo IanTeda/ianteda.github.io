@@ -16,10 +16,10 @@ const deployment = "deployment";
 module.exports = {
   fonts: {
     src: [
-      nodeModules + 'font-awesome/fonts/**/*.{eot,svg,ttf,woff,woff2,otf}',
-      src + assets + 'fonts/**/*.{eot,svg,ttf,woff,woff2,otf}'
+      nodeModules + "font-awesome/fonts/**/*.{eot,svg,ttf,woff,woff2,otf}",
+      src + assets + "fonts/**/*.{eot,svg,ttf,woff,woff2,otf}"
     ],
-    dest: tmp + assets + 'fonts'
+    dest: tmp + assets + "fonts"
   },
   gulpLoadPlugins: {
     options: {
@@ -35,7 +35,7 @@ module.exports = {
     }
   },
   html: {
-    src: build + '**/*.html',
+    src: build + "**/*.html",
     dest: build
   },
   htmlmin: {
@@ -47,9 +47,19 @@ module.exports = {
       removeRedundantAttributes: false
     }
   },
+  inject: {
+    options: {
+      read: false
+    },
+    scripts: {
+      target: src + "_includes/scripts.html",
+      references: tmp + assets + "scripts/*.js",
+      dest: src + "_includes/"
+    }
+  },
   images: {
-    src: src + assets + 'images/**/*',
-    dest: tmp + assets + 'images'
+    src: src + assets + "images/**/*",
+    dest: tmp + assets + "images"
   },
   imagemin: {
     options: {
@@ -60,9 +70,9 @@ module.exports = {
   },
   jekyll: {
     dest: build,
-    deploy: build + '**/*',
+    deploy: build + "**/*",
     assets: build + assets,
-    tmp: tmp + assets + '**/*'
+    tmp: tmp + assets + "**/*"
   },
   postcss: {
     processors: [

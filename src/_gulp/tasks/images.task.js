@@ -16,7 +16,7 @@ module.exports = (gulp, config, argv, $) => {
       .pipe($.changed(config.images.dest))
       .pipe($.size({title: 'Images:'}))
       // Minimise images
-      .pipe($.cache($.imagemin(config.imagemin.options)))
+      .pipe($.imagemin(config.imagemin.options))
       .pipe($.size({title: 'Optimised:'}))
       // Save images to destination
       .pipe(gulp.dest(config.images.dest));
