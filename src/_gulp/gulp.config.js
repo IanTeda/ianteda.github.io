@@ -9,9 +9,8 @@ const src = "src/";
 const assets = "assets/";
 const build = "build/";
 const tmp = ".tmp/";
-const exlcudes = "_excludes/";
 const nodeModules = "node_modules/";
-const deployment = "deployment";
+const release = "release";
 
 module.exports = {
   fonts: {
@@ -20,6 +19,13 @@ module.exports = {
       src + assets + "fonts/**/*.{eot,svg,ttf,woff,woff2,otf}"
     ],
     dest: tmp + assets + "fonts"
+  },
+  ghPages: {
+    options: {
+      branch: 'master',
+      cacheDir: release,
+      remoteUrl: 'git@github.com:IanTeda/ianteda.github.io.git'
+    }
   },
   gulpLoadPlugins: {
     options: {
@@ -77,7 +83,7 @@ module.exports = {
     dest: build,
     deploy: build + "**/*",
     assets: build + assets,
-    tmp: tmp + assets + "**/*"
+    tmp: tmp + assets
   },
   postcss: {
     processors: [
