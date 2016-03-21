@@ -11,16 +11,16 @@ module.exports = (gulp, config, argv, $) => {
   return callback => {
     gulp
       .src(config.html.src)
-      .pipe($.if(argv.p, $.size({title: 'Html:'})))
-      .pipe($.if(argv.p, $.htmlmin(config.htmlmin.options)))
-      .pipe($.if(argv.p, $.size({title: 'Minimised:'})))
-      .pipe($.if(argv.p, gulp.dest(config.html.dest)))
-      .pipe($.if(argv.p, $.gzip(config.gzip.options)))
-      .pipe($.if(argv.p, $.size({
+      .pipe($.if(argv.prod, $.size({title: 'Html:'})))
+      .pipe($.if(argv.prod, $.htmlmin(config.htmlmin.options)))
+      .pipe($.if(argv.prod, $.size({title: 'Minimised:'})))
+      .pipe($.if(argv.prod, gulp.dest(config.html.dest)))
+      .pipe($.if(argv.prod, $.gzip(config.gzip.options)))
+      .pipe($.if(argv.prod, $.size({
         title: 'GZiped:',
         zip: true
       })))
-      .pipe($.if(argv.p, gulp.dest(config.html.dest)));
+      .pipe($.if(argv.prod, gulp.dest(config.html.dest)));
 
     callback();
   };

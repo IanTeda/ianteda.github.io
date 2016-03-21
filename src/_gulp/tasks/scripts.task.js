@@ -13,26 +13,26 @@ module.exports = (gulp, config, argv, $) => {
       // JavaScript source files
       .src(config.scripts.src)
       // Initate sourcemaps when not in production mode
-      .pipe($.if(!argv.p, $.sourcemaps.init()))
+      .pipe($.if(!argv.prod, $.sourcemaps.init()))
       // Always concatinate files, order is important
       .pipe($.concat(config.scripts.filename))
       .pipe($.size({title: 'Concatinated:'}))
       // Write source maps when not in production mode for easier debugging in browser
-      .pipe($.if(!argv.p, $.sourcemaps.write('./')))
-      .pipe($.if(!argv.p, $.size({title: 'Source mapped:'})))
+      .pipe($.if(!argv.prod, $.sourcemaps.write('./')))
+      .pipe($.if(!argv.prod, $.size({title: 'Source mapped:'})))
       // Unglify JavaScript (remove unneeded characters)
-      .pipe($.if(argv.p, $.uglify(config.uglify.options)))
+      .pipe($.if(argv.prod, $.uglify(config.uglify.options)))
       // Add min prefix to output
-      .pipe($.if(argv.p, $.rename({suffix: '.min'})))
-      .pipe($.if(argv.p, $.size({title: 'Uglified:'})))
+      .pipe($.if(argv.prod, $.rename({suffix: '.min'})))
+      .pipe($.if(argv.prod, $.size({title: 'Uglified:'})))
       // Appending content hash to filenames, to force browser cache update
       .pipe($.if(argv.prod, $.rev()))
-      .pipe($.if(argv.p, $.size({title: 'Appended content hash:'})))
+      .pipe($.if(argv.prod, $.size({title: 'Appended content hash:'})))
       // Write stream to destination folder -- make a copy -- before compressing
-      .pipe($.if(argv.p, gulp.dest(config.scripts.dest)))
+      .pipe($.if(argv.prod, gulp.dest(config.scripts.dest)))
        // Compress stream
-      .pipe($.if(argv.p, $.gzip(config.gzip.options)))
-      .pipe($.if(argv.p, $.size({
+      .pipe($.if(argv.prod, $.gzip(config.gzip.options)))
+      .pipe($.if(argv.prod, $.size({
         title: 'Ziped:',
         gzip: true
       })))

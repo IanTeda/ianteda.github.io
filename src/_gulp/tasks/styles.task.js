@@ -14,11 +14,11 @@ module.exports = (gulp, config, argv, $) => {
       gulp
         // CSS Stream
         .src(config.styles.css)
-        .pipe($.if(!argv.p, $.sourcemaps.init())),
+        .pipe($.if(!argv.prod, $.sourcemaps.init())),
       gulp
         // SASS Stream
         .src(config.styles.sass)
-        .pipe($.if(!argv.p, $.sourcemaps.init()))
+        .pipe($.if(!argv.prod, $.sourcemaps.init()))
         .pipe($.sass({
           precision: 10
         })
@@ -36,16 +36,16 @@ module.exports = (gulp, config, argv, $) => {
       .pipe($.rename({suffix: '.min'}))
       .pipe($.size({title: 'PostCSS:'}))
       // Write source maps for easier debuging, since we are concatinating
-      .pipe($.if(!argv.p, $.sourcemaps.write('./')))
-      .pipe($.if(!argv.p, $.size({title: 'Source Maps Written:'})))
+      .pipe($.if(!argv.prod, $.sourcemaps.write('./')))
+      .pipe($.if(!argv.prod, $.size({title: 'Source Maps Written:'})))
       // Appending content hash to filenames, to force browser cache update
       .pipe($.if(argv.prod, $.rev()))
-      .pipe($.if(argv.p, $.size({title: 'Appended content hash:'})))
+      .pipe($.if(argv.prod, $.size({title: 'Appended content hash:'})))
       // Write stream (copy) to drive before we zip
-      .pipe($.if(argv.p, gulp.dest(config.styles.dest)))
+      .pipe($.if(argv.prod, gulp.dest(config.styles.dest)))
       // Zip stream for faster transfer
-      .pipe($.if(argv.p, $.gzip(config.gzip.options)))
-      .pipe($.if(argv.p, $.size({
+      .pipe($.if(argv.prod, $.gzip(config.gzip.options)))
+      .pipe($.if(argv.prod, $.size({
         title: 'GZiped:',
         gzip: true
       })))

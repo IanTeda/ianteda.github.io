@@ -4,10 +4,10 @@
  * @exports {argv} argv - Argument object
  */
 module.exports = require("yargs")
-  .usage("Usage: Gulp <mode> [-p -production]")
+  .usage("Usage: Gulp <mode> [-p -prod -production]")
   .command("script", "Run script tasks", {alias: "scripts"})
   .boolean("production")
-  .alias("production", ["p"])
+  .alias("production", ["p", "prod"])
   .describe("production", "Run Gulp tasks in production mode")
   .example("gulp scripts:clean", "Clean JavaScript build folder")
   .example("gulp scripts:build", "Build JavaScript file from source")

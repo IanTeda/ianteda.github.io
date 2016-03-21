@@ -5,9 +5,9 @@ import gulp from "gulp";
 // BrowserSync is used to live-reload your website
 import browserSync from "browser-sync";
 const reload = browserSync.reload;
-// Handel command line (CLI) argument
+// Command line (CLI) argument
 var argv = require("./src/_gulp/yargs.config");
-// Configuration file, so I can stay out of JS once complete
+// Configuration file for gulp tasks
 const config = require("./src/_gulp/gulp.config");
 // Lazy load plugins, save on var declaration
 var plugins = require("gulp-load-plugins")(config.gulpLoadPlugins.options);
@@ -189,7 +189,7 @@ gulp.task(
 gulp.task(
   "html:cleanGZips",
   requireCleanTask(
-    config.jekyll.dest + "/**/*.{gz}"
+    config.jekyll.dest + "/**/*.gz"
   )
 );
 gulp.task(
