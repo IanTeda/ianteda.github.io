@@ -1,13 +1,14 @@
 "use strict";
 /**
- * Gulp Jekyll Task
+ * Gulp Inject Task
+ * @param {target} target - What html file do we want to inject reference
+ * @param {references} references - What files to we want to reference
  * @param {gulp} gulp - The gulp module passed in
  * @param {config} config - The projects Gulp config file
- * @param {argv} argv - Arguments flagged at the CLI
  * @param {$} $ - Lazy load plugins, save the imports at the start of the file
  * @return {task} Scripts - Task to manage Jekyll in project
  */
-module.exports = (target, references, gulp, config, $) => {
+module.exports = (target, references, destination, gulp, config, $) => {
   return callback => {
     gulp
       .src(target)
@@ -15,7 +16,7 @@ module.exports = (target, references, gulp, config, $) => {
         ignorePath: '.tmp/'
         // addRootSlash: false
       }))
-    .pipe(gulp.dest(target));
+    .pipe(gulp.dest(destination));
 
     callback();
   };

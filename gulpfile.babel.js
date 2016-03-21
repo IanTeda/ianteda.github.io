@@ -34,11 +34,18 @@ function requireCleanTask(directory) {
   );
 }
 
-function requireInjectTask(target, references) {
+/**
+ * Require Gulp Inject Task
+ * @param {target} target - What html file do we want to inject reference
+ * @param {references} references - What files to we want to reference
+ * @return {function} function - Returns task function from module export
+ */
+function requireInjectTask(target, references, destination) {
   // Require gulp task module
   return require("./src/_gulp/tasks/inject.task")(
     target,
     references,
+    destination,
     gulp,
     config,
     plugins
@@ -105,4 +112,6 @@ gulp.task("images:clean", requireCleanTask(config.images.dest + "/**/*"));
 gulp.task("images:build", requireTask("images"));
 gulp.task("images", gulp.series("images:clean", "images:build"));
 
-gulp.task("inject:scripts", requireInjectTask(config.injects.scripts.target, config.injects.scripts.references));
+gulp.task("inject:scripts", requireInjectTask(config.inject.scripts.target, config.inject.scripts.references, config.inject.scripts.destination));
+gulp.task("inject:styles", requireInjectTask(config.inject.styles.target, config.inject.styles.references, config.inject.styles.destination));
+gulp.task("inject", gulp.parallel("inject:scripts", "inject:styles"));

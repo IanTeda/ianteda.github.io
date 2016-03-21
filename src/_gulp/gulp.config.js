@@ -54,7 +54,12 @@ module.exports = {
     scripts: {
       target: src + "_includes/scripts.html",
       references: tmp + assets + "scripts/*.js",
-      dest: src + "_includes/"
+      destination: src + "_includes/"
+    },
+    styles: {
+      target: src + "_includes/styles.html",
+      references: tmp + assets + "styles/*.css",
+      destination: src + "_includes/"
     }
   },
   images: {
