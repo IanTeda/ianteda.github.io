@@ -16,7 +16,10 @@ module.exports = (gulp, config, argv, $) => {
       .pipe($.if(argv.p, $.size({title: 'Minimised:'})))
       .pipe($.if(argv.p, gulp.dest(config.html.dest)))
       .pipe($.if(argv.p, $.gzip(config.gzip.options)))
-      .pipe($.if(argv.p, $.size({title: 'Ziped:'})))
+      .pipe($.if(argv.p, $.size({
+        title: 'GZiped:',
+        zip: true
+      })))
       .pipe($.if(argv.p, gulp.dest(config.html.dest)));
 
     callback();

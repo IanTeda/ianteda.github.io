@@ -38,11 +38,17 @@ module.exports = (gulp, config, argv, $) => {
       // Write source maps for easier debuging, since we are concatinating
       .pipe($.if(!argv.p, $.sourcemaps.write('./')))
       .pipe($.if(!argv.p, $.size({title: 'Source Maps Written:'})))
+      // Appending content hash to filenames, to force cache update
+      .pipe($.if(argv.prod, $.rev()))
+      .pipe($.if(argv.p, $.size({title: 'Appended content hash:'})))
       // Write stream (copy) to drive before we zip
       .pipe($.if(argv.p, gulp.dest(config.styles.dest)))
       // Zip stream for faster transfer
       .pipe($.if(argv.p, $.gzip(config.gzip.options)))
-      .pipe($.if(argv.p, $.size({title: 'GZiped:'})))
+      .pipe($.if(argv.p, $.size({
+        title: 'GZiped:',
+        gzip: true
+      })))
       // Write stream to drive
       .pipe(gulp.dest(config.styles.dest))
       .pipe($.size({title: 'Styles copied:'}));

@@ -25,11 +25,17 @@ module.exports = (gulp, config, argv, $) => {
       // Add min prefix to output
       .pipe($.if(argv.p, $.rename({suffix: '.min'})))
       .pipe($.if(argv.p, $.size({title: 'Uglified:'})))
+      // Appending content hash to filenames, to force cache update
+      .pipe($.if(argv.prod, $.rev()))
+      .pipe($.if(argv.p, $.size({title: 'Appended content hash:'})))
       // Write stream to destination folder -- make a copy -- before compressing
       .pipe($.if(argv.p, gulp.dest(config.scripts.dest)))
        // Compress stream
       .pipe($.if(argv.p, $.gzip(config.gzip.options)))
-      .pipe($.if(argv.p, $.size({title: 'Ziped:'})))
+      .pipe($.if(argv.p, $.size({
+        title: 'Ziped:',
+        gzip: true
+      })))
       // Write stream to destination folder
       .pipe(gulp.dest(config.scripts.dest))
       .pipe($.size({title: 'Scripts copied:'}));

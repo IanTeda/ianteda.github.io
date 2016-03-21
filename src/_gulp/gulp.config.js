@@ -49,8 +49,8 @@ module.exports = {
       removeComments: true,
       collapseWhitespace: true,
       collapseBooleanAttributes: true,
-      removeAttributeQuotes: false,
-      removeRedundantAttributes: false
+      removeAttributeQuotes: true,
+      removeRedundantAttributes: true
     }
   },
   inject: {
@@ -75,6 +75,7 @@ module.exports = {
   imagemin: {
     options: {
       progressive: true,
+      interlaced: true,
       svgoPlugins: [{removeViewBox: false}],
       use: [pngquant()]
     }
