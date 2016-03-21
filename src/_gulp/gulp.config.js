@@ -13,6 +13,10 @@ const nodeModules = "node_modules/";
 const release = "release";
 
 module.exports = {
+  browserSync: {
+    development: [tmp, build],
+    production: build
+  },
   fonts: {
     src: [
       nodeModules + "font-awesome/fonts/**/*.{eot,svg,ttf,woff,woff2,otf}",

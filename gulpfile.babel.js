@@ -1,9 +1,15 @@
 "use strict";
-// Ref http://macr.ae/article/splitting-gulpfile-multiple-files.html
 
+// Import Gulp module
 import gulp from "gulp";
+// BrowserSync is used to live-reload your website
+import browserSync from "browser-sync";
+const reload = browserSync.reload;
+// Handel command line (CLI) argument
 var argv = require("./src/_gulp/yargs.config");
+// Configuration file, so I can stay out of JS once complete
 const config = require("./src/_gulp/gulp.config");
+// Lazy load plugins, save on var declaration
 var plugins = require("gulp-load-plugins")(config.gulpLoadPlugins.options);
 
 /**
@@ -72,9 +78,9 @@ function requireCopyTask(source, destination) {
 
 /**
  * Scripts Tasks
- * Usage: gulp scripts:clean - Clean main.js from the JavaScripts build folder
- * Usage: gulp scripts:build - Build main.js from source into build folder
- * Usage: gulp scripts - Clean build folder, then build from source into build folder
+ * Usage: gulp scripts:clean  - Clean main.js from the JavaScripts build folder
+ * Usage: gulp scripts:build  - Build main.js from source into build folder
+ * Usage: gulp scripts        - Clean build folder, then build from source into build folder
 */
 gulp.task(
   "scripts:clean",
@@ -100,7 +106,7 @@ gulp.task(
  * Styles Tasks
  * Usage: gulp styles:clean - Clean main.css from styles build folder
  * Usage: gulp styles:build - Build main.css from source into build folder
- * Usage: gulp styles - Clean build folder, then build from source into build folder
+ * Usage: gulp styles       - Clean build folder, then build from source into build folder
 */
 gulp.task(
   "styles:clean",
@@ -126,7 +132,7 @@ gulp.task(
  * Styles Tasks
  * Usage: gulp styles:clean - Clean main.css from styles build folder
  * Usage: gulp styles:build - Build main.css from source into build folder
- * Usage: gulp styles - Clean build folder, then build from source into build folder
+ * Usage: gulp styles       - Clean build folder, then build from source into build folder
 */
 gulp.task(
   "fonts:clean",
@@ -152,7 +158,7 @@ gulp.task(
  * Jekyll Tasks
  * Usage: gulp jekyll:clean - Clean generated pages from build folder
  * Usage: gulp jekyll:build - Build generated pages
- * Usage: gulp jekyll - Clean build folder, then build generated pages from source
+ * Usage: gulp jekyll       - Clean build folder, then build generated pages from source
 */
 gulp.task(
   "jekyll:clean",
@@ -178,12 +184,12 @@ gulp.task(
  * HTML Tasks
  * Usage: gulp html:clean - Clean zipped pages from build folder
  * Usage: gulp html:build - Build minified and zipped pages
- * Usage: gulp html - Clean build folder, then minify and zip pages from source
+ * Usage: gulp html       - Clean build folder, then minify and zip pages from source
 */
 gulp.task(
-  "html:clean",
+  "html:cleanGZips",
   requireCleanTask(
-    config.jekyll.dest + "/**/*.{html,gz}"
+    config.jekyll.dest + "/**/*.{gz}"
   )
 );
 gulp.task(
@@ -195,7 +201,7 @@ gulp.task(
 gulp.task(
   "html",
   gulp.series(
-    "html:clean",
+    "html:cleanGZips",
     "html:build"
   )
 );
@@ -204,7 +210,7 @@ gulp.task(
  * Images Tasks
  * Usage: gulp images:clean - Clean images from build folder
  * Usage: gulp images:build - Copy and minify images to build folder
- * Usage: gulp images - Clean build folder, then minify and copy images to build folder
+ * Usage: gulp images       - Clean build folder, then minify and copy images to build folder
 */
 gulp.task(
   "images:clean",
@@ -229,8 +235,8 @@ gulp.task(
 /**
  * Inject Tasks
  * Usage: gulp inject:scripts - Inject scripts into scripts.html
- * Usage: gulp inject:styles - Inject styles into styles.html
- * Usage: gulp inject - Inject scripts and styles into Jekyll include files
+ * Usage: gulp inject:styles  - Inject styles into styles.html
+ * Usage: gulp inject         - Inject scripts and styles into Jekyll include files
 */
 gulp.task(
   "inject:scripts",
@@ -257,17 +263,17 @@ gulp.task(
 );
 
 /**
- * Build Tasks
- * Usage: gulp build:clean     - Delete all files in build destination folder
- * Usage: gulp build:scripts   - Copy JavaScript files into build destination folder
- * Usage: gulp build:styles    - Copy CSS files into build destination folder
- * Usage: gulp build:image     - Copy png, gif & jpg files into build destination folder
- * Usage: gulp build:fonts     - Copy eot, svg, ttf, woff, woff2 & otf files into build destination folder
- * Usage: gulp build:downloads - Copy files in download into build destination folder
- * Usage: gulp build:scripts   - Copy JavaScript files into build destination folder
+ * Assets Tasks
+ * Usage: gulp build:cleanAssets  - Delete all files in build (assets) destination folder
+ * Usage: gulp build:scripts      - Copy JavaScript files into build destination folder
+ * Usage: gulp build:styles       - Copy CSS files into build destination folder
+ * Usage: gulp build:image        - Copy png, gif & jpg files into build destination folder
+ * Usage: gulp build:fonts        - Copy eot, svg, ttf, woff, woff2 & otf files into build destination folder
+ * Usage: gulp build:downloads    - Copy files in download into build destination folder
+ * Usage: gulp build:scripts      - Copy JavaScript files into build destination folder
 */
 gulp.task(
-  "build:clean",
+  "build:cleanAssets",
   requireCleanTask(
     config.jekyll.assets + "/**/*")
 );
@@ -301,9 +307,9 @@ gulp.task(
     config.jekyll.tmp + "/downloads/**/*",
     config.jekyll.assets + "/downloads")
 );
-gulp.task("build",
+gulp.task("build:assets",
   gulp.series(
-    "build:clean",
+    "build:cleanAssets",
     gulp.parallel(
       "build:scripts",
       "build:styles",
@@ -311,4 +317,86 @@ gulp.task("build",
       "build:fonts",
       "build:downloads")
   )
+);
+
+/**
+ * Gulp Serve
+ * Usage: gulp serve - Start BrowserSync and start watching for file changes
+ */
+gulp.task("serve", () => {
+  // What directory are we starting browserSync in
+  var baseDir = config.browserSync.development;
+  if (argv.p) {
+    baseDir = config.browserSync.production;
+  }
+
+  // Start browserSync
+  browserSync({
+    server: baseDir
+  });
+
+  // Watch various files for changes and run task as needed
+  gulp.watch(
+    [
+      "src/**/*.md",
+      "src/**/*.html",
+      "src/**/*.yml"
+    ],
+    gulp.series(
+      "jekyll:build",
+      reload
+    )
+  );
+  gulp.watch(
+    [
+      "src/**/*.xml",
+      "src/**/*.txt"
+    ],
+    gulp.series(
+      "jekyll:build"
+    )
+  );
+  gulp.watch(
+    "src/assets/javascript/**/*.js",
+    gulp.series(
+      "scripts",
+      browserSync.stream() // TODO: Testing
+      )
+    );
+  gulp.watch(
+    [
+      "src/assets/sass/**/*.scss",
+      "src/assets/styles/**/*.css"
+    ],
+    gulp.series(
+      "styles",
+      browserSync.stream() // TODO: Testing
+    )
+  );
+  gulp.watch(
+    "src/assets/images/**/*",
+    gulp.series(
+      "images:build",
+      reload
+    )
+  );
+});
+
+gulp.task("default",
+  gulp.series(
+    gulp.series("build:assets", "inject"),
+    gulp.series("jekyll:build", "html"),
+    gulp.series("serve")
+));
+
+gulp.task("build",
+  gulp.series(
+    gulp.series("build:assets", "inject"),
+    gulp.series("jekyll:build", "html")
+  )
+);
+
+gulp.task(
+  "clean",
+  gulp.series("build:cleanAssets", "html:cleanGZips", "jekyll:clean")
 );
