@@ -9,11 +9,15 @@
  */
 module.exports = (gulp, config, argv, $) => {
   return callback => {
-    if (argv.prod) {
-      $.shelljs.exec('jekyll build --config _config.yml,_config.production.yml');
+    if (argv.p) {
+      $.shelljs.exec(
+        'jekyll build --config _config.yml,_config.production.yml'
+      );
       callback();
     } else {
-      $.shelljs.exec('jekyll build --config _config.yml');
+      $.shelljs.exec(
+        'jekyll build --config _config.yml'
+      );
       callback();
     }
   };
