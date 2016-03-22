@@ -8,7 +8,7 @@
  */
 module.exports = (directory, $) => {
   return callback => {
-    $.del(directory); // Globbing pattern to match everything inside the folder
+    $.del(directory); // Use globbing pattern to match everything inside the folder
     callback();
   };
 };

@@ -6,9 +6,9 @@ import gulp from "gulp";
 import browserSync from "browser-sync";
 const reload = browserSync.reload;
 // Command line (CLI) argument
-var argv = require("./src/_gulp/yargs.config");
+var argv = require("./gulp/yargs.config");
 // Configuration file for gulp tasks
-const config = require("./src/_gulp/gulp.config");
+const config = require("./gulp/gulp.config");
 // Lazy load plugins, save on var declaration
 var plugins = require("gulp-load-plugins")(config.gulpLoadPlugins.options);
 
@@ -19,7 +19,7 @@ var plugins = require("gulp-load-plugins")(config.gulpLoadPlugins.options);
  */
 function requireTask(task) {
   // Require Gulp task module, passing in Gulp, config, argv and plugin objects
-  return require("./src/_gulp/tasks/" + task + ".task.js")(
+  return require("./gulp/tasks/" + task + ".task.js")(
     gulp,
     config,
     argv,
@@ -34,7 +34,7 @@ function requireTask(task) {
  */
 function requireCleanTask(directory) {
   // Require gulp task module
-  return require("./src/_gulp/tasks/clean.task")(
+  return require("./gulp/tasks/clean.task")(
     directory,
     plugins
   );
@@ -49,7 +49,7 @@ function requireCleanTask(directory) {
  */
 function requireInjectTask(target, references, destination) {
   // Require gulp task module
-  return require("./src/_gulp/tasks/inject.task")(
+  return require("./gulp/tasks/inject.task")(
     target,
     references,
     destination,
@@ -67,7 +67,7 @@ function requireInjectTask(target, references, destination) {
  */
 function requireCopyTask(source, destination) {
   // Require gulp task module
-  return require("./src/_gulp/tasks/copy.task")(
+  return require("./gulp/tasks/copy.task")(
     source,
     destination,
     gulp,

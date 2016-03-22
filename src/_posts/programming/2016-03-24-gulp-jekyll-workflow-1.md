@@ -1,7 +1,7 @@
 ---
 title: Gulp Jekyll Workflow - Part 1 Design Pattern
-description: {insert post description, I'm used with SEO and excerpts}
-date: yyyy-mm-dd
+description: Part 1 - Gulp design pattern for working with Jekyll website generator
+date: 2016-03-24
 tags: [gulp, jekyll, workflow, design pattern]
 layout: post
 category: programming
@@ -11,50 +11,52 @@ cover: /assets/images/{cover-in-header}.jpg
 logo: /assets/images/logo-light.png
 ---
 
-> Start with a quote
-> <cite> -- Quote by </cite>
+Putting together my workflow for developing and publishing my Jekyll website I set the following design criteria or patterns:
 
-### Promise (why)
+1. Use ES2015: Use new features before they become mainstream
+2. Command Line Interface: Be able to develop in different modes (dev / prod)
+3. Configuration File: Store configuration (constants) in seperate file. More readable code
+4. Modulised gulp tasks: Makes for more readable, easier to reuse and maintainable code
 
-### Paint the picture (vivid)
-Design criteria / pattern:
+# 1 - Use ES2015 with Gulpfile.js
 
-1. Use ES2015, JavaScript language update
-2. Provide a command line interface
-3. Store configuration (constants) in seperate file
-4. Modulised gulp tasks for easy reuse and maintainability
+With [Babel](https://babeljs.io/) one can use next generation JavaScript, today in [Gulp](http://gulpjs.com/). To ~steal~ use the Babel tag line.
+If you have Gulp (gulp-cli) version +3.9 installed then using ES2015 through Babel is as easy as 1-2-3 [^using-es6-with-gulp]
 
-## 1. Use ES2015 with Gulpfile.js
-Transpile Gulpfile.js with Babel.
-If you are using Gulp (gulp-cli) version +3.9 then using ES2015 through Babel is as easy as 1-2-3 [^using-es6-with-gulp]
+1 - Install npm packages for Babel and babel presents
 
-1. Install npm packages for Babel and babel presents
-~~~~
+~~~ Javascript
 npm install babel-core babel-preset-es2015 --save-dev
-~~~~
+~~~
 
-2. Create a `.babelrc` file to enable 2015 presets
+2 - Create a `.babelrc` file to enable 2015 presets
+
 ~~~ Javascript
 {
   "presets": ["es2015"]
 }
-~~~~
+~~~
 
-3. Rename `gulpfile.js` to 'gulpfile.babel.js`
+3 - Rename `gulpfile.js` to 'gulpfile.babel.js`
 
 Done.
 
-## 2. Command Line Interface
+How do I check what version of Gulp I have
+
+# 2 - Command Line Interface
+
 Use Yargs
 
 `gulp.babel.js`
-~~~Javascript
+
+~~~ Javascript
 // Command line (CLI) argument
 var argv = require("./gulp/yargs.config");
 ~~~
 
 `yargs.config.js`
-~~~JavaScript
+
+~~~ JavaScript
 /**
  * CLI (YARGS) Configuration
  * @param {yargs} yargs - Module for handling CLI arguments
@@ -71,7 +73,8 @@ module.exports = require("yargs")
   .argv;
 ~~~
 
-## 3. Gulp Configuration File
+# 3 - Gulp Configuration File
+
 `gulp.babel.js`
 ~~~Javascript
 // Configuration file for gulp tasks
@@ -102,10 +105,11 @@ module.exports = {
 }
 ~~~
 
-## 4. Modulise Gulp Tasks
+# 4 - Modulise Gulp Tasks
 
 `gulp.bable.js`
-~~~Javascript
+
+~~~ Javascript
 // Import Gulp module
 import gulp from "gulp";
 // Command line (CLI) argument
@@ -134,6 +138,7 @@ gulp.task("scripts:build", requireTask("scripts"));
 ~~~
 
 `scripts.task.js`
+
 ~~~javascript
 "use strict";
 /**

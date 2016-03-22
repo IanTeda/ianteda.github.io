@@ -8,6 +8,7 @@
     "email": "ian@teda.id.au"
   },
   "scripts": {
+    "babel-doctor": "babel-doctor",
     "deploy": "gulp gh-pages",
     "eslint": "eslint",
     "build": "gulp build --prod",
