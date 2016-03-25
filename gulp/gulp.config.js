@@ -8,7 +8,7 @@ var pngquant = require("imagemin-pngquant");
 const src = "src/";
 const assets = "assets/";
 const build = "build/";
-const tmp = ".tmp/";
+const tmp = "tmp/";
 const nodeModules = "node_modules/";
 const release = "release";
 
@@ -73,7 +73,7 @@ module.exports = {
     }
   },
   images: {
-    src: src + assets + "images/**/*",
+    src: src + assets + "images/**/*.{png,gif,jpg}",
     dest: tmp + assets + "images"
   },
   imagemin: {
@@ -104,8 +104,8 @@ module.exports = {
     src: [
       nodeModules + "jquery/dist/jquery.js",
       nodeModules + "wow.js/dist/wow.js",
-      nodeModules + "/fitvids/fitvids.js",
-      src + assets + "/scripts/main.js"
+      nodeModules + "fitvids/fitvids.js",
+      src + assets + "scripts/main.js"
     ],
     dest: tmp + assets + "scripts"
   },

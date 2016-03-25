@@ -13,7 +13,7 @@ module.exports = (target, references, destination, gulp, config, $) => {
     gulp
       .src(target)
       .pipe($.inject(gulp.src(references, config.inject.options), {
-        ignorePath: '.tmp/'
+        ignorePath: 'tmp/'
         // addRootSlash: false
       }))
     .pipe(gulp.dest(destination));

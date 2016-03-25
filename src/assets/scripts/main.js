@@ -1,37 +1,25 @@
-/**
- * Main JS file for Casper behaviours
- */
+  "use strict";
 
 /* globals jQuery, document */
-(function ($, undefined) {
-    "use strict";
+(function($, undefined) {
 
-    var $document = $(document);
+  var $document = $(document);
 
-    $document.ready(function () {
+  $document.ready(function() {
+    $(".scroll-down").arcticScroll();
 
-        var $postContent = $(".post-content");
-        $postContent.fitVids();
-
-        $(".scroll-down").arctic_scroll();
-
-        $(".menu-button, .nav-cover, .nav-close").on("click", function(e){
-            e.preventDefault();
-            $("body").toggleClass("nav-opened nav-closed");
-        });
-
+    $(".menu-button, .nav-cover, .nav-close").on("click", function(e) {
+      e.preventDefault();
+      $("body").toggleClass("nav-opened nav-closed");
     });
+  });
 
-    // Arctic Scroll by Paul Adam Davis
-    // https://github.com/PaulAdamDavis/Arctic-Scroll
-    $.fn.arctic_scroll = function (options) {
+  // Arctic Scroll by Paul Adam Davis
+  // https://github.com/PaulAdamDavis/Arctic-Scroll
+  $.fn.arcticScroll = function(options) {
+    var defaults = {elem: $(this), speed: 500},
 
-        var defaults = {
-                elem: $(this),
-                speed: 500
-            },
-
-            allOptions = $.extend(defaults, options);
+    allOptions = $.extend(defaults, options);
 
         allOptions.elem.click(function (event) {
             event.preventDefault();
@@ -50,12 +38,6 @@
             } else {
                 $htmlBody.stop(true, false).animate({scrollTop: ($(this.hash).offset().top) }, allOptions.speed);
             }
-        });
-
-    };
+    });
+  };
 })(jQuery);
-
-$(document).ready(function(){
-    // Target your .container, .wrapper, .post, etc.
-    $(".vido-wrapper").fitVids();
-  });

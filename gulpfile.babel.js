@@ -325,7 +325,7 @@ gulp.task("build:assets",
  */
 gulp.task("serve", () => {
   // What directory are we starting browserSync in
-  var baseDir = [".tmp", "build"];
+  var baseDir = config.browserSync.development;
   if (argv.p) {
     baseDir = config.browserSync.production;
   }
@@ -357,7 +357,7 @@ gulp.task("serve", () => {
     )
   );
   gulp.watch(
-    "src/assets/javascript/**/*.js",
+    "src/assets/scripts/**/*.js",
     gulp.series(
       "scripts",
       reload
@@ -384,10 +384,10 @@ gulp.task("serve", () => {
 
 gulp.task("default",
   gulp.series(
-    gulp.series("build:assets", "inject"),
-    gulp.series("jekyll:build", "html"),
-    gulp.series("serve")
-));
+    gulp.parallel("styles", "scripts", "images:build", "fonts:build"),
+    gulp.series("inject", "jekyll:build", "html", "serve")
+  )
+);
 
 gulp.task("build",
   gulp.series(
