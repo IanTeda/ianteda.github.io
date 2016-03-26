@@ -41,3 +41,5 @@
     });
   };
 })(jQuery);
+
+fitvids();
