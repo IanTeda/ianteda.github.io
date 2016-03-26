@@ -10,6 +10,12 @@ Add extra styles here
     border-radius: 50%;
 }
 
+@media only screen and (max-width: 500px) {
+  .headshot {
+    width: 60% !important;
+  } 
+}
+
 /* Social links in about.html, list horizontal */
 .about-list-social {
     padding: 0;
