@@ -107,7 +107,8 @@ module.exports = {
       nodeModules + "fitvids/fitvids.js",
       src + assets + "scripts/main.js"
     ],
-    dest: tmp + assets + "scripts"
+    dest: tmp + assets + "scripts",
+    build: build + assets + "scripts"
   },
   styles: {
     filename: "main.css",

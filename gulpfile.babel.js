@@ -275,31 +275,31 @@ gulp.task(
 gulp.task(
   "build:cleanAssets",
   requireCleanTask(
-    config.jekyll.assets + "/**/*")
+    config.jekyll.assets)
 );
 gulp.task(
   "build:scripts",
   requireCopyTask(
-    config.jekyll.tmp + "/**/*.js",
-    config.jekyll.assets)
+    config.jekyll.tmp + "/scripts/**/*.js",
+    config.jekyll.assets + "/scripts")
 );
 gulp.task(
   "build:styles",
   requireCopyTask(
-    config.jekyll.tmp + "/**/*.css",
-    config.jekyll.assets)
+    config.jekyll.tmp + "/styles/**/*.css",
+    config.jekyll.assets + "/styles")
 );
 gulp.task(
   "build:images",
   requireCopyTask(
-    config.jekyll.tmp + "/**/*.{png,gif,jpg}",
-    config.jekyll.assets)
+    config.jekyll.tmp + "/images/**/*.{png,gif,jpg}",
+    config.jekyll.assets + "/images")
 );
 gulp.task(
   "build:fonts",
   requireCopyTask(
-    config.jekyll.tmp + "/**/*.{eot,svg,ttf,woff,woff2,otf}",
-    config.jekyll.assets)
+    config.jekyll.tmp + "/fonts/**/*.{eot,svg,ttf,woff,woff2,otf}",
+    config.jekyll.assets + "/fonts")
 );
 gulp.task(
   "build:downloads",
@@ -391,8 +391,11 @@ gulp.task("default",
 
 gulp.task("build",
   gulp.series(
-    gulp.series("build:assets", "inject"),
-    gulp.series("jekyll:build", "html")
+    gulp.parallel("styles", "scripts", "images:build", "fonts:build"),
+    gulp.parallel(
+      "build:assets",
+      gulp.series("inject", "jekyll:build", "html")
+    )
   )
 );
 

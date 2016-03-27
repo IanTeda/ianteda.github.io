@@ -8,8 +8,7 @@
  * @return {task} Scripts - Task to manage scripts in project
  */
 module.exports = (gulp, config, argv, $) => {
-  return callback => {
-    gulp
+  return gulp
       // JavaScript source files
       .src(config.scripts.src)
       // Initate sourcemaps when not in production mode
@@ -38,9 +37,6 @@ module.exports = (gulp, config, argv, $) => {
       })))
       // Write stream to destination folder
       .pipe(gulp.dest(config.scripts.dest))
-      .pipe($.size({title: 'Scripts copied:'}));
-
-    // Let async know things have finished
-    callback();
-  };
+      .pipe($.size({title: 'Scripts copied:'})
+    );
 };
