@@ -5,12 +5,12 @@
  * @param {config} config - The projects Gulp config file
  * @param {argv} argv - Arguments flagged at the CLI
  * @param {$} $ - Lazy load plugins, save the imports at the start of the file
- * @return {task} Scripts - Task to manage scripts in project
+ * @return {stream} Stream - Task stream to manage Style Sheets in project
  */
 module.exports = (gulp, config, argv, $) => {
-  return callback => {
+  return function() {
     // We have a CSS and SASS stream that need to merge into one
-    $.merge2(
+    var stream = $.merge2(
       gulp
         // CSS Stream
         .src(config.styles.css)
@@ -53,7 +53,6 @@ module.exports = (gulp, config, argv, $) => {
       .pipe(gulp.dest(config.styles.dest))
       .pipe($.size({title: 'Styles copied:'}));
 
-    // Let async know we have finished
-    callback();
+    return stream;
   };
 };

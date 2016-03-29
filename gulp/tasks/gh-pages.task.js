@@ -5,14 +5,14 @@
  * @param {config} config - The projects Gulp config file
  * @param {argv} argv - Arguments flagged at the CLI
  * @param {$} $ - Lazy load plugins, save the imports at the start of the file
- * @return {task} Scripts - Task to manage GitHub Pages Repository
+ * @return {stream} Stream - Task stream to manage GitHub Pages in project
  */
 module.exports = (gulp, config, argv, $) => {
-  return callback => {
-    gulp
+  return function() {
+    var stream = gulp
       .src(config.jekyll.deploy)
       .pipe($.ghPages(config.ghPages.options));
 
-    callback();
+    return stream;
   };
 };

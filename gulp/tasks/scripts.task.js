@@ -5,10 +5,11 @@
  * @param {config} config - The projects Gulp config file
  * @param {argv} argv - Arguments flagged at the CLI
  * @param {$} $ - Lazy load plugins, save the imports at the start of the file
- * @return {task} Scripts - Task to manage scripts in project
+ * @return {stream} Stream - Task stream to manage JavaScript in project
  */
 module.exports = (gulp, config, argv, $) => {
-  return gulp
+  return function() {
+    var stream = gulp
       // JavaScript source files
       .src(config.scripts.src)
       // Initate sourcemaps when not in production mode
@@ -39,4 +40,7 @@ module.exports = (gulp, config, argv, $) => {
       .pipe(gulp.dest(config.scripts.dest))
       .pipe($.size({title: 'Scripts copied:'})
     );
+
+    return stream;
+  };
 };

@@ -5,11 +5,11 @@
  * @param {config} config - The projects Gulp config file
  * @param {argv} argv - Arguments flagged at the CLI
  * @param {$} $ - Lazy load plugins, save the imports at the start of the file
- * @return {task} Scripts - Task to manage scripts in project
+ * @return {stream} Stream - Task stream to manage fonts in project
  */
 module.exports = (gulp, config, argv, $) => {
-  return callback => {
-    gulp
+  return function() {
+    var stream = gulp
       // Font source files
       .src(config.fonts.src)
       .pipe($.changed(config.fonts.dest))
@@ -18,7 +18,6 @@ module.exports = (gulp, config, argv, $) => {
       .pipe(gulp.dest(config.fonts.dest))
       .pipe($.size({title: 'Fonts copied:'}));
 
-    // Let async know things have finished
-    callback();
+    return stream;
   };
 };

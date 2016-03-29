@@ -6,15 +6,15 @@
  * @param {gulp} gulp - The gulp module passed in
  * @param {argv} argv - Arguments flagged at the CLI
  * @param {$} $ - Lazy load plugins, save the imports at the start of the file
- * @return {task} Scripts - Task to copy files
+ * @return {stream} Stream - Task stream to copy files in project
  */
 module.exports = (source, destination, gulp, argv, $) => {
-  return callback => {
-    gulp
+  return function() {
+    var stream = gulp
       .src(source)
       .pipe($.size({title: 'Copied:'}))
       .pipe(gulp.dest(destination));
 
-    callback();
+    return stream;
   };
 };

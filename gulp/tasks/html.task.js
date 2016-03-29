@@ -5,11 +5,11 @@
  * @param {config} config - The projects Gulp config file
  * @param {argv} argv - Arguments flagged at the CLI
  * @param {$} $ - Lazy load plugins, save the imports at the start of the file
- * @return {task} Scripts - Task to manage Jekyll in project
+ * @return {stream} Stream - Task stream to manage HTML in project
  */
 module.exports = (gulp, config, argv, $) => {
-  return callback => {
-    gulp
+  return function() {
+    var stream = gulp
       .src(config.html.src)
       .pipe($.if(argv.prod, $.size({title: 'Html:'})))
       .pipe($.if(argv.prod, $.htmlmin(config.htmlmin.options)))
@@ -22,6 +22,6 @@ module.exports = (gulp, config, argv, $) => {
       })))
       .pipe($.if(argv.prod, gulp.dest(config.html.dest)));
 
-    callback();
+    return stream;
   };
 };

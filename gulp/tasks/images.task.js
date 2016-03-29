@@ -5,11 +5,11 @@
  * @param {config} config - The projects Gulp config file
  * @param {argv} argv - Arguments flagged at the CLI
  * @param {$} $ - Lazy load plugins, save the imports at the start of the file
- * @return {task} Scripts - Task to manage Images in project
+ * @return {stream} Stream - Task stream to manage images in project
  */
 module.exports = (gulp, config, argv, $) => {
-  return callback => {
-    gulp
+  return function() {
+    var stream = gulp
       // Image sources
       .src(config.images.src)
       // Only pipe changed images
@@ -21,7 +21,6 @@ module.exports = (gulp, config, argv, $) => {
       // Save images to destination
       .pipe(gulp.dest(config.images.dest));
 
-    // Let async know things have finished
-    callback();
+    return stream;
   };
 };
