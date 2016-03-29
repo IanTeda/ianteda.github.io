@@ -7,8 +7,8 @@
  * @return {task} Clean - Clean directory passed in
  */
 module.exports = (directory, $) => {
-  return callback => {
-    $.del(directory); // Use globbing pattern to match everything inside the folder
-    callback();
+  return function() {
+    var stream = $.del(directory); // Use globbing pattern to match everything inside the folder
+    return stream;
   };
 };

@@ -30,23 +30,23 @@ module.exports = (gulp, config, argv, $) => {
       .pipe($.size({title: 'Merged CSS & SASS streams:'}))
       // Concatinate css, since order is important
       .pipe($.concat(config.styles.filename))
-      .pipe($.size({title: 'Concatinated:'}))
+      .pipe($.size({title: 'Concatinated Styles:'}))
       // Apply PostCSS processors to the stream
       .pipe($.postcss(config.postcss.processors))
       .pipe($.rename({suffix: '.min'}))
-      .pipe($.size({title: 'PostCSS:'}))
+      .pipe($.size({title: 'PostCSS Styles:'}))
       // Write source maps for easier debuging, since we are concatinating
       .pipe($.if(!argv.prod, $.sourcemaps.write('./')))
-      .pipe($.if(!argv.prod, $.size({title: 'Source Maps Written:'})))
+      .pipe($.if(!argv.prod, $.size({title: 'Styles Source Maps Written:'})))
       // Appending content hash to filenames, to force browser cache update
       .pipe($.if(argv.prod, $.rev()))
-      .pipe($.if(argv.prod, $.size({title: 'Appended content hash:'})))
+      .pipe($.if(argv.prod, $.size({title: 'Appended content hash to main.css:'})))
       // Write stream (copy) to drive before we zip
       .pipe($.if(argv.prod, gulp.dest(config.styles.dest)))
       // Zip stream for faster transfer
       .pipe($.if(argv.prod, $.gzip(config.gzip.options)))
       .pipe($.if(argv.prod, $.size({
-        title: 'GZiped:',
+        title: 'GZiped Styles:',
         gzip: true
       })))
       // Write stream to drive

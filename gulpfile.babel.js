@@ -385,16 +385,24 @@ gulp.task("serve", () => {
 gulp.task("default",
   gulp.series(
     gulp.parallel("styles", "scripts", "images:build", "fonts:build"),
-    gulp.series("inject", "jekyll:build", "html", "serve")
+    gulp.series(
+      "build:assets",
+      "inject",
+      "jekyll:build",
+      "html",
+      "serve"
+    )
   )
 );
 
 gulp.task("build",
   gulp.series(
     gulp.parallel("styles", "scripts", "images:build", "fonts:build"),
-    gulp.parallel(
+    gulp.series(
       "build:assets",
-      gulp.series("inject", "jekyll:build", "html")
+      "inject",
+      "jekyll:build",
+      "html"
     )
   )
 );
