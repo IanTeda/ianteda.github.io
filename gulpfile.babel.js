@@ -30,7 +30,7 @@ function requireTask(task) {
 /**
  * Require Gulp Clean Task
  * @param {directory} directory - What directory do you want cleaned
- * @return {function} function - Returns task function from moudle export
+ * @return {function} function  - Returns task function from moudle export
  */
 function requireCleanTask(directory) {
   // Require gulp task module
@@ -42,10 +42,10 @@ function requireCleanTask(directory) {
 
 /**
  * Require Gulp Inject Task
- * @param {target} target - What html file do we want to inject reference
- * @param {references} references - What files to we want to reference
+ * @param {target} target           - What html file do we want to inject reference
+ * @param {references} references   - What files to we want to reference
  * @param {destination} destination - Where does the inject file go
- * @return {function} function - Returns task function from module export
+ * @return {function} function      - Returns task function from module export
  */
 function requireInjectTask(target, references, destination) {
   // Require gulp task module
@@ -262,60 +262,65 @@ gulp.task(
   )
 );
 
+gulp.task(
+  "inject",
+  requireTask("gh-pages")
+);
+
 /**
  * Assets Tasks
- * Usage: gulp build:cleanAssets  - Delete all files in build (assets) destination folder
- * Usage: gulp build:scripts      - Copy JavaScript files into build destination folder
- * Usage: gulp build:styles       - Copy CSS files into build destination folder
- * Usage: gulp build:image        - Copy png, gif & jpg files into build destination folder
- * Usage: gulp build:fonts        - Copy eot, svg, ttf, woff, woff2 & otf files into build destination folder
- * Usage: gulp build:downloads    - Copy files in download into build destination folder
- * Usage: gulp build:scripts      - Copy JavaScript files into build destination folder
+ * Usage: gulp copyAssetsToBuild:clean        - Delete all files in build (assets) destination folder
+ * Usage: gulp copyAssetsToBuild:scripts      - Copy JavaScript files into build destination folder
+ * Usage: gulp copyAssetsToBuild:styles       - Copy CSS files into build destination folder
+ * Usage: gulp copyAssetsToBuild:image        - Copy png, gif & jpg files into build destination folder
+ * Usage: gulp copyAssetsToBuild:fonts        - Copy eot, svg, ttf, woff, woff2 & otf files into build destination folder
+ * Usage: gulp copyAssetsToBuild:downloads    - Copy files in download into build destination folder
+ * Usage: gulp copyAssetsToBuild:scripts      - Copy JavaScript files into build destination folder
 */
 gulp.task(
-  "build:cleanAssets",
+  "copyAssetsToBuild:clean",
   requireCleanTask(
     config.jekyll.assets)
 );
 gulp.task(
-  "build:scripts",
+  "copyAssetsToBuild:scripts",
   requireCopyTask(
-    config.jekyll.tmp + "/scripts/**/*.js",
+    config.jekyll.tmp + "/scripts/**/*.{js,gz}",
     config.jekyll.assets + "/scripts")
 );
 gulp.task(
-  "build:styles",
+  "copyAssetsToBuild:styles",
   requireCopyTask(
-    config.jekyll.tmp + "/styles/**/*.css",
+    config.jekyll.tmp + "/styles/**/*.{css,gz}",
     config.jekyll.assets + "/styles")
 );
 gulp.task(
-  "build:images",
+  "copyAssetsToBuild:images",
   requireCopyTask(
     config.jekyll.tmp + "/images/**/*.{png,gif,jpg}",
     config.jekyll.assets + "/images")
 );
 gulp.task(
-  "build:fonts",
+  "copyAssetsToBuild:fonts",
   requireCopyTask(
     config.jekyll.tmp + "/fonts/**/*.{eot,svg,ttf,woff,woff2,otf}",
     config.jekyll.assets + "/fonts")
 );
 gulp.task(
-  "build:downloads",
+  "copyAssetsToBuild:downloads",
   requireCopyTask(
     config.jekyll.tmp + "/downloads/**/*",
     config.jekyll.assets + "/downloads")
 );
-gulp.task("build:assets",
+gulp.task("copyAssetsToBuild",
   gulp.series(
-    "build:cleanAssets",
+    "copyAssetsToBuild:clean",
     gulp.parallel(
-      "build:scripts",
-      "build:styles",
-      "build:images",
-      "build:fonts",
-      "build:downloads")
+      "copyAssetsToBuild:scripts",
+      "copyAssetsToBuild:styles",
+      "copyAssetsToBuild:images",
+      "copyAssetsToBuild:fonts",
+      "copyAssetsToBuild:downloads")
   )
 );
 
@@ -386,7 +391,6 @@ gulp.task("default",
   gulp.series(
     gulp.parallel("styles", "scripts", "images:build", "fonts:build"),
     gulp.series(
-      "build:assets",
       "inject",
       "jekyll:build",
       "html",
@@ -399,15 +403,33 @@ gulp.task("build",
   gulp.series(
     gulp.parallel("styles", "scripts", "images:build", "fonts:build"),
     gulp.series(
-      "build:assets",
       "inject",
       "jekyll:build",
-      "html"
+      "html",
+      "copyAssetsToBuild"
+    )
+  )
+);
+
+gulp.task("testProd",
+  gulp.series(
+    gulp.parallel("styles", "scripts", "images:build", "fonts:build"),
+    gulp.series(
+      "inject",
+      "jekyll:build",
+      "html",
+      "copyAssetsToBuild",
+      "serve"
     )
   )
 );
 
 gulp.task(
+  "deploy",
+  gulp.series("build", "gh-pages")
+);
+
+gulp.task(
   "clean",
-  gulp.series("build:cleanAssets", "html:cleanGZips", "jekyll:clean")
+  gulp.series("copyAssetsToBuild:clean", "html:cleanGZips", "jekyll:clean")
 );

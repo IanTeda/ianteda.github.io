@@ -9,9 +9,9 @@
   },
   "scripts": {
     "babel-doctor": "babel-doctor",
-    "deploy": "gulp gh-pages",
+    "deploy": "gulp deploy -prod",
     "eslint": "eslint",
-    "build": "gulp build --prod",
+    "build": "gulp build -prod",
     "gulp": "gulp",
     "package-update": "npm-check-updates -u",
     "start": "gulp"
