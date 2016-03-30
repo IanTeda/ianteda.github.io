@@ -12,6 +12,7 @@
     "deploy": "gulp deploy -prod",
     "eslint": "eslint",
     "build": "gulp build -prod",
+    "jsdocs": "gulp jsdocs",
     "gulp": "gulp",
     "package-update": "npm-check-updates -u",
     "start": "gulp"
