@@ -97,10 +97,13 @@ module.exports = {
     ],
     options: {
       opts: {
-        destination: "./gulp/docs"
+        encoding: 'utf8',
+        destination: "./gulp/docs",
+        recurse: true,
+        access: 'all'
       },
       plugins: [
-        "plugins/markdown"
+        "node_modules/jsdoc/plugins/markdown"
       ],
       templates: {
         cleverLinks: false,
