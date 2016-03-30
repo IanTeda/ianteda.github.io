@@ -262,8 +262,12 @@ gulp.task(
   )
 );
 
+/**
+ * GitHub Pages
+ * usage: gulp gh-pages - Push files to GitHub registry
+ */
 gulp.task(
-  "inject",
+  "gh-pages",
   requireTask("gh-pages")
 );
 
@@ -387,18 +391,25 @@ gulp.task("serve", () => {
   );
 });
 
+/**
+ * Gulp Default
+ * Usage: gulp - Compile styles, scripts, images and fonts. Then inject references, build jekyll and server up.
+ */
 gulp.task("default",
   gulp.series(
     gulp.parallel("styles", "scripts", "images:build", "fonts:build"),
     gulp.series(
       "inject",
       "jekyll:build",
-      "html",
       "serve"
     )
   )
 );
 
+/**
+ * Gulp Build
+ * Usage: gulp build -prod - Compile styles, scripts, images and fonts. Then inject references, build jekyll compress html and copy assets to build folder.
+ */
 gulp.task("build",
   gulp.series(
     gulp.parallel("styles", "scripts", "images:build", "fonts:build"),
@@ -411,6 +422,10 @@ gulp.task("build",
   )
 );
 
+/**
+ * Gulp testProd
+ * Usage: gulp testProd -prod - Run build for production
+ */
 gulp.task("testProd",
   gulp.series(
     gulp.parallel("styles", "scripts", "images:build", "fonts:build"),
@@ -424,6 +439,10 @@ gulp.task("testProd",
   )
 );
 
+/**
+ * Gulp deploy
+ * Usage: gulp deploy -prod - Build website and push to Github
+ */
 gulp.task(
   "deploy",
   gulp.series("build", "gh-pages")
@@ -432,4 +451,9 @@ gulp.task(
 gulp.task(
   "clean",
   gulp.series("copyAssetsToBuild:clean", "html:cleanGZips", "jekyll:clean")
+);
+
+gulp.task(
+  "jsdocs",
+  requireTask("jsdocs")
 );

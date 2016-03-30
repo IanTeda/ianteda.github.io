@@ -26,9 +26,9 @@ module.exports = {
   },
   ghPages: {
     options: {
-      branch: 'master',
+      branch: "master",
       cacheDir: release,
-      remoteUrl: 'git@github.com:IanTeda/ianteda.github.io.git'
+      remoteUrl: "git@github.com:IanTeda/ianteda.github.io.git"
     }
   },
   gulpLoadPlugins: {
@@ -89,6 +89,32 @@ module.exports = {
     deploy: build + "**/*",
     assets: build + assets,
     tmp: tmp + assets
+  },
+  jsdoc3: {
+    src: [
+      "./gulp/README.md",
+      "./gulp/**/*.js"
+    ],
+    options: {
+      opts: {
+        destination: "./gulp/docs"
+      },
+      plugins: [
+        "plugins/markdown"
+      ],
+      templates: {
+        cleverLinks: false,
+        monospaceLinks: false,
+        default: {
+          outputSourceFiles: true
+        },
+        path: "ink-docstrap",
+        theme: "cerulean",
+        navType: "vertical",
+        linenums: true,
+        dateFormat: "MMMM Do YYYY, h:mm:ss a"
+      }
+    }
   },
   postcss: {
     processors: [
