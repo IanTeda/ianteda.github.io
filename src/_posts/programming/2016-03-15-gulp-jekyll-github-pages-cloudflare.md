@@ -11,7 +11,7 @@ cover: /assets/images/cover-old-typewriter.jpg
 logo: /assets/images/logo-light.png
 ---
 
-> Flexible, simple, fast, secure & https. Total cost, $15AUD for domain registration.
+> Flexible, simple, fast, secure & https. Total cost, $15AUD for domain registration.<br/>
 > <cite> — Ian Teda </cite>
 
 Web technologies for development hosting and security are numerous. With each propent singing there own praises. At the start of my [ianteda.com](https://ianteda.com) project [^1] I looked around at the options.
@@ -42,7 +42,7 @@ Below is a list of the plugins that I used during development and for deployment
 * [postCSS](https://www.npmjs.com/package/gulp-postcss/): Transform CSS styles with JavaScript plugins
 * [SASS](https://www.npmjs.com/package/gulp-sass/): Transpile SASS into CSS
 
-### Jekyll (Website)
+### [Jekyll](http://jekyllrb.com/) (Website)
 I decided to use Jekyll when it dawned on me that for any content management system (CMS) to be fast it needs a cache system. What is a cache system? but a static webpage generator. Since I did not need the functionality of allowing access to multiple authors -- which could still be done with Jekyll and Github, but would require more technical knowledge from the author -- lets skip the whole database thing and go straight to generating the webpages on my local machine and uploading the build.
 
 By removing the database I reduced my cyber attach profile -- no database calls -- and simplifies hosting requirements. Opening up cheaper hosting options.

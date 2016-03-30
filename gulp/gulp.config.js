@@ -8,9 +8,9 @@ var pngquant = require("imagemin-pngquant");
 const src = "src/";
 const assets = "assets/";
 const build = "build/";
-const tmp = "tmp/";
+const tmp = ".tmp/";
 const nodeModules = "node_modules/";
-const release = "release";
+const release = ".release";
 
 module.exports = {
   browserSync: {
@@ -58,6 +58,7 @@ module.exports = {
     }
   },
   inject: {
+    ignorePath: tmp,
     options: {
       read: false
     },

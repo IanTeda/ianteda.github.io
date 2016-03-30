@@ -14,8 +14,8 @@ module.exports = (target, references, destination, gulp, config, $) => {
     var stream = gulp
       .src(target)
       .pipe($.inject(gulp.src(references, config.inject.options), {
-        ignorePath: 'tmp/'
-        // addRootSlash: false
+        ignorePath: config.inject.ignorePath
+        //addRootSlash: false
       }))
       .pipe(gulp.dest(destination)
     );
