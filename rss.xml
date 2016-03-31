@@ -1,5 +1,353 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.0.1">Jekyll</generator><link href="http://localhost:3000/rss.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:3000/" rel="alternate" type="text/html" /><updated>2016-03-14T20:46:41+11:00</updated><id>http://localhost:3000/</id><title>Ian Teda</title><subtitle>Husband, Father, Engineer, Explorer &amp; Creator</subtitle><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><entry><title>Gulp, Jekyll, Github Pages &amp;amp; Cloudflare</title><link href="http://localhost:3000/programming/gulp-jekyll-github-pages-cloudflare.html" rel="alternate" type="text/html" title="Gulp, Jekyll, Github Pages &amp; Cloudflare" /><published>2016-03-15T00:00:00+11:00</published><updated>2016-03-15T00:00:00+11:00</updated><id>http://localhost:3000/programming/gulp-jekyll-github-pages-cloudflare</id><content type="html" xml:base="http://localhost:3000/programming/gulp-jekyll-github-pages-cloudflare.html">&lt;blockquote&gt;
-  &lt;p&gt;Flexible, simple, fast, secure &amp;amp; https. Total cost, $15AUD for domain registration.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.0.1">Jekyll</generator><link href="https://ianteda.com/rss.xml" rel="self" type="application/atom+xml" /><link href="https://ianteda.com/" rel="alternate" type="text/html" /><updated>2016-03-31T19:31:08+11:00</updated><id>https://ianteda.com/</id><title>Ian Teda</title><subtitle>Husband, Father, Engineer, Explorer &amp; Creator</subtitle><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><entry><title>Gulp Jekyll Workflow - Part 1 Design Pattern</title><link href="https://ianteda.com/programming/gulp-jekyll-workflow-1.html" rel="alternate" type="text/html" title="Gulp Jekyll Workflow - Part 1 Design Pattern" /><published>2016-03-24T00:00:00+11:00</published><updated>2016-03-24T00:00:00+11:00</updated><id>https://ianteda.com/programming/gulp-jekyll-workflow-1</id><content type="html" xml:base="https://ianteda.com/programming/gulp-jekyll-workflow-1.html">&lt;blockquote&gt;
+  &lt;p&gt;Always start with the end in mind. So you know what direction to travel&lt;br /&gt;
+&lt;cite&gt; — Ian Teda &lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Keeping the end in mind, I listed four design criteria (patterns) to target when writting Gulp tasks. I wanted my workflow to be modern, simple, configurable and modulised.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Design Criteria/Patterns&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Use ES2015, ECMAScript 2015 (modern): Why? Get accustom to new JavaScript features before they become mainstream.&lt;/li&gt;
+  &lt;li&gt;Command Line Interface (simple): Why? KISS. Keep It Simple Stupid. A good design is a simple yet functional design.&lt;/li&gt;
+  &lt;li&gt;Configuration File (configurable): Why? Make changes in one place, watch them permiate. Easier to read and maintain code.&lt;/li&gt;
+  &lt;li&gt;Modulised Gulp tasks: Why? Makes for more readable, easier to reuse and maintainable code.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;use-es2015httpwwwecma-internationalorgecma-26260-with-gulphttpgulpjscom&quot;&gt;1 - Use &lt;a href=&quot;http://www.ecma-international.org/ecma-262/6.0/&quot;&gt;ES2015&lt;/a&gt; with &lt;a href=&quot;http://gulpjs.com/&quot;&gt;Gulp&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;To paraphrase the Babel tagline. Use next generation JavaScript, today with &lt;a href=&quot;https://babeljs.io/&quot;&gt;Babel&lt;/a&gt;. Since the release of Gulp (gulp-cli) version +3.9 &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp -v&lt;/code&gt; it is as easy as 1-2-3 to use ES2015 while writting Gulp tasks &lt;sup id=&quot;fnref:using-es6-with-gulp&quot;&gt;&lt;a href=&quot;#fn:using-es6-with-gulp&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;To get babel plugged into Gulp I used the following 3 steps:&lt;/p&gt;
+
+&lt;p&gt;1 - Install npm packages for Babel and babel presents&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;babel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;core&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;babel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;preset&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;es2015&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;save&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dev&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;2 - Create a &lt;code class=&quot;highlighter-rouge&quot;&gt;.babelrc&lt;/code&gt; file to enable 2015 presets&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;s2&quot;&gt;&quot;presets&quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;es2015&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;3 - Rename &lt;code class=&quot;highlighter-rouge&quot;&gt;gulpfile.js&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;gulpfile.babel.js&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Done. See, as easy as 1-2-3.&lt;/p&gt;
+
+&lt;h2 id=&quot;command-line-interface-with-yargshttpyargsjsorg&quot;&gt;2 - Command Line Interface with &lt;a href=&quot;http://yargs.js.org/&quot;&gt;Yargs&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;Paraphrasing the &lt;a href=&quot;http://yargs.js.org/&quot;&gt;Yargs&lt;/a&gt; tagline. Build interactive command line tools by parsing arguments and generating an elegant user interface. Keeping with my design criteria, I refractored the Yargs configuration into a seperate config file &lt;code class=&quot;highlighter-rouge&quot;&gt;yargs.config.js&lt;/code&gt;. Which is then required from within the &lt;code class=&quot;highlighter-rouge&quot;&gt;gulpfile.babel.js&lt;/code&gt;. Keeping things neat and tidy.&lt;/p&gt;
+
+&lt;p&gt;Require Yargs configuration file within &lt;code class=&quot;highlighter-rouge&quot;&gt;gulpfile.babel.js&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Command line (CLI) argument&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;argv&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;./gulp/yargs.config&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Setup the user interface and configure the CLI arguments &lt;code class=&quot;highlighter-rouge&quot;&gt;yargs.config.js&lt;/code&gt; &lt;sup id=&quot;fnref:node-command-args&quot;&gt;&lt;a href=&quot;#fn:node-command-args&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cm&quot;&gt;/**
+ * CLI (YARGS) Configuration
+ * @param {yargs} yargs - Module for handling CLI arguments
+ * @exports {argv} argv - Argument object
+ */&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;module&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;exports&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;yargs&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;usage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Usage: Gulp &amp;lt;task&amp;gt; [-p -prod -production]&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;command&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;script&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Run script tasks&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;alias&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;scripts&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;boolean&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;production&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;alias&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;production&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;p&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;prod&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;describe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;production&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Run Gulp tasks in production mode&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;help&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;help&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;alias&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;help&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;?&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;argv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;gulp-configuration-file&quot;&gt;3 - Gulp Configuration File&lt;/h2&gt;
+
+&lt;p&gt;Make changes in one place, watch them permiate. Which equals easier to read and maintain code.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;gulp.babel.js&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Configuration file for gulp tasks&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;config&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;./gulp/gulp.config&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;gulp.config.js&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;module&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;exports&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;xyz&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;src/xyz.xyz&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt; 
+    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;dest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;src/&quot;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;modulise-gulp-tasks&quot;&gt;4 - Modulise Gulp Tasks&lt;/h2&gt;
+
+&lt;p&gt;Modulisation of Gulp tasks makes for more readable, easier to reuse and maintain code.&lt;/p&gt;
+
+&lt;p&gt;Always abstract anything you need to do more than once. With that in mind a requireTask function is used to require task files from within &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp.babel.js&lt;/code&gt;. &lt;sup id=&quot;fnref:module-gulp-tasks&quot;&gt;&lt;a href=&quot;#fn:module-gulp-tasks&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Import Gulp module&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;gulp&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// Command line (CLI) argument&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;argv&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;./gulp/yargs.config&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// Configuration file for gulp tasks&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;config&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;./gulp/gulp.config&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// Lazy load plugins, makes for neater source code&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;plugins&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;gulp-load-plugins&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;gulpLoadPlugins&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;cm&quot;&gt;/**
+ * Require Gulp Task
+ * @param {task} task - What Gulp task do you require
+ * @return {function} function - Returns task function from module export
+ */&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;requireTask&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// Require Gulp task module, passing in Gulp, config, argv and plugin object references&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;./gulp/tasks/&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;task&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;.task.js&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)(&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;argv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;plugins&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;scripts:build&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;requireTask&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;nameOfTask&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The task &lt;code class=&quot;highlighter-rouge&quot;&gt;./gulp/tasks/nameOfTask.task.js&lt;/code&gt; is built up using the &lt;a href=&quot;https://nodejs.org/&quot;&gt;NodeJS&lt;/a&gt; module pattern, returing the task stream. Returning the task stream is important as it allows Gulp to signal async task completion. With task configuration from withing the &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp.config.js&lt;/code&gt; file.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s2&quot;&gt;&quot;use strict&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;/**
+ * Gulp Task for doing XYZ
+ * @param {gulp} gulp - The gulp module passed in
+ * @param {config} config - The projects Gulp config file
+ * @param {argv} argv - Arguments flagged at the CLI
+ * @param {$} $ - Lazy load plugins, save the imports at the start of the file
+ * @return {stream} Stream - Task stream to manage XYZ in project
+ */&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;module&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;exports&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;argv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;stream&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;// XYZ source files&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;xyz&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;// Apply special Gulp source&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;argv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;prod&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;specialsource&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;specialsource&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;options&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;// Write stream to destination folder&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;xyz&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+      
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;stream&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;just-show-me-the-repository-already&quot;&gt;5 - Just Show Me the Repository Already&lt;/h2&gt;
+&lt;p&gt;If you would like to see it in action, check out the repositry for this website at &lt;a href=&quot;https://github.com/IanTeda/IanTeda.github.io&quot;&gt;https://github.com/IanTeda/IanTeda.github.io&lt;/a&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;footnotes&quot;&gt;Footnotes&lt;/h5&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:using-es6-with-gulp&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://markgoodyear.com/2015/06/using-es6-with-gulp/&quot;&gt;Using ES6 with gulp&lt;/a&gt; &lt;a href=&quot;#fnref:using-es6-with-gulp&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:node-command-args&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;http://reverentgeek.com/ahoy-parse-ye-node-js-command-args-with-yargs/&quot;&gt;Parse ye Node.js command args with yargs!&lt;/a&gt; &lt;a href=&quot;#fnref:node-command-args&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:module-gulp-tasks&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;http://macr.ae/article/splitting-gulpfile-multiple-files.html&quot;&gt;Splitting a gulpfile into multiple files&lt;/a&gt; &lt;a href=&quot;#fnref:module-gulp-tasks&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><category term="programming" /><category term="gulp" /><category term="jekyll" /><category term="workflow" /><category term="design pattern" /><summary>Always start with the end in mind. So you know what direction to travel
+ — Ian Teda 
+
+
+Keeping the end in mind, I listed four design criteria (patterns) to target when writting Gulp tasks. I wanted my workflow to be modern, simple, configurable and modulised.
+
+Design Criteria/Patterns
+
+
+  Use ES2015, ECMAScript 2015 (modern): Why? Get accustom to new JavaScript features before they become mainstream.
+  Command Line Interface (simple): Why? KISS. Keep It Simple Stupid. A good design is a simple yet functional design.
+  Configuration File (configurable): Why? Make changes in one place, watch them permiate. Easier to read and maintain code.
+  Modulised Gulp tasks: Why? Makes for more readable, easier to reuse and maintainable code.
+
+
+1 - Use ES2015 with Gulp
+
+To paraphrase the Babel tagline. Use next generation JavaScript, today with Babel. Since the release of Gulp (gulp-cli) version +3.9 gulp -v it is as easy as 1-2-3 to use ES2015 while writting Gulp tasks 1.
+
+To get babel plugged into Gulp I used the following 3 steps:
+
+1 - Install npm packages for Babel and babel presents
+
+npm install babel-core babel-preset-es2015 --save-dev
+
+
+
+2 - Create a .babelrc file to enable 2015 presets
+
+{
+  &quot;presets&quot;: [&quot;es2015&quot;]
+}
+
+
+
+3 - Rename gulpfile.js to gulpfile.babel.js
+
+Done. See, as easy as 1-2-3.
+
+2 - Command Line Interface with Yargs
+
+Paraphrasing the Yargs tagline. Build interactive command line tools by parsing arguments and generating an elegant user interface. Keeping with my design criteria, I refractored the Yargs configuration into a seperate config file yargs.config.js. Which is then required from within the gulpfile.babel.js. Keeping things neat and tidy.
+
+Require Yargs configuration file within gulpfile.babel.js.
+
+// Command line (CLI) argument
+var argv = require(&quot;./gulp/yargs.config&quot;);
+
+
+
+Setup the user interface and configure the CLI arguments yargs.config.js 2.
+
+/**
+ * CLI (YARGS) Configuration
+ * @param {yargs} yargs - Module for handling CLI arguments
+ * @exports {argv} argv - Argument object
+ */
+module.exports = require(&quot;yargs&quot;)
+  .usage(&quot;Usage: Gulp &amp;lt;task&amp;gt; [-p -prod -production]&quot;)
+  .command(&quot;script&quot;, &quot;Run script tasks&quot;, {alias: &quot;scripts&quot;})
+  .boolean(&quot;production&quot;)
+  .alias(&quot;production&quot;, [&quot;p&quot;, &quot;prod&quot;])
+  .describe(&quot;production&quot;, &quot;Run Gulp tasks in production mode&quot;)
+  .help(&quot;help&quot;)
+  .alias(&quot;help&quot;, &quot;?&quot;)
+  .argv;
+
+
+
+3 - Gulp Configuration File
+
+Make changes in one place, watch them permiate. Which equals easier to read and maintain code.
+
+gulp.babel.js
+
+// Configuration file for gulp tasks
+const config = require(&quot;./gulp/gulp.config&quot;);
+
+
+
+gulp.config.js
+
+module.exports = {
+  xyz: {
+    src: &quot;src/xyz.xyz&quot;,
+    options: {
+      a: true,
+      b: false 
+    },
+    dest: &quot;src/&quot;
+  }
+}
+
+
+
+4 - Modulise Gulp Tasks
+
+Modulisation of Gulp tasks makes for more readable, easier to reuse and maintain code.
+
+Always abstract anything you need to do more than once. With that in mind a requireTask function is used to require task files from within gulp.babel.js. 3
+
+// Import Gulp module
+import gulp from &quot;gulp&quot;;
+// Command line (CLI) argument
+var argv = require(&quot;./gulp/yargs.config&quot;);
+// Configuration file for gulp tasks
+const config = require(&quot;./gulp/gulp.config&quot;);
+// Lazy load plugins, makes for neater source code
+var plugins = require(&quot;gulp-load-plugins&quot;)(config.gulpLoadPlugins.options);
+
+/**
+ * Require Gulp Task
+ * @param {task} task - What Gulp task do you require
+ * @return {function} function - Returns task function from module export
+ */
+function requireTask(task) {
+  // Require Gulp task module, passing in Gulp, config, argv and plugin object references
+  return require(&quot;./gulp/tasks/&quot; + task + &quot;.task.js&quot;)(
+    gulp,
+    config,
+    argv,
+    plugins
+  );
+}
+
+gulp.task(&quot;scripts:build&quot;, requireTask(&quot;nameOfTask&quot;));
+
+
+
+The task ./gulp/tasks/nameOfTask.task.js is built up using the NodeJS module pattern, returing the task stream. Returning the task stream is important as it allows Gulp to signal async task completion. With task configuration from withing the gulp.config.js file.
+
+&quot;use strict&quot;;
+/**
+ * Gulp Task for doing XYZ
+ * @param {gulp} gulp - The gulp module passed in
+ * @param {config} config - The projects Gulp config file
+ * @param {argv} argv - Arguments flagged at the CLI
+ * @param {$} $ - Lazy load plugins, save the imports at the start of the file
+ * @return {stream} Stream - Task stream to manage XYZ in project
+ */
+module.exports = (gulp, config, argv, $) =&amp;gt; {
+  return function() {
+    var stream = gulp
+      // XYZ source files
+      .src(config.xyz.src)
+      // Apply special Gulp source
+      .pipe($.if(
+        !argv.prod,
+        $.specialsource(config.specialsource.options
+      )
+      // Write stream to destination folder
+      .pipe(gulp.dest(config.xyz.dest));
+      
+    return stream;
+  };
+};
+
+
+
+5 - Just Show Me the Repository Already
+If you would like to see it in action, check out the repositry for this website at https://github.com/IanTeda/IanTeda.github.io
+
+Footnotes
+
+  
+    
+      Using ES6 with gulp &amp;#8617;
+    
+    
+      Parse ye Node.js command args with yargs! &amp;#8617;
+    
+    
+      Splitting a gulpfile into multiple files &amp;#8617;</summary></entry><entry><title>Gulp, Jekyll, Github Pages &amp;amp; Cloudflare</title><link href="https://ianteda.com/programming/gulp-jekyll-github-pages-cloudflare.html" rel="alternate" type="text/html" title="Gulp, Jekyll, Github Pages &amp; Cloudflare" /><published>2016-03-15T00:00:00+11:00</published><updated>2016-03-15T00:00:00+11:00</updated><id>https://ianteda.com/programming/gulp-jekyll-github-pages-cloudflare</id><content type="html" xml:base="https://ianteda.com/programming/gulp-jekyll-github-pages-cloudflare.html">&lt;blockquote&gt;
+  &lt;p&gt;Flexible, simple, fast, secure &amp;amp; https. Total cost, $15AUD for domain registration.&lt;br /&gt;
 &lt;cite&gt; — Ian Teda &lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -33,7 +381,7 @@
   &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-sass/&quot;&gt;SASS&lt;/a&gt;: Transpile SASS into CSS&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;jekyll-website&quot;&gt;Jekyll (Website)&lt;/h3&gt;
+&lt;h3 id=&quot;jekyllhttpjekyllrbcom-website&quot;&gt;&lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; (Website)&lt;/h3&gt;
 &lt;p&gt;I decided to use Jekyll when it dawned on me that for any content management system (CMS) to be fast it needs a cache system. What is a cache system? but a static webpage generator. Since I did not need the functionality of allowing access to multiple authors – which could still be done with Jekyll and Github, but would require more technical knowledge from the author – lets skip the whole database thing and go straight to generating the webpages on my local machine and uploading the build.&lt;/p&gt;
 
 &lt;p&gt;By removing the database I reduced my cyber attach profile – no database calls – and simplifies hosting requirements. Opening up cheaper hosting options.&lt;/p&gt;
@@ -150,11 +498,11 @@ Footnotes
       CloudFlare one-click SSL &amp;#8617;
     
     
-      Free SSL for GitHub Pages with Custom Domains &amp;#8617;</summary></entry><entry><title>Cotter Dam Intake Tower - Video</title><link href="http://localhost:3000/engineering/cotter-dam-intake-tower.html" rel="alternate" type="text/html" title="Cotter Dam Intake Tower - Video" /><published>2016-03-02T00:00:00+11:00</published><updated>2016-03-02T00:00:00+11:00</updated><id>http://localhost:3000/engineering/cotter-dam-intake-tower</id><content type="html" xml:base="http://localhost:3000/engineering/cotter-dam-intake-tower.html">&lt;div class=&quot;vido-wrapper&quot;&gt;
+      Free SSL for GitHub Pages with Custom Domains &amp;#8617;</summary></entry><entry><title>Cotter Dam Intake Tower - Video</title><link href="https://ianteda.com/engineering/cotter-dam-intake-tower.html" rel="alternate" type="text/html" title="Cotter Dam Intake Tower - Video" /><published>2016-03-02T00:00:00+11:00</published><updated>2016-03-02T00:00:00+11:00</updated><id>https://ianteda.com/engineering/cotter-dam-intake-tower</id><content type="html" xml:base="https://ianteda.com/engineering/cotter-dam-intake-tower.html">&lt;div class=&quot;vido-wrapper&quot;&gt;
   &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/6MZ0eRckO34&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;p&gt;A short video featuring yours truly, and the construction of the intake tower on the Cotter Dam project.&lt;/p&gt;</content><category term="engineering" /><category term="dams" /><summary>A short video featuring yours truly, and the construction of the intake tower on the Cotter Dam project.</summary></entry><entry><title>Idea Value Proposition</title><link href="http://localhost:3000/creativity/Idea-Value-Proposition.html" rel="alternate" type="text/html" title="Idea Value Proposition" /><published>2016-02-26T00:00:00+11:00</published><updated>2016-02-26T00:00:00+11:00</updated><id>http://localhost:3000/creativity/Idea-Value-Proposition</id><content type="html" xml:base="http://localhost:3000/creativity/Idea-Value-Proposition.html">&lt;blockquote&gt;
+&lt;p&gt;A short video featuring yours truly, and the construction of the intake tower on the Cotter Dam project.&lt;/p&gt;</content><category term="engineering" /><category term="dams" /><summary>A short video featuring yours truly, and the construction of the intake tower on the Cotter Dam project.</summary></entry><entry><title>Idea Value Proposition</title><link href="https://ianteda.com/creativity/Idea-Value-Proposition.html" rel="alternate" type="text/html" title="Idea Value Proposition" /><published>2016-02-26T00:00:00+11:00</published><updated>2016-02-26T00:00:00+11:00</updated><id>https://ianteda.com/creativity/Idea-Value-Proposition</id><content type="html" xml:base="https://ianteda.com/creativity/Idea-Value-Proposition.html">&lt;blockquote&gt;
   &lt;p&gt;Daring ideas are like chessmen moved forward. They may be beaten, but they may start a winning game.
 &lt;cite&gt; – Johann Wolfgang von Goethe &lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -236,7 +584,7 @@ So don’t burn energy protecting and worrying that someone will steal your idea
 
   Ideas are just a multiplier of execution – Derek Sivers
   Ideas Are Cheap, Execution is Worth Millions – Sathyvelu Kunashegaran
-  Photo cover credit: Larry Myhre</summary></entry><entry><title>Mastermind Group Brief</title><link href="http://localhost:3000/management/mastermind-group-breif.html" rel="alternate" type="text/html" title="Mastermind Group Brief" /><published>2016-02-17T00:00:00+11:00</published><updated>2016-02-17T00:00:00+11:00</updated><id>http://localhost:3000/management/mastermind-group-breif</id><content type="html" xml:base="http://localhost:3000/management/mastermind-group-breif.html">&lt;blockquote&gt;
+  Photo cover credit: Larry Myhre</summary></entry><entry><title>Mastermind Group Brief</title><link href="https://ianteda.com/management/mastermind-group-breif.html" rel="alternate" type="text/html" title="Mastermind Group Brief" /><published>2016-02-17T00:00:00+11:00</published><updated>2016-02-17T00:00:00+11:00</updated><id>https://ianteda.com/management/mastermind-group-breif</id><content type="html" xml:base="https://ianteda.com/management/mastermind-group-breif.html">&lt;blockquote&gt;
   &lt;p&gt;No two minds ever come together without thereby creating a third, invisible intangible force, which may be likened to a third mind [the master mind].
 &lt;cite&gt; – Napoleon Hill &lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -458,257 +806,7 @@ Some links and references used to write this post:
   Napoleon Hill’s Mastermind Principle
   How to Structure a Mastermind Meeting - SPI TV, Ep. 10
   Mastermind Groups are the Secret to Success - Tips and Presentation! - SPI TV, Ep. 9
-  How to Build a Winning Mastermind Group (Webinar Replay) - SPI TV, Ep. 12</summary></entry><entry><title>Jekyll and Search Engine Optimisation</title><link href="http://localhost:3000/programming/jekyll-seo.html" rel="alternate" type="text/html" title="Jekyll and Search Engine Optimisation" /><published>2016-01-27T00:00:00+11:00</published><updated>2016-01-27T00:00:00+11:00</updated><id>http://localhost:3000/programming/jekyll-seo</id><content type="html" xml:base="http://localhost:3000/programming/jekyll-seo.html">&lt;h3 id=&quot;basics&quot;&gt;Basics&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Create unique, accurate page titles &lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/li&gt;
-  &lt;li&gt;Make use of the “description” meta tag &lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/li&gt;
-  &lt;li&gt;Improve the structure of your URLs and make your site easier to navigate – Permalinks &lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/li&gt;
-  &lt;li&gt;Offer quality content and services – Build your authority (back liks)&lt;/li&gt;
-  &lt;li&gt;Write better anchor text. Use descriptive text when linking:&lt;/li&gt;
-  &lt;li&gt;Optimize your use of images – Image sitemap&lt;/li&gt;
-  &lt;li&gt;Use heading tags appropriately&lt;/li&gt;
-  &lt;li&gt;Make effective use of robots.txt&lt;/li&gt;
-  &lt;li&gt;Be aware of rel=”nofollow” for links&lt;/li&gt;
-  &lt;li&gt;Notify Google of mobile sites &lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/li&gt;
-  &lt;li&gt;Guide mobile users accurately &lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/li&gt;
-  &lt;li&gt;Promote your website in the right ways&lt;/li&gt;
-  &lt;li&gt;Make use of free webmaster tools&lt;/li&gt;
-  &lt;li&gt;404 meaningful&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Mystery algorithm&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Link to gPlus author&lt;/li&gt;
-  &lt;li&gt;Search Engines love fresh content&lt;/li&gt;
-  &lt;li&gt;Search Engines don’t like duplicate content&lt;/li&gt;
-  &lt;li&gt;Images should always have an alt attribute&lt;/li&gt;
-  &lt;li&gt;HTTPS &lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;page-titles&quot;&gt;Page Titles&lt;/h3&gt;
-&lt;p&gt;YAML front matter&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-title: Jekyll and Search Engine Optimisation
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;config.yml&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-name: &quot;Ian Teda&quot;
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;the &amp;lt;title&amp;gt; tag should be placed within the &amp;lt;head&amp;gt; tag&lt;/p&gt;
-
-&lt;p&gt;```&lt;/p&gt;
-&lt;head&gt;
-...
-&lt;title&gt;
-  {% if page.title %}
-    {{ page.title }}
-  {% else %}
-    {{ site.name }}
-  {% endif %}
-&lt;/title&gt;
-...
-&lt;/head&gt;
-&lt;p&gt;```&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;The contents of the title tag will usually appear in the first line of the results&lt;/li&gt;
-  &lt;li&gt;Create a unique title for each page on your site&lt;/li&gt;
-  &lt;li&gt;Choose a title that effectively communicates the topic of the page’s content&lt;/li&gt;
-  &lt;li&gt;Use brief, but descriptive titles&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;page-description&quot;&gt;Page Description&lt;/h3&gt;
-&lt;p&gt;Make use of the “description” meta tag&lt;/p&gt;
-
-&lt;p&gt;YAML front matter&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-description: Optimising your Jekyll Website for SEO
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;```&lt;/p&gt;
-&lt;head&gt;
-...
-{% if page.description %}
-  &lt;meta name=&quot;description&quot; content=&quot;{{ page.description }}&quot; /&gt;
-{% endif %}
-...
-&lt;/head&gt;
-&lt;p&gt;```&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Words in the snippet are bolded when they appear in the user’s query&lt;/li&gt;
-  &lt;li&gt;Google might use them as snippets for your pages&lt;/li&gt;
-  &lt;li&gt;Write a description that would both inform and interest users if they saw your description meta tag as a snippet in a search result&lt;/li&gt;
-  &lt;li&gt;Having a different description meta tag for each page helps both users and Google&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;permalinks&quot;&gt;Permalinks&lt;/h3&gt;
-&lt;p&gt;Improve the structure of your URLs and navigation&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Simple-to-understand URLs will convey content information easily&lt;/li&gt;
-  &lt;li&gt;lead to better crawling of your documents by search engines&lt;/li&gt;
-  &lt;li&gt;“friendlier” URLs for those that want to link to your content&lt;/li&gt;
-  &lt;li&gt;reciting the URL from memory or creating a link&lt;/li&gt;
-  &lt;li&gt;URLs are displayed in search results&lt;/li&gt;
-  &lt;li&gt;Use words in URLs&lt;/li&gt;
-  &lt;li&gt;Create a simple directory structure&lt;/li&gt;
-  &lt;li&gt;Provide one version of a URL to reach a document&lt;/li&gt;
-  &lt;li&gt;Plan out your navigation based on your homepage&lt;/li&gt;
-  &lt;li&gt;Ensure more convenience for users by using ‘breadcrumb lists’&lt;/li&gt;
-  &lt;li&gt;allows visitors to quickly navigate back to a previous section or the root page (breadcrumbs)&lt;/li&gt;
-  &lt;li&gt;Allow for the possibility of a part of the URL being removed 404&lt;/li&gt;
-  &lt;li&gt;Prepare two sitemaps: one for users, one for search engines&lt;/li&gt;
-  &lt;li&gt;Use mostly text for navigation&lt;/li&gt;
-  &lt;li&gt;Have a useful 404 page&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;https&quot;&gt;HTTPS&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Cloudflare / DNS records&lt;/li&gt;
-  &lt;li&gt;ssl-redirect / enforce_ssl&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h6 id=&quot;references&quot;&gt;References&lt;/h6&gt;
-&lt;p&gt;[^n] http://jekyll.tips/tutorials/seo/
-http://sixrevisions.com/content-strategy/5-common-seo-mistakes-with-web-page-titles/
-http://vdaubry.github.io/2014/10/21/SEO-for-your-Jekyll-blog/
-https://moz.com/learn/seo/meta-description
-http://static.googleusercontent.com/media/www.google.com/en//webmasters/docs/search-engine-optimization-starter-guide.pdf
-https://www.youtube.com/watch?v=vS1Mw1Adrk0&lt;/p&gt;</content><category term="programming" /><category term="jekyll" /><category term="seo" /><summary>Basics
-
-
-  Create unique, accurate page titles 
-  Make use of the “description” meta tag 
-  Improve the structure of your URLs and make your site easier to navigate – Permalinks 
-  Offer quality content and services – Build your authority (back liks)
-  Write better anchor text. Use descriptive text when linking:
-  Optimize your use of images – Image sitemap
-  Use heading tags appropriately
-  Make effective use of robots.txt
-  Be aware of rel=”nofollow” for links
-  Notify Google of mobile sites 
-  Guide mobile users accurately 
-  Promote your website in the right ways
-  Make use of free webmaster tools
-  404 meaningful
-
-
-Mystery algorithm
-
-
-  Link to gPlus author
-  Search Engines love fresh content
-  Search Engines don’t like duplicate content
-  Images should always have an alt attribute
-  HTTPS 
-
-
-Page Titles
-YAML front matter
-
-
-title: Jekyll and Search Engine Optimisation
-
-
-config.yml
-
-
-name: &quot;Ian Teda&quot;
-
-
-the &amp;lt;title&amp;gt; tag should be placed within the &amp;lt;head&amp;gt; tag
-
-```
-
-...
-
-  {% if page.title %}
-    {{ page.title }}
-  {% else %}
-    {{ site.name }}
-  {% endif %}
-
-...
-
-```
-
-
-  The contents of the title tag will usually appear in the first line of the results
-  Create a unique title for each page on your site
-  Choose a title that effectively communicates the topic of the page’s content
-  Use brief, but descriptive titles
-
-
-Page Description
-Make use of the “description” meta tag
-
-YAML front matter
-
-
-description: Optimising your Jekyll Website for SEO
-
-
-```
-
-...
-{% if page.description %}
-  
-{% endif %}
-...
-
-```
-
-
-  Words in the snippet are bolded when they appear in the user’s query
-  Google might use them as snippets for your pages
-  Write a description that would both inform and interest users if they saw your description meta tag as a snippet in a search result
-  Having a different description meta tag for each page helps both users and Google
-
-
-Permalinks
-Improve the structure of your URLs and navigation
-
-
-  Simple-to-understand URLs will convey content information easily
-  lead to better crawling of your documents by search engines
-  “friendlier” URLs for those that want to link to your content
-  reciting the URL from memory or creating a link
-  URLs are displayed in search results
-  Use words in URLs
-  Create a simple directory structure
-  Provide one version of a URL to reach a document
-  Plan out your navigation based on your homepage
-  Ensure more convenience for users by using ‘breadcrumb lists’
-  allows visitors to quickly navigate back to a previous section or the root page (breadcrumbs)
-  Allow for the possibility of a part of the URL being removed 404
-  Prepare two sitemaps: one for users, one for search engines
-  Use mostly text for navigation
-  Have a useful 404 page
-
-
-HTTPS
-
-
-  Cloudflare / DNS records
-  ssl-redirect / enforce_ssl
-
-
-References
-[^n] http://jekyll.tips/tutorials/seo/
-http://sixrevisions.com/content-strategy/5-common-seo-mistakes-with-web-page-titles/
-http://vdaubry.github.io/2014/10/21/SEO-for-your-Jekyll-blog/
-https://moz.com/learn/seo/meta-description
-http://static.googleusercontent.com/media/www.google.com/en//webmasters/docs/search-engine-optimization-starter-guide.pdf
-https://www.youtube.com/watch?v=vS1Mw1Adrk0</summary></entry><entry><title>Welcome to ianteda.com</title><link href="http://localhost:3000/management/ianteda-com.html" rel="alternate" type="text/html" title="Welcome to ianteda.com" /><published>2016-01-21T00:00:00+11:00</published><updated>2016-01-21T00:00:00+11:00</updated><id>http://localhost:3000/management/ianteda-com</id><content type="html" xml:base="http://localhost:3000/management/ianteda-com.html">&lt;p&gt;&lt;img src=&quot;/assets/images/head-shot.png&quot; alt=&quot;Ian Teda photo&quot; title=&quot;Optional Title&quot; class=&quot;img-circle&quot; /&gt;&lt;/p&gt;
+  How to Build a Winning Mastermind Group (Webinar Replay) - SPI TV, Ep. 12</summary></entry><entry><title>Welcome to ianteda.com</title><link href="https://ianteda.com/management/ianteda-com.html" rel="alternate" type="text/html" title="Welcome to ianteda.com" /><published>2016-01-21T00:00:00+11:00</published><updated>2016-01-21T00:00:00+11:00</updated><id>https://ianteda.com/management/ianteda-com</id><content type="html" xml:base="https://ianteda.com/management/ianteda-com.html">&lt;p&gt;&lt;img src=&quot;/assets/images/head-shot.png&quot; alt=&quot;Ian Teda photo&quot; title=&quot;Optional Title&quot; class=&quot;img-circle&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Hello and thank you for visiting &lt;a href=&quot;ianteda.com&quot;&gt;ianteda.com&lt;/a&gt;, my little corner of the Internet.&lt;/p&gt;
 
@@ -730,7 +828,7 @@ How can I be useful? By providing content around ideas, thoughts and projects, p
 
 To find out more about me check out the About
 
-To find out what I am currently working on check out the Now</summary></entry><entry><title>Be Bold &amp;amp; Make Mistakes</title><link href="http://localhost:3000/creativity/bold-mistakes.html" rel="alternate" type="text/html" title="Be Bold &amp; Make Mistakes" /><published>2016-01-19T00:00:00+11:00</published><updated>2016-01-19T00:00:00+11:00</updated><id>http://localhost:3000/creativity/bold-mistakes</id><content type="html" xml:base="http://localhost:3000/creativity/bold-mistakes.html">&lt;blockquote&gt;
+To find out what I am currently working on check out the Now</summary></entry><entry><title>Be Bold &amp;amp; Make Mistakes</title><link href="https://ianteda.com/creativity/bold-mistakes.html" rel="alternate" type="text/html" title="Be Bold &amp; Make Mistakes" /><published>2016-01-19T00:00:00+11:00</published><updated>2016-01-19T00:00:00+11:00</updated><id>https://ianteda.com/creativity/bold-mistakes</id><content type="html" xml:base="https://ianteda.com/creativity/bold-mistakes.html">&lt;blockquote&gt;
   &lt;p&gt;All courses of action are risky, so prudence is not in avoiding danger (it’s impossible), but calculating risk and acting decisively. Make mistakes of ambition and not mistakes of sloth. Develop the strength to do bold things, not the strength to suffer.
 &lt;cite&gt;– Chapter III: Of Mixed Princedoms&lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -751,740 +849,7 @@ Becoming successful requires risk and with risk comes mistakes. It is through th
 
 Success for the most part is subjective, but what ever your measure may be it still requires action. It is comfortable to stay on the path of least resistance, because it is well walked. But be bold and walk the road less traveled.
 
-[^] The Prince by Niccolò Machiavelli. Written in the 16th century, it is about acquiring power and maintaining it (pre democracy).</summary></entry><entry><title>4 Reasons Why I Decided to Use Jekyll</title><link href="http://localhost:3000/programming/why-jekyll-website.html" rel="alternate" type="text/html" title="4 Reasons Why I Decided to Use Jekyll" /><published>2016-01-17T00:00:00+11:00</published><updated>2016-01-17T00:00:00+11:00</updated><id>http://localhost:3000/programming/why-jekyll-website</id><content type="html" xml:base="http://localhost:3000/programming/why-jekyll-website.html">&lt;p&gt;I decide to use &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; for speed, simplicity, security profile and quality free hosting (Github).&lt;/p&gt;
-
-&lt;p&gt;It occurred to me, while assessing options for &lt;a href=&quot;ianteda.com&quot;&gt;ianteda.com&lt;/a&gt; any platform (&lt;a href=&quot;https://en.wikipedia.org/wiki/Content_management_system&quot;&gt;CMS&lt;/a&gt;) worth its salt would use a cache system. And a cache system turns a dynamic site into a static site. The main reason I would want a CMS would be for others authors to add content, which I don’t need since &lt;a href=&quot;ianteda.com&quot;&gt;ianteda.com&lt;/a&gt; is all about me. Lets skip the whole CMS and go straight to the static Website. Enter &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h4 id=&quot;jekyll&quot;&gt;Jekyll&lt;/h4&gt;
-&lt;p&gt;Question: What is Jekyll? Answer: Well, it is a Website generator.&lt;/p&gt;
-
-&lt;p&gt;Jekyll calls it self:
-&amp;gt; [A] simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.&lt;/p&gt;
-
-&lt;h4 id=&quot;speed&quot;&gt;Speed&lt;/h4&gt;
-&lt;p&gt;No database means speed
-To get speed any dynamic Website builds a cache of static files, removing the need for database calls.&lt;/p&gt;
-
-&lt;h4 id=&quot;simplicity&quot;&gt;Simplicity&lt;/h4&gt;
-&lt;p&gt;No database calls
-Control of the system
-Predicable, the static files are what you get means peace of mind&lt;/p&gt;
-
-&lt;h4 id=&quot;security&quot;&gt;Security&lt;/h4&gt;
-&lt;p&gt;Moving parts
-No database calls
-No login to CMS&lt;/p&gt;
-
-&lt;h4 id=&quot;free-hosting&quot;&gt;Free hosting&lt;/h4&gt;
-&lt;p&gt;Static means no database, which means cheep hosting
-Github pages
-Developed by xyz the creator of Github. Github provides free hosting through its Github Pages&lt;/p&gt;
-
-&lt;h4 id=&quot;who-else-is-using-jekyll&quot;&gt;Who Else is Using Jekyll&lt;/h4&gt;
-&lt;p&gt;Obama campaign
-Bootstrap&lt;/p&gt;
-
-&lt;h4 id=&quot;getting-a-jekyll-website-up-and-running&quot;&gt;Getting a Jekyll Website Up and Running&lt;/h4&gt;
-&lt;p&gt;Github pages
-Another post&lt;/p&gt;</content><category term="programming" /><category term="Jekyll" /><category term="Github" /><summary>I decide to use Jekyll for speed, simplicity, security profile and quality free hosting (Github).
-
-It occurred to me, while assessing options for ianteda.com any platform (CMS) worth its salt would use a cache system. And a cache system turns a dynamic site into a static site. The main reason I would want a CMS would be for others authors to add content, which I don’t need since ianteda.com is all about me. Lets skip the whole CMS and go straight to the static Website. Enter Jekyll.
-
-Jekyll
-Question: What is Jekyll? Answer: Well, it is a Website generator.
-
-Jekyll calls it self:
-&amp;gt; [A] simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.
-
-Speed
-No database means speed
-To get speed any dynamic Website builds a cache of static files, removing the need for database calls.
-
-Simplicity
-No database calls
-Control of the system
-Predicable, the static files are what you get means peace of mind
-
-Security
-Moving parts
-No database calls
-No login to CMS
-
-Free hosting
-Static means no database, which means cheep hosting
-Github pages
-Developed by xyz the creator of Github. Github provides free hosting through its Github Pages
-
-Who Else is Using Jekyll
-Obama campaign
-Bootstrap
-
-Getting a Jekyll Website Up and Running
-Github pages
-Another post</summary></entry><entry><title>Using Gulp with Jekyll</title><link href="http://localhost:3000/programming/gulp-for-jekyll.html" rel="alternate" type="text/html" title="Using Gulp with Jekyll" /><published>2016-01-15T00:00:00+11:00</published><updated>2016-01-15T00:00:00+11:00</updated><id>http://localhost:3000/programming/gulp-for-jekyll</id><content type="html" xml:base="http://localhost:3000/programming/gulp-for-jekyll.html">&lt;h3 id=&quot;structure&quot;&gt;Structure&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Development&lt;/li&gt;
-  &lt;li&gt;Build&lt;/li&gt;
-  &lt;li&gt;Deployment&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;development&quot;&gt;Development&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Images
-    &lt;ul&gt;
-      &lt;li&gt;Copy images from source to temporary folder for serve, but only those changed or new&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Scripts
-    &lt;ul&gt;
-      &lt;li&gt;Concatinate&lt;/li&gt;
-      &lt;li&gt;Sourcemaps&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Styles
-    &lt;ul&gt;
-      &lt;li&gt;Concatinate&lt;/li&gt;
-      &lt;li&gt;Sourcemaps&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Inject
-    &lt;ul&gt;
-      &lt;li&gt;Styles&lt;/li&gt;
-      &lt;li&gt;Scripts&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Fonts
-    &lt;ul&gt;
-      &lt;li&gt;Copy&lt;/li&gt;
-      &lt;li&gt;Flatten folder structure&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5 id=&quot;images-task&quot;&gt;Images Task&lt;/h5&gt;
-&lt;p&gt;```
-/**
- * IMAGES
- * Lazy load gulp plugins using gulp-load-plugins and attaches them variable $.
- * Copy changed files into .tmp folder
- * –prod optimises images with imagemin
- */&lt;/p&gt;
-
-&lt;p&gt;var gulp = require(‘gulp’);
-var argv = require(‘yargs’).argv;
-var $ = require(‘gulp-load-plugins’)({
-  pattern: [‘gulp-&lt;em&gt;’, ‘gulp.&lt;/em&gt;’, ‘del’],
-	lazy: true
-});&lt;/p&gt;
-
-&lt;p&gt;/**
- * CONFIG
- */
-var images = require(‘../gulp-config’).images;
-var imagemin = require(‘../gulp-config’).imagemin;&lt;/p&gt;
-
-&lt;p&gt;/**
-  * IMAGES TASK
-  */
-gulp.task(‘images’, function () {
-  return gulp.src(images.src)
-		.pipe($.if(!argv.prod, $.changed(images.dest)))
-		.pipe($.size({title: ‘Images:’}))
-    .pipe($.if(argv.prod, $.cache($.imagemin(imagemin.options))))
-    .pipe($.if(argv.prod, $.size({title: ‘Optimised:’})))
-		.pipe(gulp.dest(images.dest));
-})
-```&lt;/p&gt;
-
-&lt;h5 id=&quot;scripts-task&quot;&gt;Scripts Task&lt;/h5&gt;
-&lt;p&gt;```
-/**
- * SCRIPTS
- * Lazy load gulp plugins using gulp-load-plugins and attaches them variable $.
- * Create a sourcemap of each javascript file, concatinate, ungilify
- * –prod will skip the sourcemaps, uglify (minimise), add a min suffix and create a gziped copy
- */&lt;/p&gt;
-
-&lt;p&gt;var gulp = require(‘gulp’);
-var argv = require(‘yargs’).argv;
-var $ = require(‘gulp-load-plugins’)({
-  pattern: [‘gulp-&lt;em&gt;’, ‘gulp.&lt;/em&gt;’, ‘del’],
-	lazy: true
-});&lt;/p&gt;
-
-&lt;p&gt;/**
- * CONFIG
- */
-var scripts = require(‘../gulp-config’).scripts;
-var uglify = require(‘../gulp-config’).uglify;
-var gzip = require(‘../gulp-config’).gzip;&lt;/p&gt;
-
-&lt;p&gt;gulp.task(‘scripts’, function (){
-  return gulp.src(scripts.src)
-    .pipe($.if(!argv.prod, $.sourcemaps.init()))
-    .pipe($.concat(scripts.filename))
-    .pipe($.size({title: ‘Concatinated:’}))
-    .pipe($.if(!argv.prod, $.sourcemaps.write(‘./’)))
-    .pipe($.if(argv.prod, $.uglify(uglify.options)))
-    .pipe($.if(argv.prod, $.rename({suffix: ‘.min’})))
-    .pipe($.if(argv.prod, $.size({title: ‘Uglified:’})))
-    .pipe($.if(argv.prod, gulp.dest(scripts.dest)))
-    .pipe($.if(argv.prod, $.gzip(gzip.options)))
-    .pipe($.if(argv.prod, $.size({title: ‘GZiped:’})))
-    .pipe(gulp.dest(scripts.dest));
-})
-```&lt;/p&gt;
-
-&lt;h5 id=&quot;inject&quot;&gt;Inject&lt;/h5&gt;
-&lt;p&gt;```
-/**
- * INJECT
- * Lazy load gulp plugins using gulp-load-plugins and attach them variable $.
- * Inject styles and scripts into include files, ignoring the .tmp/ folder in path
- */&lt;/p&gt;
-
-&lt;p&gt;/**
- * REQUIRES
- &lt;em&gt;/
-var gulp = require(‘gulp’);
-var $ = require(‘gulp-load-plugins’)({
-  pattern: [‘gulp-&lt;/em&gt;’, ‘gulp.*’, ‘del’],
- lazy: true
-});&lt;/p&gt;
-
-&lt;p&gt;/**
- * CONFIG
- */
-var inject = require(‘../gulp-config’).inject;
-var scripts = require(‘../gulp-config’).scripts;
-var styles = require(‘../gulp-config’).styles;&lt;/p&gt;
-
-&lt;p&gt;/**
- * INJECT STYLE SHEETS
- * Inject style sheet reference into _includes/styles.html
- */
-gulp.task(‘inject:styles’, function () {
-  return gulp.src(styles.inject.target)
-    .pipe($.inject(gulp.src(styles.inject.files, inject.options), {
-      ignorePath: ‘.tmp/’,
-    }))
-    .pipe(gulp.dest(styles.inject.dest));
-});&lt;/p&gt;
-
-&lt;p&gt;/**
- * INJECT SCRIPTS
- * Inject javascript reference into _includes/scripts.html
- */
-gulp.task(‘inject:scripts’, function () {
-  return gulp.src(scripts.inject.target)
-    .pipe($.inject(gulp.src(scripts.inject.files, {
-      read: false
-    }), {
-      ignorePath: ‘.tmp/’,
-    }))
-    .pipe(gulp.dest(scripts.inject.dest));
-});&lt;/p&gt;
-
-&lt;p&gt;/**
- * INJECT
- */
-gulp.task(‘inject’, gulp.parallel(‘inject:styles’, ‘inject:scripts’));
-```&lt;/p&gt;
-
-&lt;h5 id=&quot;html&quot;&gt;Html&lt;/h5&gt;
-&lt;p&gt;```
-/**
- * HTML
- * Lazy load gulp plugins using gulp-load-plugins and attach them variable $.
- * Default the task do not do anything
- * –prod will uglify (minimise) html files and create a gziped copy
- */&lt;/p&gt;
-
-&lt;p&gt;/**
- * REQUIRES
- &lt;em&gt;/
-var gulp = require(‘gulp’);
-var argv = require(‘yargs’).argv;
-var $ = require(‘gulp-load-plugins’)({
-  pattern: [‘gulp-&lt;/em&gt;’, ‘gulp.*’, ‘del’]
-});&lt;/p&gt;
-
-&lt;p&gt;/**
- * CONFIG
- */
-var html = require(‘../gulp-config’).html;
-var gzip = require(‘../gulp-config’).gzip;
-var htmlmin = require(‘../gulp-config’).htmlmin;&lt;/p&gt;
-
-&lt;p&gt;/**
- * OPTIMISE HTML
- */
-gulp.task(‘html’, function() {
-  return gulp.src(html.optimise)
-    .pipe($.if(argv.prod, $.size({title: ‘Html:’})))
-    .pipe($.if(argv.prod, $.htmlmin(htmlmin.options)))
-    .pipe($.if(argv.prod, $.size({title: ‘Minimised:’})))
-    .pipe($.if(argv.prod, gulp.dest(html.dest)))
-    .pipe($.if(argv.prod, $.gzip(gzip.options)))
-    .pipe($.if(argv.prod, $.size({title: ‘GZiped:’})))
-    .pipe($.if(argv.prod, gulp.dest(html.dest)));
-});
-```&lt;/p&gt;
-
-&lt;h5 id=&quot;fonts&quot;&gt;Fonts&lt;/h5&gt;
-&lt;p&gt;```
-/**
- * FONTS
- * Lazy load gulp plugins using gulp-load-plugins and attach them variable $.
- * Collect all fonts and copy only changed fonts into assets fonts folder, flattening any folder hierarchy
- * –prod will do the same as above
- */&lt;/p&gt;
-
-&lt;p&gt;/**
- * REQUIRES
- &lt;em&gt;/
-var gulp = require(‘gulp’);
-var $ = require(‘gulp-load-plugins’)({
-  pattern: [‘gulp-&lt;/em&gt;’, ‘gulp.*’, ‘del’]
-});&lt;/p&gt;
-
-&lt;p&gt;/**
- * CONFIG
- */
-var fonts = require(‘../gulp-config’).fonts;&lt;/p&gt;
-
-&lt;p&gt;/**
- * COPY FONTS
- * Flatten folder structure
- * Copy only fonts that have changed into destination folder
- */
-gulp.task(‘fonts’, function () {
-  return gulp.src(fonts.src)
-    .pipe($.changed(fonts.dest))
-    .pipe($.flatten())
-    .pipe(gulp.dest(fonts.dest))
-    .pipe($.size({
-      title: ‘Fonts size:’,
-      showFiles: false
-    }));
-});
-```&lt;/p&gt;
-
-&lt;h5 id=&quot;browser-sync&quot;&gt;Browser Sync&lt;/h5&gt;
-&lt;p&gt;```
-/**
- * BROWSERSYNC
- * Start browsersync
- * –prod will start browsersync from build directory only
- */&lt;/p&gt;
-
-&lt;p&gt;/**
- * REQUIRES
- */
-var gulp = require(‘gulp’);
-var argv = require(‘yargs’).argv;
-var browsersync = require(‘browser-sync’);
-var reload = browsersync.reload;&lt;/p&gt;
-
-&lt;p&gt;/**
- * BROWSERSYNC
- */
-gulp.task(‘browsersync’, function() {&lt;/p&gt;
-
-&lt;p&gt;if (argv.prod){
-    var baseDir = [‘build’];
-  } else {
-    var baseDir = [‘.tmp’, ‘build’];
-  }&lt;/p&gt;
-
-&lt;p&gt;browsersync({
-    server: {
-      baseDir: baseDir
-    }
-  });&lt;/p&gt;
-
-&lt;p&gt;// Watch files for changes and do the needful
-  gulp.watch([‘src/&lt;strong&gt;/&lt;em&gt;.md’, ‘src/**/&lt;/em&gt;.html’, ‘src/&lt;/strong&gt;/&lt;em&gt;.yml’], gulp.series(‘jekyll’, reload));
-  gulp.watch([‘src/&lt;strong&gt;/*.xml’, ‘src/&lt;/strong&gt;/&lt;/em&gt;.txt’], gulp.series(‘jekyll’, reload));
-  gulp.watch(‘src/assets/scripts/&lt;strong&gt;/&lt;em&gt;.js’, gulp.series(‘scripts’, reload));
-  gulp.watch([‘src/assets/scss/**/&lt;/em&gt;.scss’, ‘src/assets/styles/&lt;/strong&gt;/&lt;em&gt;.css’], gulp.series(‘styles’, reload));
-  gulp.watch(‘src/assets/images/**/&lt;/em&gt;’, gulp.series(‘images’, reload));
-});
-```&lt;/p&gt;
-
-&lt;h5 id=&quot;github-pages&quot;&gt;Github pages&lt;/h5&gt;
-&lt;p&gt;```
-/**
- * GITHUB PAGES
- * Deploy generated pages to Github
- */&lt;/p&gt;
-
-&lt;p&gt;/**
- * CONFIG
- */
-var gulp = require(‘gulp’);
-var ghPages = require(‘gulp-gh-pages’);&lt;/p&gt;
-
-&lt;p&gt;/**
- * CONFIG
- */
-var jekyll = require(‘../gulp-config’).jekyll;&lt;/p&gt;
-
-&lt;p&gt;/**
- * GITHUB PAGES
- */
-gulp.task(‘gh-pages’, function() {
-  return gulp.src(jekyll.deploy)
-    .pipe(ghPages({
-      branch: ‘master’
-    }));
-});
-```&lt;/p&gt;
-
-&lt;h3 id=&quot;production&quot;&gt;Production&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Images
-    &lt;ul&gt;
-      &lt;li&gt;Clean: Clean temporary folder of images&lt;/li&gt;
-      &lt;li&gt;Copy: Copy images from source to temporary folder for serve&lt;/li&gt;
-      &lt;li&gt;Watch: Watch image folder for changes and copy changed images to temporary folder&lt;/li&gt;
-      &lt;li&gt;Optimise: Optimise images in temporary folder&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><category term="programming" /><category term="gulp" /><category term="jekyll" /><summary>Structure
-
-
-  Development
-  Build
-  Deployment
-
-
-Development
-
-
-  Images
-    
-      Copy images from source to temporary folder for serve, but only those changed or new
-    
-  
-  Scripts
-    
-      Concatinate
-      Sourcemaps
-    
-  
-  Styles
-    
-      Concatinate
-      Sourcemaps
-    
-  
-  Inject
-    
-      Styles
-      Scripts
-    
-  
-  Fonts
-    
-      Copy
-      Flatten folder structure
-    
-  
-
-
-Images Task
-```
-/**
- * IMAGES
- * Lazy load gulp plugins using gulp-load-plugins and attaches them variable $.
- * Copy changed files into .tmp folder
- * –prod optimises images with imagemin
- */
-
-var gulp = require(‘gulp’);
-var argv = require(‘yargs’).argv;
-var $ = require(‘gulp-load-plugins’)({
-  pattern: [‘gulp-’, ‘gulp.’, ‘del’],
-	lazy: true
-});
-
-/**
- * CONFIG
- */
-var images = require(‘../gulp-config’).images;
-var imagemin = require(‘../gulp-config’).imagemin;
-
-/**
-  * IMAGES TASK
-  */
-gulp.task(‘images’, function () {
-  return gulp.src(images.src)
-		.pipe($.if(!argv.prod, $.changed(images.dest)))
-		.pipe($.size({title: ‘Images:’}))
-    .pipe($.if(argv.prod, $.cache($.imagemin(imagemin.options))))
-    .pipe($.if(argv.prod, $.size({title: ‘Optimised:’})))
-		.pipe(gulp.dest(images.dest));
-})
-```
-
-Scripts Task
-```
-/**
- * SCRIPTS
- * Lazy load gulp plugins using gulp-load-plugins and attaches them variable $.
- * Create a sourcemap of each javascript file, concatinate, ungilify
- * –prod will skip the sourcemaps, uglify (minimise), add a min suffix and create a gziped copy
- */
-
-var gulp = require(‘gulp’);
-var argv = require(‘yargs’).argv;
-var $ = require(‘gulp-load-plugins’)({
-  pattern: [‘gulp-’, ‘gulp.’, ‘del’],
-	lazy: true
-});
-
-/**
- * CONFIG
- */
-var scripts = require(‘../gulp-config’).scripts;
-var uglify = require(‘../gulp-config’).uglify;
-var gzip = require(‘../gulp-config’).gzip;
-
-gulp.task(‘scripts’, function (){
-  return gulp.src(scripts.src)
-    .pipe($.if(!argv.prod, $.sourcemaps.init()))
-    .pipe($.concat(scripts.filename))
-    .pipe($.size({title: ‘Concatinated:’}))
-    .pipe($.if(!argv.prod, $.sourcemaps.write(‘./’)))
-    .pipe($.if(argv.prod, $.uglify(uglify.options)))
-    .pipe($.if(argv.prod, $.rename({suffix: ‘.min’})))
-    .pipe($.if(argv.prod, $.size({title: ‘Uglified:’})))
-    .pipe($.if(argv.prod, gulp.dest(scripts.dest)))
-    .pipe($.if(argv.prod, $.gzip(gzip.options)))
-    .pipe($.if(argv.prod, $.size({title: ‘GZiped:’})))
-    .pipe(gulp.dest(scripts.dest));
-})
-```
-
-Inject
-```
-/**
- * INJECT
- * Lazy load gulp plugins using gulp-load-plugins and attach them variable $.
- * Inject styles and scripts into include files, ignoring the .tmp/ folder in path
- */
-
-/**
- * REQUIRES
- /
-var gulp = require(‘gulp’);
-var $ = require(‘gulp-load-plugins’)({
-  pattern: [‘gulp-’, ‘gulp.*’, ‘del’],
- lazy: true
-});
-
-/**
- * CONFIG
- */
-var inject = require(‘../gulp-config’).inject;
-var scripts = require(‘../gulp-config’).scripts;
-var styles = require(‘../gulp-config’).styles;
-
-/**
- * INJECT STYLE SHEETS
- * Inject style sheet reference into _includes/styles.html
- */
-gulp.task(‘inject:styles’, function () {
-  return gulp.src(styles.inject.target)
-    .pipe($.inject(gulp.src(styles.inject.files, inject.options), {
-      ignorePath: ‘.tmp/’,
-    }))
-    .pipe(gulp.dest(styles.inject.dest));
-});
-
-/**
- * INJECT SCRIPTS
- * Inject javascript reference into _includes/scripts.html
- */
-gulp.task(‘inject:scripts’, function () {
-  return gulp.src(scripts.inject.target)
-    .pipe($.inject(gulp.src(scripts.inject.files, {
-      read: false
-    }), {
-      ignorePath: ‘.tmp/’,
-    }))
-    .pipe(gulp.dest(scripts.inject.dest));
-});
-
-/**
- * INJECT
- */
-gulp.task(‘inject’, gulp.parallel(‘inject:styles’, ‘inject:scripts’));
-```
-
-Html
-```
-/**
- * HTML
- * Lazy load gulp plugins using gulp-load-plugins and attach them variable $.
- * Default the task do not do anything
- * –prod will uglify (minimise) html files and create a gziped copy
- */
-
-/**
- * REQUIRES
- /
-var gulp = require(‘gulp’);
-var argv = require(‘yargs’).argv;
-var $ = require(‘gulp-load-plugins’)({
-  pattern: [‘gulp-’, ‘gulp.*’, ‘del’]
-});
-
-/**
- * CONFIG
- */
-var html = require(‘../gulp-config’).html;
-var gzip = require(‘../gulp-config’).gzip;
-var htmlmin = require(‘../gulp-config’).htmlmin;
-
-/**
- * OPTIMISE HTML
- */
-gulp.task(‘html’, function() {
-  return gulp.src(html.optimise)
-    .pipe($.if(argv.prod, $.size({title: ‘Html:’})))
-    .pipe($.if(argv.prod, $.htmlmin(htmlmin.options)))
-    .pipe($.if(argv.prod, $.size({title: ‘Minimised:’})))
-    .pipe($.if(argv.prod, gulp.dest(html.dest)))
-    .pipe($.if(argv.prod, $.gzip(gzip.options)))
-    .pipe($.if(argv.prod, $.size({title: ‘GZiped:’})))
-    .pipe($.if(argv.prod, gulp.dest(html.dest)));
-});
-```
-
-Fonts
-```
-/**
- * FONTS
- * Lazy load gulp plugins using gulp-load-plugins and attach them variable $.
- * Collect all fonts and copy only changed fonts into assets fonts folder, flattening any folder hierarchy
- * –prod will do the same as above
- */
-
-/**
- * REQUIRES
- /
-var gulp = require(‘gulp’);
-var $ = require(‘gulp-load-plugins’)({
-  pattern: [‘gulp-’, ‘gulp.*’, ‘del’]
-});
-
-/**
- * CONFIG
- */
-var fonts = require(‘../gulp-config’).fonts;
-
-/**
- * COPY FONTS
- * Flatten folder structure
- * Copy only fonts that have changed into destination folder
- */
-gulp.task(‘fonts’, function () {
-  return gulp.src(fonts.src)
-    .pipe($.changed(fonts.dest))
-    .pipe($.flatten())
-    .pipe(gulp.dest(fonts.dest))
-    .pipe($.size({
-      title: ‘Fonts size:’,
-      showFiles: false
-    }));
-});
-```
-
-Browser Sync
-```
-/**
- * BROWSERSYNC
- * Start browsersync
- * –prod will start browsersync from build directory only
- */
-
-/**
- * REQUIRES
- */
-var gulp = require(‘gulp’);
-var argv = require(‘yargs’).argv;
-var browsersync = require(‘browser-sync’);
-var reload = browsersync.reload;
-
-/**
- * BROWSERSYNC
- */
-gulp.task(‘browsersync’, function() {
-
-if (argv.prod){
-    var baseDir = [‘build’];
-  } else {
-    var baseDir = [‘.tmp’, ‘build’];
-  }
-
-browsersync({
-    server: {
-      baseDir: baseDir
-    }
-  });
-
-// Watch files for changes and do the needful
-  gulp.watch([‘src//.md’, ‘src/**/.html’, ‘src//.yml’], gulp.series(‘jekyll’, reload));
-  gulp.watch([‘src//*.xml’, ‘src//.txt’], gulp.series(‘jekyll’, reload));
-  gulp.watch(‘src/assets/scripts//.js’, gulp.series(‘scripts’, reload));
-  gulp.watch([‘src/assets/scss/**/.scss’, ‘src/assets/styles//.css’], gulp.series(‘styles’, reload));
-  gulp.watch(‘src/assets/images/**/’, gulp.series(‘images’, reload));
-});
-```
-
-Github pages
-```
-/**
- * GITHUB PAGES
- * Deploy generated pages to Github
- */
-
-/**
- * CONFIG
- */
-var gulp = require(‘gulp’);
-var ghPages = require(‘gulp-gh-pages’);
-
-/**
- * CONFIG
- */
-var jekyll = require(‘../gulp-config’).jekyll;
-
-/**
- * GITHUB PAGES
- */
-gulp.task(‘gh-pages’, function() {
-  return gulp.src(jekyll.deploy)
-    .pipe(ghPages({
-      branch: ‘master’
-    }));
-});
-```
-
-Production
-
-
-  Images
-    
-      Clean: Clean temporary folder of images
-      Copy: Copy images from source to temporary folder for serve
-      Watch: Watch image folder for changes and copy changed images to temporary folder
-      Optimise: Optimise images in temporary folder</summary></entry><entry><title>A Letter to my Sons</title><link href="http://localhost:3000/creativity/a-letter-to-sons.html" rel="alternate" type="text/html" title="A Letter to my Sons" /><published>2015-12-10T00:00:00+11:00</published><updated>2015-12-10T00:00:00+11:00</updated><id>http://localhost:3000/creativity/a-letter-to-sons</id><content type="html" xml:base="http://localhost:3000/creativity/a-letter-to-sons.html">&lt;p&gt;Live, love, be generous, show respect and give thanks.&lt;/p&gt;
+[^] The Prince by Niccolò Machiavelli. Written in the 16th century, it is about acquiring power and maintaining it (pre democracy).</summary></entry><entry><title>A Letter to my Sons</title><link href="https://ianteda.com/creativity/a-letter-to-sons.html" rel="alternate" type="text/html" title="A Letter to my Sons" /><published>2015-12-10T00:00:00+11:00</published><updated>2015-12-10T00:00:00+11:00</updated><id>https://ianteda.com/creativity/a-letter-to-sons</id><content type="html" xml:base="https://ianteda.com/creativity/a-letter-to-sons.html">&lt;p&gt;Live, love, be generous, show respect and give thanks.&lt;/p&gt;
 
 &lt;p&gt;Know who you are and remember were you came from, but always look forward to were you are going.&lt;/p&gt;
 
@@ -1500,4 +865,120 @@ Time is the most valuable thing you have, as death comes to us all. So spend you
 
 Show respect to others and demand they respect you. Abuse no one and nothing because abuse turns the wise to fools and robs the spirit of its vision.
 
-Give thanks for what you have and for the joy of life. If you see no reason to give thanks, the fault lies only in yourself.</summary></entry></feed>
+Give thanks for what you have and for the joy of life. If you see no reason to give thanks, the fault lies only in yourself.</summary></entry><entry><title>A Journey With Cancer</title><link href="https://ianteda.com/creativity/a-journey-with-cancer.html" rel="alternate" type="text/html" title="A Journey With Cancer" /><published>2015-11-10T00:00:00+11:00</published><updated>2015-11-10T00:00:00+11:00</updated><id>https://ianteda.com/creativity/a-journey-with-cancer</id><content type="html" xml:base="https://ianteda.com/creativity/a-journey-with-cancer.html">&lt;p&gt;I would like to acknowledge and thank all those that helped and supported my dad on his final journey and the Teda family after his passing. Your love is very much appreciated and heartfelt. Thank You.&lt;/p&gt;
+
+&lt;p&gt;Reflecting on what I saw in my dad, a lot of words, character traits come to mind:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A husband&lt;/li&gt;
+  &lt;li&gt;A father&lt;/li&gt;
+  &lt;li&gt;A family man&lt;/li&gt;
+  &lt;li&gt;A lover&lt;/li&gt;
+  &lt;li&gt;A wise man&lt;/li&gt;
+  &lt;li&gt;A man with integrity&lt;/li&gt;
+  &lt;li&gt;Shined the light of life&lt;/li&gt;
+  &lt;li&gt;Had a spirit of adventure&lt;/li&gt;
+  &lt;li&gt;The desire to explore&lt;/li&gt;
+  &lt;li&gt;A determination&lt;/li&gt;
+  &lt;li&gt;A film maker&lt;/li&gt;
+  &lt;li&gt;A hard worker&lt;/li&gt;
+  &lt;li&gt;An enjoyment&lt;/li&gt;
+  &lt;li&gt;Holidays&lt;/li&gt;
+  &lt;li&gt;Great courage&lt;/li&gt;
+  &lt;li&gt;Dignity&lt;/li&gt;
+  &lt;li&gt;Acceptance&lt;/li&gt;
+  &lt;li&gt;Skilled hands&lt;/li&gt;
+  &lt;li&gt;Finished the race&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It still isn’t easy to talk about my dad’s final journey and it is still a little fresh, but I think his journey with cancer illustrates well his character. The person that he was and the type of character that he was.&lt;/p&gt;
+
+&lt;p&gt;His journey with cancer, I think can best be described as a mysterious journey of unknown certainty. Where the outcome is certain (death) but the destiny a mystery (life after death) and the path unknown (everyone is different). My dad walked this journey with great courage and strength. He was joined on this path by the enduring and never ending lover of his wife, companion and best friend. Who demonstrated great courage and strength of her own. I am extremely proud of the way both my parents carried themselves during this time. With great dignity and care for each other. Dads first concern, when diagnosed was for the well being of his family. That his wife will be taken care of and that his family will be ok.&lt;/p&gt;
+
+&lt;p&gt;Early on during his journey as we sat around at home I asked him “What he wanted to be remembered for”. His answer “That he gave to his kids, to his family the most precious thing anyone can give, his time”. Many of the family photos found in our photo albums were taken during family holidays. This is a testament to just that, time spent with his family. I don’t think I have ever met anyone that was taken on as many family holidays as his children were. While Laura and I where honeymooning in Fiji, enjoying the weather and warm water Laura asked me “if this is the best holiday ever?” My answer, “hmmm, maybe not as good as Blowering dam”. Our family holidays are for me by fare my fondest childhood memories.&lt;/p&gt;
+
+&lt;p&gt;In the past I have been accused of being stubborn and told “it is ok to ask for help”. This I think is one character trait I can say I shared with dad. Other words for stubborn could also be hard working, determined or finisher. All through his journey with cancer Dad was up early showering and shaving himself. He never complained about the situation he found himself in, why me. He always did for himself that what he could. He never gave up hope, sure he wavered but he always tried.&lt;/p&gt;
+
+&lt;p&gt;You hear people saying “I’m not going to be like my parents”, “I’m never going to do this like my parents did”. For me my hope and prayer is that I can one day be as great a man, as great a father and husband that my dad was. As children we don’t always see the things that our parents do for us, I certainly didn’t. We just expect them to do, situation normal. However with passing of time and as I saw the way my friends interacted with their children I have began to see. To see just how much dad and just how much mum did for their children.&lt;/p&gt;
+
+&lt;p&gt;The last week of his life was tough for all involved, but was a something we all went through together and choose to be part of because of our love. During this time as I sat there with dad listening to the familiar sounds of the birds outside, the sound of the wind in the trees and the unique sounds found in every house I understood why he wanted to undertake the final part of his journey at home. At home surrounded by the love of his family and in the house that he put some much of time, so much his love into. His skill full hands can be seen throughout the house. In the TV cabinet he built, in the bathroom he built, in the kitchen he built, the garage he built, the garden tendered to, everywhere. He put all that he was into his house.&lt;/p&gt;
+
+&lt;p&gt;I sat there on his final day watching his irregular and labored breathing emotionally torn. As one breath was being expelled I was saying my good byes, letting him go, wanting his pain to be over for dad to find his peace. On the other breath I was willing him to keep breathing. I’m not ready, come on breath dam it! In the end the choice is not mine.&lt;/p&gt;
+
+&lt;p&gt;He lives on in all of those he touched, in the valves he taught his children, the receding hair line he passed onto his sons, the love he showed his wife and the things that he made.&lt;/p&gt;
+
+&lt;p&gt;Thank you all for your prayers, thoughts and gifts during this journey.&lt;/p&gt;
+
+&lt;p&gt;God bless.&lt;/p&gt;</content><category term="creativity" /><category term="life" /><summary>I would like to acknowledge and thank all those that helped and supported my dad on his final journey and the Teda family after his passing. Your love is very much appreciated and heartfelt. Thank You.
+
+Reflecting on what I saw in my dad, a lot of words, character traits come to mind:
+
+
+  A husband
+  A father
+  A family man
+  A lover
+  A wise man
+  A man with integrity
+  Shined the light of life
+  Had a spirit of adventure
+  The desire to explore
+  A determination
+  A film maker
+  A hard worker
+  An enjoyment
+  Holidays
+  Great courage
+  Dignity
+  Acceptance
+  Skilled hands
+  Finished the race
+
+
+It still isn’t easy to talk about my dad’s final journey and it is still a little fresh, but I think his journey with cancer illustrates well his character. The person that he was and the type of character that he was.
+
+His journey with cancer, I think can best be described as a mysterious journey of unknown certainty. Where the outcome is certain (death) but the destiny a mystery (life after death) and the path unknown (everyone is different). My dad walked this journey with great courage and strength. He was joined on this path by the enduring and never ending lover of his wife, companion and best friend. Who demonstrated great courage and strength of her own. I am extremely proud of the way both my parents carried themselves during this time. With great dignity and care for each other. Dads first concern, when diagnosed was for the well being of his family. That his wife will be taken care of and that his family will be ok.
+
+Early on during his journey as we sat around at home I asked him “What he wanted to be remembered for”. His answer “That he gave to his kids, to his family the most precious thing anyone can give, his time”. Many of the family photos found in our photo albums were taken during family holidays. This is a testament to just that, time spent with his family. I don’t think I have ever met anyone that was taken on as many family holidays as his children were. While Laura and I where honeymooning in Fiji, enjoying the weather and warm water Laura asked me “if this is the best holiday ever?” My answer, “hmmm, maybe not as good as Blowering dam”. Our family holidays are for me by fare my fondest childhood memories.
+
+In the past I have been accused of being stubborn and told “it is ok to ask for help”. This I think is one character trait I can say I shared with dad. Other words for stubborn could also be hard working, determined or finisher. All through his journey with cancer Dad was up early showering and shaving himself. He never complained about the situation he found himself in, why me. He always did for himself that what he could. He never gave up hope, sure he wavered but he always tried.
+
+You hear people saying “I’m not going to be like my parents”, “I’m never going to do this like my parents did”. For me my hope and prayer is that I can one day be as great a man, as great a father and husband that my dad was. As children we don’t always see the things that our parents do for us, I certainly didn’t. We just expect them to do, situation normal. However with passing of time and as I saw the way my friends interacted with their children I have began to see. To see just how much dad and just how much mum did for their children.
+
+The last week of his life was tough for all involved, but was a something we all went through together and choose to be part of because of our love. During this time as I sat there with dad listening to the familiar sounds of the birds outside, the sound of the wind in the trees and the unique sounds found in every house I understood why he wanted to undertake the final part of his journey at home. At home surrounded by the love of his family and in the house that he put some much of time, so much his love into. His skill full hands can be seen throughout the house. In the TV cabinet he built, in the bathroom he built, in the kitchen he built, the garage he built, the garden tendered to, everywhere. He put all that he was into his house.
+
+I sat there on his final day watching his irregular and labored breathing emotionally torn. As one breath was being expelled I was saying my good byes, letting him go, wanting his pain to be over for dad to find his peace. On the other breath I was willing him to keep breathing. I’m not ready, come on breath dam it! In the end the choice is not mine.
+
+He lives on in all of those he touched, in the valves he taught his children, the receding hair line he passed onto his sons, the love he showed his wife and the things that he made.
+
+Thank you all for your prayers, thoughts and gifts during this journey.
+
+God bless.</summary></entry><entry><title>Leadership Styles</title><link href="https://ianteda.com/management/leadership-styles.html" rel="alternate" type="text/html" title="Leadership Styles" /><published>2015-09-29T00:00:00+10:00</published><updated>2015-09-29T00:00:00+10:00</updated><id>https://ianteda.com/management/leadership-styles</id><content type="html" xml:base="https://ianteda.com/management/leadership-styles.html">&lt;p&gt;The father of leadership is arguably the psychologist Kurt Lewin, who in 1939 proposed that there are 3 styles of leadership:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;The Authoritarian (Autocratic)&lt;/li&gt;
+  &lt;li&gt;The Participator (Democratic)&lt;/li&gt;
+  &lt;li&gt;The Delegator (Laissez-faire)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The authoritarian – rule by ones self – leader provides clear expectations for what needs to be done, when it should be completed and how to complete it. They provide vision and direction and then try to convince people to get on board. The Participator (majority rule) encourages the group members to participate, offers guidance but retains final say over the decision making. They spend time building consensus amongst the group, using that consensus to drive the direction. While the delegator (let do) offers little or no guidance to the group and leaves decision making up the group members. Kurt Lewin studied the three styles of leadership and discovered that members of an authoritarian leadership are the most productive, though members of participator leaders contributions while less productive did produce higher quality output. While members of a delegator leader often lack motivation and have poorly defined roles.&lt;/p&gt;
+
+&lt;p&gt;I think my personal style is part authoritarian and part participator. Properly more authoritarian then participator but I think that is a result of my drive from being goal and outcome driven. Though I also recognise the need to be a participator and get people involved and owning what they are doing. I lean away from the delegator style mainly due to the fact I believe it is important for a leader to have the answers.&lt;/p&gt;
+
+&lt;p&gt;Reflecting on my current frustrations I boiled my frustration down to the meetings about meetings about meetings. Did I mention there are a lot of meetings. It seemed that everything was being done through committee, which appeared to be an ineffective use of time. So when I was listening to the Podcast the comments about Bob Hawke being a leader of consensus it rang some bells and I decided to do a little more reading on leadership styles. As I reflected more on it I realised that it was the lack of productive outcomes, outputs and an apparent poor utilisation of time. The group dynamics where lending themselves towards the delegator style, causing me to have an undefined role and tasks within the group. Making me increasingly frustrated.&lt;/p&gt;
+
+&lt;p&gt;In the name of balance and yin yang a good leader most be able apply all three styles and be able to identify when it is appropriate to use which style. They must be able to use the authoritative style when the group lacks knowledge, use the participative style when the group clearly understands their objectives and there roles in the task and use the delegative style when the members know more about the task at hand then they do. Participative leadership is said to be the most effective style of leadership though I think it can easily become a delegator style, the least effective, if the leader does not retain the final say over the decision making.&lt;/p&gt;</content><category term="management" /><category term="leadership" /><summary>The father of leadership is arguably the psychologist Kurt Lewin, who in 1939 proposed that there are 3 styles of leadership:
+
+
+  The Authoritarian (Autocratic)
+  The Participator (Democratic)
+  The Delegator (Laissez-faire)
+
+
+The authoritarian – rule by ones self – leader provides clear expectations for what needs to be done, when it should be completed and how to complete it. They provide vision and direction and then try to convince people to get on board. The Participator (majority rule) encourages the group members to participate, offers guidance but retains final say over the decision making. They spend time building consensus amongst the group, using that consensus to drive the direction. While the delegator (let do) offers little or no guidance to the group and leaves decision making up the group members. Kurt Lewin studied the three styles of leadership and discovered that members of an authoritarian leadership are the most productive, though members of participator leaders contributions while less productive did produce higher quality output. While members of a delegator leader often lack motivation and have poorly defined roles.
+
+I think my personal style is part authoritarian and part participator. Properly more authoritarian then participator but I think that is a result of my drive from being goal and outcome driven. Though I also recognise the need to be a participator and get people involved and owning what they are doing. I lean away from the delegator style mainly due to the fact I believe it is important for a leader to have the answers.
+
+Reflecting on my current frustrations I boiled my frustration down to the meetings about meetings about meetings. Did I mention there are a lot of meetings. It seemed that everything was being done through committee, which appeared to be an ineffective use of time. So when I was listening to the Podcast the comments about Bob Hawke being a leader of consensus it rang some bells and I decided to do a little more reading on leadership styles. As I reflected more on it I realised that it was the lack of productive outcomes, outputs and an apparent poor utilisation of time. The group dynamics where lending themselves towards the delegator style, causing me to have an undefined role and tasks within the group. Making me increasingly frustrated.
+
+In the name of balance and yin yang a good leader most be able apply all three styles and be able to identify when it is appropriate to use which style. They must be able to use the authoritative style when the group lacks knowledge, use the participative style when the group clearly understands their objectives and there roles in the task and use the delegative style when the members know more about the task at hand then they do. Participative leadership is said to be the most effective style of leadership though I think it can easily become a delegator style, the least effective, if the leader does not retain the final say over the decision making.</summary></entry></feed>

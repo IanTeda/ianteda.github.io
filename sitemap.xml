@@ -3,7 +3,22 @@
   
     
     <url>
-      <loc>http://localhost:3000/programming/gulp-jekyll-github-pages-cloudflare.html</loc>
+      <loc>https://ianteda.com/programming/gulp-jekyll-workflow-1.html</loc>
+      
+        <lastmod>2016-03-24T00:00:00+11:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://ianteda.com/programming/gulp-jekyll-github-pages-cloudflare.html</loc>
       
         <lastmod>2016-03-15T00:00:00+11:00</lastmod>
       
@@ -18,7 +33,7 @@
   
     
     <url>
-      <loc>http://localhost:3000/engineering/cotter-dam-intake-tower.html</loc>
+      <loc>https://ianteda.com/engineering/cotter-dam-intake-tower.html</loc>
       
         <lastmod>2016-03-02T00:00:00+11:00</lastmod>
       
@@ -33,7 +48,7 @@
   
     
     <url>
-      <loc>http://localhost:3000/creativity/Idea-Value-Proposition.html</loc>
+      <loc>https://ianteda.com/creativity/Idea-Value-Proposition.html</loc>
       
         <lastmod>2016-02-26T00:00:00+11:00</lastmod>
       
@@ -48,7 +63,7 @@
   
     
     <url>
-      <loc>http://localhost:3000/management/mastermind-group-breif.html</loc>
+      <loc>https://ianteda.com/management/mastermind-group-breif.html</loc>
       
         <lastmod>2016-02-17T00:00:00+11:00</lastmod>
       
@@ -63,22 +78,7 @@
   
     
     <url>
-      <loc>http://localhost:3000/programming/jekyll-seo.html</loc>
-      
-        <lastmod>2016-01-27T00:00:00+11:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:3000/management/ianteda-com.html</loc>
+      <loc>https://ianteda.com/management/ianteda-com.html</loc>
       
         <lastmod>2016-01-21T00:00:00+11:00</lastmod>
       
@@ -93,7 +93,7 @@
   
     
     <url>
-      <loc>http://localhost:3000/creativity/bold-mistakes.html</loc>
+      <loc>https://ianteda.com/creativity/bold-mistakes.html</loc>
       
         <lastmod>2016-01-19T00:00:00+11:00</lastmod>
       
@@ -108,37 +108,7 @@
   
     
     <url>
-      <loc>http://localhost:3000/programming/why-jekyll-website.html</loc>
-      
-        <lastmod>2016-01-17T00:00:00+11:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:3000/programming/gulp-for-jekyll.html</loc>
-      
-        <lastmod>2016-01-15T00:00:00+11:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:3000/creativity/a-letter-to-sons.html</loc>
+      <loc>https://ianteda.com/creativity/a-letter-to-sons.html</loc>
       
         <lastmod>2015-12-10T00:00:00+11:00</lastmod>
       
@@ -151,6 +121,36 @@
     </url>
     
   
+    
+    <url>
+      <loc>https://ianteda.com/creativity/a-journey-with-cancer.html</loc>
+      
+        <lastmod>2015-11-10T00:00:00+11:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://ianteda.com/management/leadership-styles.html</loc>
+      
+        <lastmod>2015-09-29T00:00:00+10:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
 
   
     
@@ -158,9 +158,9 @@
 
     
     <url>
-      <loc>http://localhost:3000404.html</loc>
+      <loc>https://ianteda.com404.html</loc>
       
-        <lastmod>2016-03-14T20:46:41+11:00</lastmod>
+        <lastmod>2016-03-31T19:31:08+11:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -176,27 +176,9 @@
 
     
     <url>
-      <loc>http://localhost:3000/tests/bootstrap.html</loc>
+      <loc>https://ianteda.com/tests/bootstrap.html</loc>
       
-        <lastmod>2016-03-14T20:46:41+11:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    
-
-    
-    <url>
-      <loc>http://localhost:3000/tests/colors.html</loc>
-      
-        <lastmod>2016-03-14T20:46:41+11:00</lastmod>
+        <lastmod>2016-03-31T19:31:08+11:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -212,9 +194,9 @@
 
     
     <url>
-      <loc>http://localhost:3000</loc>
+      <loc>https://ianteda.com/tests/colors.html</loc>
       
-        <lastmod>2016-03-14T20:46:41+11:00</lastmod>
+        <lastmod>2016-03-31T19:31:08+11:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -230,9 +212,27 @@
 
     
     <url>
-      <loc>http://localhost:3000</loc>
+      <loc>https://ianteda.com</loc>
       
-        <lastmod>2016-03-14T20:46:41+11:00</lastmod>
+        <lastmod>2016-03-31T19:31:08+11:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    
+
+    
+    <url>
+      <loc>https://ianteda.com</loc>
+      
+        <lastmod>2016-03-31T19:31:08+11:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -258,9 +258,9 @@
 
     
     <url>
-      <loc>http://localhost:3000/tests/</loc>
+      <loc>https://ianteda.com/tests/</loc>
       
-        <lastmod>2016-03-14T20:46:41+11:00</lastmod>
+        <lastmod>2016-03-31T19:31:08+11:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
