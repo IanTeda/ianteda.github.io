@@ -57,14 +57,14 @@ encoding: "utf-8"
 
 # Pagination
 paginate: 10
-paginate_path: "posts/page-:num"
+paginate_path: "blog/page-:num"
 
 # Show more
 excerpt_separator: '<!--more-->'
 
 # CONVERSION
 # Markdown library and options
-markdown:    kramdown
+markdown: kramdown
 highlighter: rouge
 
 # JEKYLL PLUGINS
