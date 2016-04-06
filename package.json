@@ -8,8 +8,11 @@
     "email": "ian@teda.id.au"
   },
   "scripts": {
-    "deploy": "gulp gh-pages",
-    "build": "gulp build --prod",
+    "babel-doctor": "babel-doctor",
+    "deploy": "gulp deploy -prod",
+    "eslint": "eslint",
+    "build": "gulp build -prod",
+    "jsdocs": "gulp jsdocs",
     "gulp": "gulp",
     "package-update": "npm-check-updates -u",
     "start": "gulp"
@@ -22,13 +25,19 @@
   "bugs": {
     "url": "https://github.com/IanTeda/IanTeda2016/issues"
   },
+  "dependencies": {
+    "animate.css": "^3.5.1",
+    "fitvids": "^1.0.2",
+    "font-awesome": "4.5.0",
+    "jquery": "^2.2.1",
+    "wow.js": "^1.1.2"
+  },
   "devDependencies": {
     "autoprefixer": "^6.0.3",
     "babel-core": "^6.0.20",
     "babel-eslint": "^5.0.0",
     "babel-preset-es2015": "^6.6.0",
     "browser-sync": "^2.9.3",
-    "concurrent-transform": "^1.0.0",
     "css-mqpacker": "^4.0.0",
     "csswring": "^4.1.1",
     "del": "^2.0.0",
@@ -36,44 +45,36 @@
     "eslint-config-google": "^0.4.0",
     "flatten": "1.0.2",
     "gulp": "git://github.com/gulpjs/gulp.git#4.0",
-    "gulp-awspublish": "^3.0.1",
-    "gulp-babel": "^6.1.2",
-    "gulp-cache": "~0.4.0",
-    "gulp-cached": "^1.1.0",
+    "gulp-babel": "6.1.2",
+    "gulp-cache": "^0.4.3",
     "gulp-changed": "^1.3.0",
     "gulp-concat": "^2.6.0",
     "gulp-eslint": "^2.0.0",
     "gulp-flatten": "^0.2.0",
     "gulp-gh-pages": "^0.5.2",
     "gulp-gzip": "^1.1.0",
-    "gulp-html-validator": "0.0.5",
     "gulp-htmlmin": "^1.0.0",
     "gulp-if": "^2.0.0",
     "gulp-imagemin": "^2.1.0",
     "gulp-inject": "^3.0.0",
+    "gulp-jsdoc3": "^0.2.1",
     "gulp-load-plugins": "^1.0.0",
-    "gulp-minify-css": "^1.2.0",
     "gulp-newer": "^1.0.0",
     "gulp-notify": "^2.2.0",
-    "gulp-plumber": "^1.0.1",
     "gulp-postcss": "^6.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-rev": "^7.0.0",
     "gulp-sass": "^2.0.2",
-    "gulp-shell": "^0.5.1",
     "gulp-size": "^2.0.0",
-    "gulp-sourcemaps": "^1.3.0",
+    "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.4.1",
-    "gulp-uncss": "^1.0.0",
-    "lost": "^6.6.3",
+    "imagemin-pngquant": "^4.2.2",
+    "jsdoc": "^3.4.0",
     "merge2": "^1.0.1",
     "npm-check-updates": "^2.5.8",
-    "pixrem": "^3.0.0",
-    "postcss-import": "^8.0.2",
-    "postcss-mixins": "^4.0.1",
     "require-dir": "^0.3.0",
     "shelljs": "^0.6.0",
-    "undertaker-forward-reference": "^1.0.1",
+    "vinyl-paths": "^2.1.0",
     "yargs": "^4.2.0"
   },
   "eslintConfig": {
@@ -87,17 +88,6 @@
       "es6": true,
       "node": true,
       "mocha": true
-    },
-    "rules": {
-      "linebreak-style": [
-        2,
-        "windows"
-      ],
-      "quotes": [
-        2,
-        "single"
-      ],
-      "indent": 2
     }
   }
 }

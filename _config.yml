@@ -36,7 +36,6 @@ exclude:
   - .travis.yml
   - _excludes
 
-
 # FILTERING CONTENT
 # _config.build.yml overwrites these options when you run `gulp build`
 show_drafts: true
@@ -58,14 +57,14 @@ encoding: "utf-8"
 
 # Pagination
 paginate: 10
-paginate_path: "posts/page-:num"
+paginate_path: "blog/page-:num"
 
 # Show more
 excerpt_separator: '<!--more-->'
 
 # CONVERSION
 # Markdown library and options
-markdown:    kramdown
+markdown: kramdown
 highlighter: rouge
 
 # JEKYLL PLUGINS
