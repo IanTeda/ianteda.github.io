@@ -11,9 +11,9 @@ current: now
 ---
 ### Now
 
-_Last updated 7th March 2015_
+_Last updated 7th April 2016_
 
-I am currently living in [Coffs Harbour](https://www.wikiwand.com/en/Coffs_Harbour){:target="_blank"}, NSW Australia with my awesome Wife and amazing boys. Working as the Production Manager at [Australian Precast Solutions](http://www.australianprecastsolutions.com.au/){:target="_blank"}.
+I am currently living in [Coffs Harbour](https://www.wikiwand.com/en/Coffs_Harbour){:target="_blank"} NSW Australia, but on the move back to [Sydney](https://en.wikipedia.org/wiki/Sydney){:target="_blank"} with my awesome Wife and amazing boys. Finishing up as the Production Manager at [Australian Precast Solutions](http://www.australianprecastsolutions.com.au/){:target="_blank"} and excited to be starting at [GHD](http://www.ghd.com/ghd-australia/){:target="_blank"} as one of there Project Managers - Major Projects.
 
 ### Books
 *Books I'm reading and why:*
