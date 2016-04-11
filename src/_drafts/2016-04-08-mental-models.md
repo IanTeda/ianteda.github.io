@@ -13,46 +13,30 @@ logo: /assets/images/logo-light.png
 > Man seeks for himself a simplified and lucid image of the world.
 > <cite> -- Albert Einstein</cite>
 
+Mental models are a simplification of how the world around us works. Our brains use them to make sense of things. They are an [abstraction](https://en.wikipedia.org/wiki/Abstraction) of reality, a simplification of an incomprehensibly complicated world. They need to simply because of our limited cognitive capabilities and brain power.
+
+Mental models are a set of tools (maps) our brains use to think and make decisions. A personal algorithm to process and make sense of the world around us. We use them to predict the results of our (or other peoples) actions. Since they are a simplifications they don't always hold true for all situations, contexts or moment in time. Because they represent (model) what is explicitly true, but not what is explicitly false. The world around us is continually changes, so should our mental models.
+
+> If all you have is a hammer, everything looks like a nail.
+> <cite> -- Abraham Maslow</cite>
+
+Mental models are formed either through direct, or shared experience. They can be seen in our prejudices, beliefs, folklore and proverbs. Why do people with more experience get the job? Because they have more mental models to guide them. When your set of mental models is limited, so is your potential for finding a solution.
+
 > The image of the world around us, which we carry in our head, is just a model. Nobody in his head imagines all the world, government or country. He has only selected concepts, and relationships between them, and uses those to represent the real system.
 > <cite> -- Jay Wright Forrester</cite>
 
-### Promise (why)
-Mental models are a simplification of how the world around us works. They are an [abstraction](https://en.wikipedia.org/wiki/Abstraction) of reality. We abstract away complexity and understanding when we hire a plumber, visit a doctor or hirer a lawyer.
+The decision maker without a mental model to apply is overwhelmed [^creative-advatage], we cannot function without them. We abstract away complexity and understanding when we hire a plumber, visit a doctor or hirer a lawyer. Why? Because it would take a long time to retain all the knowledge and skills needed. It is the same with mental models.
 
-A model is an abstraction or simplification of a system
+Over at [Creative Advantage](http://www.createadvantage.com/glossary/mental-model) they list four general problems to be aware of with mental models and their use:
 
-Being simplifications they don't hold true for all situations, contexts or time. But they don't need to correct all of the time to be useful. They simplify the world without ignoring useful information.
+* First, they can be wrong because they are limited by the simplifications that made them useful
+* Second, they can be improperly used
+* Third, they can lead to wrong answers if fed by incorrect information
+* Fourth, their effectiveness is rarely assessed.
 
-The model is less complex than the real world. If you do this, this happens.
+The more you master a single mental model, the more likely this mental model will be your downfall. Knowledge is about connections, connections between mental models. Wisdom is the application of knowledge.
 
-The decision maker without mental models to apply is overwhelmed [^creative-advatage], we cannot function without them.
+### Footnotes
 
-They simplify an incomprehensibly complicated world. The need to simplify arises from our limited cognitive capacities.
-
-They help us determine how to take advantage of opportunities and how to hedge risks. They help us spot problems and work out solutions. Mental models and the rules of conduct generated from them-whether explicit or implicit-are at the core of most man- agers' reasoning processes.
-
-There are four general problems associated with mental models and their use: First, they can be wrong because they are limited by the simplifications that made them useful. Second, they can be improperly used. Third, they can lead to wrong answers if fed by incorrect information. And fourth, their effectiveness is rarely assessed
-
-Mental models represent explicitly what is true, but not what is false.
-
-Mental models are formed either through direct, or shared experience.
-
-Mental models are the set of tools that you use to think.
-
-A lot mental models can be found in proverbs "If all you have is a hammer, everything looks like a nail". When your set of mental models is limited, so is your potential for finding a solution. The more you master a single mental model, the more likely it becomes that this mental model will be your downfall.
-
-Collection of mental models overlab (ven diagram). Knowledge is about connections
-
-Mental models allow a person to predict the results of his actions. They include only enough information to allow accurate predictions.
-
- 
-
-### Paint the picture (vivid)
-
-### Provide evidence, back up (authority)
-
-### Call to action, what now (now what)
-
-### References (it isn't just my opinion)
 * [^creative-advatage]: [Mental Model](http://www.createadvantage.com/glossary/mental-model)
 * [Mental model](https://link.me)
