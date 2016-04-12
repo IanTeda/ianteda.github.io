@@ -13,7 +13,9 @@ logo: /assets/images/logo-light.png
 > Man seeks for himself a simplified and lucid image of the world.
 > <cite> -- Albert Einstein</cite>
 
-Mental models are a simplification of how the world around us works. Our brains use them to make sense of things. They are an [abstraction](https://en.wikipedia.org/wiki/Abstraction) of reality, a simplification of an incomprehensibly complicated world. They need to simply because of our limited cognitive capabilities and brain power.
+Mental models are a simplification of how the world around us works. Our brains use them to make sense of things. They are an [abstraction](https://en.wikipedia.org/wiki/Abstraction) of reality, a simplification of an incomprehensibly complicated world. They need to simply so our limited cognitive capabilities can work efficently.
+
+I wanted to explore and better understand mental models. What better way to understand a topic then to try and explain it to someone else.
 
 Mental models are a set of tools (maps) our brains use to think and make decisions. A personal algorithm to process and make sense of the world around us. We use them to predict the results of our (or other peoples) actions. Since they are a simplifications they don't always hold true for all situations, contexts or moment in time. Because they represent (model) what is explicitly true, but not what is explicitly false. The world around us is continually changes, so should our mental models.
 
