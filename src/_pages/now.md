@@ -28,7 +28,7 @@ I am currently living in [Coffs Harbour](https://www.wikiwand.com/en/Coffs_Harbo
 ### Projects
 *What is getting my creativity juices flowing:*
 
-- ianteda.com
+- [ianteda.com](https://ianteda.com)
 - Making content!
 - JavaScript
 - Compressed air rocket with the boys
