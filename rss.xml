@@ -1,4 +1,88 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.0.1">Jekyll</generator><link href="https://ianteda.com/rss.xml" rel="self" type="application/atom+xml" /><link href="https://ianteda.com/" rel="alternate" type="text/html" /><updated>2016-04-07T19:02:29+10:00</updated><id>https://ianteda.com/</id><title>Ian Teda</title><subtitle>Husband, Father, Engineer, Explorer &amp; Creator</subtitle><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><entry><title>Gulp Jekyll Workflow - Part 1 Design Pattern</title><link href="https://ianteda.com/programming/gulp-jekyll-workflow-1.html" rel="alternate" type="text/html" title="Gulp Jekyll Workflow - Part 1 Design Pattern" /><published>2016-03-24T00:00:00+11:00</published><updated>2016-03-24T00:00:00+11:00</updated><id>https://ianteda.com/programming/gulp-jekyll-workflow-1</id><content type="html" xml:base="https://ianteda.com/programming/gulp-jekyll-workflow-1.html">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.0.1">Jekyll</generator><link href="https://ianteda.com/rss.xml" rel="self" type="application/atom+xml" /><link href="https://ianteda.com/" rel="alternate" type="text/html" /><updated>2016-04-13T19:27:50+10:00</updated><id>https://ianteda.com/</id><title>Ian Teda</title><subtitle>Husband, Father, Engineer, Explorer &amp; Creator</subtitle><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><entry><title>Mental Models</title><link href="https://ianteda.com/creativity/mental-models.html" rel="alternate" type="text/html" title="Mental Models" /><published>2016-04-13T00:00:00+10:00</published><updated>2016-04-13T00:00:00+10:00</updated><id>https://ianteda.com/creativity/mental-models</id><content type="html" xml:base="https://ianteda.com/creativity/mental-models.html">&lt;blockquote&gt;
+  &lt;p&gt;Man seeks for himself a simplified and lucid image of the world.
+&lt;cite&gt; – Albert Einstein&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Mental models are a simplification of how the world around us works that we use to make sense of our surroundings. They are an &lt;a href=&quot;https://en.wikipedia.org/wiki/Abstraction&quot;&gt;abstraction&lt;/a&gt; of reality, a simplification of an incomprehensibly complicated world. They need to be simply so our limited cognitive capabilities can process all our inputs efficiently.&lt;/p&gt;
+
+&lt;p&gt;I wanted to explore and better understand mental models and what better way to understand a topic then to try to explain it to someone else. So I sat down and wrote this blog post.&lt;/p&gt;
+
+&lt;p&gt;Mental models are a set of tools (maps) our brains use to think and make decisions. A personal algorithm to process and make sense of the world around us. We use them to predict the results of our actions or those of others. Since they are a simplifications they don’t always hold true for all situations, contexts or moments in time. Because they represent (model) what is explicitly true, but not what is explicitly false. The world around us is continually changes, so should our mental models.&lt;/p&gt;
+
+&lt;p&gt;We form Mental models either through direct, or shared experiences. We can see them in our and societies prejudices, beliefs, folklore and proverbs.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If all you have is a hammer, everything looks like a nail.
+&lt;cite&gt; – Abraham Maslow&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Why do people with more experience get the job? Because they have more mental models to guide them. When your set of mental models is limited, so is your potential for finding a solution. The decision maker without a mental model to apply is overwhelmed &lt;sup id=&quot;fnref:creative-advatage&quot;&gt;&lt;a href=&quot;#fn:creative-advatage&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, we cannot function without them. We abstract away complexity and understanding when we hire a plumber, visit a doctor or hirer a lawyer. Why? Because it would take a long time to process all the knowledge and skills needed.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The image of the world around us, which we carry in our head, is just a model. Nobody in his head imagines all the world, government or country. He has only selected concepts, and relationships between them, and uses those to represent the real system.
+&lt;cite&gt; – Jay Wright Forrester&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Over at &lt;a href=&quot;http://www.createadvantage.com/glossary/mental-model&quot;&gt;Creative Advantage&lt;/a&gt; they list four general problems with mental models:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;First, they could be wrong because they are limited by the simplifications that made them useful&lt;/li&gt;
+  &lt;li&gt;Second, they could be improperly used&lt;/li&gt;
+  &lt;li&gt;Third, they could lead to wrong answers if fed by incorrect information&lt;/li&gt;
+  &lt;li&gt;Fourth, their effectiveness is rarely assessed.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The more you master a single mental model, the more likely this mental model will be your downfall. Knowledge is about connections, connections between mental models. Wisdom is the application of that knowledge.&lt;/p&gt;
+
+&lt;h3 id=&quot;footnotes&quot;&gt;Footnotes&lt;/h3&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:creative-advatage&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;http://www.createadvantage.com/glossary/mental-model&quot;&gt;Mental Model&lt;/a&gt; &lt;a href=&quot;#fnref:creative-advatage&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><category term="creativity" /><category term="mental model" /><summary>Man seeks for himself a simplified and lucid image of the world.
+ – Albert Einstein
+
+
+Mental models are a simplification of how the world around us works that we use to make sense of our surroundings. They are an abstraction of reality, a simplification of an incomprehensibly complicated world. They need to be simply so our limited cognitive capabilities can process all our inputs efficiently.
+
+I wanted to explore and better understand mental models and what better way to understand a topic then to try to explain it to someone else. So I sat down and wrote this blog post.
+
+Mental models are a set of tools (maps) our brains use to think and make decisions. A personal algorithm to process and make sense of the world around us. We use them to predict the results of our actions or those of others. Since they are a simplifications they don’t always hold true for all situations, contexts or moments in time. Because they represent (model) what is explicitly true, but not what is explicitly false. The world around us is continually changes, so should our mental models.
+
+We form Mental models either through direct, or shared experiences. We can see them in our and societies prejudices, beliefs, folklore and proverbs.
+
+
+  If all you have is a hammer, everything looks like a nail.
+ – Abraham Maslow
+
+
+Why do people with more experience get the job? Because they have more mental models to guide them. When your set of mental models is limited, so is your potential for finding a solution. The decision maker without a mental model to apply is overwhelmed 1, we cannot function without them. We abstract away complexity and understanding when we hire a plumber, visit a doctor or hirer a lawyer. Why? Because it would take a long time to process all the knowledge and skills needed.
+
+
+  The image of the world around us, which we carry in our head, is just a model. Nobody in his head imagines all the world, government or country. He has only selected concepts, and relationships between them, and uses those to represent the real system.
+ – Jay Wright Forrester
+
+
+Over at Creative Advantage they list four general problems with mental models:
+
+
+  First, they could be wrong because they are limited by the simplifications that made them useful
+  Second, they could be improperly used
+  Third, they could lead to wrong answers if fed by incorrect information
+  Fourth, their effectiveness is rarely assessed.
+
+
+The more you master a single mental model, the more likely this mental model will be your downfall. Knowledge is about connections, connections between mental models. Wisdom is the application of that knowledge.
+
+Footnotes
+
+
+  
+    
+      Mental Model &amp;#8617;</summary></entry><entry><title>Gulp Jekyll Workflow - Part 1 Design Pattern</title><link href="https://ianteda.com/programming/gulp-jekyll-workflow-1.html" rel="alternate" type="text/html" title="Gulp Jekyll Workflow - Part 1 Design Pattern" /><published>2016-03-24T00:00:00+11:00</published><updated>2016-03-24T00:00:00+11:00</updated><id>https://ianteda.com/programming/gulp-jekyll-workflow-1</id><content type="html" xml:base="https://ianteda.com/programming/gulp-jekyll-workflow-1.html">&lt;blockquote&gt;
   &lt;p&gt;Always start with the end in mind. So you know what direction to travel&lt;br /&gt;
 &lt;cite&gt; — Ian Teda &lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -953,32 +1037,4 @@ He lives on in all of those he touched, in the valves he taught his children, th
 
 Thank you all for your prayers, thoughts and gifts during this journey.
 
-God bless.</summary></entry><entry><title>Leadership Styles</title><link href="https://ianteda.com/management/leadership-styles.html" rel="alternate" type="text/html" title="Leadership Styles" /><published>2015-09-29T00:00:00+10:00</published><updated>2015-09-29T00:00:00+10:00</updated><id>https://ianteda.com/management/leadership-styles</id><content type="html" xml:base="https://ianteda.com/management/leadership-styles.html">&lt;p&gt;The father of leadership is arguably the psychologist Kurt Lewin, who in 1939 proposed that there are 3 styles of leadership:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;The Authoritarian (Autocratic)&lt;/li&gt;
-  &lt;li&gt;The Participator (Democratic)&lt;/li&gt;
-  &lt;li&gt;The Delegator (Laissez-faire)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;The authoritarian – rule by ones self – leader provides clear expectations for what needs to be done, when it should be completed and how to complete it. They provide vision and direction and then try to convince people to get on board. The Participator (majority rule) encourages the group members to participate, offers guidance but retains final say over the decision making. They spend time building consensus amongst the group, using that consensus to drive the direction. While the delegator (let do) offers little or no guidance to the group and leaves decision making up the group members. Kurt Lewin studied the three styles of leadership and discovered that members of an authoritarian leadership are the most productive, though members of participator leaders contributions while less productive did produce higher quality output. While members of a delegator leader often lack motivation and have poorly defined roles.&lt;/p&gt;
-
-&lt;p&gt;I think my personal style is part authoritarian and part participator. Properly more authoritarian then participator but I think that is a result of my drive from being goal and outcome driven. Though I also recognise the need to be a participator and get people involved and owning what they are doing. I lean away from the delegator style mainly due to the fact I believe it is important for a leader to have the answers.&lt;/p&gt;
-
-&lt;p&gt;Reflecting on my current frustrations I boiled my frustration down to the meetings about meetings about meetings. Did I mention there are a lot of meetings. It seemed that everything was being done through committee, which appeared to be an ineffective use of time. So when I was listening to the Podcast the comments about Bob Hawke being a leader of consensus it rang some bells and I decided to do a little more reading on leadership styles. As I reflected more on it I realised that it was the lack of productive outcomes, outputs and an apparent poor utilisation of time. The group dynamics where lending themselves towards the delegator style, causing me to have an undefined role and tasks within the group. Making me increasingly frustrated.&lt;/p&gt;
-
-&lt;p&gt;In the name of balance and yin yang a good leader most be able apply all three styles and be able to identify when it is appropriate to use which style. They must be able to use the authoritative style when the group lacks knowledge, use the participative style when the group clearly understands their objectives and there roles in the task and use the delegative style when the members know more about the task at hand then they do. Participative leadership is said to be the most effective style of leadership though I think it can easily become a delegator style, the least effective, if the leader does not retain the final say over the decision making.&lt;/p&gt;</content><category term="management" /><category term="leadership" /><summary>The father of leadership is arguably the psychologist Kurt Lewin, who in 1939 proposed that there are 3 styles of leadership:
-
-
-  The Authoritarian (Autocratic)
-  The Participator (Democratic)
-  The Delegator (Laissez-faire)
-
-
-The authoritarian – rule by ones self – leader provides clear expectations for what needs to be done, when it should be completed and how to complete it. They provide vision and direction and then try to convince people to get on board. The Participator (majority rule) encourages the group members to participate, offers guidance but retains final say over the decision making. They spend time building consensus amongst the group, using that consensus to drive the direction. While the delegator (let do) offers little or no guidance to the group and leaves decision making up the group members. Kurt Lewin studied the three styles of leadership and discovered that members of an authoritarian leadership are the most productive, though members of participator leaders contributions while less productive did produce higher quality output. While members of a delegator leader often lack motivation and have poorly defined roles.
-
-I think my personal style is part authoritarian and part participator. Properly more authoritarian then participator but I think that is a result of my drive from being goal and outcome driven. Though I also recognise the need to be a participator and get people involved and owning what they are doing. I lean away from the delegator style mainly due to the fact I believe it is important for a leader to have the answers.
-
-Reflecting on my current frustrations I boiled my frustration down to the meetings about meetings about meetings. Did I mention there are a lot of meetings. It seemed that everything was being done through committee, which appeared to be an ineffective use of time. So when I was listening to the Podcast the comments about Bob Hawke being a leader of consensus it rang some bells and I decided to do a little more reading on leadership styles. As I reflected more on it I realised that it was the lack of productive outcomes, outputs and an apparent poor utilisation of time. The group dynamics where lending themselves towards the delegator style, causing me to have an undefined role and tasks within the group. Making me increasingly frustrated.
-
-In the name of balance and yin yang a good leader most be able apply all three styles and be able to identify when it is appropriate to use which style. They must be able to use the authoritative style when the group lacks knowledge, use the participative style when the group clearly understands their objectives and there roles in the task and use the delegative style when the members know more about the task at hand then they do. Participative leadership is said to be the most effective style of leadership though I think it can easily become a delegator style, the least effective, if the leader does not retain the final say over the decision making.</summary></entry></feed>
+God bless.</summary></entry></feed>
