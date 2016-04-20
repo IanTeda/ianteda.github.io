@@ -58,10 +58,30 @@ Add extra styles here
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.3);
     transition: all 0.5s ease;
 }
 
 .no-underline {
     text-decoration: none;
+}
+
+.post-footer .share a {
+    margin: 1rem 1rem 1.6rem 0;
+}
+
+.post-footer .share .share-twitter:hover {
+    color: #55acee;
+}
+
+.post-footer .share .share-facebook:hover {
+    color: #3b5998;
+}
+
+.post-footer .share .share-google-plus:hover {
+    color: #dd4b39;
+}
+
+.post-footer .share .share-linkedin:hover {
+    color: #4875B4;
 }
