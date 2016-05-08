@@ -5,9 +5,9 @@ date: 2016-02-17
 tags: [Business, Mastermind]
 layout: post
 category: management
-featured: True
-navigation: True
-main-header: True
+featured: true
+navigation: true
+main-header: true
 cover: /assets/images/cover-franklin.jpg
 logo: /assets/images/logo-light.png
 ---
