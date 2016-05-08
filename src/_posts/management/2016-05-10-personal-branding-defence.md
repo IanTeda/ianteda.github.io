@@ -18,28 +18,28 @@ logo: /assets/images/logo-light.png
 
 If you are not branding yourself, others are doing it for you. Going to a job interview, leasing a house or going on a first date then your name will be googled. Personal branding is about managing your name in a world of misinformation, disinformation, and semi-permanent Google records[^tim-ferriss]. “We are CEOs of our own companies: Me Inc.”, Tom Peters in Fast Company[^fast-company].
 
-Personal branding is about telling your story (1), letting the world know what you stand for (2) and building credibility (trust) around it (3). As Dorie Clark says, think of your personal brand as what people say about you when you leave the room[^dorie-clark].
+Personal branding is about telling your story (1), letting the world know what you stand for (2) and building credibility (trust) around it (3). Think of your personal brand as what people say about you when you leave the room[^dorie-clark].
 
 ### 1 - Your Story
 
 > If people like you they will listen to you, but if they trust you, they’ll do business with you.
 > <cite> — Zig Ziglar</cite>
 
-Your story is the proof, the walk behind your talk. It demonstrates who you are and what you believe in. Don’t create for yourself two worlds, be authentic. People will see through your false world, discard what you say and never follow you.
+Your story is the proof, the walk behind your talk. It demonstrates who you are and what you believe in. When telling your story don’t create two worlds, be authentic it is easier to remember. People will see through your false world, discard what you say and never follow you.
 
 ### 2 - Your Values
 
 > If people believe they share values with a company, they will stay loyal to the brand.
 > <cite> — Howard Schultz</cite>
 
-People buy the brand not the product. In the same way, people will buy into you not what you are saying. [^start-with-why]. What code to you live by? What do you believe in? Not sure, the best test of your character (values) is what you do when nobody else is watching.
+People buy the brand not the product. In the same way, people will buy into you not what you are saying. [^start-with-why]. Why should someone trust you? What code to you live by?
 
 ### 3 - Build Credibility
 
 > A brand is the set of expectations, memories, stories and relationships that, taken together, account for a consumer’s decision to choose one product or service over another.
 > <cite> — Seth Godin</cite>
 
-Building credibility is about continuing your story, sharing your thoughts and putting yourself out there to be challenged. It builds your personal trust, authenticity and authority. The best way to accomplish this is to blog, write down what you believe, think of or observe then put a URL to it for others to read.
+Building credibility is about continuing your story, sharing your thoughts and putting yourself out there. It builds your personal trust, authenticity and authority. The best way to build credibility is to blog, put into words what you believe, think or notice about the world. Then put a URL to it for others to read.
 
 ## Building your Personal Brand
 
@@ -55,6 +55,7 @@ The key to effective thinking is asking the right questions. Below is a list of 
 ### Your Values
 
 * What values do you live by? What priority do you put on those values?
+* Think of your values as your character. The best test of character is what you do when nobody is looking.
 * What are your ideal character traits?
 * What three people do you admire and take a deeper look at their lives?
 
