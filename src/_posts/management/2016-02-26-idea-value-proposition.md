@@ -4,7 +4,7 @@ description: Ideas are easy, cheap even. It is the execution that is hard, and b
 date: 2016-02-26
 tags: [Entrepreneurial]
 layout: post
-category: creativity
+category: management
 navigation: True
 main-header: True
 cover: /assets/images/cover-edison-lab.jpg
