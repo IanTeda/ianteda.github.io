@@ -50,19 +50,19 @@ The key to effective thinking is asking the right questions. Below is a list of 
 * What aspects of your life have been rewarding or you are proud of?
 * What are you passionate about? What makes you angry?
 * What are you good at? What are your super powers?
-* What tag line summaries your story?
+* What tagline summaries your story?
 
 ### Your Values
 
 * What values do you live by? What priority do you put on those values?
-* Think of your values as your character. The best incite into a persons character is what they do when nobody is looking.
+* Hint: Think of your values as your character.
 * What are your ideal character traits?
 * What three people do you admire and take a deeper look at their lives?
 
-### Your Credibitily
+### Your Credibility
 
 * What content can you create? Hint: Take a look at your values.
-* How can you add value through you content?
+* How can you add value through your content?
 * Create good content, don't chase views.
 
 ##### Footnotes
