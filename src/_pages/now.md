@@ -11,9 +11,9 @@ current: now
 ---
 ### Now
 
-_Last updated 7th April 2016_
+_Last updated 10th May 2016_
 
-I am currently living in [Coffs Harbour](https://www.wikiwand.com/en/Coffs_Harbour){:target="_blank"} NSW Australia with my awesome Wife and amazing boys, but we are on the move back to [Sydney](https://en.wikipedia.org/wiki/Sydney){:target="_blank"}. Finishing up as the Production Manager at [Australian Precast Solutions](http://www.australianprecastsolutions.com.au/){:target="_blank"} and excited to be starting at [GHD](http://www.ghd.com/ghd-australia/){:target="_blank"} as one of there Project Managers - Major Projects.
+I am currently living in [Coffs Harbour](https://www.wikiwand.com/en/Coffs_Harbour){:target="_blank"} NSW Australia with my awesome Wife and amazing boys, but we are on the move back to [Sydney](https://en.wikipedia.org/wiki/Sydney){:target="_blank"}. I am taking some time off between jobs for a holiday and to battle the Sydney rental market prior to starting at [GHD](http://www.ghd.com/ghd-australia/){:target="_blank"} in there infrustructor team.
 
 ### Books
 *Books I'm reading and why:*
@@ -28,10 +28,9 @@ I am currently living in [Coffs Harbour](https://www.wikiwand.com/en/Coffs_Harbo
 ### Projects
 *What is getting my creativity juices flowing:*
 
-- [ianteda.com](https://ianteda.com)
-- Making content!
-- JavaScript
-- Compressed air rocket with the boys
+1. Making content for [ianteda.com](https://ianteda.com)
+2. JavaScript
+3. Business development
 
 ### Interest
 *What topics and ideas am I diving deeper into:*
@@ -41,6 +40,5 @@ I am currently living in [Coffs Harbour](https://www.wikiwand.com/en/Coffs_Harbo
 - Mediation
 - JavaScript
 - Mental Models
-- Cold water
 
 *This page was inspired by [Derek Sivers](https://sivers.org/) and his work at [http://nownownow.com/](http://nownownow.com/). Most Websites (personal and professional) have an [about](about.html) page to let you know what they are about, funny that. A __now__ page is a way of letting visitors know what I am spending my time on right now.*
