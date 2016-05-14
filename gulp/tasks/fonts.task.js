@@ -12,7 +12,7 @@ module.exports = (gulp, config, argv, $) => {
     var stream = gulp
       // Font source files
       .src(config.fonts.src)
-      .pipe($.changed(config.fonts.dest))
+      .pipe($.newer(config.fonts.dest))
       .pipe($.flatten())
       .pipe($.size({title: 'Flatten font folder structure:'}))
       .pipe(gulp.dest(config.fonts.dest))

@@ -59,7 +59,7 @@
     "gulp-inject": "^3.0.0",
     "gulp-jsdoc3": "^0.2.1",
     "gulp-load-plugins": "^1.0.0",
-    "gulp-newer": "^1.0.0",
+    "gulp-newer": "^1.1.0",
     "gulp-notify": "^2.2.0",
     "gulp-postcss": "^6.0.0",
     "gulp-rename": "^1.2.2",

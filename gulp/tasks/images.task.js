@@ -13,7 +13,7 @@ module.exports = (gulp, config, argv, $) => {
       // Image sources
       .src(config.images.src)
       // Only pipe changed images
-      .pipe($.changed(config.images.dest))
+      .pipe($.newer(config.images.dest))
       .pipe($.size({title: 'Images:'}))
       // Minimise images
       .pipe($.imagemin(config.imagemin.options))

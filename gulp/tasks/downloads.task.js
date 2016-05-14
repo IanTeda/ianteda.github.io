@@ -12,7 +12,7 @@ module.exports = (gulp, config, argv, $) => {
     var stream = gulp
       // Downloads source files
       .src(config.downloads.src)
-      //.pipe($.changed(config.downloads.dest))
+      .pipe($.newer(config.downloads.dest))
       .pipe(gulp.dest(config.downloads.dest))
       .pipe($.size({title: 'Downloads copied:'}));
 
