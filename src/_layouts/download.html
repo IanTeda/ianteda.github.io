@@ -14,7 +14,7 @@ logo: /assets/images/logo-light.png
           <div id="counter-text">
             Your download of <strong>"{{page.file}}"</strong> will start in <span id="counter"> </span> sec. Please stand by...
           </div>
-          <a href="javascript:download('/assets/downloads/{{page.file}}')" style="display:none" id="link">Click link if it doesn't start.</a>
+          <br/><p>Click <a href="javascript:download('/assets/downloads/{{page.file}}')" id="link">here</a> if the download doesn't start.</p>
 
         </section>
 
@@ -30,12 +30,9 @@ logo: /assets/images/logo-light.png
   {
     if(time == 1)
     {
-      //Cleare Timer and remove counter from page
+      // Cleare Timer and remove counter from page
       clearInterval(timer);
-      document.getElementById("counter-text").style.display="none";
-      //If you want to display link
-      document.getElementById("link").style.display="block";
-      //Or directly start download
+      // Directly start download
       download('/assets/downloads/{{page.file}}');
     }
     else
