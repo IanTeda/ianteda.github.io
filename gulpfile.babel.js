@@ -233,6 +233,32 @@ gulp.task(
 );
 
 /**
+ * Download Tasks
+ * Usage: gulp downloads:clean - Clean downlaods from build folder
+ * Usage: gulp downloads:build - Copy downloads to build folder
+ * Usage: gulp downloads       - Clean build folder, then copy downloads to build folder
+*/
+gulp.task(
+  "downloads:clean",
+  requireCleanTask(
+    config.downloads.dest + "/**/*"
+  )
+);
+gulp.task(
+  "downloads:build",
+  requireTask(
+    "downloads"
+  )
+);
+gulp.task(
+  "downloads",
+  gulp.series(
+    "downloads:clean",
+    "downloads:build"
+  )
+);
+
+/**
  * Inject Tasks
  * Usage: gulp inject:scripts - Inject scripts into scripts.html
  * Usage: gulp inject:styles  - Inject styles into styles.html
@@ -397,7 +423,7 @@ gulp.task("serve", () => {
  */
 gulp.task("default",
   gulp.series(
-    gulp.parallel("styles", "scripts", "images:build", "fonts:build"),
+    gulp.parallel("downloads", "styles", "scripts", "images:build", "fonts:build"),
     gulp.series(
       "inject",
       "jekyll:build",
@@ -412,7 +438,7 @@ gulp.task("default",
  */
 gulp.task("build",
   gulp.series(
-    gulp.parallel("styles", "scripts", "images:build", "fonts:build"),
+    gulp.parallel("downloads", "styles", "scripts", "images:build", "fonts:build"),
     gulp.series(
       "inject",
       "jekyll:build",
@@ -428,7 +454,7 @@ gulp.task("build",
  */
 gulp.task("testProd",
   gulp.series(
-    gulp.parallel("styles", "scripts", "images:build", "fonts:build"),
+    gulp.parallel("downloads", "styles", "scripts", "images:build", "fonts:build"),
     gulp.series(
       "inject",
       "jekyll:build",

@@ -14,7 +14,7 @@ logo: /assets/images/logo-light.png
           <div id="counter-text">
             Your download of <strong>"{{page.file}}"</strong> will start in <span id="counter"> </span> sec. Please stand by...
           </div>
-          <a href="javascript:download('/downloads/{{page.file}}')" style="display:none" id="link">Click link if it doesn't start.</a>
+          <a href="javascript:download('/assets/downloads/{{page.file}}')" style="display:none" id="link">Click link if it doesn't start.</a>
 
         </section>
 
@@ -36,7 +36,7 @@ logo: /assets/images/logo-light.png
       //If you want to display link
       document.getElementById("link").style.display="block";
       //Or directly start download
-      download('/downloads/{{page.file}}');
+      download('/assets/downloads/{{page.file}}');
     }
     else
     {

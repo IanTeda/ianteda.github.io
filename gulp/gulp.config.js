@@ -17,6 +17,10 @@ module.exports = {
     development: [tmp, build],
     production: build
   },
+  downloads: {
+    src: src + assets + "/downloads/**/*",
+    dest: tmp + assets + "downloads"
+  },
   fonts: {
     src: [
       nodeModules + "font-awesome/fonts/**/*.{eot,svg,ttf,woff,woff2,otf}",
