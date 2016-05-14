@@ -47,23 +47,27 @@ The key to effective thinking is asking the right questions. Below is a list of 
 
 ### Your Story
 
-* What aspects of your life have been rewarding or you are proud of?
-* What are you passionate about? What makes you angry?
-* What are you good at? What are your super powers?
+* What aspects of your life have been rewarding or you are proud to tell your mum?
+* What are you passionate about? What makes you angry? What do you care about?
+* What are you good at? What are your super powers? What skills have you spent time developing?
 * What tagline summaries your story?
 
 ### Your Values
 
 * What values do you live by? What priority do you put on those values?
-* Hint: Think of your values as your character.
+* Hint: Think of your values as your character. Describe yourself.
 * What are your ideal character traits?
-* What three people do you admire and take a deeper look at their lives?
+* What three people do you admire? Take a deeper look at their lives?
 
 ### Your Credibility
 
 * What content can you create? Hint: Take a look at your values.
 * How can you add value through your content?
 * Create good content, don't chase views.
+
+## Downloads
+[Personal Branding Guide](/downloads/personal-branding-guide.html){: .download-link}
+
 
 ##### Footnotes
 [^tim-ferriss]: [Tips for Personal Branding in the Digital Age](http://fourhourworkweek.com/2008/01/28/tips-for-personal-branding-in-the-digital-age-google-insurance-cache-flow-and-more/)

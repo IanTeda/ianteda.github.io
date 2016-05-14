@@ -1500,7 +1500,8 @@ body:not(.post-template) .post-title {
 
 /* Push the previous/next links out to the left/right */
 .older-posts,
-.newer-posts {
+.newer-posts,
+.download-link {
     position: absolute;
     display: inline-block;
     padding: 0 15px;
@@ -1514,6 +1515,10 @@ body:not(.post-template) .post-title {
     right: 0;
 }
 
+.download-link {
+  position: relative
+}
+
 .page-number {
     display: inline-block;
     padding: 2px 0;
@@ -1525,7 +1530,8 @@ body:not(.post-template) .post-title {
 }
 
 .older-posts:hover,
-.newer-posts:hover {
+.newer-posts:hover,
+.download-link:hover {
     color: #889093;
     border-color: #98a0a4;
 }
@@ -1952,7 +1958,8 @@ body:not(.post-template) .post-title {
     }
 
     .older-posts,
-    .newer-posts {
+    .newer-posts,
+    .download-link {
         position: static;
         margin: 10px 0;
     }

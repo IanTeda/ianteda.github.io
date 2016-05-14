@@ -1,0 +1,52 @@
+---
+layout: default
+logo: /assets/images/logo-light.png
+---
+<!-- Start _layout/download.html -->
+
+{% include header.html %}
+
+<main class="content" role="main">
+    <article class="post">
+
+        <section class="post-content">
+          <h1>Download</h1>
+          <div id="counter-text">
+            Your download of <strong>"{{page.file}}"</strong> will start in <span id="counter"> </span> sec. Please stand by...
+          </div>
+          <a href="javascript:download('/downloads/{{page.file}}')" style="display:none" id="link">Click link if it doesn't start.</a>
+
+        </section>
+
+    </article>
+</main>
+
+<script>
+  time = 5;
+  document.getElementById("counter").innerHTML = time;
+  timer = setInterval("count()",1000);
+
+  function count()
+  {
+    if(time == 1)
+    {
+      //Cleare Timer and remove counter from page
+      clearInterval(timer);
+      document.getElementById("counter-text").style.display="none";
+      //If you want to display link
+      document.getElementById("link").style.display="block";
+      //Or directly start download
+      download('/downloads/{{page.file}}');
+    }
+    else
+    {
+      time--;
+      document.getElementById("counter").innerHTML = time;
+    }
+  }
+  function download(file)
+  {
+    window.location=file;
+  }
+</script>
+<!-- End _layout/download.html -->
