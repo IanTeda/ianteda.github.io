@@ -5,8 +5,8 @@ date: 2016-02-26
 tags: [Entrepreneurial]
 layout: post
 category: management
-navigation: True
-main-header: True
+navigation: true
+main-header: true
 cover: /assets/images/cover-edison-lab.jpg
 logo: /assets/images/logo-light.png
 ---

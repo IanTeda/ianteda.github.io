@@ -3,11 +3,10 @@ title: Welcome to ianteda.com
 description: Why I created ianteda.com and what I am hoping to achieve.
 date: 2016-01-21
 tags: [Business, Professional]
-subclass: 'blog'
 layout: post
 category: management
-navigation: True
-main-header: False
+navigation: true
+main-header: true
 cover: /assets/images/cover-old-typewriter.jpg
 logo: /assets/images/logo-light.png
 ---
