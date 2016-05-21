@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.0.1">Jekyll</generator><link href="https://ianteda.com/rss.xml" rel="self" type="application/atom+xml" /><link href="https://ianteda.com/" rel="alternate" type="text/html" /><updated>2016-05-21T21:47:44+10:00</updated><id>https://ianteda.com/</id><title>Ian Teda</title><subtitle>Husband, Father, Engineer, Explorer &amp; Creator</subtitle><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><entry><title>The Personal Branding Defence</title><link href="https://ianteda.com/management/the-personal-branding-defence.html" rel="alternate" type="text/html" title="The Personal Branding Defence" /><published>2016-05-08T00:00:00+10:00</published><updated>2016-05-08T00:00:00+10:00</updated><id>https://ianteda.com/management/the-personal-branding-defence</id><content type="html" xml:base="https://ianteda.com/management/the-personal-branding-defence.html">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.0.1">Jekyll</generator><link href="https://ianteda.com/rss.xml" rel="self" type="application/atom+xml" /><link href="https://ianteda.com/" rel="alternate" type="text/html" /><updated>2016-05-22T08:06:11+10:00</updated><id>https://ianteda.com/</id><title>Ian Teda</title><subtitle>Husband, Father, Engineer, Explorer &amp; Creator</subtitle><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><entry><title>The Personal Branding Defence</title><link href="https://ianteda.com/management/the-personal-branding-defence.html" rel="alternate" type="text/html" title="The Personal Branding Defence" /><published>2016-05-08T00:00:00+10:00</published><updated>2016-05-08T00:00:00+10:00</updated><id>https://ianteda.com/management/the-personal-branding-defence</id><content type="html" xml:base="https://ianteda.com/management/the-personal-branding-defence.html">&lt;blockquote&gt;
   &lt;p&gt;Start by knowing what you want and who you are, build credibility around it and deliver it online in a compelling way.
 &lt;cite&gt; — Krista Neher&lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -757,15 +757,13 @@ Footnotes
 &lt;div class=&quot;video-wrapper&quot;&gt;
   &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/6MZ0eRckO34&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;</content><category term="engineering" /><category term="dams" /><summary>A short video featuring yours truly, and the construction of the intake tower on the Cotter Dam project.</summary></entry><entry><title>The Idea Value Proposition</title><link href="https://ianteda.com/management/the-idea-value-proposition.html" rel="alternate" type="text/html" title="The Idea Value Proposition" /><published>2016-02-26T00:00:00+11:00</published><updated>2016-02-26T00:00:00+11:00</updated><id>https://ianteda.com/management/the-idea-value-proposition</id><content type="html" xml:base="https://ianteda.com/management/the-idea-value-proposition.html">&lt;blockquote&gt;
-  &lt;p&gt;Daring ideas are like chessmen moved forward. They may be beaten, but they may start a winning game.
+  &lt;p&gt;“Daring ideas are like chessmen moved forward. They may be beaten, but they may start a winning game.”
 &lt;cite&gt; – Johann Wolfgang von Goethe&lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Ideas are easy, cheap even. It is the execution that is hard and because it is hard it is worth millions. If the execution wasn’t difficult everyone would be doing it. And if everyone was doing it, then it would be worthless and it would be a race to the bottom.&lt;/p&gt;
+&lt;p&gt;Ideas are easy, cheap even. It is the execution that is hard and because it is hard it is worth millions. If the execution wasn’t hard everyone would be doing it. And if everyone was doing it, then it would be worthless and quickly become a race to the bottom.&lt;/p&gt;
 
-&lt;p&gt;It is important to realise that an idea is not a product and it is not a business. A business, is an idea that is – or multiple ideas that are – executed well.  But ideas still hold value.&lt;/p&gt;
-
-&lt;p&gt;An idea multiplied by its execution produces value. So, a good idea produces more value than a bad idea when multiplied by the same execution.&lt;/p&gt;
+&lt;p&gt;It is important to realise that an idea is not a product or a business&lt;sup id=&quot;fnref:not-a-business&quot;&gt;&lt;a href=&quot;#fn:not-a-business&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. A product, is an idea that is – or multiple ideas that are – executed well.  But ideas still hold value. Ideas are a multiplier of the execution, that together produce value. Thus, a good idea produces more value than a bad idea when multiplied by the same execution&lt;sup id=&quot;fnref:sivers&quot;&gt;&lt;a href=&quot;#fn:sivers&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-proposition&quot;&gt;The Proposition&lt;/h2&gt;
 
@@ -776,40 +774,54 @@ Product Value = Idea x Execution
 Product Value = 1 x 100,000 = 100,000 of Value
 
 // Good Idea Multiplier
-Product Value = 100 x 100,000 = 10,000,000 of Value
+Product Value = 10 x 100,000 = 1,000,000 of Value
 
 // Awful Idea Multiplier
 Product Value = -1 x 100,000 = -100,000 of Value
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;The better an idea the more it will multiple the value of the product.&lt;/p&gt;
+&lt;p&gt;The better an idea the more it will multiple the execution and the value of the product.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Genius is one percent inspiration, ninety-nine percent perspiration.
 &lt;cite&gt; – Thomas Edison&lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Even if you have an original, totally awesome idea it will not take long before someone else is copying it. After all it is an awesome idea. Success, therefore is about the execution of the idea. The way you take that idea, brand it, market it, position it and then sell it.&lt;/p&gt;
+&lt;p&gt;If you have an original, totally awesome idea it will not take long before someone else copies it. After all it is an awesome idea. Success therefore doesn’t come from the idea but the execution. How the idea is implemented, branded, marketed, positioned and finally sold.&lt;/p&gt;
 
-&lt;p&gt;You don’t need an original idea. Google wasn’t the first search engine, Facebook wasn’t the first social platform and the iPod wasn’t the first music player. They just executed the idea better the those that came before and after them.&lt;/p&gt;
+&lt;p&gt;With the multiplier in mind, you don’t need an original idea for success. Google wasn’t the first search engine, Facebook wasn’t the first social platform and the iPod wasn’t the first music player&lt;sup id=&quot;fnref:not-a-business:1&quot;&gt;&lt;a href=&quot;#fn:not-a-business&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. What differentiated them and made them “successful” was the execution of the idea.&lt;/p&gt;
 
-&lt;p&gt;What makes a bad idea? It’s hard to say. A bad idea maybe disguising itself as a good idea executed poorly. All the time you are thinking to yourself “I just need to persist and execute better”, when all you are doing is burning energy on an idea that you pushing up hill. It is important therefor to validate ideas (a topic for another post) before you execute.&lt;/p&gt;
+&lt;p&gt;What makes a bad idea? It’s hard to say. A bad idea can disguise itself as a good idea executed poorly. All the time you are thinking “I just need to persist and execute better”. You end up burning energy pushing and a bad idea uphill. It is important therefor to validate ideas (a topic for another post) before execution.&lt;/p&gt;
 
-&lt;p&gt;So don’t burn energy protecting and worrying that someone will steal your idea, they will. Put your focus into idea generation, idea valuation but mostly idea execution.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;“Ideas are a dime a dozen. People who implement them are priceless.”
+&lt;cite&gt; – Mary Kay Ash&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://sivers.org/multiply&quot; target=&quot;_blank&quot;&gt;Ideas are just a multiplier of execution – Derek Sivers&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://medium.com/the-1-blog-series/ideas-are-cheap-execution-is-worth-millions-e203efbcaa49#.u9b3zzspk&quot; target=&quot;_blank&quot;&gt;Ideas Are Cheap, Execution is Worth Millions – Sathyvelu Kunashegaran&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Photo cover credit: &lt;a href=&quot;https://www.flickr.com/photos/larrymyhre/23648279433/&quot; target=&quot;_blank&quot;&gt;Larry Myhre&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="management" /><category term="Entrepreneurial" /><summary>Daring ideas are like chessmen moved forward. They may be beaten, but they may start a winning game.
+&lt;p&gt;So don’t burn energy protecting and worrying someone will steal your idea, they will. Put your focus into idea generation and valuation. But mostly idea execution. Because, “great ideas are useless without someone full of passion to implement them.” – Amy Rees Anderson&lt;sup id=&quot;fnref:dim-dozen&quot;&gt;&lt;a href=&quot;#fn:dim-dozen&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;footnotes&quot;&gt;Footnotes:&lt;/h3&gt;
+
+&lt;p&gt;Photo cover credit: &lt;a href=&quot;https://www.flickr.com/photos/larrymyhre/23648279433/&quot; target=&quot;_blank&quot;&gt;Larry Myhre&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:not-a-business&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://medium.com/the-1-blog-series/ideas-are-cheap-execution-is-worth-millions-e203efbcaa49#.u9b3zzspk&quot; target=&quot;_blank&quot;&gt;Ideas Are Cheap, Execution is Worth Millions – Sathyvelu Kunashegaran&lt;/a&gt; &lt;a href=&quot;#fnref:not-a-business&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt; &lt;a href=&quot;#fnref:not-a-business:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:sivers&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://sivers.org/multiply&quot; target=&quot;_blank&quot;&gt;Ideas are just a multiplier of execution – Derek Sivers&lt;/a&gt; &lt;a href=&quot;#fnref:sivers&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:dim-dozen&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;http://www.forbes.com/sites/amyanderson/2013/03/14/ideas-are-a-dime-a-dozen-people-who-implement-them-are-priceless/#57e07877304b&quot; target=&quot;_blank&quot;&gt;Ideas are a Dime a Dozen&lt;/a&gt; &lt;a href=&quot;#fnref:dim-dozen&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><category term="management" /><category term="Entrepreneurial" /><summary>“Daring ideas are like chessmen moved forward. They may be beaten, but they may start a winning game.”
  – Johann Wolfgang von Goethe
 
 
-Ideas are easy, cheap even. It is the execution that is hard and because it is hard it is worth millions. If the execution wasn’t difficult everyone would be doing it. And if everyone was doing it, then it would be worthless and it would be a race to the bottom.
+Ideas are easy, cheap even. It is the execution that is hard and because it is hard it is worth millions. If the execution wasn’t hard everyone would be doing it. And if everyone was doing it, then it would be worthless and quickly become a race to the bottom.
 
-It is important to realise that an idea is not a product and it is not a business. A business, is an idea that is – or multiple ideas that are – executed well.  But ideas still hold value.
-
-An idea multiplied by its execution produces value. So, a good idea produces more value than a bad idea when multiplied by the same execution.
+It is important to realise that an idea is not a product or a business1. A product, is an idea that is – or multiple ideas that are – executed well.  But ideas still hold value. Ideas are a multiplier of the execution, that together produce value. Thus, a good idea produces more value than a bad idea when multiplied by the same execution2.
 
 The Proposition
 
@@ -820,31 +832,45 @@ Product Value = Idea x Execution
 Product Value = 1 x 100,000 = 100,000 of Value
 
 // Good Idea Multiplier
-Product Value = 100 x 100,000 = 10,000,000 of Value
+Product Value = 10 x 100,000 = 1,000,000 of Value
 
 // Awful Idea Multiplier
 Product Value = -1 x 100,000 = -100,000 of Value
 
 
-The better an idea the more it will multiple the value of the product.
+The better an idea the more it will multiple the execution and the value of the product.
 
 
   Genius is one percent inspiration, ninety-nine percent perspiration.
  – Thomas Edison
 
 
-Even if you have an original, totally awesome idea it will not take long before someone else is copying it. After all it is an awesome idea. Success, therefore is about the execution of the idea. The way you take that idea, brand it, market it, position it and then sell it.
+If you have an original, totally awesome idea it will not take long before someone else copies it. After all it is an awesome idea. Success therefore doesn’t come from the idea but the execution. How the idea is implemented, branded, marketed, positioned and finally sold.
 
-You don’t need an original idea. Google wasn’t the first search engine, Facebook wasn’t the first social platform and the iPod wasn’t the first music player. They just executed the idea better the those that came before and after them.
+With the multiplier in mind, you don’t need an original idea for success. Google wasn’t the first search engine, Facebook wasn’t the first social platform and the iPod wasn’t the first music player1. What differentiated them and made them “successful” was the execution of the idea.
 
-What makes a bad idea? It’s hard to say. A bad idea maybe disguising itself as a good idea executed poorly. All the time you are thinking to yourself “I just need to persist and execute better”, when all you are doing is burning energy on an idea that you pushing up hill. It is important therefor to validate ideas (a topic for another post) before you execute.
-
-So don’t burn energy protecting and worrying that someone will steal your idea, they will. Put your focus into idea generation, idea valuation but mostly idea execution.
+What makes a bad idea? It’s hard to say. A bad idea can disguise itself as a good idea executed poorly. All the time you are thinking “I just need to persist and execute better”. You end up burning energy pushing and a bad idea uphill. It is important therefor to validate ideas (a topic for another post) before execution.
 
 
-  Ideas are just a multiplier of execution – Derek Sivers
-  Ideas Are Cheap, Execution is Worth Millions – Sathyvelu Kunashegaran
-  Photo cover credit: Larry Myhre</summary></entry><entry><title>The Mastermind Group Brief</title><link href="https://ianteda.com/management/the-mastermind-group-breif.html" rel="alternate" type="text/html" title="The Mastermind Group Brief" /><published>2016-02-17T00:00:00+11:00</published><updated>2016-02-17T00:00:00+11:00</updated><id>https://ianteda.com/management/the-mastermind-group-breif</id><content type="html" xml:base="https://ianteda.com/management/the-mastermind-group-breif.html">&lt;blockquote&gt;
+  “Ideas are a dime a dozen. People who implement them are priceless.”
+ – Mary Kay Ash
+
+
+So don’t burn energy protecting and worrying someone will steal your idea, they will. Put your focus into idea generation and valuation. But mostly idea execution. Because, “great ideas are useless without someone full of passion to implement them.” – Amy Rees Anderson3
+
+Footnotes:
+
+Photo cover credit: Larry Myhre
+
+  
+    
+      Ideas Are Cheap, Execution is Worth Millions – Sathyvelu Kunashegaran &amp;#8617; &amp;#8617;2
+    
+    
+      Ideas are just a multiplier of execution – Derek Sivers &amp;#8617;
+    
+    
+      Ideas are a Dime a Dozen &amp;#8617;</summary></entry><entry><title>The Mastermind Group Brief</title><link href="https://ianteda.com/management/the-mastermind-group-breif.html" rel="alternate" type="text/html" title="The Mastermind Group Brief" /><published>2016-02-17T00:00:00+11:00</published><updated>2016-02-17T00:00:00+11:00</updated><id>https://ianteda.com/management/the-mastermind-group-breif</id><content type="html" xml:base="https://ianteda.com/management/the-mastermind-group-breif.html">&lt;blockquote&gt;
   &lt;p&gt;No two minds ever come together without thereby creating a third, invisible intangible force, which may be likened to a third mind [the master mind].
 &lt;cite&gt; – Napoleon Hill&lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
