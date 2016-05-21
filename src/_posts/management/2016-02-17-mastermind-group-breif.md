@@ -1,6 +1,6 @@
 ---
 title: Mastermind Group Brief
-description: A Mastermind Group can be thought of as a peer advisory board that meets with the aim of sharpening the groups personal and business skills so they can achieve optimum outcomes
+description: A peer advisory board with the aim of sharpening the groups personal and business skills so they can achieve optimum outcomes.
 date: 2016-02-17
 tags: [Business, Mastermind]
 layout: post
@@ -12,7 +12,7 @@ cover: /assets/images/cover-franklin.jpg
 logo: /assets/images/logo-light.png
 ---
 > No two minds ever come together without thereby creating a third, invisible intangible force, which may be likened to a third mind [the master mind].
-> <cite> -- Napoleon Hill </cite>
+> <cite> -- Napoleon Hill</cite>
 
 The phrase Mastermind Group (MMG) was first coined by Napoleon Hill in his 1937 book "Think and Grow Rich". A MMG is not a group coaching session but can be thought of as a peer advisory board that meets with the aim of sharpening the groups personal and business skills so they can achieve optimum outcomes.
 
@@ -20,7 +20,8 @@ The phrase Mastermind Group (MMG) was first coined by Napoleon Hill in his 1937 
 
 ### The Why?
 
-“You are the average of the five people you spend the most time with.” — Jim Rohn
+> “You are the average of the five people you spend the most time with.”
+> <cite> — Jim Rohn</cite>
 
 The possible result of any situation will be the average of all possible outcomes. So if your aim is to become a professional table tennis player, then surround yourself with professional table tennis players. If you want to be successful then surround yourself with and successful people. A MMG is a way of surrounding yourself with like people of similar focuses ambitions and interest, increasing your changes of success. Both Benjamin Franklin and Thomas Edison saw the benefits and were involved in MMGs.
 

@@ -1,5 +1,5 @@
 ---
-title: The Leadership Styles Analysis
+title: The Leadership Style Analysis
 description: You need to find your own style of leadership, one that complements your character. However, good leaders use all three styles depending on the dynamics.
 date: 2016-01-21
 tags: [Leadership, Business]
@@ -18,7 +18,7 @@ You need to find your own style of leadership, one that complements your charact
 
 ## Leadership Styles
 
-The father of leadership is arguably the psychologist [Kurt Lewin](https://en.wikipedia.org/wiki/Kurt_Lewin). Who in 1939, following his research proposed 3 styles of leadership[^enotes]:
+The father of leadership is arguably the psychologist [Kurt Lewin](https://en.wikipedia.org/wiki/Kurt_Lewin){:target="_blank"}. Who in 1939, following his research proposed 3 styles of leadership[^enotes]:
 
 1. The Authoritarian (Autocratic) Leader
 2. The Participator (Democratic) Leader
@@ -45,7 +45,7 @@ The Delegator leadership style is best used when number of members out grows the
 Small business typically start with the Autocratic, move onto Participator and if the owner can let go, transition to the Delegator style. Much like raising children.
 
 ### Footnotes:
-[^enotes]: [Authoritarian, Democratic & Laissez-Faire Leadership](http://www.enotes.com/research-starters/authoritarian-democratic-laissez-faire-leadership)
-[^laissez-faire]: [Dictionary: laissez-faire](http://www.dictionary.com/browse/laissez-faire)
-[^definition-of-leadership]: [Definition of Leadership. Kurt Lewin & Belbin](https://nofinchaos.wordpress.com/2012/03/07/definition-of-leadership-kurt-lewin/)
-[^leadership-styles]: [Leadership Styles](http://www.nwlink.com/~donclark/leader/leadstl.html)
+[^enotes]: [Authoritarian, Democratic & Laissez-Faire Leadership](http://www.enotes.com/research-starters/authoritarian-democratic-laissez-faire-leadership){:target="_blank"}
+[^laissez-faire]: [Dictionary: laissez-faire](http://www.dictionary.com/browse/laissez-faire){:target="_blank"}
+[^definition-of-leadership]: [Definition of Leadership. Kurt Lewin & Belbin](https://nofinchaos.wordpress.com/2012/03/07/definition-of-leadership-kurt-lewin/){:target="_blank"}
+[^leadership-styles]: [Leadership Styles](http://www.nwlink.com/~donclark/leader/leadstl.html){:target="_blank"}

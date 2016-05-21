@@ -1,5 +1,5 @@
 ---
-title: Idea Value Proposition
+title: The Idea Value Proposition
 description: Ideas are easy, cheap even. It is the execution that is hard, and because it is hard it is worth millions.
 date: 2016-02-26
 tags: [Entrepreneurial]
@@ -12,32 +12,36 @@ logo: /assets/images/logo-light.png
 ---
 
 > Daring ideas are like chessmen moved forward. They may be beaten, but they may start a winning game.
-> <cite> -- Johann Wolfgang von Goethe </cite>
+> <cite> -- Johann Wolfgang von Goethe</cite>
 
-Ideas are easy, cheap even. It is the execution that is hard, and because it is hard it is worth millions. If it wasn't difficult everyone would be doing it, and if everyone was doing it it wouldn't be worth as much.
+Ideas are easy, cheap even. It is the execution that is hard and because it is hard it is worth millions. If the execution wasn't difficult everyone would be doing it. And if everyone was doing it, then it would be worthless and it would be a race to the bottom.
 
-It is important to realise that an idea is not a product, it is not a business. A business, is an idea that is -- or multiple ideas that are -- executed well.  But ideas still have a value. An idea is multiplied by its execution to produce value for the business.  A good idea is worth more than a bad idea when multiplied by good execution.
+It is important to realise that an idea is not a product and it is not a business. A business, is an idea that is -- or multiple ideas that are -- executed well.  But ideas still hold value.
 
-~~~~~~~~
-// Value Proposition
+An idea multiplied by its execution produces value. So, a good idea produces more value than a bad idea when multiplied by the same execution.
+
+## The Proposition
+
+~~~JavaScript
+// The Value Proposition
 Product Value = Idea x Execution
 
 // Bad Idea Multiplier
-Product Value = 1 x 100,000 = 100,000 Units
+Product Value = 1 x 100,000 = 100,000 of Value
 
 // Good Idea Multiplier
-Product Value = 100 x 100,000 = 10,000,000 Units
+Product Value = 100 x 100,000 = 10,000,000 of Value
 
 // Awful Idea Multiplier
-Product Value = -1 x 100,000 = - 100,000 Units
-~~~~~~~~
+Product Value = -1 x 100,000 = -100,000 of Value
+~~~
 
-The more value or better an idea, the more it will multiple the value of the product.
+The better an idea the more it will multiple the value of the product.
 
 > Genius is one percent inspiration, ninety-nine percent perspiration.
-> <cite> -- Thomas Edison </cite>
+> <cite> -- Thomas Edison</cite>
 
-Even if you have an original, totally awesome idea, it want be long before someone else is copying it. After all it is an awesome idea. Success, therefor is about execution. The way you take that idea, brand it, market it, position it and then sell it.
+Even if you have an original, totally awesome idea it will not take long before someone else is copying it. After all it is an awesome idea. Success, therefore is about the execution of the idea. The way you take that idea, brand it, market it, position it and then sell it.
 
 You don't need an original idea. Google wasn't the first search engine, Facebook wasn't the first social platform and the iPod wasn't the first music player. They just executed the idea better the those that came before and after them.
 

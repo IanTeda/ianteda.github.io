@@ -70,7 +70,7 @@ The key to effective thinking is asking the right questions. Below is a list of 
 
 
 ##### Footnotes
-[^tim-ferriss]: [Tips for Personal Branding in the Digital Age](http://fourhourworkweek.com/2008/01/28/tips-for-personal-branding-in-the-digital-age-google-insurance-cache-flow-and-more/)
-[^fast-company]: [The Brand Called You](http://www.fastcompany.com/28905/brand-called-you)
-[^dorie-clark]: [What do people say about your when you leave the room](http://www.businessinnovationfactory.com/summit/story/what-do-people-say-about-you-when-you-leave-room)
-[^start-with-why]: [Start With Why - Simon Sinek TED talk](https://www.youtube.com/watch?v=u4ZoJKF_VuA)
+[^tim-ferriss]: [Tips for Personal Branding in the Digital Age](http://fourhourworkweek.com/2008/01/28/tips-for-personal-branding-in-the-digital-age-google-insurance-cache-flow-and-more/){:target="_blank"}
+[^fast-company]: [The Brand Called You](http://www.fastcompany.com/28905/brand-called-you){:target="_blank"}
+[^dorie-clark]: [What do people say about your when you leave the room](http://www.businessinnovationfactory.com/summit/story/what-do-people-say-about-you-when-you-leave-room){:target="_blank"}
+[^start-with-why]: [Start With Why - Simon Sinek TED talk](https://www.youtube.com/watch?v=u4ZoJKF_VuA){:target="_blank"}
