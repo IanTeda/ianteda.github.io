@@ -1,5 +1,5 @@
 ---
-title: Mastermind Group Brief
+title: The Mastermind Group Brief
 description: A peer advisory board with the aim of sharpening the groups personal and business skills so they can achieve optimum outcomes.
 date: 2016-02-17
 tags: [Business, Mastermind]

@@ -8,6 +8,8 @@ show_drafts: false
 lsi: true
 # Removes the upper limit for posts generated
 limit_posts: 0
+# Number of posts per index page
+paginate: 10
 
 google_analytics: UA-71253711-1
 
