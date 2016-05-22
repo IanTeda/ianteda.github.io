@@ -4,7 +4,6 @@ title: What am I doing right now!
 description: Find out what I am up to right now, now, now!
 navigation: True
 main-header: True
-permalink: /now.html
 logo: assets/images/ghost.png
 cover: assets/images/cover-cat-gear.jpg
 current: now

@@ -6,4 +6,4 @@ User-agent: *
 Disallow:
 
 # Provide direction to sitemap
-Sitemap: {{ site.url }}/sitemap.xml
+Sitemap: https://ianteda.com/sitemap.xml
