@@ -1,13 +1,13 @@
 # Title, decription, tagline and URL for your site
 # Can be used in your theme by calling 'site.title' and so on
-name: "Ian Teda"
+name: Ian Teda
 description: "Husband, Father, Engineer, Explorer & Creator"
 # Set timezone for site generation
 timezone: Australia/Sydney
 # Host informaiton for URLs
 url: http://localhost:3000
 baseurl: ""
-keywords: "ian teda, engineering, project management, software development, programming, video editing, video production"
+keywords: "Ian Teda, engineering, project management, software development, programming, video editing, video production"
 
 # LOCATION
 # Where things are
@@ -114,7 +114,7 @@ author:
   url: 'https://ianteda.com'
   image: 'assets/images/casper.png'
   email: 'ian@teda.id.au'
-  bio: I&#39;m Ian Teda
+  bio: Ian Teda
   location: Australia
   facebook: ian.teda
   github: IanTeda

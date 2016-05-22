@@ -1,6 +1,6 @@
 ---
-title: Mental Models
-description: Mental models are an abstraction of reality, a simplification of an incomprehensibly complicated world.
+title: The Mental Model Definition
+description: Mental models are an abstraction of reality, a simplification of an incomprehensibly world.
 date: 2016-04-13
 tags: [mental model]
 layout: post
@@ -14,9 +14,9 @@ logo: /assets/images/logo-light.png
 > Man seeks for himself a simplified and lucid image of the world.
 > <cite> -- Albert Einstein</cite>
 
-Mental models are a simplification of how the world around us works, that we use to make sense of our surroundings. They are an [abstraction](https://en.wikipedia.org/wiki/Abstraction) of reality, a simplification of an incomprehensibly complicated world. They need to be simply so our limited cognitive capabilities can process all our inputs without overload.
+Mental models simplify the world around us so we can make sense of our surroundings. They are an [abstraction](https://en.wikipedia.org/wiki/Abstraction) of reality, a simplification of an incomprehensibly world so our limited cognitive capabilities can process all our inputs without overload.
 
-I wanted to explore and better understand mental models. What better way to understand a topic then to try to explain it to someone else. So I sat down and wrote this blog post.
+I wanted to explore and better understand mental models and what better way to understand a topic then to try to explain it to someone else. So I sat down and wrote this blog post.
 
 Mental models are a set of tools (maps) our brains use to think and make decisions. A personal algorithm to process and make sense of the world around us. We use them to predict the results of our actions or those of others. Since they are a simplifications they don't always hold true for all situations, contexts or moments in time. Because they represent (model) what is explicitly true, but not what is explicitly false. The world around us is continually changing, so should our mental models.
 

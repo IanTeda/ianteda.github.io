@@ -17,7 +17,9 @@
 
     <!-- Page Title -->
     <title>
-      {% if page.title %}
+      {% if page_title %}
+        {{ page_title }} Title
+      {% elsif page.title %}
         {{ page.title }}
       {% else %}
         {{ site.name }}
