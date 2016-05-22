@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.0.1">Jekyll</generator><link href="https://ianteda.com/rss.xml" rel="self" type="application/atom+xml" /><link href="https://ianteda.com/" rel="alternate" type="text/html" /><updated>2016-05-22T19:19:45+10:00</updated><id>https://ianteda.com/</id><title>Ian Teda</title><subtitle>Husband, Father, Engineer, Explorer &amp; Creator</subtitle><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><entry><title>The Personal Branding Defence</title><link href="https://ianteda.com/management/the-personal-branding-defence.html" rel="alternate" type="text/html" title="The Personal Branding Defence" /><published>2016-05-08T00:00:00+10:00</published><updated>2016-05-08T00:00:00+10:00</updated><id>https://ianteda.com/management/the-personal-branding-defence</id><content type="html" xml:base="https://ianteda.com/management/the-personal-branding-defence.html">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.0.1">Jekyll</generator><link href="https://ianteda.com/rss.xml" rel="self" type="application/atom+xml" /><link href="https://ianteda.com/" rel="alternate" type="text/html" /><updated>2016-05-22T19:27:56+10:00</updated><id>https://ianteda.com/</id><title>Ian Teda</title><subtitle>Husband, Father, Engineer, Explorer &amp; Creator</subtitle><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><entry><title>The Personal Branding Defence</title><link href="https://ianteda.com/management/the-personal-branding-defence.html" rel="alternate" type="text/html" title="The Personal Branding Defence" /><published>2016-05-08T00:00:00+10:00</published><updated>2016-05-08T00:00:00+10:00</updated><id>https://ianteda.com/management/the-personal-branding-defence</id><content type="html" xml:base="https://ianteda.com/management/the-personal-branding-defence.html">&lt;blockquote&gt;
   &lt;p&gt;Start by knowing what you want and who you are, build credibility around it and deliver it online in a compelling way.
 &lt;cite&gt; — Krista Neher&lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -638,7 +638,7 @@ Footnotes
 &lt;h3 id=&quot;jekyllhttpjekyllrbcomtargetblank-website&quot;&gt;&lt;a href=&quot;http://jekyllrb.com/&quot; target=&quot;_blank&quot;&gt;Jekyll&lt;/a&gt; (Website)&lt;/h3&gt;
 &lt;p&gt;I decided to use Jekyll when it dawned on me that to have a fast content management system (CMS) it needs a cache system. And what is a cache system? A static webpage generator - aka Jekyll. Since I don’t need access for multiple authors – which could still be done with Jekyll and Github, but would require more technical knowledge from the author – lets skip the whole database thing and go straight to generating the webpages on my local machine and uploading the build.&lt;/p&gt;
 
-&lt;p&gt;By removing the database I reduced my cyber attach profile – no database calls – and simplifies hosting requirements. Opening up cheaper hosting options.&lt;/p&gt;
+&lt;p&gt;By removing the database I reduced my cyber attack profile – no database calls – and simplifies hosting requirements. Opening up cheaper hosting options.&lt;/p&gt;
 
 &lt;p&gt;Jekyll is easy to setup on Mac and Linux machines but is a little bit more work on Windows&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
@@ -715,7 +715,7 @@ Below is a list of the plugins in alphabetical order that I use:
 Jekyll (Website)
 I decided to use Jekyll when it dawned on me that to have a fast content management system (CMS) it needs a cache system. And what is a cache system? A static webpage generator - aka Jekyll. Since I don’t need access for multiple authors – which could still be done with Jekyll and Github, but would require more technical knowledge from the author – lets skip the whole database thing and go straight to generating the webpages on my local machine and uploading the build.
 
-By removing the database I reduced my cyber attach profile – no database calls – and simplifies hosting requirements. Opening up cheaper hosting options.
+By removing the database I reduced my cyber attack profile – no database calls – and simplifies hosting requirements. Opening up cheaper hosting options.
 
 Jekyll is easy to setup on Mac and Linux machines but is a little bit more work on Windows3
 
