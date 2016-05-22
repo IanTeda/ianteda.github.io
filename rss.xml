@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.0.1">Jekyll</generator><link href="https://ianteda.com/rss.xml" rel="self" type="application/atom+xml" /><link href="https://ianteda.com/" rel="alternate" type="text/html" /><updated>2016-05-22T19:31:49+10:00</updated><id>https://ianteda.com/</id><title>Ian Teda</title><subtitle>Husband, Father, Engineer, Explorer &amp; Creator</subtitle><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><entry><title>The Personal Branding Defence</title><link href="https://ianteda.com/management/the-personal-branding-defence.html" rel="alternate" type="text/html" title="The Personal Branding Defence" /><published>2016-05-08T00:00:00+10:00</published><updated>2016-05-08T00:00:00+10:00</updated><id>https://ianteda.com/management/the-personal-branding-defence</id><content type="html" xml:base="https://ianteda.com/management/the-personal-branding-defence.html">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.0.5">Jekyll</generator><link href="https://ianteda.com/rss.xml" rel="self" type="application/atom+xml" /><link href="https://ianteda.com/" rel="alternate" type="text/html" /><updated>2016-05-22T19:47:54+10:00</updated><id>https://ianteda.com/</id><title>Ian Teda</title><subtitle>Husband, Father, Engineer, Explorer &amp; Creator</subtitle><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><entry><title>The Personal Branding Defence</title><link href="https://ianteda.com/management/the-personal-branding-defence.html" rel="alternate" type="text/html" title="The Personal Branding Defence" /><published>2016-05-08T00:00:00+10:00</published><updated>2016-05-08T00:00:00+10:00</updated><id>https://ianteda.com/management/the-personal-branding-defence</id><content type="html" xml:base="https://ianteda.com/management/the-personal-branding-defence.html">&lt;blockquote&gt;
   &lt;p&gt;Start by knowing what you want and who you are, build credibility around it and deliver it online in a compelling way.
 &lt;cite&gt; — Krista Neher&lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -85,7 +85,7 @@
       &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=u4ZoJKF_VuA&quot; target=&quot;_blank&quot;&gt;Start With Why - Simon Sinek TED talk&lt;/a&gt; &lt;a href=&quot;#fnref:start-with-why&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><category term="management" /><category term="Branding" /><summary>Start by knowing what you want and who you are, build credibility around it and deliver it online in a compelling way.
+&lt;/div&gt;</content><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><category term="management" /><category term="Branding" /><summary>Start by knowing what you want and who you are, build credibility around it and deliver it online in a compelling way.
  — Krista Neher
 
 
@@ -212,7 +212,7 @@ Footnotes
       &lt;p&gt;&lt;a href=&quot;http://www.createadvantage.com/glossary/mental-model&quot;&gt;Mental Model&lt;/a&gt; &lt;a href=&quot;#fnref:creative-advatage&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><category term="creativity" /><category term="mental model" /><summary>Man seeks for himself a simplified and lucid image of the world.
+&lt;/div&gt;</content><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><category term="creativity" /><category term="mental model" /><summary>Man seeks for himself a simplified and lucid image of the world.
  – Albert Einstein
 
 
@@ -276,13 +276,13 @@ Footnotes
 
 &lt;p&gt;1 - Install npm packages for Babel and babel presents&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;babel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;core&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;babel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;preset&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;es2015&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;save&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dev&lt;/span&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;babel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;core&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;babel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;preset&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;es2015&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;save&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dev&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;2 - Create a &lt;code class=&quot;highlighter-rouge&quot;&gt;.babelrc&lt;/code&gt; file to enable 2015 presets&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;s2&quot;&gt;&quot;presets&quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;es2015&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
@@ -298,14 +298,14 @@ Footnotes
 
 &lt;p&gt;Require Yargs configuration file within &lt;code class=&quot;highlighter-rouge&quot;&gt;gulpfile.babel.js&lt;/code&gt;.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Command line (CLI) argument&lt;/span&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Command line (CLI) argument&lt;/span&gt;
 &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;argv&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;./gulp/yargs.config&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Setup the user interface and configure the CLI arguments &lt;code class=&quot;highlighter-rouge&quot;&gt;yargs.config.js&lt;/code&gt; &lt;sup id=&quot;fnref:node-command-args&quot;&gt;&lt;a href=&quot;#fn:node-command-args&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cm&quot;&gt;/**
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cm&quot;&gt;/**
  * CLI (YARGS) Configuration
  * @param {yargs} yargs - Module for handling CLI arguments
  * @exports {argv} argv - Argument object
@@ -328,14 +328,14 @@ Footnotes
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;gulp.babel.js&lt;/code&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Configuration file for gulp tasks&lt;/span&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Configuration file for gulp tasks&lt;/span&gt;
 &lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;config&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;./gulp/gulp.config&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;gulp.config.js&lt;/code&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;module&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;exports&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;module&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;exports&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;na&quot;&gt;xyz&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;na&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;src/xyz.xyz&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
     &lt;span class=&quot;na&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
@@ -354,7 +354,7 @@ Footnotes
 
 &lt;p&gt;Always abstract anything you need to do more than once. With that in mind a requireTask function is used to require task files from within &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp.babel.js&lt;/code&gt;. &lt;sup id=&quot;fnref:module-gulp-tasks&quot;&gt;&lt;a href=&quot;#fn:module-gulp-tasks&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Import Gulp module&lt;/span&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Import Gulp module&lt;/span&gt;
 &lt;span class=&quot;kr&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;gulp&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;// Command line (CLI) argument&lt;/span&gt;
 &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;argv&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;./gulp/yargs.config&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
@@ -384,7 +384,7 @@ Footnotes
 
 &lt;p&gt;The task &lt;code class=&quot;highlighter-rouge&quot;&gt;./gulp/tasks/nameOfTask.task.js&lt;/code&gt; is built up using the &lt;a href=&quot;https://nodejs.org/&quot;&gt;NodeJS&lt;/a&gt; module pattern, returing the task stream. Returning the task stream is important as it allows Gulp to signal async task completion. With task configuration from withing the &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp.config.js&lt;/code&gt; file.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s2&quot;&gt;&quot;use strict&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s2&quot;&gt;&quot;use strict&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;cm&quot;&gt;/**
  * Gulp Task for doing XYZ
  * @param {gulp} gulp - The gulp module passed in
@@ -428,7 +428,7 @@ Footnotes
       &lt;p&gt;&lt;a href=&quot;http://macr.ae/article/splitting-gulpfile-multiple-files.html&quot;&gt;Splitting a gulpfile into multiple files&lt;/a&gt; &lt;a href=&quot;#fnref:module-gulp-tasks&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><category term="programming" /><category term="gulp" /><category term="jekyll" /><category term="workflow" /><category term="design pattern" /><summary>Always start with the end in mind. So you know what direction to travel
+&lt;/div&gt;</content><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><category term="programming" /><category term="gulp" /><category term="jekyll" /><category term="workflow" /><category term="design pattern" /><summary>Always start with the end in mind. So you know what direction to travel
  — Ian Teda 
 
 
@@ -678,7 +678,7 @@ Footnotes
       &lt;p&gt;&lt;a href=&quot;https://sheharyar.me/blog/free-ssl-for-github-pages-with-custom-domains/&quot; target=&quot;_blank&quot;&gt;Free SSL for GitHub Pages with Custom Domains&lt;/a&gt; &lt;a href=&quot;#fnref:7&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><category term="programming" /><category term="Gulp" /><category term="Jekyll" /><category term="Github" /><category term="Github Pages" /><category term="Cloudflare" /><summary>Flexible, simple, fast, secure &amp;amp; https. Total cost, $15AUD for domain registration.
+&lt;/div&gt;</content><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><category term="programming" /><category term="Gulp" /><category term="Jekyll" /><category term="Github" /><category term="Github Pages" /><category term="Cloudflare" /><summary>Flexible, simple, fast, secure &amp;amp; https. Total cost, $15AUD for domain registration.
  — Ian Teda 
 
 
@@ -758,7 +758,7 @@ Footnotes
   &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/6MZ0eRckO34&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Video &amp;amp; Cover Image Credit: &lt;a href=&quot;https://www.iconwater.com.au/&quot; target=&quot;_blank&quot;&gt;Icon Water&lt;/a&gt; &amp;amp; &lt;a href=&quot;http://www.richardsnashall.net/&quot; target=&quot;_blank&quot;&gt;Richard Snashall&lt;/a&gt;&lt;/p&gt;</content><category term="engineering" /><category term="Dams" /><summary>A short video featuring yours truly, and the construction of the intake tower on the Cotter Dam project.
+&lt;p&gt;Video &amp;amp; Cover Image Credit: &lt;a href=&quot;https://www.iconwater.com.au/&quot; target=&quot;_blank&quot;&gt;Icon Water&lt;/a&gt; &amp;amp; &lt;a href=&quot;http://www.richardsnashall.net/&quot; target=&quot;_blank&quot;&gt;Richard Snashall&lt;/a&gt;&lt;/p&gt;</content><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><category term="engineering" /><category term="Dams" /><summary>A short video featuring yours truly, and the construction of the intake tower on the Cotter Dam project.
 
 
   
@@ -823,7 +823,7 @@ Product Value = -1 x 100,000 = -100,000 of Value
       &lt;p&gt;&lt;a href=&quot;http://www.forbes.com/sites/amyanderson/2013/03/14/ideas-are-a-dime-a-dozen-people-who-implement-them-are-priceless/#57e07877304b&quot; target=&quot;_blank&quot;&gt;Ideas are a Dime a Dozen&lt;/a&gt; &lt;a href=&quot;#fnref:dim-dozen&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><category term="management" /><category term="Entrepreneurial" /><summary>“Daring ideas are like chessmen moved forward. They may be beaten, but they may start a winning game.”
+&lt;/div&gt;</content><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><category term="management" /><category term="Entrepreneurial" /><summary>“Daring ideas are like chessmen moved forward. They may be beaten, but they may start a winning game.”
  – Johann Wolfgang von Goethe
 
 
@@ -895,7 +895,7 @@ Photo cover credit: Larry Myhre
       &lt;p&gt;&lt;a rel=&quot;nofollow&quot; href=&quot;http://www.amazon.com/gp/product/0486272745/ref=as_li_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=0486272745&amp;amp;linkCode=as2&amp;amp;tag=iate-20&amp;amp;linkId=XF6OTL2R2FAENV6H&quot;&gt;The Prince&lt;/a&gt; by Niccolò Machiavelli. Written in the 16th century, it is about acquiring power and maintaining it (pre democracy). &lt;a href=&quot;#fnref:footnote&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><category term="creativity" /><category term="Philosophy" /><summary>All courses of action are risky, so prudence is not in avoiding danger (it’s impossible), but calculating risk and acting decisively. Make mistakes of ambition and not mistakes of sloth. Develop the strength to do bold things, not the strength to suffer.
+&lt;/div&gt;</content><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><category term="creativity" /><category term="Philosophy" /><summary>All courses of action are risky, so prudence is not in avoiding danger (it’s impossible), but calculating risk and acting decisively. Make mistakes of ambition and not mistakes of sloth. Develop the strength to do bold things, not the strength to suffer.
 – Chapter III: Of Mixed Princedoms1
 
 
@@ -1039,7 +1039,7 @@ Success for the most part is subjective. Whatever your measure, it still require
       &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=U0Np-IszK-8&quot; target=&quot;_blank&quot;&gt;Video: How to Build a Winning Mastermind Group (Webinar Replay) - SPI TV, Ep. 12&lt;/a&gt; &lt;a href=&quot;#fnref:mmg-build&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><category term="management" /><category term="Business" /><category term="Mastermind" /><summary>No two minds ever come together without thereby creating a third, invisible intangible force, which may be likened to a third mind [the master mind].
+&lt;/div&gt;</content><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><category term="management" /><category term="Business" /><category term="Mastermind" /><summary>No two minds ever come together without thereby creating a third, invisible intangible force, which may be likened to a third mind [the master mind].
  – Napoleon Hill
 
 
@@ -1219,7 +1219,7 @@ Footnotes
       &lt;p&gt;&lt;a href=&quot;http://www.nwlink.com/~donclark/leader/leadstl.html&quot; target=&quot;_blank&quot;&gt;Leadership Styles&lt;/a&gt; &lt;a href=&quot;#fnref:leadership-styles&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><category term="management" /><category term="Leadership" /><category term="Business" /><summary>“Styles are tailor made to different situations. Different leaders must have their own styles and these styles must be able to adapt to different people and situations.”
+&lt;/div&gt;</content><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><category term="management" /><category term="Leadership" /><category term="Business" /><summary>“Styles are tailor made to different situations. Different leaders must have their own styles and these styles must be able to adapt to different people and situations.”
  – John Ng
 
 
@@ -1289,7 +1289,7 @@ Footnotes:
       &lt;p&gt;&lt;a href=&quot;http://fourhourworkweek.com/2015/09/22/scott-adams-the-man-behind-dilbert/&quot; target=&quot;_blank&quot;&gt;Podcast: Scott Adams: The Man Behind Dilbert&lt;/a&gt; &lt;a href=&quot;#fnref:be-useful&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><category term="management" /><category term="Business" /><category term="Professional" /><summary>Hello and thank you for visiting ianteda.com, my little corner of the Internet.
+&lt;/div&gt;</content><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><category term="management" /><category term="Business" /><category term="Professional" /><summary>Hello and thank you for visiting ianteda.com, my little corner of the Internet.
 
 I created ianteda.com to be useful. By sharing content around ideas, thoughts and projects I am working on. Second to being useful, I wanted to build and manage my - Ian Teda - professional image, brand and authority.
 
