@@ -48,7 +48,7 @@
   
     
     <url>
-      <loc>https://ianteda.com/programming/gulp-jekyll-github-pages-cloudflare.html</loc>
+      <loc>https://ianteda.com/programming/the-gulp-jekyll-github-pages-cloudflare-mixture.html</loc>
       
         <lastmod>2016-03-15T00:00:00+11:00</lastmod>
       
@@ -81,6 +81,21 @@
       <loc>https://ianteda.com/management/the-idea-value-proposition.html</loc>
       
         <lastmod>2016-02-26T00:00:00+11:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://ianteda.com/creativity/the-bold-mistake-instruction.html</loc>
+      
+        <lastmod>2016-02-19T00:00:00+11:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -138,21 +153,6 @@
   
     
     <url>
-      <loc>https://ianteda.com/creativity/the-bold-mistake-instruction.html</loc>
-      
-        <lastmod>2016-01-19T00:00:00+11:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-    
-  
-    
-    <url>
       <loc>https://ianteda.com/creativity/a-letter-to-sons.html</loc>
       
         <lastmod>2015-12-10T00:00:00+11:00</lastmod>
@@ -190,7 +190,7 @@
     <url>
       <loc>https://ianteda.com404.html</loc>
       
-        <lastmod>2016-05-22T18:48:54+10:00</lastmod>
+        <lastmod>2016-05-22T19:19:45+10:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -213,7 +213,7 @@
     <url>
       <loc>https://ianteda.com</loc>
       
-        <lastmod>2016-05-22T18:48:54+10:00</lastmod>
+        <lastmod>2016-05-22T19:19:45+10:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -231,7 +231,7 @@
     <url>
       <loc>https://ianteda.com</loc>
       
-        <lastmod>2016-05-22T18:48:54+10:00</lastmod>
+        <lastmod>2016-05-22T19:19:45+10:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -259,7 +259,7 @@
     <url>
       <loc>https://ianteda.com</loc>
       
-        <lastmod>2016-05-22T18:48:54+10:00</lastmod>
+        <lastmod>2016-05-22T19:19:45+10:00</lastmod>
       
       
         <changefreq>monthly</changefreq>

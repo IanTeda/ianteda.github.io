@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.0.1">Jekyll</generator><link href="https://ianteda.com/rss.xml" rel="self" type="application/atom+xml" /><link href="https://ianteda.com/" rel="alternate" type="text/html" /><updated>2016-05-22T18:48:54+10:00</updated><id>https://ianteda.com/</id><title>Ian Teda</title><subtitle>Husband, Father, Engineer, Explorer &amp; Creator</subtitle><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><entry><title>The Personal Branding Defence</title><link href="https://ianteda.com/management/the-personal-branding-defence.html" rel="alternate" type="text/html" title="The Personal Branding Defence" /><published>2016-05-08T00:00:00+10:00</published><updated>2016-05-08T00:00:00+10:00</updated><id>https://ianteda.com/management/the-personal-branding-defence</id><content type="html" xml:base="https://ianteda.com/management/the-personal-branding-defence.html">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.0.1">Jekyll</generator><link href="https://ianteda.com/rss.xml" rel="self" type="application/atom+xml" /><link href="https://ianteda.com/" rel="alternate" type="text/html" /><updated>2016-05-22T19:19:45+10:00</updated><id>https://ianteda.com/</id><title>Ian Teda</title><subtitle>Husband, Father, Engineer, Explorer &amp; Creator</subtitle><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><entry><title>The Personal Branding Defence</title><link href="https://ianteda.com/management/the-personal-branding-defence.html" rel="alternate" type="text/html" title="The Personal Branding Defence" /><published>2016-05-08T00:00:00+10:00</published><updated>2016-05-08T00:00:00+10:00</updated><id>https://ianteda.com/management/the-personal-branding-defence</id><content type="html" xml:base="https://ianteda.com/management/the-personal-branding-defence.html">&lt;blockquote&gt;
   &lt;p&gt;Start by knowing what you want and who you are, build credibility around it and deliver it online in a compelling way.
 &lt;cite&gt; — Krista Neher&lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -600,54 +600,54 @@ Footnotes
       Parse ye Node.js command args with yargs! &amp;#8617;
     
     
-      Splitting a gulpfile into multiple files &amp;#8617;</summary></entry><entry><title>Gulp, Jekyll, Github Pages &amp;amp; Cloudflare</title><link href="https://ianteda.com/programming/gulp-jekyll-github-pages-cloudflare.html" rel="alternate" type="text/html" title="Gulp, Jekyll, Github Pages &amp; Cloudflare" /><published>2016-03-15T00:00:00+11:00</published><updated>2016-03-15T00:00:00+11:00</updated><id>https://ianteda.com/programming/gulp-jekyll-github-pages-cloudflare</id><content type="html" xml:base="https://ianteda.com/programming/gulp-jekyll-github-pages-cloudflare.html">&lt;blockquote&gt;
+      Splitting a gulpfile into multiple files &amp;#8617;</summary></entry><entry><title>The Gulp, Jekyll, Github Pages &amp;amp; Cloudflare Mixture</title><link href="https://ianteda.com/programming/the-gulp-jekyll-github-pages-cloudflare-mixture.html" rel="alternate" type="text/html" title="The Gulp, Jekyll, Github Pages &amp; Cloudflare Mixture" /><published>2016-03-15T00:00:00+11:00</published><updated>2016-03-15T00:00:00+11:00</updated><id>https://ianteda.com/programming/the-gulp-jekyll-github-pages-cloudflare-mixture</id><content type="html" xml:base="https://ianteda.com/programming/the-gulp-jekyll-github-pages-cloudflare-mixture.html">&lt;blockquote&gt;
   &lt;p&gt;Flexible, simple, fast, secure &amp;amp; https. Total cost, $15AUD for domain registration.&lt;br /&gt;
 &lt;cite&gt; — Ian Teda &lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Web technologies for development hosting and security are numerous. With each propent singing there own praises. At the start of my &lt;a href=&quot;https://ianteda.com&quot;&gt;ianteda.com&lt;/a&gt; project &lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; I looked around at the options.&lt;/p&gt;
+&lt;p&gt;Web technologies for development hosting and security are vast. With proponents singing their own praises. At the start of my &lt;a href=&quot;https://ianteda.com&quot;&gt;ianteda.com&lt;/a&gt; project &lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; I looked around at the options.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://wordpress.org/&quot;&gt;Wordpress&lt;/a&gt; serves up over 26%&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; of the internet, but I was bored with it. So I crossed that one off the list &lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://wordpress.org/&quot; target=&quot;_blank&quot;&gt;Wordpress&lt;/a&gt; serves up over 26%&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; of the internet. Been there done that, so I crossed it off the list &lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt;.&lt;/p&gt;
 
-&lt;p&gt;I almost settled on &lt;a href=&quot;https://ghost.org/&quot;&gt;Ghost&lt;/a&gt;. The idea of playing around with &lt;a href=&quot;https://nodejs.org/en/&quot;&gt;Node.js&lt;/a&gt; tickled my fancy. But I balked at the hosting options, which cost money and are few. Hosting with &lt;a href=&quot;https://www.digitalocean.com/&quot;&gt;DigitalOcean&lt;/a&gt; almost swayed me and self hosting &lt;a href=&quot;https://ghost.org/&quot;&gt;Ghost&lt;/a&gt; was a cheaper option, but both would require what time I do have keeping the server up and current instead of creating content. So I cross that one off the list &lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt;.&lt;/p&gt;
+&lt;p&gt;I almost settled on &lt;a href=&quot;https://ghost.org/&quot; target=&quot;_blank&quot;&gt;Ghost&lt;/a&gt;. The idea of playing around with &lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot;&gt;Node.js&lt;/a&gt; tickled my fancy. But I balked at the hosting options, which cost money and are few. Hosting with &lt;a href=&quot;https://www.digitalocean.com/&quot; target=&quot;_blank&quot;&gt;DigitalOcean&lt;/a&gt; almost swayed me. Self hosting &lt;a href=&quot;https://ghost.org/&quot; target=&quot;_blank&quot;&gt;Ghost&lt;/a&gt; was a cheaper option, but both would require what time I have keeping the server up and current instead of creating content. So I cross Ghost off the list &lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt;.&lt;/p&gt;
 
-&lt;p&gt;In the end, the technology stack I chose for my &lt;a href=&quot;https://en.wikipedia.org/wiki/Quiver&quot;&gt;quiver&lt;/a&gt; was made up of &lt;a href=&quot;http://gulpjs.com/&quot;&gt;Gulp&lt;/a&gt; for development, &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; as the web platform, &lt;a href=&quot;https://pages.github.com/&quot;&gt;Github Pages&lt;/a&gt; for the hosting, and &lt;a href=&quot;https://www.cloudflare.com/&quot;&gt;Cloudfare&lt;/a&gt; for CDN and HTTPS. Total cost, $15AUD for domain registration. Tick &lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;.&lt;/p&gt;
+&lt;p&gt;In the end, the technology stack I chose for my &lt;a href=&quot;https://en.wikipedia.org/wiki/Quiver&quot; target=&quot;_blank&quot;&gt;quiver&lt;/a&gt; includes &lt;a href=&quot;http://gulpjs.com/&quot; target=&quot;_blank&quot;&gt;Gulp&lt;/a&gt; for development, &lt;a href=&quot;http://jekyllrb.com/&quot; target=&quot;_blank&quot;&gt;Jekyll&lt;/a&gt; as the web platform, &lt;a href=&quot;https://pages.github.com/&quot; target=&quot;_blank&quot;&gt;Github Pages&lt;/a&gt; for the hosting, and &lt;a href=&quot;https://www.cloudflare.com/&quot; target=&quot;_blank&quot;&gt;Cloudfare&lt;/a&gt; for CDN and HTTPS. Total cost, $15AUD for domain registration. Tick &lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;gulphttpgulpjscom-development&quot;&gt;&lt;a href=&quot;http://gulpjs.com/&quot;&gt;Gulp&lt;/a&gt; (Development)&lt;/h2&gt;
-&lt;p&gt;Jekyll comes with tooling out of the box to help with development, such as server reload on file change and SASS transpiling. But I wanted more flexibility (options) with my development workflow, so I piped in Gulp (did you see what I did there, Gulp joke). Using Gulp opened up my workflow to the Gulp &lt;a href=&quot;http://gulpjs.com/plugins/&quot;&gt;ecosystem&lt;/a&gt; and the 2,251 plugins in it.&lt;/p&gt;
+&lt;p&gt;Jekyll comes with tooling out of the box to help with development, such as server reload on file change and SASS transpiling. But I wanted more flexibility (options) with my development workflow, so I piped in Gulp (did you see what I did there, Gulp joke). Using Gulp opened up my workflow to the Gulp &lt;a href=&quot;http://gulpjs.com/plugins/&quot; target=&quot;_blank&quot;&gt;ecosystem&lt;/a&gt; and 2,251 plugins in it.&lt;/p&gt;
 
-&lt;p&gt;Below is a list of the plugins that I used during development and for deployment of the site in alphabetical order:&lt;/p&gt;
+&lt;p&gt;Below is a list of the plugins in alphabetical order that I use:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/autoprefixer&quot;&gt;autoprefixer&lt;/a&gt;: Write cleaner CSS by adding vender prefixes postCSS&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/browser-sync&quot;&gt;Browsersync&lt;/a&gt;: Live reload CSS and keep multiple browsers &amp;amp; devices in sync&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-concat/&quot;&gt;Concat&lt;/a&gt;: Join multiple files into one CSS &amp;amp; JavaScript&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/css-mqpacker&quot;&gt;css-mqpacker&lt;/a&gt;: Pack the same CSS media query rules into one media query rule postCSS&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/csswring&quot;&gt;csswring&lt;/a&gt;: Delete unneed characters in my CSS file with source maps postCSS&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-eslint/&quot;&gt;eslint&lt;/a&gt;: Lint my JavaScript&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/eslint-config-google&quot;&gt;eslint-config-google&lt;/a&gt;: Lint my JavaScript using the Google style guide&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-gh-pages/&quot;&gt;gh-pages&lt;/a&gt;: Publish the website build to Github Pages&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-gzip/&quot;&gt;Gzip&lt;/a&gt;: Compress the deployed files to reduce load time – i.e. html and JavaScript&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-htmlmin/&quot;&gt;htmlmin&lt;/a&gt;: Delete unneeded characters in my html&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-imagemin/&quot;&gt;Imagemin&lt;/a&gt;: Minify my PNG, JPEG, GIF and SVG images. I have some problems with this one.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-inject/&quot;&gt;Inject&lt;/a&gt;: Inject dynamic CSS and JavaScript file references into the html header and footer&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-postcss/&quot;&gt;postCSS&lt;/a&gt;: Transform CSS styles with JavaScript plugins&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-sass/&quot;&gt;SASS&lt;/a&gt;: Transpile SASS into CSS&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/autoprefixer&quot; target=&quot;_blank&quot;&gt;autoprefixer&lt;/a&gt;: Write cleaner CSS by adding vender prefixes postCSS&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/browser-sync&quot; target=&quot;_blank&quot;&gt;Browsersync&lt;/a&gt;: Live reload CSS and keep multiple browsers &amp;amp; devices in sync&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-concat/&quot; target=&quot;_blank&quot;&gt;Concat&lt;/a&gt;: Join multiple files into one CSS &amp;amp; JavaScript&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/css-mqpacker&quot; target=&quot;_blank&quot;&gt;css-mqpacker&lt;/a&gt;: Pack the same CSS media query rules into one media query rule postCSS&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/csswring&quot; target=&quot;_blank&quot;&gt;csswring&lt;/a&gt;: Delete unneed characters in my CSS file with source maps postCSS&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-eslint/&quot; target=&quot;_blank&quot;&gt;eslint&lt;/a&gt;: Lint my JavaScript&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/eslint-config-google&quot; target=&quot;_blank&quot;&gt;eslint-config-google&lt;/a&gt;: Lint my JavaScript using the Google style guide&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-gh-pages/&quot; target=&quot;_blank&quot;&gt;gh-pages&lt;/a&gt;: Publish the website build to Github Pages&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-gzip/&quot; target=&quot;_blank&quot;&gt;Gzip&lt;/a&gt;: Compress the deployed files to reduce load time – i.e. html and JavaScript&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-htmlmin/&quot; target=&quot;_blank&quot;&gt;htmlmin&lt;/a&gt;: Delete unneeded characters in my html&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-imagemin/&quot; target=&quot;_blank&quot;&gt;Imagemin&lt;/a&gt;: Minify my PNG, JPEG, GIF and SVG images. I have some problems with this one.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-inject/&quot; target=&quot;_blank&quot;&gt;Inject&lt;/a&gt;: Inject dynamic CSS and JavaScript file references into the html header and footer&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-postcss/&quot; target=&quot;_blank&quot;&gt;postCSS&lt;/a&gt;: Transform CSS styles with JavaScript plugins&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-sass/&quot; target=&quot;_blank&quot;&gt;SASS&lt;/a&gt;: Transpile SASS into CSS&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;jekyllhttpjekyllrbcom-website&quot;&gt;&lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; (Website)&lt;/h3&gt;
-&lt;p&gt;I decided to use Jekyll when it dawned on me that for any content management system (CMS) to be fast it needs a cache system. What is a cache system? but a static webpage generator. Since I did not need the functionality of allowing access to multiple authors – which could still be done with Jekyll and Github, but would require more technical knowledge from the author – lets skip the whole database thing and go straight to generating the webpages on my local machine and uploading the build.&lt;/p&gt;
+&lt;h3 id=&quot;jekyllhttpjekyllrbcomtargetblank-website&quot;&gt;&lt;a href=&quot;http://jekyllrb.com/&quot; target=&quot;_blank&quot;&gt;Jekyll&lt;/a&gt; (Website)&lt;/h3&gt;
+&lt;p&gt;I decided to use Jekyll when it dawned on me that to have a fast content management system (CMS) it needs a cache system. And what is a cache system? A static webpage generator - aka Jekyll. Since I don’t need access for multiple authors – which could still be done with Jekyll and Github, but would require more technical knowledge from the author – lets skip the whole database thing and go straight to generating the webpages on my local machine and uploading the build.&lt;/p&gt;
 
 &lt;p&gt;By removing the database I reduced my cyber attach profile – no database calls – and simplifies hosting requirements. Opening up cheaper hosting options.&lt;/p&gt;
 
 &lt;p&gt;Jekyll is easy to setup on Mac and Linux machines but is a little bit more work on Windows&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;github-pageshttpjekyllrbcom-hosting&quot;&gt;&lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Github Pages&lt;/a&gt; (Hosting)&lt;/h3&gt;
-&lt;p&gt;Jekyll was written by &lt;a href=&quot;https://en.wikipedia.org/wiki/Tom_Preston-Werner&quot;&gt;Tom Preston-Werner&lt;/a&gt;, the co-founder of Github. So it isn’t surprising that Github supports hosting of Jekyll websites – known as &lt;a href=&quot;https://pages.github.com&quot;&gt;Github Pages&lt;/a&gt;, which removes the need to generate webpages locally. However, Github Pages only allows a few Jekyll Gems (plugins) to run on their server. So I decided to develop locally and upload the build to GitHub Pages. I can do what ever I like now, it is my machine.&lt;/p&gt;
+&lt;p&gt;Jekyll was written by &lt;a href=&quot;https://en.wikipedia.org/wiki/Tom_Preston-Werner&quot; target=&quot;_blank&quot;&gt;Tom Preston-Werner&lt;/a&gt;, the co-founder of Github. So it isn’t surprising that Github supports hosting of Jekyll websites – known as &lt;a href=&quot;https://pages.github.com&quot; target=&quot;_blank&quot;&gt;Github Pages&lt;/a&gt;, which removes the need to generate webpages locally. However, Github Pages only allows a few Jekyll Gems (plugins) to run on their server. So I decided to develop locally and upload the build to GitHub Pages. I can do what ever I like now, it is my machine.&lt;/p&gt;
 
 &lt;p&gt;GitHub Pages also offers CDN and domain redirects&lt;sup id=&quot;fnref:4&quot;&gt;&lt;a href=&quot;#fn:4&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;, meaning speed and your own domain name. On top of all that the price is right, free.&lt;/p&gt;
 
-&lt;h3 id=&quot;cloudfarehttpswwwcloudflarecom-https&quot;&gt;&lt;a href=&quot;https://www.cloudflare.com/&quot;&gt;Cloudfare&lt;/a&gt; (HTTPS)&lt;/h3&gt;
+&lt;h3 id=&quot;cloudfarehttpswwwcloudflarecomtargetblank-httpscdn&quot;&gt;&lt;a href=&quot;https://www.cloudflare.com/&quot; target=&quot;_blank&quot;&gt;Cloudfare&lt;/a&gt; (HTTPS/CDN)&lt;/h3&gt;
 &lt;p&gt;Cloudfare makes your website faster and safer by offering DOS protection, shared SSL and CDN cache. They believe so deeply about a secure internet, they have a free tier plan&lt;sup id=&quot;fnref:5&quot;&gt;&lt;a href=&quot;#fn:5&quot; class=&quot;footnote&quot;&gt;5&lt;/a&gt;&lt;/sup&gt;. Tick, tick and tick. They use a Universal SSL to secure the connection between your users and CloudFlare&lt;sup id=&quot;fnref:6&quot;&gt;&lt;a href=&quot;#fn:6&quot; class=&quot;footnote&quot;&gt;6&lt;/a&gt;&lt;/sup&gt;. Giving your website a https address.&lt;/p&gt;
 
 &lt;p&gt;I used the linked guide for setting up my Jekyll / GitHub website with Clodflare&lt;sup id=&quot;fnref:7&quot;&gt;&lt;a href=&quot;#fn:7&quot; class=&quot;footnote&quot;&gt;7&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
@@ -657,43 +657,43 @@ Footnotes
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;ttps://github.com/IanTeda/IanTeda.github.io&quot;&gt;GitHub Repository for ianteda.com source code&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;https://github.com/IanTeda/IanTeda.github.io&quot; target=&quot;_blank&quot;&gt;GitHub Repository for ianteda.com source code&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:2&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;http://w3techs.com/technologies/overview/content_management/all&quot;&gt;Usage of content management systems for websites&lt;/a&gt; &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;http://w3techs.com/technologies/overview/content_management/all&quot; target=&quot;_blank&quot;&gt;Usage of content management systems for websites&lt;/a&gt; &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:3&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;http://jekyll-windows.juthilo.com/&quot;&gt;Setting up Jekyll on Windows&lt;/a&gt; &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jekyll-windows.juthilo.com/&quot; target=&quot;_blank&quot;&gt;Setting up Jekyll on Windows&lt;/a&gt; &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:4&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://help.github.com/articles/using-a-custom-domain-with-github-pages/&quot;&gt;Set up subdomain Github&lt;/a&gt; &lt;a href=&quot;#fnref:4&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;https://help.github.com/articles/using-a-custom-domain-with-github-pages/&quot; target=&quot;_blank&quot;&gt;Set up subdomain Github&lt;/a&gt; &lt;a href=&quot;#fnref:4&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:5&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://www.cloudflare.com/plans/&quot;&gt;CloudFlare Plans&lt;/a&gt; &lt;a href=&quot;#fnref:5&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;https://www.cloudflare.com/plans/&quot; target=&quot;_blank&quot;&gt;CloudFlare Plans&lt;/a&gt; &lt;a href=&quot;#fnref:5&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:6&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://www.cloudflare.com/ssl/&quot;&gt;CloudFlare one-click SSL&lt;/a&gt; &lt;a href=&quot;#fnref:6&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;https://www.cloudflare.com/ssl/&quot; target=&quot;_blank&quot;&gt;CloudFlare one-click SSL&lt;/a&gt; &lt;a href=&quot;#fnref:6&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:7&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://sheharyar.me/blog/free-ssl-for-github-pages-with-custom-domains/&quot;&gt;Free SSL for GitHub Pages with Custom Domains&lt;/a&gt; &lt;a href=&quot;#fnref:7&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;https://sheharyar.me/blog/free-ssl-for-github-pages-with-custom-domains/&quot; target=&quot;_blank&quot;&gt;Free SSL for GitHub Pages with Custom Domains&lt;/a&gt; &lt;a href=&quot;#fnref:7&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;</content><category term="programming" /><category term="Gulp" /><category term="Jekyll" /><category term="Github" /><category term="Github Pages" /><category term="Cloudflare" /><summary>Flexible, simple, fast, secure &amp;amp; https. Total cost, $15AUD for domain registration.
  — Ian Teda 
 
 
-Web technologies for development hosting and security are numerous. With each propent singing there own praises. At the start of my ianteda.com project 1 I looked around at the options.
+Web technologies for development hosting and security are vast. With proponents singing their own praises. At the start of my ianteda.com project 1 I looked around at the options.
 
-Wordpress serves up over 26%2 of the internet, but I was bored with it. So I crossed that one off the list .
+Wordpress serves up over 26%2 of the internet. Been there done that, so I crossed it off the list .
 
-I almost settled on Ghost. The idea of playing around with Node.js tickled my fancy. But I balked at the hosting options, which cost money and are few. Hosting with DigitalOcean almost swayed me and self hosting Ghost was a cheaper option, but both would require what time I do have keeping the server up and current instead of creating content. So I cross that one off the list .
+I almost settled on Ghost. The idea of playing around with Node.js tickled my fancy. But I balked at the hosting options, which cost money and are few. Hosting with DigitalOcean almost swayed me. Self hosting Ghost was a cheaper option, but both would require what time I have keeping the server up and current instead of creating content. So I cross Ghost off the list .
 
-In the end, the technology stack I chose for my quiver was made up of Gulp for development, Jekyll as the web platform, Github Pages for the hosting, and Cloudfare for CDN and HTTPS. Total cost, $15AUD for domain registration. Tick .
+In the end, the technology stack I chose for my quiver includes Gulp for development, Jekyll as the web platform, Github Pages for the hosting, and Cloudfare for CDN and HTTPS. Total cost, $15AUD for domain registration. Tick .
 
 Gulp (Development)
-Jekyll comes with tooling out of the box to help with development, such as server reload on file change and SASS transpiling. But I wanted more flexibility (options) with my development workflow, so I piped in Gulp (did you see what I did there, Gulp joke). Using Gulp opened up my workflow to the Gulp ecosystem and the 2,251 plugins in it.
+Jekyll comes with tooling out of the box to help with development, such as server reload on file change and SASS transpiling. But I wanted more flexibility (options) with my development workflow, so I piped in Gulp (did you see what I did there, Gulp joke). Using Gulp opened up my workflow to the Gulp ecosystem and 2,251 plugins in it.
 
-Below is a list of the plugins that I used during development and for deployment of the site in alphabetical order:
+Below is a list of the plugins in alphabetical order that I use:
 
 
   autoprefixer: Write cleaner CSS by adding vender prefixes postCSS
@@ -713,7 +713,7 @@ Below is a list of the plugins that I used during development and for deployment
 
 
 Jekyll (Website)
-I decided to use Jekyll when it dawned on me that for any content management system (CMS) to be fast it needs a cache system. What is a cache system? but a static webpage generator. Since I did not need the functionality of allowing access to multiple authors – which could still be done with Jekyll and Github, but would require more technical knowledge from the author – lets skip the whole database thing and go straight to generating the webpages on my local machine and uploading the build.
+I decided to use Jekyll when it dawned on me that to have a fast content management system (CMS) it needs a cache system. And what is a cache system? A static webpage generator - aka Jekyll. Since I don’t need access for multiple authors – which could still be done with Jekyll and Github, but would require more technical knowledge from the author – lets skip the whole database thing and go straight to generating the webpages on my local machine and uploading the build.
 
 By removing the database I reduced my cyber attach profile – no database calls – and simplifies hosting requirements. Opening up cheaper hosting options.
 
@@ -724,7 +724,7 @@ Jekyll was written by Tom Preston-Werner, the co-founder of Github. So it isn’
 
 GitHub Pages also offers CDN and domain redirects4, meaning speed and your own domain name. On top of all that the price is right, free.
 
-Cloudfare (HTTPS)
+Cloudfare (HTTPS/CDN)
 Cloudfare makes your website faster and safer by offering DOS protection, shared SSL and CDN cache. They believe so deeply about a secure internet, they have a free tier plan5. Tick, tick and tick. They use a Universal SSL to secure the connection between your users and CloudFlare6. Giving your website a https address.
 
 I used the linked guide for setting up my Jekyll / GitHub website with Clodflare7.
@@ -878,7 +878,37 @@ Photo cover credit: Larry Myhre
       Ideas are just a multiplier of execution – Derek Sivers &amp;#8617;
     
     
-      Ideas are a Dime a Dozen &amp;#8617;</summary></entry><entry><title>The Mastermind Brief</title><link href="https://ianteda.com/management/the-mastermind-brief.html" rel="alternate" type="text/html" title="The Mastermind Brief" /><published>2016-02-17T00:00:00+11:00</published><updated>2016-02-17T00:00:00+11:00</updated><id>https://ianteda.com/management/the-mastermind-brief</id><content type="html" xml:base="https://ianteda.com/management/the-mastermind-brief.html">&lt;blockquote&gt;
+      Ideas are a Dime a Dozen &amp;#8617;</summary></entry><entry><title>The Bold Mistake Instruction</title><link href="https://ianteda.com/creativity/the-bold-mistake-instruction.html" rel="alternate" type="text/html" title="The Bold Mistake Instruction" /><published>2016-02-19T00:00:00+11:00</published><updated>2016-02-19T00:00:00+11:00</updated><id>https://ianteda.com/creativity/the-bold-mistake-instruction</id><content type="html" xml:base="https://ianteda.com/creativity/the-bold-mistake-instruction.html">&lt;blockquote&gt;
+  &lt;p&gt;All courses of action are risky, so prudence is not in avoiding danger (it’s impossible), but calculating risk and acting decisively. Make mistakes of ambition and not mistakes of sloth. Develop the strength to do bold things, not the strength to suffer.
+&lt;cite&gt;– Chapter III: Of Mixed Princedoms&lt;sup id=&quot;fnref:footnote&quot;&gt;&lt;a href=&quot;#fn:footnote&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Life is risk, it cannot be avoided so do not let the possibility of being wrong prevent action. An indecision is still a decision. Move forward knowing that the decision you made was the right one, based on the knowledge you had at the time. Whether or not it turns out right is besides the point, considered action is.&lt;/p&gt;
+
+&lt;p&gt;Becoming successful requires risk and with risk comes mistakes. It is through these mistakes that we learn and grow. We can try to avoid risk but in the end we will make mistakes. However, there are mistakes of sloth and mistakes of ambition. Mistake of sloth lead to missed opportunity and regret. While, mistakes of ambition will be forgiven because they come from good intentions. Mistakes of sloth are not so easily forgiven and often it is ourselves that are the last to forget because regret lives on.&lt;/p&gt;
+
+&lt;p&gt;Success for the most part is subjective. Whatever your measure, it still requires action. The path of least resistance is easy because it is well-worn. Be bold, walk the road less traveled and live a life without regrets and full of mistakes.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:footnote&quot;&gt;
+      &lt;p&gt;&lt;a rel=&quot;nofollow&quot; href=&quot;http://www.amazon.com/gp/product/0486272745/ref=as_li_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=0486272745&amp;amp;linkCode=as2&amp;amp;tag=iate-20&amp;amp;linkId=XF6OTL2R2FAENV6H&quot;&gt;The Prince&lt;/a&gt; by Niccolò Machiavelli. Written in the 16th century, it is about acquiring power and maintaining it (pre democracy). &lt;a href=&quot;#fnref:footnote&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><category term="creativity" /><category term="Philosophy" /><summary>All courses of action are risky, so prudence is not in avoiding danger (it’s impossible), but calculating risk and acting decisively. Make mistakes of ambition and not mistakes of sloth. Develop the strength to do bold things, not the strength to suffer.
+– Chapter III: Of Mixed Princedoms1
+
+
+Life is risk, it cannot be avoided so do not let the possibility of being wrong prevent action. An indecision is still a decision. Move forward knowing that the decision you made was the right one, based on the knowledge you had at the time. Whether or not it turns out right is besides the point, considered action is.
+
+Becoming successful requires risk and with risk comes mistakes. It is through these mistakes that we learn and grow. We can try to avoid risk but in the end we will make mistakes. However, there are mistakes of sloth and mistakes of ambition. Mistake of sloth lead to missed opportunity and regret. While, mistakes of ambition will be forgiven because they come from good intentions. Mistakes of sloth are not so easily forgiven and often it is ourselves that are the last to forget because regret lives on.
+
+Success for the most part is subjective. Whatever your measure, it still requires action. The path of least resistance is easy because it is well-worn. Be bold, walk the road less traveled and live a life without regrets and full of mistakes.
+
+
+  
+    
+      The Prince by Niccolò Machiavelli. Written in the 16th century, it is about acquiring power and maintaining it (pre democracy). &amp;#8617;</summary></entry><entry><title>The Mastermind Brief</title><link href="https://ianteda.com/management/the-mastermind-brief.html" rel="alternate" type="text/html" title="The Mastermind Brief" /><published>2016-02-17T00:00:00+11:00</published><updated>2016-02-17T00:00:00+11:00</updated><id>https://ianteda.com/management/the-mastermind-brief</id><content type="html" xml:base="https://ianteda.com/management/the-mastermind-brief.html">&lt;blockquote&gt;
   &lt;p&gt;No two minds ever come together without thereby creating a third, invisible intangible force, which may be likened to a third mind [the master mind].
 &lt;cite&gt; – Napoleon Hill&lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1275,25 +1305,4 @@ Footnotes
 
   
     
-      Podcast: Scott Adams: The Man Behind Dilbert &amp;#8617;</summary></entry><entry><title>The Bold Mistake Instruction</title><link href="https://ianteda.com/creativity/the-bold-mistake-instruction.html" rel="alternate" type="text/html" title="The Bold Mistake Instruction" /><published>2016-01-19T00:00:00+11:00</published><updated>2016-01-19T00:00:00+11:00</updated><id>https://ianteda.com/creativity/the-bold-mistake-instruction</id><content type="html" xml:base="https://ianteda.com/creativity/the-bold-mistake-instruction.html">&lt;blockquote&gt;
-  &lt;p&gt;All courses of action are risky, so prudence is not in avoiding danger (it’s impossible), but calculating risk and acting decisively. Make mistakes of ambition and not mistakes of sloth. Develop the strength to do bold things, not the strength to suffer.
-&lt;cite&gt;– Chapter III: Of Mixed Princedoms&lt;/cite&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Life is risk, it cannot be avoided so do not let the possibility of being wrong prevent action. An indecision is still a decision. Move forward knowing that the decision you made was the right one, based on the knowledge you had at the time. Whether or not it turns out right is besides the point, considered action is.&lt;/p&gt;
-
-&lt;p&gt;Becoming successful requires risk and with risk comes mistakes. It is through these mistakes that we learn and grow. We can try to avoid risk but in the end we will make mistakes. However, there are mistakes of sloth and mistakes of ambition. Mistake of sloth lead to missed opportunity and regret. While, mistakes of ambition will be forgiven because they come from good intentions. Mistakes of sloth are not so easily forgiven and often it is ourselves that are the last to forget because regret lives on.&lt;/p&gt;
-
-&lt;p&gt;Success for the most part is subjective. Whatever your measure, it still requires action. The path of least resistance is easy because it is well-worn. Be bold, walk the road less traveled and live a life without regrets and full of mistakes.&lt;/p&gt;
-
-&lt;p&gt;[^] &lt;a rel=&quot;nofollow&quot; href=&quot;http://www.amazon.com/gp/product/0486272745/ref=as_li_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=0486272745&amp;amp;linkCode=as2&amp;amp;tag=iate-20&amp;amp;linkId=XF6OTL2R2FAENV6H&quot;&gt;The Prince&lt;/a&gt; by Niccolò Machiavelli. Written in the 16th century, it is about acquiring power and maintaining it (pre democracy).&lt;/p&gt;</content><category term="creativity" /><category term="Philosophy" /><summary>All courses of action are risky, so prudence is not in avoiding danger (it’s impossible), but calculating risk and acting decisively. Make mistakes of ambition and not mistakes of sloth. Develop the strength to do bold things, not the strength to suffer.
-– Chapter III: Of Mixed Princedoms
-
-
-Life is risk, it cannot be avoided so do not let the possibility of being wrong prevent action. An indecision is still a decision. Move forward knowing that the decision you made was the right one, based on the knowledge you had at the time. Whether or not it turns out right is besides the point, considered action is.
-
-Becoming successful requires risk and with risk comes mistakes. It is through these mistakes that we learn and grow. We can try to avoid risk but in the end we will make mistakes. However, there are mistakes of sloth and mistakes of ambition. Mistake of sloth lead to missed opportunity and regret. While, mistakes of ambition will be forgiven because they come from good intentions. Mistakes of sloth are not so easily forgiven and often it is ourselves that are the last to forget because regret lives on.
-
-Success for the most part is subjective. Whatever your measure, it still requires action. The path of least resistance is easy because it is well-worn. Be bold, walk the road less traveled and live a life without regrets and full of mistakes.
-
-[^] The Prince by Niccolò Machiavelli. Written in the 16th century, it is about acquiring power and maintaining it (pre democracy).</summary></entry></feed>
+      Podcast: Scott Adams: The Man Behind Dilbert &amp;#8617;</summary></entry></feed>
