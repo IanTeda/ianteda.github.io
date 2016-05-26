@@ -14,7 +14,7 @@ logo: /assets/images/logo-light.png
 > No two minds ever come together without thereby creating a third, invisible intangible force, which may be likened to a third mind [the master mind].
 > <cite> -- Napoleon Hill</cite>
 
-[![Think and Grow Rich - Book Cover](/assets/images/think-and-grow-rich.jpg "Think and Grow Rich - Book Cover"){: .book-cover}](http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1585424331&Format=_SL110_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=iate-20)
+[![Think and Grow Rich - Book Cover](/assets/images/book-think-and-grow-rich.jpg "Think and Grow Rich - Book Cover"){: .book-cover}](http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1585424331&Format=_SL110_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=iate-20)
 
 The phrase Mastermind Group (MMG) was first coined by Napoleon Hill in his 1937 book "[Think and Grow Rich](http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1585424331&Format=_SL110_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=iate-20)". A MMG can be thought of as a peer advisory board that meets with the aim of sharpening the groups personal and business skills so they can achieve optimum outcomes[^napoleon-hill]. It is not a group coaching session[^definition].
 
