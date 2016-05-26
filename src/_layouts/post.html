@@ -12,9 +12,7 @@ logo: 'assets/images/logo-light.png'
     <article class="post {{ post.subclass }}">
 
         <header class="post-header">
-            {% if page.main-header == false %}
-                <h1 class="post-title">{{ page.title }}</h1>
-            {% endif %}
+            <h1 class="post-title">{{ page.title }}</h1>
             <section class="post-meta">
                 {% if page.categories.size > 0 %}
                     Filed Under:
