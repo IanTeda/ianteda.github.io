@@ -22,21 +22,21 @@ Who doesn't want to find their passion. It's a romantic notion afterall. That in
 > To find yourself, think for yourself.
 > <cite> — SOCRATES</cite>
 
-The world, life doesn't owe you happiness. It doesn't owe you a successful, meaningful and rewarding career. You have to work for it, you need to earn it. By refining your craft, becoming a master craftsman. Being so good they can't ignore you. Put aside the question of a true passion and focus on becoming good. It isn't about you, it's about what you can do for the world. The passion, satisfaction and enjoyment will follow.
+Life doesn't owe you happiness. It doesn't owe you a successful, meaningful and rewarding career. You have to work for it, you need to earn it. By refining your craft, becoming a master craftsman. Being so good they can't ignore you. Put aside the question of a true passion and focus on becoming good. It isn't about you, it's about what you can do for the world. The passion, satisfaction and enjoyment will follow.
 
 [![So Good They Can't Ignore You - Book Cover](/assets/images/book-so-good.jpg "So Good They Can't Ignore You - Book Cover"){: .book-cover}](http://amzn.to/1reowPn)
 
 "So Good They Can't Ignore You" by [Cal Newport](http://calnewport.com/) defines people who have meaningful careers as having the following traits in there work[^so-good] :
 
-- __Autonomy__: Control over there day. What they work on and there priorities.
-- __Competency__: They are good at what you do, and find it easy to do there work.
-- __Respect__: People openly acknowledgement there skills and look to them for answers.
+- __Autonomy__: Control over their day. What they work on and their priorities.
+- __Competency__: They are good at what they do, and find it easy to do their work.
+- __Respect__: People openly acknowledgement their skills and look to them for answers.
 
 It is surprisingly hard to get people to give you money. If you want something rare and valuable - i.e. a successful, meaningful and rewarding career - you need something rare and valuable to trade in exchange and that commodity is your skills. The more experiences you have, the bigger your collections of mental models becomes[^mental]. And the more you are going to love your work because it will be easy, people will respect you and in return they will give you more autonomy. Focus on mastering the skills you can trade. You need to be good at what you do to get good things from your work[^youtube].
 
 Mastery however is not enough, just look at the miserable workaholics. It is how you invest the fruits of those skills to build for you a meaningful and rewarding life. Be so good they can't ignore you. So they will give you the autonomy and respect. Like a continuous feed back loop, the more experience you have the more you are going to enjoy your work, the more experience you will get.
 
-To become a master craftsman take on an apprenticeship[^mind], look to roles models, be uncomfortable and be patient. Blog posts for another day.
+To become a master craftsman take on an apprenticeship[^mind], look to roles models, be uncomfortable and be patient. Topics for other blog posts.
 
 #### Footnotes
 
