@@ -36,7 +36,9 @@ It is surprisingly hard to get people to give you money. If you want something r
 
 Mastery however is not enough, just look at the miserable workaholics. It is how you invest the fruits of those skills to build for you a meaningful and rewarding life. Be so good they can't ignore you. So they will give you the autonomy and respect. Like a continuous feed back loop, the more experience you have the more you are going to enjoy your work, the more experience you will get.
 
-To become a master craftsman take on an apprenticeship[^mind], look to roles models, be uncomfortable and be patient. Topics for other blog posts.
+Don't mistake passion for an idea, with passion for work. Passion for an idea will not get you anywhere without passion for work, for the process[^seal]. But hard work isn't enough. There are lots of hardworking people that are not unhappy. What are they missing? They haven't figured out how to cash in some of that career capital for autonomy, and what do with that it.
+
+To become a master craftsman take on an apprenticeship[^mind] for guidance, look to roles models for direction, be uncomfortable with growth and be patient (see "[The Turtle Mindset](/management/the-turtle-mindset.html)"). But those are topics for whole other blog posts.
 
 #### Footnotes
 
@@ -47,3 +49,4 @@ This post builds on the ideas and thoughts of [Cal Newport](http://calnewport.co
 [^so-good]: [Amazon: Be So Good They Can't Ignore You](http://amzn.to/1reowPn)
 [^mental]: [The Mental Model Definition](https://ianteda.com/creativity/the-mental-model-definition.html)
 [^mind]: [The Mastermind Brief](https://ianteda.com/management/the-mastermind-brief.html)
+[^seal]: [Billionaire Lives W/ Navy Seal for 31 Days](https://www.theinvestorspodcast.com/tip92-billionaire-lives-w-navy-seal-nba-atlanta-hawks-owner-jesse-itzler/)
