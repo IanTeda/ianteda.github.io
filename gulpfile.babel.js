@@ -4,7 +4,6 @@
 import gulp from "gulp";
 // BrowserSync is used to live-reload your website
 import browserSync from "browser-sync";
-const reload = browserSync.reload;
 // Command line (CLI) argument
 var argv = require("./gulp/yargs.config");
 // Configuration file for gulp tasks
@@ -367,54 +366,50 @@ gulp.task("serve", () => {
 
   // Start browserSync
   browserSync({
+    // files: ['./src/**', './tmp/**'],
     server: baseDir
   });
 
-  // Watch various files for changes and run task as needed
+  // Watch for Jekyll file changes
   gulp.watch(
     [
       "src/**/*.md",
       "src/**/*.html",
-      "src/**/*.yml"
-    ],
-    gulp.series(
-      "jekyll:build",
-      reload
-    )
-  );
-  gulp.watch(
-    [
+      "src/**/*.yml",
       "src/**/*.xml",
       "src/**/*.txt"
-    ],
-    gulp.series(
-      "jekyll:build"
-    )
-  );
+    ]
+  ).on("change", gulp.series(
+    "jekyll:build",
+    browserSync.reload
+  ));
+
+  // Watch for Script changes
   gulp.watch(
-    "src/assets/scripts/**/*.js",
-    gulp.series(
-      "scripts",
-      reload
-      )
-    );
+    "src/assets/scripts/**/*.js"
+  ).on("change", gulp.series(
+    "scripts",
+    browserSync.reload
+  ));
+
+  // Watch for Styles changes
   gulp.watch(
     [
       "src/assets/sass/**/*.scss",
       "src/assets/styles/**/*.css"
-    ],
-    gulp.series(
+    ]
+  ).on("change", gulp.series(
       "styles",
-      reload
-    )
-  );
+      browserSync.reload
+  ));
+
+  // Watch for image changes
   gulp.watch(
-    "src/assets/images/**/*",
-    gulp.series(
+    "src/assets/images/**/*"
+  ).on("change", gulp.series(
       "images:build",
-      reload
-    )
-  );
+      browserSync.reload
+  ));
 });
 
 /**

@@ -38,4 +38,4 @@ Just moved into a rental house in [Sydney](https://en.wikipedia.org/wiki/Sydney)
 - Mediation
 - JavaScript
 
-*This page was inspired by [Derek Sivers](https://sivers.org/) and his work at [http://nownownow.com/](http://nownownow.com/). Most Websites (personal and professional) have an [about](about.html) page to let you know what they are about, funny that. A __now__ page is a way of letting visitors know what I am spending my time on right now.*
+*This page was inspired by [Derek Sivers](https://sivers.org/) and his work at [http://nownownow.com/](http://nownownow.com/). Most Websites (personal and professional) have an page to let you know what they are about, funny that. A __now__ page is a way of letting visitors know what I am spending my time on right now.*
