@@ -1,5 +1,5 @@
 ---
-title: The API Design Guide
+title: The API Design Guide Original
 description: One piece of software talking to another piece of software
 date: 2016-07-27
 tags: [API]
@@ -13,40 +13,41 @@ logo: /assets/images/logo-light.png
 
 > One piece of software talking to another piece of software
 
-### Definitions
-
-Some terms that are used in this guide and there definitions:
-
-- Resource: A single instance of an object.
-- Collection: A collection of homogeneous objects (resources).
-- HTTP: A protocol for communicating over networks.
-- Consumer: A client computer application capable of making HTTP requests.
-- Third Party Developer: A developer not a part of your project but who wishes to consume your data.
-- Server: An HTTP server/application accessible from a Consumer over a network.
-- Endpoint: An API URL on a Server which represents either a Resource or a Collection.
-- Idempotent: Side-effect free, can happen multiple times without penalty.
-- URL Segment: A slash-separated piece of information in the URL.
-
 ### AIM
 
-The aim of this design guide is to assist in the planing and development of a REST API.
+The aim of this design guide is to assist in the planing and development of my REST API boilerplate project.
 
 ### Overview
 
-An API is an: Application Programming Interface. An interface for one piece of software to talk to another[^concepts]. For data to be shared. It is a set of Endpoints for building software to utilise those Endpoints.
+An API is an: Application Programming Interface. An interface for one piece of software to talk to another[^concepts]. For data to be shared. It is a set of routines — in case of the web, url endpoints — for building software to utilise those routines.
 
-### REST API
+### History
 
-Representational State Transfer[^beautiful] (REST) API is a design paradigm that follows a defined set of objectives. It was first defined by Roy Thomas Fielding in his 2000 PhD dissertation “Architectural Styles and the Design of Network-based Software Architectures”. 
+REST Representational State Transfer[^beautiful], was defined by Roy Thomas Fielding in his 2000 PhD dissertation “Architectural Styles and the Design of Network-based Software Architectures”. Fielding developed the REST architectural style in parallel with HTTP 1.1 of 1996-1999, based on the existing design of HTTP 1.0[9] of 1996[^wikipedia].
 
-REST APIs aim to be:
 
-- Scalability as environments change and different internet, not performance, internet scale;
-- General or average granularity so to satisfy as many difference requirements and use cases as possible;
-- Independent of development environments allowing for different client appliaction languages and implementations.
-- Low in latency (caching) or responsiveness
-- Secure by using HTTP authorisation headers
-- Encapsulating of data so to exposes data in a constroled way
+REST:
+
+- Scalability (change and different internet, not performance, internet scale)
+- Generality (satisfy difference requirements and use cases)
+- Independence (different languages, implementation)
+- Latency (Caching)
+- Security (HTTP authorisation header)
+- Encapsulation (exposes data in a particular data, but not the working or resources)
+
+### Definition
+
+Here’s a few of the important terms I will use throughout the course of this document:
+
+- Resource: A single instance of an object. For example, an animal.
+- Collection: A collection of homogeneous objects. For example, animals.
+- HTTP: A protocol for communicating over a network.
+- Consumer: A client computer application capable of making HTTP requests.
+- Third Party Developer: A developer not a part of your project but who wishes to consume your data.
+- Server: An HTTP server/application accessible from a Consumer over a network.
+- Endpoint: An API URL on a Server which represents either a Resource or an entire Collection.
+- Idempotent: Side-effect free, can happen multiple times without penalty.
+- URL Segment: A slash-separated piece of information in the URL.
 
 ## Goals
 The big picture goals or how success will be defined, is if the project
@@ -66,14 +67,6 @@ Here are two common URL Roots:
 
 https://example.org/api/v1/*
 https://api.example.com/v1/*
-
-#### Endpoint stability
-
-When a third-party software application integrates a government API, then it may become dependent on the continued availability of that API for the software to function correctly. The software package must also depend on the stability of the API so that changes can be planned to fit within a normal software product release cycle. 
-
-#### Average Granularity
-
-A common misconception is that there is a one-to-one mapping between a service in the paper world and a corresponding API. In reality, this is almost never the case. APIs should be designed at the lowest practical level of granularity because this makes each service simpler and allows them to be combined in ways that suit the consumer. The key principle is to design services that can be re-used and combined in different ways.
 
 ## Endpoints
 
@@ -118,6 +111,7 @@ Use parameters to "expand"
 Limit through "fields"
 
 
+
 #### Versioning
 
 The version number refers to a major release of the API as to a resource.
@@ -125,6 +119,14 @@ The version number refers to a major release of the API as to a resource.
 Versioning should be included in the url. An API is never going to be completely stable. Change is inevitable. What's important is how that change is managed.
 
 `GET /v1/orders`
+
+#### Endpoint stability
+
+When a third-party software application integrates a government API, then it may become dependent on the continued availability of that API for the software to function correctly. The software package must also depend on the stability of the API so that changes can be planned to fit within a normal software product release cycle. 
+
+#### Average Granularity
+
+A common misconception is that there is a one-to-one mapping between a service in the paper world and a corresponding API. In reality, this is almost never the case. APIs should be designed at the lowest practical level of granularity because this makes each service simpler and allows them to be combined in ways that suit the consumer. The key principle is to design services that can be re-used and combined in different ways.
 
 ## Relationships
 
