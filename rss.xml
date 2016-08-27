@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.0.5">Jekyll</generator><link href="https://ianteda.com/rss.xml" rel="self" type="application/atom+xml" /><link href="https://ianteda.com/" rel="alternate" type="text/html" /><updated>2016-08-27T15:39:00+10:00</updated><id>https://ianteda.com/</id><title>Ian Teda</title><subtitle>Husband, Father, Engineer, Explorer &amp; Creator</subtitle><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><entry><title>The API Design Guide</title><link href="https://ianteda.com/programming/the-api-design-guide.html" rel="alternate" type="text/html" title="The API Design Guide" /><published>2016-08-26T00:00:00+10:00</published><updated>2016-08-26T00:00:00+10:00</updated><id>https://ianteda.com/programming/the-api-design-guide</id><content type="html" xml:base="https://ianteda.com/programming/the-api-design-guide.html">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.0.5">Jekyll</generator><link href="https://ianteda.com/rss.xml" rel="self" type="application/atom+xml" /><link href="https://ianteda.com/" rel="alternate" type="text/html" /><updated>2016-08-27T15:44:11+10:00</updated><id>https://ianteda.com/</id><title>Ian Teda</title><subtitle>Husband, Father, Engineer, Explorer &amp; Creator</subtitle><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><entry><title>The API Design Guide</title><link href="https://ianteda.com/programming/the-api-design-guide.html" rel="alternate" type="text/html" title="The API Design Guide" /><published>2016-08-26T00:00:00+10:00</published><updated>2016-08-26T00:00:00+10:00</updated><id>https://ianteda.com/programming/the-api-design-guide</id><content type="html" xml:base="https://ianteda.com/programming/the-api-design-guide.html">&lt;blockquote&gt;
   &lt;p&gt;An API allows one piece of software talking to another piece of software&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -126,7 +126,7 @@ Content-Type: application/com.ianteda.app-v3+json
 
 &lt;p&gt;When responding with an error the JSON body should return a useful error message, a unique internal error code with reference to documentation, a detailed description and a 400 http status. Error messages should be human-readable from the browser, include a diagnostic message to help the consumer resolve the error condition and be as descriptive as possible.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Status: 409 Error
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Status: 400 BAD REQUEST
 {
   &quot;code&quot; : unique_project_code,
   &quot;property&quot; : &quot;What caused the error&quot;,
@@ -137,89 +137,6 @@ Content-Type: application/com.ianteda.app-v3+json
 }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
-
-&lt;h2 id=&quot;http-status-codes&quot;&gt;HTTP status codes&lt;/h2&gt;
-
-&lt;p&gt;HTTP status codes can help your consumers navigate your API. Providing context to the API responses.&lt;/p&gt;
-
-&lt;p&gt;Useful list of API HTTP status codes&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Code&lt;/th&gt;
-      &lt;th&gt;Status&lt;/th&gt;
-      &lt;th&gt;Notes&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;200&lt;/td&gt;
-      &lt;td&gt;OK&lt;/td&gt;
-      &lt;td&gt;Response to a successful GET, PUT, PATCH or DELETE. Can also be used for a POST that doesn’t result in a creation&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;201&lt;/td&gt;
-      &lt;td&gt;Created&lt;/td&gt;
-      &lt;td&gt;Response to a POST that results in a creation. Should be combined with a Location header pointing to the location of the new resource&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;204&lt;/td&gt;
-      &lt;td&gt;No Content&lt;/td&gt;
-      &lt;td&gt;Response to a successful request that won’t be returning a body (like a DELETE request)&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;304&lt;/td&gt;
-      &lt;td&gt;Not Modified&lt;/td&gt;
-      &lt;td&gt;Used when HTTP caching headers are in play&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;400&lt;/td&gt;
-      &lt;td&gt;Bad Request&lt;/td&gt;
-      &lt;td&gt;The request is malformed, such as if the body does not parse&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;401&lt;/td&gt;
-      &lt;td&gt;Unauthorized&lt;/td&gt;
-      &lt;td&gt;When no or invalid authentication details are provided. Also useful to trigger an auth popup if the API is used from a browser&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;403&lt;/td&gt;
-      &lt;td&gt;Forbidden&lt;/td&gt;
-      &lt;td&gt;When authentication succeeded but authenticated user doesn’t have access to the resource&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;404&lt;/td&gt;
-      &lt;td&gt;Not Found&lt;/td&gt;
-      &lt;td&gt;When a non-existent resource is requested&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;405&lt;/td&gt;
-      &lt;td&gt;Method Not Allowed&lt;/td&gt;
-      &lt;td&gt;When an HTTP method is being requested that isn’t allowed for the authenticated user&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;410&lt;/td&gt;
-      &lt;td&gt;Gone&lt;/td&gt;
-      &lt;td&gt;Indicates that the resource at this end point is no longer available. Useful as a blanket response for old API versions&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;415&lt;/td&gt;
-      &lt;td&gt;Unsupported Media Type&lt;/td&gt;
-      &lt;td&gt;If incorrect content type was provided as part of the request&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;422&lt;/td&gt;
-      &lt;td&gt;Unprocessable Entity&lt;/td&gt;
-      &lt;td&gt;Used for validation errors&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;429&lt;/td&gt;
-      &lt;td&gt;Too Many Requests&lt;/td&gt;
-      &lt;td&gt;When a request is rejected due to rate limiting&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
 
 &lt;h3 id=&quot;endpoints&quot;&gt;Endpoints&lt;/h3&gt;
 
@@ -401,7 +318,90 @@ Content-Type: application/com.ianteda.app-v3+json
 
 &lt;p&gt;To make the API experience more pleasant for the average consumer, consider packaging up sets of query conditions into easily accessible endpoints.&lt;/p&gt;
 
-&lt;h4 id=&quot;references&quot;&gt;References&lt;/h4&gt;
+&lt;h3 id=&quot;http-status-codes&quot;&gt;HTTP status codes&lt;/h3&gt;
+
+&lt;p&gt;HTTP status codes can help your consumers navigate your API. Providing context to the API responses.&lt;/p&gt;
+
+&lt;p&gt;Useful list of API HTTP status codes&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Code&lt;/th&gt;
+      &lt;th&gt;Status&lt;/th&gt;
+      &lt;th&gt;Notes&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;200&lt;/td&gt;
+      &lt;td&gt;OK&lt;/td&gt;
+      &lt;td&gt;Response to a successful GET, PUT, PATCH or DELETE. Can also be used for a POST that doesn’t result in a creation&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;201&lt;/td&gt;
+      &lt;td&gt;Created&lt;/td&gt;
+      &lt;td&gt;Response to a POST that results in a creation. Should be combined with a Location header pointing to the location of the new resource&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;204&lt;/td&gt;
+      &lt;td&gt;No Content&lt;/td&gt;
+      &lt;td&gt;Response to a successful request that won’t be returning a body (like a DELETE request)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;304&lt;/td&gt;
+      &lt;td&gt;Not Modified&lt;/td&gt;
+      &lt;td&gt;Used when HTTP caching headers are in play&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;400&lt;/td&gt;
+      &lt;td&gt;Bad Request&lt;/td&gt;
+      &lt;td&gt;The request is malformed, such as if the body does not parse&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;401&lt;/td&gt;
+      &lt;td&gt;Unauthorized&lt;/td&gt;
+      &lt;td&gt;When no or invalid authentication details are provided. Also useful to trigger an auth popup if the API is used from a browser&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;403&lt;/td&gt;
+      &lt;td&gt;Forbidden&lt;/td&gt;
+      &lt;td&gt;When authentication succeeded but authenticated user doesn’t have access to the resource&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;404&lt;/td&gt;
+      &lt;td&gt;Not Found&lt;/td&gt;
+      &lt;td&gt;When a non-existent resource is requested&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;405&lt;/td&gt;
+      &lt;td&gt;Method Not Allowed&lt;/td&gt;
+      &lt;td&gt;When an HTTP method is being requested that isn’t allowed for the authenticated user&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;410&lt;/td&gt;
+      &lt;td&gt;Gone&lt;/td&gt;
+      &lt;td&gt;Indicates that the resource at this end point is no longer available. Useful as a blanket response for old API versions&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;415&lt;/td&gt;
+      &lt;td&gt;Unsupported Media Type&lt;/td&gt;
+      &lt;td&gt;If incorrect content type was provided as part of the request&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;422&lt;/td&gt;
+      &lt;td&gt;Unprocessable Entity&lt;/td&gt;
+      &lt;td&gt;Used for validation errors&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;429&lt;/td&gt;
+      &lt;td&gt;Too Many Requests&lt;/td&gt;
+      &lt;td&gt;When a request is rejected due to rate limiting&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h5 id=&quot;references&quot;&gt;References&lt;/h5&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://phraseapp.com/blog/posts/best-practice-10-design-tips-for-apis/&quot;&gt;10 Design Tips For APIs&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Application_programming_interface&quot;&gt;Application programming interface&lt;/a&gt;&lt;/li&gt;
@@ -540,7 +540,7 @@ Error Messages
 
 When responding with an error the JSON body should return a useful error message, a unique internal error code with reference to documentation, a detailed description and a 400 http status. Error messages should be human-readable from the browser, include a diagnostic message to help the consumer resolve the error condition and be as descriptive as possible.
 
-Status: 409 Error
+Status: 400 BAD REQUEST
 {
   &quot;code&quot; : unique_project_code,
   &quot;property&quot; : &quot;What caused the error&quot;,
@@ -550,89 +550,6 @@ Status: 409 Error
   &quot;documentation_url&quot;: &quot;https://ianteda.com/api/documentation&quot;
 }
 
-
-
-HTTP status codes
-
-HTTP status codes can help your consumers navigate your API. Providing context to the API responses.
-
-Useful list of API HTTP status codes
-
-
-  
-    
-      Code
-      Status
-      Notes
-    
-  
-  
-    
-      200
-      OK
-      Response to a successful GET, PUT, PATCH or DELETE. Can also be used for a POST that doesn’t result in a creation
-    
-    
-      201
-      Created
-      Response to a POST that results in a creation. Should be combined with a Location header pointing to the location of the new resource
-    
-    
-      204
-      No Content
-      Response to a successful request that won’t be returning a body (like a DELETE request)
-    
-    
-      304
-      Not Modified
-      Used when HTTP caching headers are in play
-    
-    
-      400
-      Bad Request
-      The request is malformed, such as if the body does not parse
-    
-    
-      401
-      Unauthorized
-      When no or invalid authentication details are provided. Also useful to trigger an auth popup if the API is used from a browser
-    
-    
-      403
-      Forbidden
-      When authentication succeeded but authenticated user doesn’t have access to the resource
-    
-    
-      404
-      Not Found
-      When a non-existent resource is requested
-    
-    
-      405
-      Method Not Allowed
-      When an HTTP method is being requested that isn’t allowed for the authenticated user
-    
-    
-      410
-      Gone
-      Indicates that the resource at this end point is no longer available. Useful as a blanket response for old API versions
-    
-    
-      415
-      Unsupported Media Type
-      If incorrect content type was provided as part of the request
-    
-    
-      422
-      Unprocessable Entity
-      Used for validation errors
-    
-    
-      429
-      Too Many Requests
-      When a request is rejected due to rate limiting
-    
-  
 
 
 Endpoints
@@ -814,6 +731,89 @@ Searching
 Sometimes basic filters is not enough and you need the power of full text search. Use a query parameter on the resources endpoint ?query=search term. Search queries should be passed straight to the search engine and API output should be in the same format as a normal list result.
 
 To make the API experience more pleasant for the average consumer, consider packaging up sets of query conditions into easily accessible endpoints.
+
+HTTP status codes
+
+HTTP status codes can help your consumers navigate your API. Providing context to the API responses.
+
+Useful list of API HTTP status codes
+
+
+  
+    
+      Code
+      Status
+      Notes
+    
+  
+  
+    
+      200
+      OK
+      Response to a successful GET, PUT, PATCH or DELETE. Can also be used for a POST that doesn’t result in a creation
+    
+    
+      201
+      Created
+      Response to a POST that results in a creation. Should be combined with a Location header pointing to the location of the new resource
+    
+    
+      204
+      No Content
+      Response to a successful request that won’t be returning a body (like a DELETE request)
+    
+    
+      304
+      Not Modified
+      Used when HTTP caching headers are in play
+    
+    
+      400
+      Bad Request
+      The request is malformed, such as if the body does not parse
+    
+    
+      401
+      Unauthorized
+      When no or invalid authentication details are provided. Also useful to trigger an auth popup if the API is used from a browser
+    
+    
+      403
+      Forbidden
+      When authentication succeeded but authenticated user doesn’t have access to the resource
+    
+    
+      404
+      Not Found
+      When a non-existent resource is requested
+    
+    
+      405
+      Method Not Allowed
+      When an HTTP method is being requested that isn’t allowed for the authenticated user
+    
+    
+      410
+      Gone
+      Indicates that the resource at this end point is no longer available. Useful as a blanket response for old API versions
+    
+    
+      415
+      Unsupported Media Type
+      If incorrect content type was provided as part of the request
+    
+    
+      422
+      Unprocessable Entity
+      Used for validation errors
+    
+    
+      429
+      Too Many Requests
+      When a request is rejected due to rate limiting
+    
+  
+
 
 References
 
