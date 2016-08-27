@@ -1,4 +1,832 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.0.5">Jekyll</generator><link href="https://ianteda.com/rss.xml" rel="self" type="application/atom+xml" /><link href="https://ianteda.com/" rel="alternate" type="text/html" /><updated>2016-08-27T15:37:15+10:00</updated><id>https://ianteda.com/</id><title>Ian Teda</title><subtitle>Husband, Father, Engineer, Explorer &amp; Creator</subtitle><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><entry><title>The Turtle Mindset</title><link href="https://ianteda.com/management/the-turtle-mindset.html" rel="alternate" type="text/html" title="The Turtle Mindset" /><published>2016-07-01T00:00:00+10:00</published><updated>2016-07-01T00:00:00+10:00</updated><id>https://ianteda.com/management/the-turtle-mindset</id><content type="html" xml:base="https://ianteda.com/management/the-turtle-mindset.html">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.0.5">Jekyll</generator><link href="https://ianteda.com/rss.xml" rel="self" type="application/atom+xml" /><link href="https://ianteda.com/" rel="alternate" type="text/html" /><updated>2016-08-27T15:39:00+10:00</updated><id>https://ianteda.com/</id><title>Ian Teda</title><subtitle>Husband, Father, Engineer, Explorer &amp; Creator</subtitle><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><entry><title>The API Design Guide</title><link href="https://ianteda.com/programming/the-api-design-guide.html" rel="alternate" type="text/html" title="The API Design Guide" /><published>2016-08-26T00:00:00+10:00</published><updated>2016-08-26T00:00:00+10:00</updated><id>https://ianteda.com/programming/the-api-design-guide</id><content type="html" xml:base="https://ianteda.com/programming/the-api-design-guide.html">&lt;blockquote&gt;
+  &lt;p&gt;An API allows one piece of software talking to another piece of software&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;definitions&quot;&gt;Definitions&lt;/h3&gt;
+
+&lt;p&gt;Some terms used in this guide and there definitions:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;API&lt;/strong&gt; - Application Programming Interface, an interface for one piece of software to talk to another;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Collection&lt;/strong&gt; - A collection of resources found at an endpoint;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Consumer (Client)&lt;/strong&gt; - A client computer application making requests of the API;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;cURL&lt;/strong&gt; - A command line tool for getting and sending files using URL syntax;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Endpoint&lt;/strong&gt; - An API URL on a Server which represents either a Resource or a Collection;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Granularity&lt;/strong&gt; - The level of detailed returned in the request response;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;HTTP&lt;/strong&gt; - A protocol for communicating over networks, aka the internet;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Idempotent (Stateless)&lt;/strong&gt; - Side-effect free, can happen multiple times without affecting the data state;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Resource&lt;/strong&gt; - A single instance of an object in an endpoint request response;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;REST (RESTful)&lt;/strong&gt; - Representational State Transfer, an architectural style for the design of network-based software;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;SSL&lt;/strong&gt; - Secure Socket Layer, the standard security technology for establishing an encrypted link between a web server and a browser&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;URL&lt;/strong&gt; - Uniform Resource Locator and is a reference (an address) to a resource on the Internet.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;URL Segment&lt;/strong&gt; - A slash-separated piece of information in the URL;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;aim&quot;&gt;AIM&lt;/h3&gt;
+
+&lt;p&gt;The aim of this design guide is to assist in the planing and development of a REST API.&lt;/p&gt;
+
+&lt;h3 id=&quot;overview&quot;&gt;Overview&lt;/h3&gt;
+
+&lt;p&gt;An API is an: Application Programming Interface. An interface for one piece of software to talk to another[^concepts] and data to be shared. It is a set of endpoints for serving up data.&lt;/p&gt;
+
+&lt;h3 id=&quot;rest-api&quot;&gt;REST API&lt;/h3&gt;
+
+&lt;p&gt;REST API is an architectural design style that follows a defined set of objectives. It was first defined by Roy &lt;a href=&quot;https://en.wikipedia.org/wiki/Roy_Fielding&quot;&gt;Thomas Fielding&lt;/a&gt; in his 2000 PhD dissertation “Architectural Styles and the Design of Network-based Software Architectures”.&lt;/p&gt;
+
+&lt;p&gt;The REST architectural style aims to be:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Stateless:&lt;/strong&gt; each request contains all the information needed to complete the request;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Independent:&lt;/strong&gt; client-server model allows for different client environments and implementations to use the API;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Cacheable:&lt;/strong&gt; responses define themselves as cacheable or not, improving latency, scalability and responsiveness;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Granularity:&lt;/strong&gt; use the lowest possible level of deatil to satisfy as many difference requirements and use cases as possible;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Secure:&lt;/strong&gt; use of HTTP authorisation headers to securely send data;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Encapsulation:&lt;/strong&gt; expose only the date data you want to, in a controlled way;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;success&quot;&gt;Success&lt;/h3&gt;
+
+&lt;p&gt;A successful REST API, is one that:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Has good documentation that is easy to find;&lt;/li&gt;
+  &lt;li&gt;Uses web standards where they make sense;&lt;/li&gt;
+  &lt;li&gt;Is friendly to the developer and can be explored via a browser address bar;&lt;/li&gt;
+  &lt;li&gt;Is simple, intuitive and consistent to make adoption not only easy but pleasant;&lt;/li&gt;
+  &lt;li&gt;Provides enough flexibility to power the majority of development environments;&lt;/li&gt;
+  &lt;li&gt;Is efficient, while maintaining a balance with other requirements;&lt;/li&gt;
+  &lt;li&gt;Has been developed using Test Driven Development (TDD) principles&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;documentation&quot;&gt;Documentation&lt;/h3&gt;
+
+&lt;p&gt;The API should be well documented with cURL examples with JSON responses. A cURL examples can be cut-and-pasted, removing any ambiguity regarding endpoint calls and applicable JSON responses.&lt;/p&gt;
+
+&lt;h3 id=&quot;api-baseroot-url&quot;&gt;API BASE/ROOT URL&lt;/h3&gt;
+
+&lt;p&gt;The root or entry point into the API should be as simple as possible. Long complex URLs appear daunting. Two common API roots are:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;https://api.example.com/*&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;https://example.com/api/*&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The single root entry point should contain some basic information about the API, such as:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Information on the API version;&lt;/li&gt;
+  &lt;li&gt;Supported features;&lt;/li&gt;
+  &lt;li&gt;A list of top-level collections;&lt;/li&gt;
+  &lt;li&gt;A list of singleton resources;&lt;/li&gt;
+  &lt;li&gt;A small summary of operating status;&lt;/li&gt;
+  &lt;li&gt;Some statistics;&lt;/li&gt;
+  &lt;li&gt;A link to the documentation&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;versioning&quot;&gt;Versioning&lt;/h3&gt;
+
+&lt;p&gt;The version number should refer to major releases of the API. An API is never going to be stable, change is inevitable in fact needed. What is important is how that change is managed. When third-party software applications (clients) integrate with your API, they become dependent on the availability of the API. Versioning allows for backwards compatibility and continued development.&lt;/p&gt;
+
+&lt;p&gt;There are two common methods for managing API versions:&lt;/p&gt;
+
+&lt;p&gt;1) in the request HTTP header;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Accept: application/com.ianteda.app-v3+json
+Content-Type: application/com.ianteda.app-v3+json 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;2) in the URL;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;GET https://api.example.com/v1/endpoint
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This guide recommends option 2. Having the API version in the endpoint URL, it is obvious and human readable.&lt;/p&gt;
+
+&lt;h3 id=&quot;security&quot;&gt;Security&lt;/h3&gt;
+
+&lt;p&gt;All API requests and responses should be over SSL (HTTPS). Do not redirect non-SSL requests to the SSL endpoint, as this can leak information. Instead throw an API error response when the request comes over non-SSL.&lt;/p&gt;
+
+&lt;p&gt;With the use of Webtokens, SSL simplifies the authentication model. Never use a custom authentication protocol, stick to the standards like &lt;a href=&quot;https://oauth.net/2/&quot;&gt;Oauth 2&lt;/a&gt;. Webtokens means the users state (authentication) is kept on the user end, sot that every request can be authenticated against the webtokens. This avoids server session states, sticking to the REST stateless server principle.&lt;/p&gt;
+
+&lt;p&gt;Access within the API should be based on the resource not the endpoint URL.&lt;/p&gt;
+
+&lt;p&gt;Use request rate limiting to the endpoints, to avoid performance issues.&lt;/p&gt;
+
+&lt;p&gt;Keep in mind when providing authentication responses that:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;401 “Unauthorized”&lt;/strong&gt; - Really means unauthenticated. You need valid credentials for me to respond to this request;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;403 “Forbidden”&lt;/strong&gt; - Really means unauthorized. I understood your credentials, but sorry, you are not allowed to access that resource;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;error-messages&quot;&gt;Error Messages&lt;/h3&gt;
+
+&lt;p&gt;When responding with an error the JSON body should return a useful error message, a unique internal error code with reference to documentation, a detailed description and a 400 http status. Error messages should be human-readable from the browser, include a diagnostic message to help the consumer resolve the error condition and be as descriptive as possible.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Status: 409 Error
+{
+  &quot;code&quot; : unique_project_code,
+  &quot;property&quot; : &quot;What caused the error&quot;,
+  &quot;message&quot; : &quot;Something bad has happened :(&quot;,
+  &quot;description&quot; : &quot;More details about the error here&quot;,
+  &quot;developer_message : &quot;Extra information to help resolve the error response&quot;,
+  &quot;documentation_url&quot;: &quot;https://ianteda.com/api/documentation&quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;http-status-codes&quot;&gt;HTTP status codes&lt;/h2&gt;
+
+&lt;p&gt;HTTP status codes can help your consumers navigate your API. Providing context to the API responses.&lt;/p&gt;
+
+&lt;p&gt;Useful list of API HTTP status codes&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Code&lt;/th&gt;
+      &lt;th&gt;Status&lt;/th&gt;
+      &lt;th&gt;Notes&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;200&lt;/td&gt;
+      &lt;td&gt;OK&lt;/td&gt;
+      &lt;td&gt;Response to a successful GET, PUT, PATCH or DELETE. Can also be used for a POST that doesn’t result in a creation&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;201&lt;/td&gt;
+      &lt;td&gt;Created&lt;/td&gt;
+      &lt;td&gt;Response to a POST that results in a creation. Should be combined with a Location header pointing to the location of the new resource&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;204&lt;/td&gt;
+      &lt;td&gt;No Content&lt;/td&gt;
+      &lt;td&gt;Response to a successful request that won’t be returning a body (like a DELETE request)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;304&lt;/td&gt;
+      &lt;td&gt;Not Modified&lt;/td&gt;
+      &lt;td&gt;Used when HTTP caching headers are in play&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;400&lt;/td&gt;
+      &lt;td&gt;Bad Request&lt;/td&gt;
+      &lt;td&gt;The request is malformed, such as if the body does not parse&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;401&lt;/td&gt;
+      &lt;td&gt;Unauthorized&lt;/td&gt;
+      &lt;td&gt;When no or invalid authentication details are provided. Also useful to trigger an auth popup if the API is used from a browser&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;403&lt;/td&gt;
+      &lt;td&gt;Forbidden&lt;/td&gt;
+      &lt;td&gt;When authentication succeeded but authenticated user doesn’t have access to the resource&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;404&lt;/td&gt;
+      &lt;td&gt;Not Found&lt;/td&gt;
+      &lt;td&gt;When a non-existent resource is requested&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;405&lt;/td&gt;
+      &lt;td&gt;Method Not Allowed&lt;/td&gt;
+      &lt;td&gt;When an HTTP method is being requested that isn’t allowed for the authenticated user&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;410&lt;/td&gt;
+      &lt;td&gt;Gone&lt;/td&gt;
+      &lt;td&gt;Indicates that the resource at this end point is no longer available. Useful as a blanket response for old API versions&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;415&lt;/td&gt;
+      &lt;td&gt;Unsupported Media Type&lt;/td&gt;
+      &lt;td&gt;If incorrect content type was provided as part of the request&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;422&lt;/td&gt;
+      &lt;td&gt;Unprocessable Entity&lt;/td&gt;
+      &lt;td&gt;Used for validation errors&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;429&lt;/td&gt;
+      &lt;td&gt;Too Many Requests&lt;/td&gt;
+      &lt;td&gt;When a request is rejected due to rate limiting&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;endpoints&quot;&gt;Endpoints&lt;/h3&gt;
+
+&lt;h4 id=&quot;rules&quot;&gt;Rules&lt;/h4&gt;
+
+&lt;p&gt;Some Endpoint rules to keep in mind:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Nouns&lt;/strong&gt; - Always represent endpoints with nouns, not verbs;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Plurals&lt;/strong&gt; - Always use the plural of the noun. It avoids confusing pluralisation such as person and people;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Logical&lt;/strong&gt; - Endpoints should make sense from the perspective of the API consumer. Aka developer, not the data model;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Not one-to-one&lt;/strong&gt; - Endpoints don’t necessarily need to or make sense to map one-to-one to the data (database) model;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Actions&lt;/strong&gt; - Endpoint actions should be verbs;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;down case&lt;/strong&gt; - Down case end points and actions;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Snake Case&lt;/strong&gt; - Use snake_case;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Full Path&lt;/strong&gt; - In your responses provide a link to the fully qualified canoncial API path;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Resource Created&lt;/strong&gt; - When posting (creation and update) to an endpoint the response should return the resource created;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Names and IDs&lt;/strong&gt; - Accept Ids and names in endpoint requests;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Limit Nesting&lt;/strong&gt; - Limit endpoint nesting;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Human Readable&lt;/strong&gt; - The API response should  be human readable, pretty print by default. i.e. Do not remove white space;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;GZip&lt;/strong&gt; - Compress responses, since we are going pretty print response with whitespaces;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Cache&lt;/strong&gt; - Cache responses with ETag and &lt;code class=&quot;highlighter-rouge&quot;&gt;Cache-Control: max-age=0, private, must-revalidate&lt;/code&gt;;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Media Type&lt;/strong&gt; - Use Media Type &lt;code class=&quot;highlighter-rouge&quot;&gt;Content-Type: application/json; charset=utf-8&lt;/code&gt;;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Expansion&lt;/strong&gt; - Keep response as small as possible with links to expansion (or materialisation);&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Documentation&lt;/strong&gt; - Each endpoint should provide a link to its documentation;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Boolean&lt;/strong&gt; - Treat boolean actions on a resource as a sub resource. &lt;code class=&quot;highlighter-rouge&quot;&gt;PUT /resource/{key}/activate&lt;/code&gt;;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Granularity:&lt;/strong&gt; Keep resource detail to the lowest practical level with links to expansion;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Multiple Endpoing Query:&lt;/strong&gt; Create an endpoint for multiple resource queries, such as search;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Analytics&lt;/strong&gt; - Keep track of the version/endpoints of your API being used by Consumers;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Response Output&lt;/strong&gt; - Use JSON;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;actions&quot;&gt;Actions&lt;/h4&gt;
+
+&lt;p&gt;Typical actions on an endpoint&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Method&lt;/th&gt;
+      &lt;th&gt;URI end point&lt;/th&gt;
+      &lt;th&gt;Notes&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;GET&lt;/td&gt;
+      &lt;td&gt;/resource&lt;/td&gt;
+      &lt;td&gt;Returns a list of all the resources in the collection. By default items in the list are a minimal representation of themselves&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;GET&lt;/td&gt;
+      &lt;td&gt;/resource/{key}&lt;/td&gt;
+      &lt;td&gt;Returns the full content of the resource identified by the given key (name or id)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;POST&lt;/td&gt;
+      &lt;td&gt;/resource&lt;/td&gt;
+      &lt;td&gt;Create a new resource&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;PUT&lt;/td&gt;
+      &lt;td&gt;/resource/{key}&lt;/td&gt;
+      &lt;td&gt;Update a resource identified by the given key (name or id)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;PATCH&lt;/td&gt;
+      &lt;td&gt;/resource/{key}&lt;/td&gt;
+      &lt;td&gt;Partially update a resource identified by the given key (name or id)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;DELTE&lt;/td&gt;
+      &lt;td&gt;/resource/{key}&lt;/td&gt;
+      &lt;td&gt;Delete a resource identified by the given key (name or id)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h4 id=&quot;relationships&quot;&gt;Relationships&lt;/h4&gt;
+
+&lt;h5 id=&quot;one-to-many-relationships&quot;&gt;One to many relationships&lt;/h5&gt;
+
+&lt;p&gt;If Relationships exist within a resource, extend the endpoint.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Method&lt;/th&gt;
+      &lt;th&gt;URI end point&lt;/th&gt;
+      &lt;th&gt;Notes&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;GET&lt;/td&gt;
+      &lt;td&gt;/resource/{key}/relationship&lt;/td&gt;
+      &lt;td&gt;Retrieve a list of relationships for the resource {key (name or id)}&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;GET&lt;/td&gt;
+      &lt;td&gt;/resource/{key}/relationship/{key}&lt;/td&gt;
+      &lt;td&gt;Retrieve relationship {key} (name or id) for a given resource {key (name or id)}&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;POST&lt;/td&gt;
+      &lt;td&gt;/resource/{key}/relationship&lt;/td&gt;
+      &lt;td&gt;Create a new relationship for a given resource {key (name or id)}&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;PUT&lt;/td&gt;
+      &lt;td&gt;/resource/{key}/relationship/{key}&lt;/td&gt;
+      &lt;td&gt;Update relationship {key} (name or ide) for ticket {key (name or id)}&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;PATCH&lt;/td&gt;
+      &lt;td&gt;/resource/{key}/relationship/{key}&lt;/td&gt;
+      &lt;td&gt;Partially update relationship {key (name or id)} for resource {key (name or id)}&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;DELETE&lt;/td&gt;
+      &lt;td&gt;/resource/{key}/relationship/{key}&lt;/td&gt;
+      &lt;td&gt;Delete relationship {key (name or id)} for resource {key (name or id)}&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h5 id=&quot;many-to-many-relationships&quot;&gt;Many to many relationships&lt;/h5&gt;
+
+&lt;p&gt;If the relationship exists external to a resource, provide an end point for the relationship. With a href link within the resource response to the relationship. By creating an endpoint for the relationship it can be deleted without deleting the resource.&lt;/p&gt;
+
+&lt;h4 id=&quot;provide-request-ids-for-introspection&quot;&gt;Provide Request-Ids for Introspection&lt;/h4&gt;
+
+&lt;p&gt;Include a Request-Id header in each API response, populated with a UUID value. By logging these values on the client, server and any backing services, it provides a mechanism to trace, diagnose and debug requests.&lt;/p&gt;
+
+&lt;h4 id=&quot;pagination&quot;&gt;Pagination&lt;/h4&gt;
+
+&lt;p&gt;Divide large responses across multiple requests with pagination. Using offset and limit parameters&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;../resource?offset=50&amp;amp;limit=25&lt;/code&gt; - Will return a response starting from 50 of the next 25 resource items.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Provide links within the paged response to other pages.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;first&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/resource/00001&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;previous&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/resource/34523&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;next&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/resource/34525&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;last&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/resource/8764534&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;index : {
+    00001: &quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/resource?offset=0&amp;amp;limit=25&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;,
+    00002: &quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/resource?offset=25&amp;amp;limit=25&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;,
+    00003: &quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/resource?offset=50&amp;amp;limit=25&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&quot;parameters&quot;&gt;Parameters&lt;/h4&gt;
+
+&lt;p&gt;Complex result filters, sorting and searching can all be easily implemented as query parameters on top of the resource URL&lt;/p&gt;
+
+&lt;h5 id=&quot;filtering&quot;&gt;Filtering&lt;/h5&gt;
+
+&lt;p&gt;Use a unique query parameter for each field that implements filtering. When requesting a list of resources from the /resources endpoint the default should be the smallest practical, say those in the open state. Provide a mechanism to return all &lt;code class=&quot;highlighter-rouge&quot;&gt;GET /resources?state=all&lt;/code&gt; or those closed &lt;code class=&quot;highlighter-rouge&quot;&gt;GET /resources?state=closed&lt;/code&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;sorting&quot;&gt;Sorting&lt;/h5&gt;
+
+&lt;p&gt;Use the a generic parameter such as &lt;code class=&quot;highlighter-rouge&quot;&gt;?sort=&lt;/code&gt; to describe sorting rules for a resource endpoint. Accommodate complex sorting requirements with a list of comma separated fields, each with a possible unary negative for descending order or positive.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET /resources?sort=-priority&lt;/code&gt; - Responds with a list of resources in descending order of priority field&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET /resources?sort=-priority,created_at&lt;/code&gt; - Responds with a list of resources in descending order of priority.  With older resources within the priority being first.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;searching&quot;&gt;Searching&lt;/h5&gt;
+
+&lt;p&gt;Sometimes basic filters is not enough and you need the power of full text search. Use a query parameter on the resources endpoint &lt;code class=&quot;highlighter-rouge&quot;&gt;?query=search term&lt;/code&gt;. Search queries should be passed straight to the search engine and API output should be in the same format as a normal list result.&lt;/p&gt;
+
+&lt;p&gt;To make the API experience more pleasant for the average consumer, consider packaging up sets of query conditions into easily accessible endpoints.&lt;/p&gt;
+
+&lt;h4 id=&quot;references&quot;&gt;References&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://phraseapp.com/blog/posts/best-practice-10-design-tips-for-apis/&quot;&gt;10 Design Tips For APIs&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Application_programming_interface&quot;&gt;Application programming interface&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api&quot;&gt;Best Practices for a Pragmatic RESTful API&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=mZ8_QgJ5mbs&quot;&gt;Beautiful REST &amp;amp; JSON APIs&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.octo.com/en/design-a-rest-api/&quot;&gt;How to design a REST API&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Representational_state_transfer&quot;&gt;Representational state transfer&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.thoughtworks.com/insights/blog/rest-api-design-resource-modeling&quot;&gt;REST API Design - Resource Modeling&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=7YcW25PHnAA&quot;&gt;REST API concepts and examples&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://restful-api-design.readthedocs.io/en/latest/&quot;&gt;Thoughts on RESTful API Design&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/671118/what-exactly-is-restful-programming&quot;&gt;What Exactly is RESTful Programming&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><category term="programming" /><category term="API" /><summary>An API allows one piece of software talking to another piece of software
+
+
+Definitions
+
+Some terms used in this guide and there definitions:
+
+
+  API - Application Programming Interface, an interface for one piece of software to talk to another;
+  Collection - A collection of resources found at an endpoint;
+  Consumer (Client) - A client computer application making requests of the API;
+  cURL - A command line tool for getting and sending files using URL syntax;
+  Endpoint - An API URL on a Server which represents either a Resource or a Collection;
+  Granularity - The level of detailed returned in the request response;
+  HTTP - A protocol for communicating over networks, aka the internet;
+  Idempotent (Stateless) - Side-effect free, can happen multiple times without affecting the data state;
+  Resource - A single instance of an object in an endpoint request response;
+  REST (RESTful) - Representational State Transfer, an architectural style for the design of network-based software;
+  SSL - Secure Socket Layer, the standard security technology for establishing an encrypted link between a web server and a browser
+  URL - Uniform Resource Locator and is a reference (an address) to a resource on the Internet.
+  URL Segment - A slash-separated piece of information in the URL;
+
+
+AIM
+
+The aim of this design guide is to assist in the planing and development of a REST API.
+
+Overview
+
+An API is an: Application Programming Interface. An interface for one piece of software to talk to another[^concepts] and data to be shared. It is a set of endpoints for serving up data.
+
+REST API
+
+REST API is an architectural design style that follows a defined set of objectives. It was first defined by Roy Thomas Fielding in his 2000 PhD dissertation “Architectural Styles and the Design of Network-based Software Architectures”.
+
+The REST architectural style aims to be:
+
+
+  Stateless: each request contains all the information needed to complete the request;
+  Independent: client-server model allows for different client environments and implementations to use the API;
+  Cacheable: responses define themselves as cacheable or not, improving latency, scalability and responsiveness;
+  Granularity: use the lowest possible level of deatil to satisfy as many difference requirements and use cases as possible;
+  Secure: use of HTTP authorisation headers to securely send data;
+  Encapsulation: expose only the date data you want to, in a controlled way;
+
+
+Success
+
+A successful REST API, is one that:
+
+
+  Has good documentation that is easy to find;
+  Uses web standards where they make sense;
+  Is friendly to the developer and can be explored via a browser address bar;
+  Is simple, intuitive and consistent to make adoption not only easy but pleasant;
+  Provides enough flexibility to power the majority of development environments;
+  Is efficient, while maintaining a balance with other requirements;
+  Has been developed using Test Driven Development (TDD) principles
+
+
+Documentation
+
+The API should be well documented with cURL examples with JSON responses. A cURL examples can be cut-and-pasted, removing any ambiguity regarding endpoint calls and applicable JSON responses.
+
+API BASE/ROOT URL
+
+The root or entry point into the API should be as simple as possible. Long complex URLs appear daunting. Two common API roots are:
+
+
+  https://api.example.com/*
+  https://example.com/api/*
+
+
+The single root entry point should contain some basic information about the API, such as:
+
+
+  Information on the API version;
+  Supported features;
+  A list of top-level collections;
+  A list of singleton resources;
+  A small summary of operating status;
+  Some statistics;
+  A link to the documentation
+
+
+Versioning
+
+The version number should refer to major releases of the API. An API is never going to be stable, change is inevitable in fact needed. What is important is how that change is managed. When third-party software applications (clients) integrate with your API, they become dependent on the availability of the API. Versioning allows for backwards compatibility and continued development.
+
+There are two common methods for managing API versions:
+
+1) in the request HTTP header;
+
+Accept: application/com.ianteda.app-v3+json
+Content-Type: application/com.ianteda.app-v3+json 
+
+
+
+2) in the URL;
+
+GET https://api.example.com/v1/endpoint
+
+
+
+This guide recommends option 2. Having the API version in the endpoint URL, it is obvious and human readable.
+
+Security
+
+All API requests and responses should be over SSL (HTTPS). Do not redirect non-SSL requests to the SSL endpoint, as this can leak information. Instead throw an API error response when the request comes over non-SSL.
+
+With the use of Webtokens, SSL simplifies the authentication model. Never use a custom authentication protocol, stick to the standards like Oauth 2. Webtokens means the users state (authentication) is kept on the user end, sot that every request can be authenticated against the webtokens. This avoids server session states, sticking to the REST stateless server principle.
+
+Access within the API should be based on the resource not the endpoint URL.
+
+Use request rate limiting to the endpoints, to avoid performance issues.
+
+Keep in mind when providing authentication responses that:
+
+
+  401 “Unauthorized” - Really means unauthenticated. You need valid credentials for me to respond to this request;
+  403 “Forbidden” - Really means unauthorized. I understood your credentials, but sorry, you are not allowed to access that resource;
+
+
+Error Messages
+
+When responding with an error the JSON body should return a useful error message, a unique internal error code with reference to documentation, a detailed description and a 400 http status. Error messages should be human-readable from the browser, include a diagnostic message to help the consumer resolve the error condition and be as descriptive as possible.
+
+Status: 409 Error
+{
+  &quot;code&quot; : unique_project_code,
+  &quot;property&quot; : &quot;What caused the error&quot;,
+  &quot;message&quot; : &quot;Something bad has happened :(&quot;,
+  &quot;description&quot; : &quot;More details about the error here&quot;,
+  &quot;developer_message : &quot;Extra information to help resolve the error response&quot;,
+  &quot;documentation_url&quot;: &quot;https://ianteda.com/api/documentation&quot;
+}
+
+
+
+HTTP status codes
+
+HTTP status codes can help your consumers navigate your API. Providing context to the API responses.
+
+Useful list of API HTTP status codes
+
+
+  
+    
+      Code
+      Status
+      Notes
+    
+  
+  
+    
+      200
+      OK
+      Response to a successful GET, PUT, PATCH or DELETE. Can also be used for a POST that doesn’t result in a creation
+    
+    
+      201
+      Created
+      Response to a POST that results in a creation. Should be combined with a Location header pointing to the location of the new resource
+    
+    
+      204
+      No Content
+      Response to a successful request that won’t be returning a body (like a DELETE request)
+    
+    
+      304
+      Not Modified
+      Used when HTTP caching headers are in play
+    
+    
+      400
+      Bad Request
+      The request is malformed, such as if the body does not parse
+    
+    
+      401
+      Unauthorized
+      When no or invalid authentication details are provided. Also useful to trigger an auth popup if the API is used from a browser
+    
+    
+      403
+      Forbidden
+      When authentication succeeded but authenticated user doesn’t have access to the resource
+    
+    
+      404
+      Not Found
+      When a non-existent resource is requested
+    
+    
+      405
+      Method Not Allowed
+      When an HTTP method is being requested that isn’t allowed for the authenticated user
+    
+    
+      410
+      Gone
+      Indicates that the resource at this end point is no longer available. Useful as a blanket response for old API versions
+    
+    
+      415
+      Unsupported Media Type
+      If incorrect content type was provided as part of the request
+    
+    
+      422
+      Unprocessable Entity
+      Used for validation errors
+    
+    
+      429
+      Too Many Requests
+      When a request is rejected due to rate limiting
+    
+  
+
+
+Endpoints
+
+Rules
+
+Some Endpoint rules to keep in mind:
+
+
+  Nouns - Always represent endpoints with nouns, not verbs;
+  Plurals - Always use the plural of the noun. It avoids confusing pluralisation such as person and people;
+  Logical - Endpoints should make sense from the perspective of the API consumer. Aka developer, not the data model;
+  Not one-to-one - Endpoints don’t necessarily need to or make sense to map one-to-one to the data (database) model;
+  Actions - Endpoint actions should be verbs;
+  down case - Down case end points and actions;
+  Snake Case - Use snake_case;
+  Full Path - In your responses provide a link to the fully qualified canoncial API path;
+  Resource Created - When posting (creation and update) to an endpoint the response should return the resource created;
+  Names and IDs - Accept Ids and names in endpoint requests;
+  Limit Nesting - Limit endpoint nesting;
+  Human Readable - The API response should  be human readable, pretty print by default. i.e. Do not remove white space;
+  GZip - Compress responses, since we are going pretty print response with whitespaces;
+  Cache - Cache responses with ETag and Cache-Control: max-age=0, private, must-revalidate;
+  Media Type - Use Media Type Content-Type: application/json; charset=utf-8;
+  Expansion - Keep response as small as possible with links to expansion (or materialisation);
+  Documentation - Each endpoint should provide a link to its documentation;
+  Boolean - Treat boolean actions on a resource as a sub resource. PUT /resource/{key}/activate;
+  Granularity: Keep resource detail to the lowest practical level with links to expansion;
+  Multiple Endpoing Query: Create an endpoint for multiple resource queries, such as search;
+  Analytics - Keep track of the version/endpoints of your API being used by Consumers;
+  Response Output - Use JSON;
+
+
+Actions
+
+Typical actions on an endpoint
+
+
+  
+    
+      Method
+      URI end point
+      Notes
+    
+  
+  
+    
+      GET
+      /resource
+      Returns a list of all the resources in the collection. By default items in the list are a minimal representation of themselves
+    
+    
+      GET
+      /resource/{key}
+      Returns the full content of the resource identified by the given key (name or id)
+    
+    
+      POST
+      /resource
+      Create a new resource
+    
+    
+      PUT
+      /resource/{key}
+      Update a resource identified by the given key (name or id)
+    
+    
+      PATCH
+      /resource/{key}
+      Partially update a resource identified by the given key (name or id)
+    
+    
+      DELTE
+      /resource/{key}
+      Delete a resource identified by the given key (name or id)
+    
+  
+
+
+Relationships
+
+One to many relationships
+
+If Relationships exist within a resource, extend the endpoint.
+
+
+  
+    
+      Method
+      URI end point
+      Notes
+    
+  
+  
+    
+      GET
+      /resource/{key}/relationship
+      Retrieve a list of relationships for the resource {key (name or id)}
+    
+    
+      GET
+      /resource/{key}/relationship/{key}
+      Retrieve relationship {key} (name or id) for a given resource {key (name or id)}
+    
+    
+      POST
+      /resource/{key}/relationship
+      Create a new relationship for a given resource {key (name or id)}
+    
+    
+      PUT
+      /resource/{key}/relationship/{key}
+      Update relationship {key} (name or ide) for ticket {key (name or id)}
+    
+    
+      PATCH
+      /resource/{key}/relationship/{key}
+      Partially update relationship {key (name or id)} for resource {key (name or id)}
+    
+    
+      DELETE
+      /resource/{key}/relationship/{key}
+      Delete relationship {key (name or id)} for resource {key (name or id)}
+    
+  
+
+
+Many to many relationships
+
+If the relationship exists external to a resource, provide an end point for the relationship. With a href link within the resource response to the relationship. By creating an endpoint for the relationship it can be deleted without deleting the resource.
+
+Provide Request-Ids for Introspection
+
+Include a Request-Id header in each API response, populated with a UUID value. By logging these values on the client, server and any backing services, it provides a mechanism to trace, diagnose and debug requests.
+
+Pagination
+
+Divide large responses across multiple requests with pagination. Using offset and limit parameters
+
+
+  ../resource?offset=50&amp;amp;limit=25 - Will return a response starting from 50 of the next 25 resource items.
+
+
+Provide links within the paged response to other pages.
+
+{
+  &quot;first&quot; : &quot;/resource/00001&quot;,
+  &quot;previous&quot; : &quot;/resource/34523&quot;,
+  &quot;next&quot; : &quot;/resource/34525&quot;,
+  &quot;last&quot; : &quot;/resource/8764534&quot;,
+  &quot;index : {
+    00001: &quot;/resource?offset=0&amp;amp;limit=25&quot;,
+    00002: &quot;/resource?offset=25&amp;amp;limit=25&quot;,
+    00003: &quot;/resource?offset=50&amp;amp;limit=25&quot;
+  }
+}
+
+
+
+Parameters
+
+Complex result filters, sorting and searching can all be easily implemented as query parameters on top of the resource URL
+
+Filtering
+
+Use a unique query parameter for each field that implements filtering. When requesting a list of resources from the /resources endpoint the default should be the smallest practical, say those in the open state. Provide a mechanism to return all GET /resources?state=all or those closed GET /resources?state=closed
+
+Sorting
+
+Use the a generic parameter such as ?sort= to describe sorting rules for a resource endpoint. Accommodate complex sorting requirements with a list of comma separated fields, each with a possible unary negative for descending order or positive.
+
+
+  GET /resources?sort=-priority - Responds with a list of resources in descending order of priority field
+  GET /resources?sort=-priority,created_at - Responds with a list of resources in descending order of priority.  With older resources within the priority being first.
+
+
+Searching
+
+Sometimes basic filters is not enough and you need the power of full text search. Use a query parameter on the resources endpoint ?query=search term. Search queries should be passed straight to the search engine and API output should be in the same format as a normal list result.
+
+To make the API experience more pleasant for the average consumer, consider packaging up sets of query conditions into easily accessible endpoints.
+
+References
+
+  10 Design Tips For APIs
+  Application programming interface
+  Best Practices for a Pragmatic RESTful API
+  Beautiful REST &amp;amp; JSON APIs
+  How to design a REST API
+  Representational state transfer
+  REST API Design - Resource Modeling
+  REST API concepts and examples
+  Thoughts on RESTful API Design
+  What Exactly is RESTful Programming</summary></entry><entry><title>The Turtle Mindset</title><link href="https://ianteda.com/management/the-turtle-mindset.html" rel="alternate" type="text/html" title="The Turtle Mindset" /><published>2016-07-01T00:00:00+10:00</published><updated>2016-07-01T00:00:00+10:00</updated><id>https://ianteda.com/management/the-turtle-mindset</id><content type="html" xml:base="https://ianteda.com/management/the-turtle-mindset.html">&lt;blockquote&gt;
   &lt;p&gt;“Turtles carry their homes on their backs.” Running her finger over the tattoo, she tells him what her dad told her: “They’re exposed and hidden at the same time. They’re a symbol of strength and perseverance.”
 &lt;cite&gt; – Christina Baker Kline&lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1238,262 +2066,4 @@ Success for the most part is subjective. Whatever your measure, it still require
 
   
     
-      The Prince by Niccolò Machiavelli. Written in the 16th century, it is about acquiring power and maintaining it (pre democracy). &amp;#8617;</summary></entry><entry><title>The Mastermind Brief</title><link href="https://ianteda.com/management/the-mastermind-brief.html" rel="alternate" type="text/html" title="The Mastermind Brief" /><published>2016-02-17T00:00:00+11:00</published><updated>2016-02-17T00:00:00+11:00</updated><id>https://ianteda.com/management/the-mastermind-brief</id><content type="html" xml:base="https://ianteda.com/management/the-mastermind-brief.html">&lt;blockquote&gt;
-  &lt;p&gt;No two minds ever come together without thereby creating a third, invisible intangible force, which may be likened to a third mind [the master mind].
-&lt;cite&gt; – Napoleon Hill&lt;/cite&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;amp;ASIN=1585424331&amp;amp;Format=_SL110_&amp;amp;ID=AsinImage&amp;amp;MarketPlace=US&amp;amp;ServiceVersion=20070822&amp;amp;WS=1&amp;amp;tag=iate-20&quot;&gt;&lt;img src=&quot;/assets/images/book-think-and-grow-rich.jpg&quot; alt=&quot;Think and Grow Rich - Book Cover&quot; title=&quot;Think and Grow Rich - Book Cover&quot; class=&quot;book-cover&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The phrase Mastermind Group (MMG) was first coined by Napoleon Hill in his 1937 book “&lt;a href=&quot;http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;amp;ASIN=1585424331&amp;amp;Format=_SL110_&amp;amp;ID=AsinImage&amp;amp;MarketPlace=US&amp;amp;ServiceVersion=20070822&amp;amp;WS=1&amp;amp;tag=iate-20&quot;&gt;Think and Grow Rich&lt;/a&gt;”. A MMG can be thought of as a peer advisory board that meets with the aim of sharpening the groups personal and business skills so they can achieve optimum outcomes&lt;sup id=&quot;fnref:napoleon-hill&quot;&gt;&lt;a href=&quot;#fn:napoleon-hill&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. It is not a group coaching session&lt;sup id=&quot;fnref:definition&quot;&gt;&lt;a href=&quot;#fn:definition&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;the-why&quot;&gt;The Why?&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;“You are the average of the five people you spend the most time with.”
-&lt;cite&gt; — Jim Rohn&lt;/cite&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The possible result of any situation is the average of all possible outcomes. So if your aim is to become a professional table tennis player, then surround yourself with professional table tennis players. To be successful, surround yourself with and successful people. A MMG is a way of surrounding yourself with like-minded people of similar focuses, ambition and interest. Both Benjamin Franklin and Thomas Edison saw the benefits MMG.&lt;/p&gt;
-
-&lt;p&gt;Don’t reinvent the wheel, you are not the first professional table tennis player. A MMG helps you focus, shape ideas, validate ideas and help correct course if needed. While providing inspiration and success stories.&lt;/p&gt;
-
-&lt;p&gt;A MMG is a place of unbiased ideas and respectful opinions. Encouragement, inspiration, shared resources and accountability&lt;sup id=&quot;fnref:start-mmg&quot;&gt;&lt;a href=&quot;#fn:start-mmg&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;. It is not a gossip group but focused on your growth and the growth of others in the group through the collective brain. To paraphrase Napoleon Hill, success is planned and earned. The only limitation you have is the one you accept in your own mind.&lt;/p&gt;
-
-&lt;h3 id=&quot;what-is-in-a-name&quot;&gt;What is in a name?&lt;/h3&gt;
-
-&lt;p&gt;A name and description helps set the purpose and make clear the groups aims. Ensuring it is formed around people striving for a common purpose, but not necessarily with common perspectives. Hearing different views helps you see the forest from the trees. It is not always easy to see your own problems they way others do&lt;sup id=&quot;fnref:mmg-structure&quot;&gt;&lt;a href=&quot;#fn:mmg-structure&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;. It is important to have people with similar drive, commitment and be in the same place in business/life so that everyone gets something from the MGG and the input doesn’t become lop sided.&lt;/p&gt;
-
-&lt;h3 id=&quot;mmg-membership&quot;&gt;MMG Membership&lt;/h3&gt;
-
-&lt;p&gt;Pick your group members carefully, as the group will only be as good as the people in it. Try to choose people with different perspective and skill sets, because they will see the world in a different way and provide solutions you may not see&lt;sup id=&quot;fnref:start-mmg:1&quot;&gt;&lt;a href=&quot;#fn:start-mmg&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;. And only allow new members with the unanimous consent of the group.&lt;/p&gt;
-
-&lt;p&gt;Be ready to ask a member to leave the MMG if they are not up to the standard of participation and do it quickly once the poor behaviour becomes clear. A “slacking” member will bring down the energy and fun level of the whole MMG&lt;sup id=&quot;fnref:mmg-tips&quot;&gt;&lt;a href=&quot;#fn:mmg-tips&quot; class=&quot;footnote&quot;&gt;5&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;create-habits-by-creating-rules&quot;&gt;Create habits by creating rules&lt;/h3&gt;
-
-&lt;p&gt;A set of rules will help set expectations for the MMG group, avoid disappointment and provide understanding on their return of investment (time). If someone is not a good fit for the group (i.e. not meeting expectations), than the rules — not followed — make a hard conversation about someone leaving easier.&lt;/p&gt;
-
-&lt;p&gt;6 Rules to create habits:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Rules are never forever (change as needed).&lt;/li&gt;
-  &lt;li&gt;Keep the group at 2 to 5 people. This provides opportunity for all to speak and be listened to.&lt;/li&gt;
-  &lt;li&gt;New members may only join the group with unanimous consent and a test in the hot seat.&lt;/li&gt;
-  &lt;li&gt;Respect other people’s time. Don’t miss meetings and be on time.&lt;/li&gt;
-  &lt;li&gt;What happens in the MMG stays in the MMG. It is a sacred place.&lt;/li&gt;
-  &lt;li&gt;Be willing to dissect and be dissected.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;meet-regularly-and-precisely&quot;&gt;Meet Regularly and Precisely&lt;/h3&gt;
-
-&lt;p&gt;Keep to a regular meeting schedule and ensure all members are punctual. Ensuring that meetings end on time and each member has equal time. Capture what happens at each meeting: lessons and triumphs; goals; items you want to keep each other accountable on.&lt;/p&gt;
-
-&lt;p&gt;Assuming a 60 minute meeting, a meeting starts with a 10 minute round table where everyone shares wins they have had — preferable from previous goals. This sets a positive tone for the meeting and gets the blood pumping. Followed by a 40 minute hot seat where one member presents a problem or business idea they are working on and the group provides feed back and advice on how to move forward. To close out the meeting a second 10 minute round table where the MMG share goals for the following period&lt;sup id=&quot;fnref:mmg-structure:1&quot;&gt;&lt;a href=&quot;#fn:mmg-structure&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;roles-and-responsibilities&quot;&gt;Roles and Responsibilities&lt;/h3&gt;
-
-&lt;p&gt;Each meeting needs three roles, rotated each meeting: 1 - The Facilitator; 2- The Hot Seat; 3 - The Group. Each roles has different responsibilities within the meeting:&lt;/p&gt;
-
-&lt;p&gt;The Facilitator:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Is the person from last weeks hot seat&lt;/li&gt;
-  &lt;li&gt;Keeps track of time&lt;/li&gt;
-  &lt;li&gt;Directs the conversation&lt;/li&gt;
-  &lt;li&gt;Prompts the quiet ones&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The Hot Seat&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Presents a problem or issue&lt;/li&gt;
-  &lt;li&gt;Talks about current or upcoming projects&lt;/li&gt;
-  &lt;li&gt;Presents a recent finding or discovery&lt;/li&gt;
-  &lt;li&gt;Asks specific (direct) questions&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The Group&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Listens, provides their full attention and respect each persons time&lt;/li&gt;
-  &lt;li&gt;Shares experiences and resources&lt;/li&gt;
-  &lt;li&gt;Dissects and investigates further (why? more information)&lt;/li&gt;
-  &lt;li&gt;Encourages and supports (energize)&lt;/li&gt;
-  &lt;li&gt;Ask open questions, not closed ones&lt;sup id=&quot;fnref:open-close&quot;&gt;&lt;a href=&quot;#fn:open-close&quot; class=&quot;footnote&quot;&gt;6&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;tips&quot;&gt;Tips&lt;/h3&gt;
-
-&lt;p&gt;9 Tips to for a successful MMG:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Be brutally honest. You are not there to be comfortable&lt;/li&gt;
-  &lt;li&gt;Share how you are best motivated&lt;/li&gt;
-  &lt;li&gt;Dedicate goals meetings (2x per year)&lt;/li&gt;
-  &lt;li&gt;Plan ahead when you are in the hot seat (don’t waste other people’s time)&lt;/li&gt;
-  &lt;li&gt;Meet in person once a year (fun / fancy)&lt;/li&gt;
-  &lt;li&gt;Start a private hub – centeral resources such as meeting notes&lt;/li&gt;
-  &lt;li&gt;Follow up and know it’s okay to disagree&lt;/li&gt;
-  &lt;li&gt;Make it a priority&lt;/li&gt;
-  &lt;li&gt;Create rules&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;building-a-mmg&quot;&gt;Building a MMG&lt;/h3&gt;
-
-&lt;p&gt;MMG are typically built through networks and connections. A good way to build your network is to go to environments were you can find like minded people such as seminars, meet ups and industry groups. The more successful you become the easier it is to find people for your MMG&lt;sup id=&quot;fnref:mmg-build&quot;&gt;&lt;a href=&quot;#fn:mmg-build&quot; class=&quot;footnote&quot;&gt;7&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-
-&lt;h4 id=&quot;footnotes&quot;&gt;Footnotes&lt;/h4&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:napoleon-hill&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=LDHCoNnuqUI&quot; target=&quot;_blank&quot;&gt;Video: Napoleon Hill’s Mastermind Principle&lt;/a&gt; &lt;a href=&quot;#fnref:napoleon-hill&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:definition&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;http://www.thesuccessalliance.com/what-is-a-mastermind-group.html&quot; target=&quot;_blank&quot;&gt;What is a Mastermind Group? A Definition&lt;/a&gt; &lt;a href=&quot;#fnref:definition&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:start-mmg&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;http://www.lifehack.org/articles/productivity/how-to-start-and-run-a-mastermind-group.html&quot; target=&quot;_blank&quot;&gt;How To Start and Run a Mastermind Group&lt;/a&gt; &lt;a href=&quot;#fnref:start-mmg&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt; &lt;a href=&quot;#fnref:start-mmg:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:mmg-structure&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=6N-rAEgIxOY&quot; target=&quot;_blank&quot;&gt;Video: How to Structure a Mastermind Meeting - SPI TV, Ep. 10&lt;/a&gt; &lt;a href=&quot;#fnref:mmg-structure&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt; &lt;a href=&quot;#fnref:mmg-structure:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:mmg-tips&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=p28vrcjZ8jc&quot; target=&quot;_blank&quot;&gt;Video: Mastermind Groups are the Secret to Success - Tips and Presentation! - SPI TV, Ep. 9&lt;/a&gt; &lt;a href=&quot;#fnref:mmg-tips&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:open-close&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;http://changingminds.org/techniques/questioning/open_closed_questions.htm&quot;&gt;Open and Closed Questions&lt;/a&gt; &lt;a href=&quot;#fnref:open-close&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:mmg-build&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=U0Np-IszK-8&quot; target=&quot;_blank&quot;&gt;Video: How to Build a Winning Mastermind Group (Webinar Replay) - SPI TV, Ep. 12&lt;/a&gt; &lt;a href=&quot;#fnref:mmg-build&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><category term="management" /><category term="Business" /><category term="Mastermind" /><summary>No two minds ever come together without thereby creating a third, invisible intangible force, which may be likened to a third mind [the master mind].
- – Napoleon Hill
-
-
-
-
-The phrase Mastermind Group (MMG) was first coined by Napoleon Hill in his 1937 book “Think and Grow Rich”. A MMG can be thought of as a peer advisory board that meets with the aim of sharpening the groups personal and business skills so they can achieve optimum outcomes1. It is not a group coaching session2.
-
-The Why?
-
-
-  “You are the average of the five people you spend the most time with.”
- — Jim Rohn
-
-
-The possible result of any situation is the average of all possible outcomes. So if your aim is to become a professional table tennis player, then surround yourself with professional table tennis players. To be successful, surround yourself with and successful people. A MMG is a way of surrounding yourself with like-minded people of similar focuses, ambition and interest. Both Benjamin Franklin and Thomas Edison saw the benefits MMG.
-
-Don’t reinvent the wheel, you are not the first professional table tennis player. A MMG helps you focus, shape ideas, validate ideas and help correct course if needed. While providing inspiration and success stories.
-
-A MMG is a place of unbiased ideas and respectful opinions. Encouragement, inspiration, shared resources and accountability3. It is not a gossip group but focused on your growth and the growth of others in the group through the collective brain. To paraphrase Napoleon Hill, success is planned and earned. The only limitation you have is the one you accept in your own mind.
-
-What is in a name?
-
-A name and description helps set the purpose and make clear the groups aims. Ensuring it is formed around people striving for a common purpose, but not necessarily with common perspectives. Hearing different views helps you see the forest from the trees. It is not always easy to see your own problems they way others do4. It is important to have people with similar drive, commitment and be in the same place in business/life so that everyone gets something from the MGG and the input doesn’t become lop sided.
-
-MMG Membership
-
-Pick your group members carefully, as the group will only be as good as the people in it. Try to choose people with different perspective and skill sets, because they will see the world in a different way and provide solutions you may not see3. And only allow new members with the unanimous consent of the group.
-
-Be ready to ask a member to leave the MMG if they are not up to the standard of participation and do it quickly once the poor behaviour becomes clear. A “slacking” member will bring down the energy and fun level of the whole MMG5.
-
-Create habits by creating rules
-
-A set of rules will help set expectations for the MMG group, avoid disappointment and provide understanding on their return of investment (time). If someone is not a good fit for the group (i.e. not meeting expectations), than the rules — not followed — make a hard conversation about someone leaving easier.
-
-6 Rules to create habits:
-
-
-  Rules are never forever (change as needed).
-  Keep the group at 2 to 5 people. This provides opportunity for all to speak and be listened to.
-  New members may only join the group with unanimous consent and a test in the hot seat.
-  Respect other people’s time. Don’t miss meetings and be on time.
-  What happens in the MMG stays in the MMG. It is a sacred place.
-  Be willing to dissect and be dissected.
-
-
-Meet Regularly and Precisely
-
-Keep to a regular meeting schedule and ensure all members are punctual. Ensuring that meetings end on time and each member has equal time. Capture what happens at each meeting: lessons and triumphs; goals; items you want to keep each other accountable on.
-
-Assuming a 60 minute meeting, a meeting starts with a 10 minute round table where everyone shares wins they have had — preferable from previous goals. This sets a positive tone for the meeting and gets the blood pumping. Followed by a 40 minute hot seat where one member presents a problem or business idea they are working on and the group provides feed back and advice on how to move forward. To close out the meeting a second 10 minute round table where the MMG share goals for the following period4.
-
-Roles and Responsibilities
-
-Each meeting needs three roles, rotated each meeting: 1 - The Facilitator; 2- The Hot Seat; 3 - The Group. Each roles has different responsibilities within the meeting:
-
-The Facilitator:
-
-
-  Is the person from last weeks hot seat
-  Keeps track of time
-  Directs the conversation
-  Prompts the quiet ones
-
-
-The Hot Seat
-
-
-  Presents a problem or issue
-  Talks about current or upcoming projects
-  Presents a recent finding or discovery
-  Asks specific (direct) questions
-
-
-The Group
-
-
-  Listens, provides their full attention and respect each persons time
-  Shares experiences and resources
-  Dissects and investigates further (why? more information)
-  Encourages and supports (energize)
-  Ask open questions, not closed ones6
-
-
-Tips
-
-9 Tips to for a successful MMG:
-
-
-  Be brutally honest. You are not there to be comfortable
-  Share how you are best motivated
-  Dedicate goals meetings (2x per year)
-  Plan ahead when you are in the hot seat (don’t waste other people’s time)
-  Meet in person once a year (fun / fancy)
-  Start a private hub – centeral resources such as meeting notes
-  Follow up and know it’s okay to disagree
-  Make it a priority
-  Create rules
-
-
-Building a MMG
-
-MMG are typically built through networks and connections. A good way to build your network is to go to environments were you can find like minded people such as seminars, meet ups and industry groups. The more successful you become the easier it is to find people for your MMG7.
-
-Footnotes
-
-
-  
-    
-      Video: Napoleon Hill’s Mastermind Principle &amp;#8617;
-    
-    
-      What is a Mastermind Group? A Definition &amp;#8617;
-    
-    
-      How To Start and Run a Mastermind Group &amp;#8617; &amp;#8617;2
-    
-    
-      Video: How to Structure a Mastermind Meeting - SPI TV, Ep. 10 &amp;#8617; &amp;#8617;2
-    
-    
-      Video: Mastermind Groups are the Secret to Success - Tips and Presentation! - SPI TV, Ep. 9 &amp;#8617;
-    
-    
-      Open and Closed Questions &amp;#8617;
-    
-    
-      Video: How to Build a Winning Mastermind Group (Webinar Replay) - SPI TV, Ep. 12 &amp;#8617;</summary></entry></feed>
+      The Prince by Niccolò Machiavelli. Written in the 16th century, it is about acquiring power and maintaining it (pre democracy). &amp;#8617;</summary></entry></feed>
