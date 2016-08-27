@@ -11,27 +11,25 @@ cover: /assets/images/cover-old-typewriter.jpg
 logo: /assets/images/logo-light.png
 ---
 
-> One piece of software talking to another piece of software
+> An API allows one piece of software talking to another piece of software
 
 ### Definitions
 
-Some terms that are used in this guide and there definitions:
+Some terms used in this guide and there definitions:
 
-- Application Programming Interface;
-- REST: Representational State Transfer;
-- Resource: A single instance of an object;
-- Collection: A collection of homogeneous objects (resources);
-- HTTP: A protocol for communicating over networks;
-- Consumer: A client computer application capable of making HTTP requests;
-- Third Party Developer: A developer not a part of your project but who wishes to consume your data;
-- Server: An HTTP server/application accessible from a Consumer over a network;
-- Endpoint: An API URL on a Server which represents either a Resource or a Collection of Resources;
-- Idempotent: Side-effect free, can happen multiple times without penalty;
-- URL: ???
-- URL Segment: a slash-separated piece of information in the URL;
-- Granularity: level of detailed;
-- cURL: A command line tool for getting and sending files using URL syntax;
-- SSL
+- __API__ - Application Programming Interface, an interface for one piece of software to talk to another;
+- __Collection__ - A collection of resources found at an endpoint;
+- __Consumer (Client)__ - A client computer application making requests of the API;
+- __cURL__ - A command line tool for getting and sending files using URL syntax;
+- __Endpoint__ - An API URL on a Server which represents either a Resource or a Collection;
+- __Granularity__ - The level of detailed returned in the request response;
+- __HTTP__ - A protocol for communicating over networks, aka the internet;
+- __Idempotent (Stateless)__ - Side-effect free, can happen multiple times without affecting the data state;
+- __Resource__ - A single instance of an object in an endpoint request response;
+- __REST (RESTful)__ - Representational State Transfer, an architectural style for the design of network-based software;
+- __SSL__ - Secure Socket Layer, the standard security technology for establishing an encrypted link between a web server and a browser
+- __URL__ - Uniform Resource Locator and is a reference (an address) to a resource on the Internet.
+- __URL Segment__ - A slash-separated piece of information in the URL;
 
 ### AIM
 
@@ -39,95 +37,112 @@ The aim of this design guide is to assist in the planing and development of a RE
 
 ### Overview
 
-An API is an: Application Programming Interface. An interface for one piece of software to talk to another[^concepts]. For data to be shared. It is a set of Endpoints for building software to utilise those Endpoints.
+An API is an: Application Programming Interface. An interface for one piece of software to talk to another[^concepts] and data to be shared. It is a set of endpoints for serving up data.
 
 ### REST API
 
-REST API is a design paradigm that follows a defined set of objectives. It was first defined by Roy Thomas Fielding in his 2000 PhD dissertation “Architectural Styles and the Design of Network-based Software Architectures”. 
+REST API is an architectural design style that follows a defined set of objectives. It was first defined by Roy [Thomas Fielding](https://en.wikipedia.org/wiki/Roy_Fielding) in his 2000 PhD dissertation “Architectural Styles and the Design of Network-based Software Architectures”. 
 
-RESTful architectural style aims to be:
+The REST architectural style aims to be:
 
-- Stateless: each request from a client contains all the information needed to complete the request. With any session state being held in the client;
-- Independent: client-server model allows for different client development environments and implementations to use the API;
-- Cacheable: responses need to define themselves as cacheable or not. Improving latency, scalability and responsiveness;
-- Granularity: general or average granularity should be used to satisfy as many difference requirements and use cases as possible;
-- Secure: use of HTTP authorisation headers to securely send data;
-- Encapsulation: expose data in a controlled way;
+- __Stateless:__ each request contains all the information needed to complete the request;
+- __Independent:__ client-server model allows for different client environments and implementations to use the API;
+- __Cacheable:__ responses define themselves as cacheable or not, improving latency, scalability and responsiveness;
+- __Granularity:__ use the lowest possible level of deatil to satisfy as many difference requirements and use cases as possible;
+- __Secure:__ use of HTTP authorisation headers to securely send data;
+- __Encapsulation:__ expose only the date data you want to, in a controlled way;
 
 ### Success
 
-A successful RESTful API, is one that:
+A successful REST API, is one that:
 
+- Has good documentation that is easy to find;
 - Uses web standards where they make sense;
 - Is friendly to the developer and can be explored via a browser address bar;
 - Is simple, intuitive and consistent to make adoption not only easy but pleasant;
-- Provides enough flexibility to power majority of development environments;
-- Is efficient, while maintaining a balance with the other requirements;
-- Is well documented
+- Provides enough flexibility to power the majority of development environments;
+- Is efficient, while maintaining a balance with other requirements;
 - Has been developed using Test Driven Development (TDD) principles
 
 ### Documentation
 
-The API should be well documented with cURL examples and expected JSON responses. cURL examples can be cut-and-pasted, removing any ambiguity regarding endpoint calls and applicable JSON responses.
+The API should be well documented with cURL examples with JSON responses. A cURL examples can be cut-and-pasted, removing any ambiguity regarding endpoint calls and applicable JSON responses.
 
-### API ROOT URL
+### API BASE/ROOT URL
 
-The root or entry point into the API should be as simple as possible, as long complex URL appear daunting. Two common ULR roots are:
+The root or entry point into the API should be as simple as possible. Long complex URLs appear daunting. Two common API roots are:
 
 1. `https://api.example.com/*`
 2. `https://example.com/api/*`
 
-Provide a singleton entry point at the root of the API with:
+The single root entry point should contain some basic information about the API, such as:
 
 - Information on the API version;
 - Supported features;
 - A list of top-level collections;
 - A list of singleton resources;
-- Small summary of operating status;
-- Statistics;
-- Link to documentation
+- A small summary of operating status;
+- Some statistics;
+- A link to the documentation
 
 ### Versioning
 
-The version number should refer to major releases of the API and should be included in the URL. An API is never going to be completely stable, change is inevitable in fact needed. What is important is how that change is managed. When third-party software applications (clients) integrate with your API, it becomes dependent on the availability of the API. Versioning allows for backwards compatibility and continued development.
+The version number should refer to major releases of the API. An API is never going to be stable, change is inevitable in fact needed. What is important is how that change is managed. When third-party software applications (clients) integrate with your API, they become dependent on the availability of the API. Versioning allows for backwards compatibility and continued development.
 
 There are two common methods for managing API versions: 
 
-1) in the POST header ??;
+1) in the request HTTP header;
+
+~~~
+Accept: application/com.ianteda.app-v3+json
+Content-Type: application/com.ianteda.app-v3+json 
+~~~
+
 2) in the URL;
 
-This guide recommends using a URL prefix:
+~~~
+GET https://api.example.com/v1/endpoint
+~~~
 
-* `GET https://api.example.com/v1/endpoint`
+This guide recommends option 2. Having the API version in the endpoint URL, it is obvious and human readable.
 
 ### Security
 
-Avoid sessions if possible because a RESTful server is stateless and authenticating every request. 
+All API requests and responses should be over SSL (HTTPS). Do not redirect non-SSL requests to the SSL endpoint, as this can leak information. Instead throw an API error response when the request comes over non-SSL.
 
-The authentication is simplified with Webtokens and SSL. When authentication use Oauth 1.0a, never use custom authentication protocols.
+With the use of Webtokens, SSL simplifies the authentication model. Never use a custom authentication protocol, stick to the standards like [Oauth 2](https://oauth.net/2/). Webtokens means the users state (authentication) is kept on the user end, sot that every request can be authenticated against the webtokens. This avoids server session states, sticking to the REST stateless server principle.
 
-Do not use non-SSL redirects to the equivalent SSL endpoint, as this could leak information. Instead provide a error response.
+Access within the API should be based on the resource not the endpoint URL.
 
-Authentication should be based on the resource not the URL.
+Use request rate limiting to the endpoints, to avoid performance issues.
 
-Use API Keys instead of Username and Passwords.
+Keep in mind when providing authentication responses that:
+- __401 "Unauthorized"__ - Really means unauthenticated. You need valid credentials for me to respond to this request;
+- __403 "Forbidden"__ - Really means unauthorized. I understood your credentials, but sorry, you are not allowed to access that resource;
 
-401 "Unauthorized" really means unauthenticated. You need valid credentials for me to respond to this request
-403 "Forbidden" really means Unauthorized. I understood your credentials, but sorry, you are not allowed
+### Error Messages
+
+When responding with an error the JSON body should return a useful error message, a unique internal error code with reference to documentation, a detailed description and a 400 http status. Error messages should be human-readable from the browser, include a diagnostic message to help the consumer resolve the error condition and be as descriptive as possible.
+
+~~~
+Header: {
+  status: 409
+}
+{
+  "code" : unique_project_code,
+  "property" : "What caused the error",
+  "message" : "Something bad has happened :(",
+  "description" : "More details about the error here",
+  "developer_message : "Extra information to help resolve the error response",
+  "documentation_url": "https://ianteda.com/api/documentation"
+}
+~~~
 
 ## HTTP status codes
 
-If we are sticking with Web standards we need to know what status codes mean:
+HTTP status codes can help your consumers navigate your API. Providing context to the API responses.
 
-- __1xx Range:__ is reserved for low-level HTTP, so you will more than likely not need to send one of these;
-- __2xx Range:__ is reserved for successful messages, the more of these returned the better the API documentation;
-- __3xx Range"__ is reserved for traffic redirection. Most APIs do not use these requests much (not nearly as often as the SEO folks use them ;), however, the newer Hypermedia style APIs will make more use of these.
-- __4xx Range:__ is reserved for responding to errors made by the Consumer, e.g. they’re providing bad data or asking for things which don’t exist. These requests should be be idempotent, and not change the state of the server.
-- __5xx Range:__ is reserved as a response when the Server makes a mistake. Often times, these errors are thrown by low-level functions even outside of the developers hands, to ensure a Consumer gets some sort of response. The Consumer can’t possibly know the state of the server when a 5xx response is received, and so these should be avoidable.
-
-
-
-HTTP defines a bunch of meaningful status codes that can be returned from your API. These can be leveraged to help the API consumers route their responses accordingly. I've curated a short list of the ones that you definitely should be using:
+Useful list of API HTTP status codes
 
 | Code | Status                 | Notes |
 |:----:|------------------------|-------|
@@ -148,182 +163,123 @@ HTTP defines a bunch of meaningful status codes that can be returned from your A
 
 ### Endpoints
 
-Endpoint Rules:
+#### Rules
 
-- Be represented by nouns, not verbs;
-- Always use the plural of the noun. It avoids confusing pluralisation such as person and people;
-- Endpoints should make sense from the perspective of the API consumer. Aka developer, not the data model;
-- Endpoints don't necessarily need to or make sense to map one-to-one to the data (database) model;
-- Actions on the nouns should be verbs
-- Down case endpoints and actions
-- Use snake_case ???
-- Responses should provide href to the API path full qualified canonical reference
-- When posting (creation and update) to an endpoint return the representation of the resource
-- Accept Ids and names in endpoint requests
-- Limit endpoint nesting
-- Pretty print by default. i.e. Make it human readable by not removing white space
-- Gzip responses, since we are going pretty print response
-- Use Media Type `Content-Type: application/json`
-- Reference Expansion (or materialised)
-- Expand to include additional information form a single requests
-- Use parameters to "expand"
-- Limit through "fields"
-- Each endpoint should provide a link to its documentation
+Some Endpoint rules to keep in mind:
 
-### Resource Granularity
+- __Nouns__ - Always represent endpoints with nouns, not verbs;
+- __Plurals__ - Always use the plural of the noun. It avoids confusing pluralisation such as person and people;
+- __Logical__ - Endpoints should make sense from the perspective of the API consumer. Aka developer, not the data model;
+- __Not one-to-one__ - Endpoints don't necessarily need to or make sense to map one-to-one to the data (database) model;
+- __Actions__ - Endpoint actions should be verbs;
+- __down case__ - Down case end points and actions;
+- __Snake Case__ - Use snake_case;
+- __Full Path__ - In your responses provide a link to the fully qualified canoncial API path;
+- __Resource Created__ - When posting (creation and update) to an endpoint the response should return the resource created;
+- __Names and IDs__ - Accept Ids and names in endpoint requests;
+- __Limit Nesting__ - Limit endpoint nesting;
+- __Human Readable__ - The API response should  be human readable, pretty print by default. i.e. Do not remove white space;
+- __GZip__ - Compress responses, since we are going pretty print response with whitespaces;
+- __Cache__ - Cache responses with ETag and `Cache-Control: max-age=0, private, must-revalidate`;
+- __Media Type__ - Use Media Type `Content-Type: application/json; charset=utf-8`;
+- __Expansion__ - Keep response as small as possible with links to expansion (or materialisation);
+- __Documentation__ - Each endpoint should provide a link to its documentation;
+- __Boolean__ - Treat boolean actions on a resource as a sub resource. `PUT /resource/{key}/activate`;
+- __Granularity:__ Keep resource detail to the lowest practical level with links to expansion;
+- __Multiple Endpoing Query:__ Create an endpoint for multiple resource queries, such as search;
+- __Analytics__ - Keep track of the version/endpoints of your API being used by Consumers;
+- __Response Output__ - Use JSON;
 
-A common misconception is that there is a one-to-one mapping between a service in the paper world and a corresponding API. In reality, this is almost never the case. APIs should be designed at the lowest practical level of granularity because this makes each service simpler and allows them to be combined in ways that suit the consumer. The key principle is to design services that can be re-used and combined in different ways.
+#### Actions
+
+Typical actions on an endpoint
 
 | Method | URI end point | Notes |
 |--------|---------------|-------|
-| GET    | /nouns        | This returns a list of the noun items. By default items in the list are a minimal representation of a noun entity |
-| GET    | /nouns/{key}  | This returns the full content of the nouns identified by the given key |
-| POST   | /nouns        | This creates a new ticket |
-| PUT    | /nouns/{key}  | This updates noun identified by the given key |
-| PATCH  | /nouns/{key}  | Partially update noun identified by the given key |
-| DELTE  | /nouns/{key}  | Delete noun identified by the given key |
+| GET    | /resource        | Returns a list of all the resources in the collection. By default items in the list are a minimal representation of themselves |
+| GET    | /resource/{key}  | Returns the full content of the resource identified by the given key (name or id) |
+| POST   | /resource        | Create a new resource |
+| PUT    | /resource/{key}  | Update a resource identified by the given key (name or id) |
+| PATCH  | /resource/{key}  | Partially update a resource identified by the given key (name or id) |
+| DELTE  | /resource/{key}  | Delete a resource identified by the given key (name or id) |
 
 
-## Relationships
+### Relationships
 
-### One to many relationships
-If Relationships exist within the resource, extend the endpoint.
+#### One to many relationships
+
+If Relationships exist within a resource, extend the endpoint.
 
 | Method | URI end point                   | Notes |
 |--------|---------------------------------|-------|
-| GET    | /nouns/{key}/relationship       | Retrieves list of relationships for ticket {key} |
-| GET    | /nouns/{key}/relationship/{key} | Retrieves message {key} for ticket {key} |
-| POST   | /nouns/{key}/relationship       | Creates a new message in ticket {key} |
-| PUT    | /nouns/{key}/relationship/{key} | Updates message {key} for ticket {key} |
-| PATCH  | /nouns/{key}/relationship/{key} | Partially updates message {key} for ticket {key} |
-| DELETE | /nouns/{key}/relationship/{key} | Deletes message {key} for ticket {key} |
+| GET    | /resource/{key}/relationship       | Retrieve a list of relationships for the resource {key (name or id)} |
+| GET    | /resource/{key}/relationship/{key} | Retrieve relationship {key} (name or id) for a given resource {key (name or id)} |
+| POST   | /resource/{key}/relationship       | Create a new relationship for a given resource {key (name or id)} |
+| PUT    | /resource/{key}/relationship/{key} | Update relationship {key} (name or ide) for ticket {key (name or id)} |
+| PATCH  | /resource/{key}/relationship/{key} | Partially update relationship {key (name or id)} for resource {key (name or id)} |
+| DELETE | /resource/{key}/relationship/{key} | Delete relationship {key (name or id)} for resource {key (name or id)} |
 
-### Many to many relationships
-A user can belong to many groups and groups can have many users.
+#### Many to many relationships
 
-If the relationship exists external to the resource. Provide an end point for the relationship, provide a href link with the initial response to the relationship endpoint.
+If the relationship exists external to a resource, provide an end point for the relationship. With a href link within the resource response to the relationship. By creating an endpoint for the relationship it can be deleted without deleting the resource.
 
-A relationship can be deleted without deleting the resource
-
-## Boolean Actions
-
-Treat it as a sub resource
-
-`PUT /users/765/activate`
-
-`DELETE /user/765/activate`
-
-## Multiple Resource
-
-Usually a query such as search
-Make a new end point
-
-## Cache
-
-Save bandwidth, cache data with ETags
-
-## Provide Request-Ids for Introspection
+### Provide Request-Ids for Introspection
 
 Include a Request-Id header in each API response, populated with a UUID value. By logging these values on the client, server and any backing services, it provides a mechanism to trace, diagnose and debug requests.
 
-## Pagination
-Divid large responses across requests
-Offset
+#### Pagination
 
-Pagination of collections
-Use Offset and Limit
-../applications?offset=50&limit=25
-Offset from 0
-limit per return
-Could provide link property through links
+Divide large responses across multiple requests with pagination. Using offset and limit parameters 
 
-- first
-- previous
-- next
-- last
-- items array for index
+- `../resource?offset=50&limit=25` - Will return a response starting from 50 of the next 25 resource items.
 
-### Error Messages
-Error messages should provide a human-readable error message that is designed to be read and understood by the user.
+Provide links within the paged response to other pages.
 
-Error messages should include a diagnostic message that contains technical details for use by the developers/maintainers of the application that consumes the API.
-
-Diagnostic messages may include links to documentation and other ‘hints’ that might assist developers resolve issues that may have resulted in the error condition.
-
-A JSON error body should provide a few things for the developer - a useful error message, a unique error code (that can be looked up for more details in the docs) and possibly a detailed description. JSON output representation for something like this would look like:
-
-```
+~~~
 {
-  "code" : 1234,
-  "message" : "Something bad happened :(",
-  "description" : "More details about the error here"
+  ....
+  "first" : ".../resource/00001",
+  "previous" : ".../resource/34523",
+  "next" : ".../resource/34525",
+  "last" : ".../resource/8764534",
+  "index : {
+    00001: "../resource?offset=0&limit=25",
+    00002: "../resource?offset=25&limit=25",
+    00003: "../resource?offset=50&limit=25",
+    ....
 }
-```
-Want to be as descriptive as possible
-Internal error code. provide ip path to the code
-status 409
-code (internal code) -> application specific
-property: what caused the problem
-message: Your customers application end user
-developerMessage: extra information and fix
-moreInfo: application specific error link
+~~~
 
-### Result
+#### Parameters
 
-It's best to keep the base resource URLs as lean as possible. Complex result filters, sorting requirements and advanced searching (when restricted to a single type of resource) can all be easily implemented as query parameters on top of the base URL
+Complex result filters, sorting and searching can all be easily implemented as query parameters on top of the resource URL
 
-#### Filtering: 
+##### Filtering
 
-Use a unique query parameter for each field that implements filtering. For example, when requesting a list of tickets from the /tickets endpoint, you may want to limit these to only those in the open state. This could be accomplished with a request like GET /tickets?state=open. Here, state is a query parameter that implements a filter.
+Use a unique query parameter for each field that implements filtering. When requesting a list of resources from the /resources endpoint the default should be the smallest practical, say those in the open state. Provide a mechanism to return all `GET /resources?state=all` or those closed `GET /resources?state=closed`
 
-#### Sorting: 
+##### Sorting
 
-Similar to filtering, a generic parameter sort can be used to describe sorting rules. Accommodate complex sorting requirements by letting the sort parameter take in list of comma separated fields, each with a possible unary negative to imply descending sort order. Let's look at some examples:
+Use the a generic parameter such as `?sort=` to describe sorting rules for a resource endpoint. Accommodate complex sorting requirements with a list of comma separated fields, each with a possible unary negative for descending order or positive.
 
-GET /tickets?sort=-priority - Retrieves a list of tickets in descending order of priority
-GET /tickets?sort=-priority,created_at - Retrieves a list of tickets in descending order of priority. Within a specific priority, older tickets are ordered first
+- `GET /resources?sort=-priority` - Responds with a list of resources in descending order of priority field
+- `GET /resources?sort=-priority,created_at` - Responds with a list of resources in descending order of priority.  With older resources within the priority being first.
 
-#### Searching: 
+##### Searching
 
-Sometimes basic filters aren't enough and you need the power of full text search. Perhaps you're already using ElasticSearch or another Lucene based search technology. When full text search is used as a mechanism of retrieving resource instances for a specific type of resource, it can be exposed on the API as a query parameter on the resource's endpoint. Let's say q. Search queries should be passed straight to the search engine and API output should be in the same format as a normal list result.
+Sometimes basic filters is not enough and you need the power of full text search. Use a query parameter on the resources endpoint `?query=search term`. Search queries should be passed straight to the search engine and API output should be in the same format as a normal list result.
 
-Aliases for common queries
-
-To make the API experience more pleasant for the average consumer, consider packaging up sets of conditions into easily accessible RESTful paths.
-
-#### Rate Limiting
-When your users begin to use your API initially, you probably don’t have to worry about performance or resource limitation.
-
-However, if your application is a success and thousands of users begin to integrate your API into their infrastructure and workflows, things can and will go wrong: Unexperienced developers will call your endpoint in endless loops, with incredibly high concurrency and badly configured cron jobs will request the same URL over and over again, thousands of times per hour.
-
-This is why you should consider implementing a rate-limit early on.
-
-### ANALYTICS
-
-Keep track of the version/endpoints of your API being used by Consumers. This can be as simple as incrementing an integer in a database each time a request is made. There are many reasons that keeping track of API Analytics is a good idea, for example, the most commonly used API calls should be made efficient.
-
-### Output
-
-Use JSON
-
-### Analytics
-Keep track of the version/endpoints of your API being used by Consumers. This can be as simple as incrementing an integer in a database each time a request is made. There are many reasons that keeping track of API Analytics is a good idea, for example, the most commonly used API calls should be made efficient.
-
-For the purposes of building an API which Third Party Developers will love, the most important thing is that when you do deprecate a version of your API, you can actually contact developers using deprecated API features. This is the perfect way to remind them to upgrade before you kill the old API version.
-
-The process of Third Party Developer notification can be automated, e.g. mail the developer every time 10,000 requests to a deprecated feature are made.
-
-Once you have your resources defined, you need to identify what actions verbs apply to them and how those map to your API.
+To make the API experience more pleasant for the average consumer, consider packaging up sets of query conditions into easily accessible endpoints.
 
 
-#### Footnotes
-[^best]: [best-practices-for-a-pragmatic-restful-api](http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api)
-[^]: [REST API Design - Resource Modeling](https://www.thoughtworks.com/insights/blog/rest-api-design-resource-modeling)
-[^beautiful]: [Beautiful REST & JSON APIs](https://www.youtube.com/watch?v=mZ8_QgJ5mbs)
-[^concepts]: [REST API concepts and examples](https://www.youtube.com/watch?v=7YcW25PHnAA)
-[^wikipedia]: [Representational state transfer](https://en.wikipedia.org/wiki/Representational_state_transfer)
-[^thoughts]: [Thoughts on RESTful API Design](https://restful-api-design.readthedocs.io/en/latest/)
-[^wiki-api]: [Application programming interface](https://en.wikipedia.org/wiki/Application_programming_interface)
-[^how-to]: [How to design a REST API](http://blog.octo.com/en/design-a-rest-api/)
-[]: [](https://phraseapp.com/blog/posts/best-practice-10-design-tips-for-apis/)
-[]: [](http://stackoverflow.com/questions/671118/what-exactly-is-restful-programming)
+#### References
+- [10 Design Tips For APIs](https://phraseapp.com/blog/posts/best-practice-10-design-tips-for-apis/)
+- [Application programming interface](https://en.wikipedia.org/wiki/Application_programming_interface)
+- [Best Practices for a Pragmatic RESTful API](http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api)
+- [Beautiful REST & JSON APIs](https://www.youtube.com/watch?v=mZ8_QgJ5mbs)
+- [How to design a REST API](http://blog.octo.com/en/design-a-rest-api/)
+- [Representational state transfer](https://en.wikipedia.org/wiki/Representational_state_transfer)
+- [REST API Design - Resource Modeling](https://www.thoughtworks.com/insights/blog/rest-api-design-resource-modeling)
+- [REST API concepts and examples](https://www.youtube.com/watch?v=7YcW25PHnAA)
+- [Thoughts on RESTful API Design](https://restful-api-design.readthedocs.io/en/latest/)
+- [What Exactly is RESTful Programming](http://stackoverflow.com/questions/671118/what-exactly-is-restful-programming)
