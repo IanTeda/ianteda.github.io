@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.0.5">Jekyll</generator><link href="https://ianteda.com/rss.xml" rel="self" type="application/atom+xml" /><link href="https://ianteda.com/" rel="alternate" type="text/html" /><updated>2016-09-28T20:52:42+10:00</updated><id>https://ianteda.com/</id><title>Ian Teda</title><subtitle>Husband, Father, Engineer, Explorer &amp; Creator</subtitle><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><entry><title>The Habit Loop</title><link href="https://ianteda.com/creativity/the-habit-loop.html" rel="alternate" type="text/html" title="The Habit Loop" /><published>2016-09-27T00:00:00+10:00</published><updated>2016-09-27T00:00:00+10:00</updated><id>https://ianteda.com/creativity/the-habit-loop</id><content type="html" xml:base="https://ianteda.com/creativity/the-habit-loop.html">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.0.5">Jekyll</generator><link href="https://ianteda.com/rss.xml" rel="self" type="application/atom+xml" /><link href="https://ianteda.com/" rel="alternate" type="text/html" /><updated>2016-09-28T21:04:43+10:00</updated><id>https://ianteda.com/</id><title>Ian Teda</title><subtitle>Husband, Father, Engineer, Explorer &amp; Creator</subtitle><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><entry><title>The Habit Loop</title><link href="https://ianteda.com/creativity/the-habit-loop.html" rel="alternate" type="text/html" title="The Habit Loop" /><published>2016-09-27T00:00:00+10:00</published><updated>2016-09-27T00:00:00+10:00</updated><id>https://ianteda.com/creativity/the-habit-loop</id><content type="html" xml:base="https://ianteda.com/creativity/the-habit-loop.html">&lt;blockquote&gt;
   &lt;p&gt;Your beliefs become your thoughts; Your thoughts become your words; Your words become your actions; Your actions become your habits; Your habits become your values; Your values become your destiny.
 &lt;cite&gt; Mahatma Ghandi.&lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -14,7 +14,7 @@
 
 &lt;p&gt;Habits allow us to undertake tasks with difficulty the first time, but then over time with increasing ease and final in a semi-autonomous mode.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/book-power-of-habit.jpg&quot; alt=&quot;The Power of Habit - Why we do what we do in life and business Book Cover&quot; title=&quot;The Power of Habit - Why we do what we do in life and business&quot; class=&quot;book-cover&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://amzn.com/081298160X&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/images/book-power-of-habit.jpg&quot; alt=&quot;The Power of Habit - Why we do what we do in life and business Book Cover&quot; title=&quot;The Power of Habit - Why we do what we do in life and business&quot; class=&quot;book-cover&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Charles Duhigg in his book “The Power of Habit - Why we do what we do in life and business” breaks habits down into a three-step loop, the habit loop:&lt;/p&gt;
 
@@ -142,7 +142,7 @@ Like a sheet of paper that has been folded, forever it will fall to that fold. H
 
 &lt;h3 id=&quot;rest-api&quot;&gt;REST API&lt;/h3&gt;
 
-&lt;p&gt;REST API is an architectural design style that follows a defined set of objectives. It was first defined by Roy &lt;a href=&quot;https://en.wikipedia.org/wiki/Roy_Fielding&quot;&gt;Thomas Fielding&lt;/a&gt; in his 2000 PhD dissertation “Architectural Styles and the Design of Network-based Software Architectures”.&lt;/p&gt;
+&lt;p&gt;REST API is an architectural design style that follows a defined set of objectives. It was first defined by Roy &lt;a href=&quot;https://en.wikipedia.org/wiki/Roy_Fielding&quot; target=&quot;_blank&quot;&gt;Thomas Fielding&lt;/a&gt; in his 2000 PhD dissertation “Architectural Styles and the Design of Network-based Software Architectures”.&lt;/p&gt;
 
 &lt;p&gt;The REST architectural style aims to be:&lt;/p&gt;
 
@@ -513,16 +513,16 @@ Content-Type: application/com.ianteda.app-v3+json
 
 &lt;h5 id=&quot;references&quot;&gt;References&lt;/h5&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://phraseapp.com/blog/posts/best-practice-10-design-tips-for-apis/&quot;&gt;10 Design Tips For APIs&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Application_programming_interface&quot;&gt;Application programming interface&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api&quot;&gt;Best Practices for a Pragmatic RESTful API&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=mZ8_QgJ5mbs&quot;&gt;Beautiful REST &amp;amp; JSON APIs&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://blog.octo.com/en/design-a-rest-api/&quot;&gt;How to design a REST API&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Representational_state_transfer&quot;&gt;Representational state transfer&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.thoughtworks.com/insights/blog/rest-api-design-resource-modeling&quot;&gt;REST API Design - Resource Modeling&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=7YcW25PHnAA&quot;&gt;REST API concepts and examples&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://restful-api-design.readthedocs.io/en/latest/&quot;&gt;Thoughts on RESTful API Design&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/671118/what-exactly-is-restful-programming&quot;&gt;What Exactly is RESTful Programming&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://phraseapp.com/blog/posts/best-practice-10-design-tips-for-apis/&quot; target=&quot;_blank&quot;&gt;10 Design Tips For APIs&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Application_programming_interface&quot; target=&quot;_blank&quot;&gt;Application programming interface&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api&quot; target=&quot;_blank&quot;&gt;Best Practices for a Pragmatic RESTful API&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=mZ8_QgJ5mbs&quot; target=&quot;_blank&quot;&gt;Beautiful REST &amp;amp; JSON APIs&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.octo.com/en/design-a-rest-api/&quot; target=&quot;_blank&quot;&gt;How to design a REST API&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Representational_state_transfer&quot; target=&quot;_blank&quot;&gt;Representational state transfer&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.thoughtworks.com/insights/blog/rest-api-design-resource-modeling&quot; target=&quot;_blank&quot;&gt;REST API Design - Resource Modeling&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=7YcW25PHnAA&quot; target=&quot;_blank&quot;&gt;REST API concepts and examples&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://restful-api-design.readthedocs.io/en/latest/&quot; target=&quot;_blank&quot;&gt;Thoughts on RESTful API Design&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/671118/what-exactly-is-restful-programming&quot; target=&quot;_blank&quot;&gt;What Exactly is RESTful Programming&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><category term="programming" /><category term="API" /><summary>An API allows one piece of software talking to another piece of software
 
 
@@ -1164,7 +1164,7 @@ Cover Photo Credit: Wexor Tmg
 
 &lt;p&gt;Life doesn’t owe you happiness. It doesn’t owe you a successful, meaningful and rewarding career. You have to work for it, you need to earn it. By refining your craft, becoming a master craftsman. Being so good they can’t ignore you. Put aside the question of a true passion and focus on becoming good. It isn’t about you, it’s about what you can do for the world. The passion, satisfaction and enjoyment will follow.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://amzn.to/1reowPn&quot;&gt;&lt;img src=&quot;/assets/images/book-so-good.jpg&quot; alt=&quot;So Good They Can&#39;t Ignore You - Book Cover&quot; title=&quot;So Good They Can&#39;t Ignore You - Book Cover&quot; class=&quot;book-cover&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://amzn.to/1reowPn&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/images/book-so-good.jpg&quot; alt=&quot;So Good They Can&#39;t Ignore You - Book Cover&quot; title=&quot;So Good They Can&#39;t Ignore You - Book Cover&quot; class=&quot;book-cover&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;“So Good They Can’t Ignore You” by &lt;a href=&quot;http://calnewport.com/&quot;&gt;Cal Newport&lt;/a&gt; defines people who have meaningful careers as having the following traits in there work&lt;sup id=&quot;fnref:so-good&quot;&gt;&lt;a href=&quot;#fn:so-good&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; :&lt;/p&gt;
 
@@ -1331,7 +1331,7 @@ This post builds on the ideas and thoughts of Cal Newport and his book “Be So 
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;downloads&quot;&gt;Downloads&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;/downloads/personal-branding-guide.html&quot; class=&quot;download-link&quot;&gt;Personal Branding Guide&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/downloads/personal-branding-guide.html&quot; class=&quot;download-link&quot; target=&quot;_blank&quot;&gt;Personal Branding Guide&lt;/a&gt;&lt;/p&gt;
 
 &lt;h5 id=&quot;footnotes&quot;&gt;Footnotes&lt;/h5&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
