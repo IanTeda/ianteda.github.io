@@ -24,7 +24,7 @@ Who doesn't want to find their passion. It's a romantic notion afterall. That in
 
 Life doesn't owe you happiness. It doesn't owe you a successful, meaningful and rewarding career. You have to work for it, you need to earn it. By refining your craft, becoming a master craftsman. Being so good they can't ignore you. Put aside the question of a true passion and focus on becoming good. It isn't about you, it's about what you can do for the world. The passion, satisfaction and enjoyment will follow.
 
-[![So Good They Can't Ignore You - Book Cover](/assets/images/book-so-good.jpg "So Good They Can't Ignore You - Book Cover"){: .book-cover}](http://amzn.to/1reowPn)
+[![So Good They Can't Ignore You - Book Cover](/assets/images/book-so-good.jpg "So Good They Can't Ignore You - Book Cover"){: .book-cover}](http://amzn.to/1reowPn){:target="_blank"}
 
 "So Good They Can't Ignore You" by [Cal Newport](http://calnewport.com/) defines people who have meaningful careers as having the following traits in there work[^so-good] :
 

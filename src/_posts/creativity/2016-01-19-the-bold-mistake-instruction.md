@@ -14,7 +14,7 @@ logo: /assets/images/logo-light.png
 > All courses of action are risky, so prudence is not in avoiding danger (it's impossible), but calculating risk and acting decisively. Make mistakes of ambition and not mistakes of sloth. Develop the strength to do bold things, not the strength to suffer.
 > <cite>-- Chapter III: Of Mixed Princedoms[^footnote]</cite>
 
-[![The Prince - Book Cover](/assets/images/book-the-prince.jpg "The Prince - Book Cover"){: .book-cover}](http://www.amazon.com/gp/product/9176370534/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=9176370534&linkCode=as2&tag=iate-20&linkId=BS2U6JP2MFM3IICC)
+[![The Prince - Book Cover](/assets/images/book-the-prince.jpg "The Prince - Book Cover"){: .book-cover}](http://www.amazon.com/gp/product/9176370534/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=9176370534&linkCode=as2&tag=iate-20&linkId=BS2U6JP2MFM3IICC){:target="_blank"}
 
 Life is risk, it cannot be avoided so do not let the possibility of being wrong prevent action. An indecision is still a decision. Move forward knowing that the decision you made was the right one, based on the knowledge you had at the time. Whether or not it turns out right is besides the point, considered action is.
 

@@ -41,7 +41,7 @@ An API is an: Application Programming Interface. An interface for one piece of s
 
 ### REST API
 
-REST API is an architectural design style that follows a defined set of objectives. It was first defined by Roy [Thomas Fielding](https://en.wikipedia.org/wiki/Roy_Fielding) in his 2000 PhD dissertation “Architectural Styles and the Design of Network-based Software Architectures”. 
+REST API is an architectural design style that follows a defined set of objectives. It was first defined by Roy [Thomas Fielding](https://en.wikipedia.org/wiki/Roy_Fielding){:target="_blank"} in his 2000 PhD dissertation “Architectural Styles and the Design of Network-based Software Architectures”. 
 
 The REST architectural style aims to be:
 
@@ -269,13 +269,13 @@ Useful list of API HTTP status codes
 | 429  | Too Many Requests      | When a request is rejected due to rate limiting |
 
 ##### References
-- [10 Design Tips For APIs](https://phraseapp.com/blog/posts/best-practice-10-design-tips-for-apis/)
-- [Application programming interface](https://en.wikipedia.org/wiki/Application_programming_interface)
-- [Best Practices for a Pragmatic RESTful API](http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api)
-- [Beautiful REST & JSON APIs](https://www.youtube.com/watch?v=mZ8_QgJ5mbs)
-- [How to design a REST API](http://blog.octo.com/en/design-a-rest-api/)
-- [Representational state transfer](https://en.wikipedia.org/wiki/Representational_state_transfer)
-- [REST API Design - Resource Modeling](https://www.thoughtworks.com/insights/blog/rest-api-design-resource-modeling)
-- [REST API concepts and examples](https://www.youtube.com/watch?v=7YcW25PHnAA)
-- [Thoughts on RESTful API Design](https://restful-api-design.readthedocs.io/en/latest/)
-- [What Exactly is RESTful Programming](http://stackoverflow.com/questions/671118/what-exactly-is-restful-programming)
+- [10 Design Tips For APIs](https://phraseapp.com/blog/posts/best-practice-10-design-tips-for-apis/){:target="_blank"}
+- [Application programming interface](https://en.wikipedia.org/wiki/Application_programming_interface){:target="_blank"}
+- [Best Practices for a Pragmatic RESTful API](http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api){:target="_blank"}
+- [Beautiful REST & JSON APIs](https://www.youtube.com/watch?v=mZ8_QgJ5mbs){:target="_blank"}
+- [How to design a REST API](http://blog.octo.com/en/design-a-rest-api/){:target="_blank"}
+- [Representational state transfer](https://en.wikipedia.org/wiki/Representational_state_transfer){:target="_blank"}
+- [REST API Design - Resource Modeling](https://www.thoughtworks.com/insights/blog/rest-api-design-resource-modeling){:target="_blank"}
+- [REST API concepts and examples](https://www.youtube.com/watch?v=7YcW25PHnAA){:target="_blank"}
+- [Thoughts on RESTful API Design](https://restful-api-design.readthedocs.io/en/latest/){:target="_blank"}
+- [What Exactly is RESTful Programming](http://stackoverflow.com/questions/671118/what-exactly-is-restful-programming){:target="_blank"}

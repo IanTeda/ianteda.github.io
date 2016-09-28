@@ -66,7 +66,7 @@ The key to effective thinking is asking the right questions. Below is a list of 
 * Create good content, don't chase views.
 
 ## Downloads
-[Personal Branding Guide](/downloads/personal-branding-guide.html){: .download-link}
+[Personal Branding Guide](/downloads/personal-branding-guide.html){:.download-link target="_blank"}
 
 
 ##### Footnotes

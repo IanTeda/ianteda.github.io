@@ -1,6 +1,6 @@
 ---
 title: The Habit Loop
-description: We are just a collection of habits
+description: We are, for the most part a collection of habits
 date: 2016-09-27
 tags: [self-help]
 layout: post
@@ -12,26 +12,26 @@ cover: /assets/images/cover-loops.png
 logo: /assets/images/logo-light.png
 ---
 > Your beliefs become your thoughts; Your thoughts become your words; Your words become your actions; Your actions become your habits; Your habits become your values; Your values become your destiny.
-> <cite> Mahatma Ghandi.
+> <cite> Mahatma Ghandi.</cite>
 
-We are for the most part a collection of habits. A collection of emotional, physical and intellectual habits, systematically organised for our brains optimisation. Manifesting themselves in our character, businesses, social groups and cultures.
+We are, for the most part a collection of habits. A collection of emotional, physical and intellectual habits, systematically organised for our brains optimisation. Manifesting themselves in our character, businesses, social groups and cultures.
 
-It might appear that the choices we make each day are the product of a well thought out concious decision, but they are not. They are habits. On its own a habit doesn't seem like much, but as a collective they shape the way we behave and ultimately our character. “You are what you do, not what you say you'll do.” -- C.G. Jung.
+It might appear that the choices we make each day are the product of a well thought out conscious decision, but they are not. They are habits. On its own a habit doesn't seem like much, but as a collective they shape the way we behave and ultimately our character. “You are what you do, not what you say you'll do.” -- C.G. Jung.
 
 > A habit is something you can do without thinking — which is why most of us have so many of them.
-> <cite> Frank A. Clark.
+> <cite> Frank A. Clark.</cite>
 
-Habits allow us to undertake tasks with difficulty the first time, but then over time with increasing easie and final in a semi-autonomous mode.
+Habits allow us to undertake tasks with difficulty the first time, but then over time with increasing ease and final in a semi-autonomous mode.
 
-![The Power of Habit - Why we do what we do in life and business Book Cover](/assets/images/book-power-of-habit.jpg "The Power of Habit - Why we do what we do in life and business"){: .book-cover}
+[![The Power of Habit - Why we do what we do in life and business Book Cover](/assets/images/book-power-of-habit.jpg "The Power of Habit - Why we do what we do in life and business"){: .book-cover}](https://amzn.com/081298160X){:target="_blank"}
 
 Charles Duhigg in his book "The Power of Habit - Why we do what we do in life and business" breaks habits down into a three-step loop, the habit loop:
 
-![The Power of Habit - Why we do what we do in life and business Book Cover](/assets/images/the-habit-loop.jpg "The Power of Habit - Why we do what we do in life and business")
+1. Cue: first a trigger tells our brain to go into automatic mode and to use routine 1423;
+2. Routine: in autonomous mode, the brain steps through the pre defined 1243 routine -- which can be emotional, physical or intellectual;
+3. Reward: finally, a reward reinforces the routine. Helping the brain figure out if this particular routine -- loop -- is worth remembering;
 
-1. A cue, a trigger that tells our brain to go into automatic mode and to use routine 1423;
-2. Now in autonomous mode, the brain steps through the pre defined routine which can be emotional, physical or intellectual;
-3. Finally, a reward reinforces the routine. Helping the brain figure out if this particular routine -- loop -- is worth remembering;
+![The Power of Habit - Why we do what we do in life and business Book Cover](/assets/images/habit-loop.jpg "The Power of Habit - Why we do what we do in life and business")
 
 Habits emerge without permission because our brains are constantly looking for ways to save effort. Left to its own devices, the brain will try to make almost any routine into a habit, because habits allow our minds to ramp down more often and conserve mental energy. Any behaviour that can be reduced to a routine is one less behaviour that we must spend time and energy consciously thinking about and deciding upon. Habits free up time and energy for other matters.
 
@@ -52,7 +52,7 @@ A special kind of habit exists, known as a Keystone habit. They have a tendency 
 Like a sheet of paper that has been folded, forever it will fall to that fold. Habits never really disappear…unfolding even if you try to fight them
 
 > The chains of habit are generally too small to be felt until they are too strong to be broken.
-> <cite> Samuel Johnson.
+> <cite> Samuel Johnson.</cite>
 
 > Men's natures are alike; it is their habits that separate them.
-> <cite> Confucius, Analects.
+> <cite> Confucius, Analects.</cite>
