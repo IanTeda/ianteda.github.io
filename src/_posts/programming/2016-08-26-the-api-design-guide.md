@@ -1,7 +1,7 @@
 ---
 title: The API Design Guide
 description: One piece of software talking to another piece of software
-date: 2016-07-27
+date: 2016-08-26
 tags: [API]
 layout: post
 category: programming
@@ -117,6 +117,7 @@ Access within the API should be based on the resource not the endpoint URL.
 Use request rate limiting to the endpoints, to avoid performance issues.
 
 Keep in mind when providing authentication responses that:
+
 - __401 "Unauthorized"__ - Really means unauthenticated. You need valid credentials for me to respond to this request;
 - __403 "Forbidden"__ - Really means unauthorized. I understood your credentials, but sorry, you are not allowed to access that resource;
 
@@ -125,9 +126,7 @@ Keep in mind when providing authentication responses that:
 When responding with an error the JSON body should return a useful error message, a unique internal error code with reference to documentation, a detailed description and a 400 http status. Error messages should be human-readable from the browser, include a diagnostic message to help the consumer resolve the error condition and be as descriptive as possible.
 
 ~~~
-Header: {
-  status: 409
-}
+Status: 400 BAD REQUEST
 {
   "code" : unique_project_code,
   "property" : "What caused the error",
@@ -137,29 +136,6 @@ Header: {
   "documentation_url": "https://ianteda.com/api/documentation"
 }
 ~~~
-
-## HTTP status codes
-
-HTTP status codes can help your consumers navigate your API. Providing context to the API responses.
-
-Useful list of API HTTP status codes
-
-| Code | Status                 | Notes |
-|:----:|------------------------|-------|
-| 200  | OK                     | Response to a successful GET, PUT, PATCH or DELETE. Can also be used for a POST that doesn't result in a creation |
-| 201  | Created                | Response to a POST that results in a creation. Should be combined with a Location header pointing to the location of the new resource |
-| 204  | No Content             | Response to a successful request that won't be returning a body (like a DELETE request)  |
-| 304  | Not Modified           | Used when HTTP caching headers are in play |
-| 400  | Bad Request            | The request is malformed, such as if the body does not parse |
-| 401  | Unauthorized           | When no or invalid authentication details are provided. Also useful to trigger an auth popup if the API is used from a browser |
-| 403  | Forbidden              | When authentication succeeded but authenticated user doesn't have access to the resource |
-| 404  | Not Found              | When a non-existent resource is requested |
-| 405  | Method Not Allowed     | When an HTTP method is being requested that isn't allowed for the authenticated user |
-| 410  | Gone                   | Indicates that the resource at this end point is no longer available. Useful as a blanket response for old API versions |
-| 415  | Unsupported Media Type | If incorrect content type was provided as part of the request |
-| 422  | Unprocessable Entity   | Used for validation errors |
-| 429  | Too Many Requests      | When a request is rejected due to rate limiting |
-
 
 ### Endpoints
 
@@ -204,9 +180,9 @@ Typical actions on an endpoint
 | DELTE  | /resource/{key}  | Delete a resource identified by the given key (name or id) |
 
 
-### Relationships
+#### Relationships
 
-#### One to many relationships
+##### One to many relationships
 
 If Relationships exist within a resource, extend the endpoint.
 
@@ -219,11 +195,11 @@ If Relationships exist within a resource, extend the endpoint.
 | PATCH  | /resource/{key}/relationship/{key} | Partially update relationship {key (name or id)} for resource {key (name or id)} |
 | DELETE | /resource/{key}/relationship/{key} | Delete relationship {key (name or id)} for resource {key (name or id)} |
 
-#### Many to many relationships
+##### Many to many relationships
 
 If the relationship exists external to a resource, provide an end point for the relationship. With a href link within the resource response to the relationship. By creating an endpoint for the relationship it can be deleted without deleting the resource.
 
-### Provide Request-Ids for Introspection
+#### Provide Request-Ids for Introspection
 
 Include a Request-Id header in each API response, populated with a UUID value. By logging these values on the client, server and any backing services, it provides a mechanism to trace, diagnose and debug requests.
 
@@ -237,16 +213,15 @@ Provide links within the paged response to other pages.
 
 ~~~
 {
-  ....
-  "first" : ".../resource/00001",
-  "previous" : ".../resource/34523",
-  "next" : ".../resource/34525",
-  "last" : ".../resource/8764534",
+  "first" : "/resource/00001",
+  "previous" : "/resource/34523",
+  "next" : "/resource/34525",
+  "last" : "/resource/8764534",
   "index : {
-    00001: "../resource?offset=0&limit=25",
-    00002: "../resource?offset=25&limit=25",
-    00003: "../resource?offset=50&limit=25",
-    ....
+    00001: "/resource?offset=0&limit=25",
+    00002: "/resource?offset=25&limit=25",
+    00003: "/resource?offset=50&limit=25"
+  }
 }
 ~~~
 
@@ -271,8 +246,29 @@ Sometimes basic filters is not enough and you need the power of full text search
 
 To make the API experience more pleasant for the average consumer, consider packaging up sets of query conditions into easily accessible endpoints.
 
+### HTTP status codes
 
-#### References
+HTTP status codes can help your consumers navigate your API. Providing context to the API responses.
+
+Useful list of API HTTP status codes
+
+| Code | Status                 | Notes |
+|:----:|------------------------|-------|
+| 200  | OK                     | Response to a successful GET, PUT, PATCH or DELETE. Can also be used for a POST that doesn't result in a creation |
+| 201  | Created                | Response to a POST that results in a creation. Should be combined with a Location header pointing to the location of the new resource |
+| 204  | No Content             | Response to a successful request that won't be returning a body (like a DELETE request)  |
+| 304  | Not Modified           | Used when HTTP caching headers are in play |
+| 400  | Bad Request            | The request is malformed, such as if the body does not parse |
+| 401  | Unauthorized           | When no or invalid authentication details are provided. Also useful to trigger an auth popup if the API is used from a browser |
+| 403  | Forbidden              | When authentication succeeded but authenticated user doesn't have access to the resource |
+| 404  | Not Found              | When a non-existent resource is requested |
+| 405  | Method Not Allowed     | When an HTTP method is being requested that isn't allowed for the authenticated user |
+| 410  | Gone                   | Indicates that the resource at this end point is no longer available. Useful as a blanket response for old API versions |
+| 415  | Unsupported Media Type | If incorrect content type was provided as part of the request |
+| 422  | Unprocessable Entity   | Used for validation errors |
+| 429  | Too Many Requests      | When a request is rejected due to rate limiting |
+
+##### References
 - [10 Design Tips For APIs](https://phraseapp.com/blog/posts/best-practice-10-design-tips-for-apis/)
 - [Application programming interface](https://en.wikipedia.org/wiki/Application_programming_interface)
 - [Best Practices for a Pragmatic RESTful API](http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api)
