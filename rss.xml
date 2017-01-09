@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="https://ianteda.com/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="https://ianteda.com/rss.xml" rel="self" type="application/atom+xml" /><link href="https://ianteda.com/" rel="alternate" type="text/html" /><updated>2017-01-09T21:47:57+11:00</updated><id>https://ianteda.com//</id><title type="html">Ian Teda</title><subtitle>Husband, Father, Engineer, Explorer &amp; Creator</subtitle><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><entry><title type="html">The Habit Loop</title><link href="https://ianteda.com/creativity/the-habit-loop.html" rel="alternate" type="text/html" title="The Habit Loop" /><published>2016-09-27T00:00:00+10:00</published><updated>2016-09-27T00:00:00+10:00</updated><id>https://ianteda.com/creativity/the-habit-loop</id><content type="html" xml:base="https://ianteda.com/creativity/the-habit-loop.html">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:3000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="http://localhost:3000/rss.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:3000/" rel="alternate" type="text/html" /><updated>2017-01-09T21:52:06+11:00</updated><id>http://localhost:3000//</id><title type="html">Ian Teda</title><subtitle>Husband, Father, Engineer, Explorer &amp; Creator</subtitle><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><entry><title type="html">The Habit Loop</title><link href="http://localhost:3000/creativity/the-habit-loop.html" rel="alternate" type="text/html" title="The Habit Loop" /><published>2016-09-27T00:00:00+10:00</published><updated>2016-09-27T00:00:00+10:00</updated><id>http://localhost:3000/creativity/the-habit-loop</id><content type="html" xml:base="http://localhost:3000/creativity/the-habit-loop.html">&lt;blockquote&gt;
   &lt;p&gt;Your beliefs become your thoughts; Your thoughts become your words; Your words become your actions; Your actions become your habits; Your habits become your values; Your values become your destiny.
 &lt;cite&gt; Mahatma Ghandi.&lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -108,7 +108,7 @@ Like a sheet of paper that has been folded, forever it will fall to that fold. H
 
 
   Men’s natures are alike; it is their habits that separate them.
- Confucius, Analects.</summary></entry><entry><title type="html">The API Design Guide</title><link href="https://ianteda.com/programming/the-api-design-guide.html" rel="alternate" type="text/html" title="The API Design Guide" /><published>2016-08-26T00:00:00+10:00</published><updated>2016-08-26T00:00:00+10:00</updated><id>https://ianteda.com/programming/the-api-design-guide</id><content type="html" xml:base="https://ianteda.com/programming/the-api-design-guide.html">&lt;blockquote&gt;
+ Confucius, Analects.</summary></entry><entry><title type="html">The API Design Guide</title><link href="http://localhost:3000/programming/the-api-design-guide.html" rel="alternate" type="text/html" title="The API Design Guide" /><published>2016-08-26T00:00:00+10:00</published><updated>2016-08-26T00:00:00+10:00</updated><id>http://localhost:3000/programming/the-api-design-guide</id><content type="html" xml:base="http://localhost:3000/programming/the-api-design-guide.html">&lt;blockquote&gt;
   &lt;p&gt;An API allows one piece of software talking to another piece of software&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -936,7 +936,7 @@ References
   REST API Design - Resource Modeling
   REST API concepts and examples
   Thoughts on RESTful API Design
-  What Exactly is RESTful Programming</summary></entry><entry><title type="html">The Turtle Mindset</title><link href="https://ianteda.com/management/the-turtle-mindset.html" rel="alternate" type="text/html" title="The Turtle Mindset" /><published>2016-07-01T00:00:00+10:00</published><updated>2016-07-01T00:00:00+10:00</updated><id>https://ianteda.com/management/the-turtle-mindset</id><content type="html" xml:base="https://ianteda.com/management/the-turtle-mindset.html">&lt;blockquote&gt;
+  What Exactly is RESTful Programming</summary></entry><entry><title type="html">The Turtle Mindset</title><link href="http://localhost:3000/management/the-turtle-mindset.html" rel="alternate" type="text/html" title="The Turtle Mindset" /><published>2016-07-01T00:00:00+10:00</published><updated>2016-07-01T00:00:00+10:00</updated><id>http://localhost:3000/management/the-turtle-mindset</id><content type="html" xml:base="http://localhost:3000/management/the-turtle-mindset.html">&lt;blockquote&gt;
   &lt;p&gt;“Turtles carry their homes on their backs.” Running her finger over the tattoo, she tells him what her dad told her: “They’re exposed and hidden at the same time. They’re a symbol of strength and perseverance.”
 &lt;cite&gt; – Christina Baker Kline&lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1148,7 +1148,7 @@ Cover Photo Credit: Wexor Tmg
       Risk, Reward And Worst Case Scenarios&amp;nbsp;&amp;#8617;
     
     
-      The Intelligent Investor By Benjamin Graham&amp;nbsp;&amp;#8617;</summary></entry><entry><title type="html">The Passion Falsity</title><link href="https://ianteda.com/creativity/the-passion-falsity.html" rel="alternate" type="text/html" title="The Passion Falsity" /><published>2016-06-09T00:00:00+10:00</published><updated>2016-06-09T00:00:00+10:00</updated><id>https://ianteda.com/creativity/the-passion-falsity</id><content type="html" xml:base="https://ianteda.com/creativity/the-passion-falsity.html">&lt;blockquote&gt;
+      The Intelligent Investor By Benjamin Graham&amp;nbsp;&amp;#8617;</summary></entry><entry><title type="html">The Passion Falsity</title><link href="http://localhost:3000/creativity/the-passion-falsity.html" rel="alternate" type="text/html" title="The Passion Falsity" /><published>2016-06-09T00:00:00+10:00</published><updated>2016-06-09T00:00:00+10:00</updated><id>http://localhost:3000/creativity/the-passion-falsity</id><content type="html" xml:base="http://localhost:3000/creativity/the-passion-falsity.html">&lt;blockquote&gt;
   &lt;p&gt;Life isn’t about finding yourself. Life is about creating yourself.
 &lt;cite&gt; – GEORGE BERNHARD SHAW&lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1262,7 +1262,7 @@ This post builds on the ideas and thoughts of Cal Newport and his book “Be So 
       Billionaire Lives W/ Navy Seal for 31 Days&amp;nbsp;&amp;#8617;
     
     
-      The Mastermind Brief&amp;nbsp;&amp;#8617;</summary></entry><entry><title type="html">The Personal Branding Defence</title><link href="https://ianteda.com/management/the-personal-branding-defence.html" rel="alternate" type="text/html" title="The Personal Branding Defence" /><published>2016-05-08T00:00:00+10:00</published><updated>2016-05-08T00:00:00+10:00</updated><id>https://ianteda.com/management/the-personal-branding-defence</id><content type="html" xml:base="https://ianteda.com/management/the-personal-branding-defence.html">&lt;blockquote&gt;
+      The Mastermind Brief&amp;nbsp;&amp;#8617;</summary></entry><entry><title type="html">The Personal Branding Defence</title><link href="http://localhost:3000/management/the-personal-branding-defence.html" rel="alternate" type="text/html" title="The Personal Branding Defence" /><published>2016-05-08T00:00:00+10:00</published><updated>2016-05-08T00:00:00+10:00</updated><id>http://localhost:3000/management/the-personal-branding-defence</id><content type="html" xml:base="http://localhost:3000/management/the-personal-branding-defence.html">&lt;blockquote&gt;
   &lt;p&gt;Start by knowing what you want and who you are, build credibility around it and deliver it online in a compelling way.
 &lt;cite&gt; — Krista Neher&lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1432,7 +1432,7 @@ Footnotes
       What do people say about your when you leave the room&amp;nbsp;&amp;#8617;
     
     
-      Start With Why - Simon Sinek TED talk&amp;nbsp;&amp;#8617;</summary></entry><entry><title type="html">The Mental Model Definition</title><link href="https://ianteda.com/creativity/the-mental-model-definition.html" rel="alternate" type="text/html" title="The Mental Model Definition" /><published>2016-04-13T00:00:00+10:00</published><updated>2016-04-13T00:00:00+10:00</updated><id>https://ianteda.com/creativity/the-mental-model-definition</id><content type="html" xml:base="https://ianteda.com/creativity/the-mental-model-definition.html">&lt;blockquote&gt;
+      Start With Why - Simon Sinek TED talk&amp;nbsp;&amp;#8617;</summary></entry><entry><title type="html">The Mental Model Definition</title><link href="http://localhost:3000/creativity/the-mental-model-definition.html" rel="alternate" type="text/html" title="The Mental Model Definition" /><published>2016-04-13T00:00:00+10:00</published><updated>2016-04-13T00:00:00+10:00</updated><id>http://localhost:3000/creativity/the-mental-model-definition</id><content type="html" xml:base="http://localhost:3000/creativity/the-mental-model-definition.html">&lt;blockquote&gt;
   &lt;p&gt;Man seeks for himself a simplified and lucid image of the world.
 &lt;cite&gt; – Albert Einstein&lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1516,7 +1516,7 @@ Footnotes
 
   
     
-      Mental Model&amp;nbsp;&amp;#8617;</summary></entry><entry><title type="html">Gulp Jekyll Workflow - Part 1 Design Pattern</title><link href="https://ianteda.com/programming/gulp-jekyll-workflow-1.html" rel="alternate" type="text/html" title="Gulp Jekyll Workflow - Part 1 Design Pattern" /><published>2016-03-24T00:00:00+11:00</published><updated>2016-03-24T00:00:00+11:00</updated><id>https://ianteda.com/programming/gulp-jekyll-workflow-1</id><content type="html" xml:base="https://ianteda.com/programming/gulp-jekyll-workflow-1.html">&lt;blockquote&gt;
+      Mental Model&amp;nbsp;&amp;#8617;</summary></entry><entry><title type="html">Gulp Jekyll Workflow - Part 1 Design Pattern</title><link href="http://localhost:3000/programming/gulp-jekyll-workflow-1.html" rel="alternate" type="text/html" title="Gulp Jekyll Workflow - Part 1 Design Pattern" /><published>2016-03-24T00:00:00+11:00</published><updated>2016-03-24T00:00:00+11:00</updated><id>http://localhost:3000/programming/gulp-jekyll-workflow-1</id><content type="html" xml:base="http://localhost:3000/programming/gulp-jekyll-workflow-1.html">&lt;blockquote&gt;
   &lt;p&gt;Always start with the end in mind. So you know what direction to travel&lt;br /&gt;
 &lt;cite&gt; — Ian Teda &lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1864,7 +1864,7 @@ Footnotes
       Parse ye Node.js command args with yargs!&amp;nbsp;&amp;#8617;
     
     
-      Splitting a gulpfile into multiple files&amp;nbsp;&amp;#8617;</summary></entry><entry><title type="html">The Gulp, Jekyll, Github Pages &amp;amp; Cloudflare Mixture</title><link href="https://ianteda.com/programming/the-gulp-jekyll-github-pages-cloudflare-mixture.html" rel="alternate" type="text/html" title="The Gulp, Jekyll, Github Pages &amp; Cloudflare Mixture" /><published>2016-03-15T00:00:00+11:00</published><updated>2016-03-15T00:00:00+11:00</updated><id>https://ianteda.com/programming/the-gulp-jekyll-github-pages-cloudflare-mixture</id><content type="html" xml:base="https://ianteda.com/programming/the-gulp-jekyll-github-pages-cloudflare-mixture.html">&lt;blockquote&gt;
+      Splitting a gulpfile into multiple files&amp;nbsp;&amp;#8617;</summary></entry><entry><title type="html">The Gulp, Jekyll, Github Pages &amp;amp; Cloudflare Mixture</title><link href="http://localhost:3000/programming/the-gulp-jekyll-github-pages-cloudflare-mixture.html" rel="alternate" type="text/html" title="The Gulp, Jekyll, Github Pages &amp; Cloudflare Mixture" /><published>2016-03-15T00:00:00+11:00</published><updated>2016-03-15T00:00:00+11:00</updated><id>http://localhost:3000/programming/the-gulp-jekyll-github-pages-cloudflare-mixture</id><content type="html" xml:base="http://localhost:3000/programming/the-gulp-jekyll-github-pages-cloudflare-mixture.html">&lt;blockquote&gt;
   &lt;p&gt;Flexible, simple, fast, secure &amp;amp; https. Total cost, $15AUD for domain registration.&lt;br /&gt;
 &lt;cite&gt; — Ian Teda &lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2016,7 +2016,7 @@ Footnotes
       CloudFlare one-click SSL&amp;nbsp;&amp;#8617;
     
     
-      Free SSL for GitHub Pages with Custom Domains&amp;nbsp;&amp;#8617;</summary></entry><entry><title type="html">Video - The Cotter Dam Intake Tower Explanation</title><link href="https://ianteda.com/engineering/the-cotter-dam-intake-tower-explanation.html" rel="alternate" type="text/html" title="Video - The Cotter Dam Intake Tower Explanation" /><published>2016-03-02T00:00:00+11:00</published><updated>2016-03-02T00:00:00+11:00</updated><id>https://ianteda.com/engineering/the-cotter-dam-intake-tower-explanation</id><content type="html" xml:base="https://ianteda.com/engineering/the-cotter-dam-intake-tower-explanation.html">&lt;p&gt;A short video featuring yours truly, and the construction of the intake tower on the Cotter Dam project.&lt;/p&gt;
+      Free SSL for GitHub Pages with Custom Domains&amp;nbsp;&amp;#8617;</summary></entry><entry><title type="html">Video - The Cotter Dam Intake Tower Explanation</title><link href="http://localhost:3000/engineering/the-cotter-dam-intake-tower-explanation.html" rel="alternate" type="text/html" title="Video - The Cotter Dam Intake Tower Explanation" /><published>2016-03-02T00:00:00+11:00</published><updated>2016-03-02T00:00:00+11:00</updated><id>http://localhost:3000/engineering/the-cotter-dam-intake-tower-explanation</id><content type="html" xml:base="http://localhost:3000/engineering/the-cotter-dam-intake-tower-explanation.html">&lt;p&gt;A short video featuring yours truly, and the construction of the intake tower on the Cotter Dam project.&lt;/p&gt;
 
 &lt;div class=&quot;video-wrapper&quot;&gt;
   &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/6MZ0eRckO34&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
@@ -2028,118 +2028,4 @@ Footnotes
   
 
 
-Video &amp;amp; Cover Image Credit: Icon Water &amp;amp; Richard Snashall</summary></entry><entry><title type="html">The Idea Value Proposition</title><link href="https://ianteda.com/management/the-idea-value-proposition.html" rel="alternate" type="text/html" title="The Idea Value Proposition" /><published>2016-02-26T00:00:00+11:00</published><updated>2016-02-26T00:00:00+11:00</updated><id>https://ianteda.com/management/the-idea-value-proposition</id><content type="html" xml:base="https://ianteda.com/management/the-idea-value-proposition.html">&lt;blockquote&gt;
-  &lt;p&gt;“Daring ideas are like chessmen moved forward. They may be beaten, but they may start a winning game.”
-&lt;cite&gt; – Johann Wolfgang von Goethe&lt;/cite&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Ideas are easy, cheap even. It is the execution that is hard and because it is hard it is worth millions. If the execution wasn’t hard everyone would be doing it. And if everyone was doing it, then it would be worthless and quickly become a race to the bottom.&lt;/p&gt;
-
-&lt;p&gt;It is important to realise that an idea is not a product or a business&lt;sup id=&quot;fnref:not-a-business&quot;&gt;&lt;a href=&quot;#fn:not-a-business&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. A product, is an idea that is – or multiple ideas that are – executed well.  But ideas still hold value. Ideas are a multiplier of the execution, that together produce value. Thus, a good idea produces more value than a bad idea when multiplied by the same execution&lt;sup id=&quot;fnref:sivers&quot;&gt;&lt;a href=&quot;#fn:sivers&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-proposition&quot;&gt;The Proposition&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-JavaScript&quot;&gt;// The Value Proposition
-Product Value = Idea x Execution
-
-// Bad Idea Multiplier
-Product Value = 1 x 100,000 = 100,000 of Value
-
-// Good Idea Multiplier
-Product Value = 10 x 100,000 = 1,000,000 of Value
-
-// Awful Idea Multiplier
-Product Value = -1 x 100,000 = -100,000 of Value
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The better an idea the more it will multiple the execution and the value of the product.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Genius is one percent inspiration, ninety-nine percent perspiration.
-&lt;cite&gt; – Thomas Edison&lt;/cite&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;If you have an original, totally awesome idea it will not take long before someone else copies it. After all it is an awesome idea. Success therefore doesn’t come from the idea but the execution. How the idea is implemented, branded, marketed, positioned and finally sold.&lt;/p&gt;
-
-&lt;p&gt;With the multiplier in mind, you don’t need an original idea for success. Google wasn’t the first search engine, Facebook wasn’t the first social platform and the iPod wasn’t the first music player&lt;sup id=&quot;fnref:not-a-business:1&quot;&gt;&lt;a href=&quot;#fn:not-a-business&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. What differentiated them and made them “successful” was the execution of the idea.&lt;/p&gt;
-
-&lt;p&gt;What makes a bad idea? It’s hard to say. A bad idea can disguise itself as a good idea executed poorly. All the time you are thinking “I just need to persist and execute better”. You end up burning energy pushing and a bad idea uphill. It is important therefor to validate ideas (a topic for another post) before execution.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;“Ideas are a dime a dozen. People who implement them are priceless.”
-&lt;cite&gt; – Mary Kay Ash&lt;/cite&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;So don’t burn energy protecting and worrying someone will steal your idea, they will. Put your focus into idea generation and valuation. But mostly idea execution. Because, “great ideas are useless without someone full of passion to implement them.” – Amy Rees Anderson&lt;sup id=&quot;fnref:dim-dozen&quot;&gt;&lt;a href=&quot;#fn:dim-dozen&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;footnotes&quot;&gt;Footnotes:&lt;/h3&gt;
-
-&lt;p&gt;Photo cover credit: &lt;a href=&quot;https://www.flickr.com/photos/larrymyhre/23648279433/&quot; target=&quot;_blank&quot;&gt;Larry Myhre&lt;/a&gt;&lt;/p&gt;
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:not-a-business&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://medium.com/the-1-blog-series/ideas-are-cheap-execution-is-worth-millions-e203efbcaa49#.u9b3zzspk&quot; target=&quot;_blank&quot;&gt;Ideas Are Cheap, Execution is Worth Millions – Sathyvelu Kunashegaran&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:not-a-business&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:not-a-business:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:sivers&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://sivers.org/multiply&quot; target=&quot;_blank&quot;&gt;Ideas are just a multiplier of execution – Derek Sivers&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:sivers&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:dim-dozen&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;http://www.forbes.com/sites/amyanderson/2013/03/14/ideas-are-a-dime-a-dozen-people-who-implement-them-are-priceless/#57e07877304b&quot; target=&quot;_blank&quot;&gt;Ideas are a Dime a Dozen&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:dim-dozen&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><category term="management" /><category term="Entrepreneurial" /><summary type="html">“Daring ideas are like chessmen moved forward. They may be beaten, but they may start a winning game.”
- – Johann Wolfgang von Goethe
-
-
-Ideas are easy, cheap even. It is the execution that is hard and because it is hard it is worth millions. If the execution wasn’t hard everyone would be doing it. And if everyone was doing it, then it would be worthless and quickly become a race to the bottom.
-
-It is important to realise that an idea is not a product or a business1. A product, is an idea that is – or multiple ideas that are – executed well.  But ideas still hold value. Ideas are a multiplier of the execution, that together produce value. Thus, a good idea produces more value than a bad idea when multiplied by the same execution2.
-
-The Proposition
-
-// The Value Proposition
-Product Value = Idea x Execution
-
-// Bad Idea Multiplier
-Product Value = 1 x 100,000 = 100,000 of Value
-
-// Good Idea Multiplier
-Product Value = 10 x 100,000 = 1,000,000 of Value
-
-// Awful Idea Multiplier
-Product Value = -1 x 100,000 = -100,000 of Value
-
-
-The better an idea the more it will multiple the execution and the value of the product.
-
-
-  Genius is one percent inspiration, ninety-nine percent perspiration.
- – Thomas Edison
-
-
-If you have an original, totally awesome idea it will not take long before someone else copies it. After all it is an awesome idea. Success therefore doesn’t come from the idea but the execution. How the idea is implemented, branded, marketed, positioned and finally sold.
-
-With the multiplier in mind, you don’t need an original idea for success. Google wasn’t the first search engine, Facebook wasn’t the first social platform and the iPod wasn’t the first music player1. What differentiated them and made them “successful” was the execution of the idea.
-
-What makes a bad idea? It’s hard to say. A bad idea can disguise itself as a good idea executed poorly. All the time you are thinking “I just need to persist and execute better”. You end up burning energy pushing and a bad idea uphill. It is important therefor to validate ideas (a topic for another post) before execution.
-
-
-  “Ideas are a dime a dozen. People who implement them are priceless.”
- – Mary Kay Ash
-
-
-So don’t burn energy protecting and worrying someone will steal your idea, they will. Put your focus into idea generation and valuation. But mostly idea execution. Because, “great ideas are useless without someone full of passion to implement them.” – Amy Rees Anderson3
-
-Footnotes:
-
-Photo cover credit: Larry Myhre
-
-  
-    
-      Ideas Are Cheap, Execution is Worth Millions – Sathyvelu Kunashegaran&amp;nbsp;&amp;#8617;&amp;nbsp;&amp;#8617;2
-    
-    
-      Ideas are just a multiplier of execution – Derek Sivers&amp;nbsp;&amp;#8617;
-    
-    
-      Ideas are a Dime a Dozen&amp;nbsp;&amp;#8617;</summary></entry></feed>
+Video &amp;amp; Cover Image Credit: Icon Water &amp;amp; Richard Snashall</summary></entry></feed>

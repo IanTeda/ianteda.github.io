@@ -1,0 +1,694 @@
+<!-- Start _layout/default.html -->
+<!DOCTYPE html>
+<html>
+
+<!-- Start _inludes/head.html -->
+<head>
+
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Mobile Metas -->
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- RSS Feed -->
+    <link rel="alternate" type="application/rss+xml" title="Ian Teda" href="http://localhost:3000/rss.xml" />
+
+    <!-- Favourite Icon -->
+    <link rel="shortcut icon" href="http://localhost:3000/assets/images/favicon.ico" >
+
+    <!-- Page Title -->
+    <title>
+      
+        The API Design Guide Original
+      
+    </title>
+
+    <!-- Page Description -->
+    
+      <meta name="description" content="One piece of software talking to another piece of software" />
+    
+
+    <!-- Page Author -->
+    
+      <link rel="author" href="https://plus.google.com/u/0/+IanTeda"/>
+    
+
+    <link rel="canonical" href="http://localhost:3000/programming/the-api-design-guide-original.html" />
+
+    <!-- Style Sheets -->
+    <!-- Start _includes/styles.html -->
+<!-- inject:css -->
+<link rel="stylesheet" href="/assets/styles/main.min.css">
+<!-- endinject -->
+<!-- End _includes/styles.html -->
+
+
+    <!-- Force HTTPS -->
+    <!-- Start _includes/ssl-redirect.html -->
+
+<!-- End _includes/sssl-redirect.html -->
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Add Google Analytics  -->
+    <!-- Start _includes/analytics.html -->
+
+
+
+<!-- End _includes/analytics.html -->
+
+</head>
+<!-- End _includes/head.html -->
+
+
+<body class="home-template nav-closed">
+
+    <!-- Start _includes/navigation.html -->
+<div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        <li class="nav-home " role="presentation"><a href="/">Home</a></li>
+        <li class="nav-posts " role="presentation"><a href="/blog">Blog</a></li>
+        <li class="nav-now " role="presentation"><a href="/now.html">Now</a></li>
+        <li class="nav-creativity " role="presentation"><a href="/creativity">Creativity</a></li>
+        <li class="nav-engineering " role="presentation"><a href="/engineering">Engineering</a></li>
+        <li class="nav-management " role="presentation"><a href="/management">Management</a></li>
+        <li class="nav-programming  nav-current" role="presentation"><a href="/programming">Programming</a></li>
+    </ul>
+    <a class="subscribe-button icon-feed" href="/rss.xml">Subscribe</a>
+</div>
+<span class="nav-cover"></span>
+<!-- End _includes/navigation.html -->
+
+
+    <div class="site-wrapper">
+
+        <!-- Start _layout/post.html -->
+<!-- Start _includes/header.html -->
+<header class="main-header post-head" style="background-image: url(/assets/images/cover-old-typewriter.jpg)">
+
+  <nav class="main-nav  overlay  clearfix">
+      
+        <a class="blog-logo" href="/"><img src="/assets/images/logo-light.png" alt="Blog Logo" /></a>
+      
+      
+          <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
+      
+  </nav>
+  
+      <div class="vertical">
+          <div class="main-header-content inner">
+              <h1 class="page-title">
+                  
+                      The API Design Guide Original
+                  
+              </h1>
+              <h2 class="page-description">
+                  
+                      One piece of software talking to another piece of software
+                  
+              </h2>
+          </div>
+      </div>
+  
+</header>
+<!-- End _includes/header.html -->
+
+
+<main class="content" role="main">
+
+    <article class="post ">
+
+        <header class="post-header">
+            <h1 class="post-title">The API Design Guide Original</h1>
+            <section class="post-meta">
+                
+                    Filed Under:
+                    
+                        
+                           <a href='/programming'>Programming</a>
+                        
+                    
+                
+            </section>
+        </header>
+
+        <section class="post-content">
+
+            <blockquote>
+  <p>One piece of software talking to another piece of software</p>
+</blockquote>
+
+<h3 id="aim">AIM</h3>
+
+<p>The aim of this design guide is to assist in the planing and development of my REST API boilerplate project.</p>
+
+<h3 id="overview">Overview</h3>
+
+<p>An API is an: Application Programming Interface. An interface for one piece of software to talk to another<sup id="fnref:concepts"><a href="#fn:concepts" class="footnote">1</a></sup>. For data to be shared. It is a set of routines — in case of the web, url endpoints — for building software to utilise those routines.</p>
+
+<h3 id="history">History</h3>
+
+<p>REST Representational State Transfer<sup id="fnref:beautiful"><a href="#fn:beautiful" class="footnote">2</a></sup>, was defined by Roy Thomas Fielding in his 2000 PhD dissertation “Architectural Styles and the Design of Network-based Software Architectures”. Fielding developed the REST architectural style in parallel with HTTP 1.1 of 1996-1999, based on the existing design of HTTP 1.0[9] of 1996<sup id="fnref:wikipedia"><a href="#fn:wikipedia" class="footnote">3</a></sup>.</p>
+
+<p>REST:</p>
+
+<ul>
+  <li>Scalability (change and different internet, not performance, internet scale)</li>
+  <li>Generality (satisfy difference requirements and use cases)</li>
+  <li>Independence (different languages, implementation)</li>
+  <li>Latency (Caching)</li>
+  <li>Security (HTTP authorisation header)</li>
+  <li>Encapsulation (exposes data in a particular data, but not the working or resources)</li>
+</ul>
+
+<h3 id="definition">Definition</h3>
+
+<p>Here’s a few of the important terms I will use throughout the course of this document:</p>
+
+<ul>
+  <li>Resource: A single instance of an object. For example, an animal.</li>
+  <li>Collection: A collection of homogeneous objects. For example, animals.</li>
+  <li>HTTP: A protocol for communicating over a network.</li>
+  <li>Consumer: A client computer application capable of making HTTP requests.</li>
+  <li>Third Party Developer: A developer not a part of your project but who wishes to consume your data.</li>
+  <li>Server: An HTTP server/application accessible from a Consumer over a network.</li>
+  <li>Endpoint: An API URL on a Server which represents either a Resource or an entire Collection.</li>
+  <li>Idempotent: Side-effect free, can happen multiple times without penalty.</li>
+  <li>URL Segment: A slash-separated piece of information in the URL.</li>
+</ul>
+
+<h2 id="goals">Goals</h2>
+<p>The big picture goals or how success will be defined, is if the project</p>
+
+<ul>
+  <li>It should use web standards where they make sense</li>
+  <li>It should be friendly to the developer and be explorable via a browser address bar</li>
+  <li>It should be simple, intuitive and consistent to make adoption not only easy but pleasant</li>
+  <li>It should provide enough flexibility to power majority of the Enchant UI</li>
+  <li>It should be efficient, while maintaining balance with the other requirements<sup id="fnref:best"><a href="#fn:best" class="footnote">4</a></sup></li>
+  <li>It should be properly documented</li>
+  <li>It should use Test Driven Development</li>
+</ul>
+
+<h3 id="api-root-url">API ROOT URL</h3>
+<p>The root location of your API is important, believe it or not. When a developer (read as code archaeologist) inherits an old project using your API and needs to build new features, they may not know about your service at all. Perhaps all they know is a list of URLs which the Consumer calls out to. It’s important that the root entry point into your API is as simple as possible, as a long complex URL will appear daunting and can turn developers away.</p>
+
+<p>Here are two common URL Roots:</p>
+
+<p>https://example.org/api/v1/*
+https://api.example.com/v1/*</p>
+
+<h2 id="endpoints">Endpoints</h2>
+
+<p>An Endpoint is a URL within your API which points to a specific Resource or a Collection of Resources.</p>
+
+<p>End points are resources. That should be nouns, not verbs that make sense from the perspective of the API consumer aka developer. Although internal models may map neatly to resources, it isn’t necessarily a one-to-one mapping. The key here is to not leak irrelevant implementation details out to your API. Some nouns would be ticket, user and group.</p>
+
+<p>Once you have your resources defined, you need to identify what actions verbs apply to them and how those would map to your API.</p>
+
+<p>End points should always be plural, be consistent. It avoids of pluralisation such as person/people.</p>
+
+<p>Down case Uri and actions</p>
+
+<p>Accept ids and names</p>
+
+<p>Limit path nesting</p>
+
+<p>Updates &amp; creation should return a resource representation</p>
+
+<p>Pretty print by default &amp; ensure gzip is supported</p>
+
+<p>Use snake_case</p>
+
+<p>When posting return the representation</p>
+
+<p>use Media Type: Content-Type: application/json</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>URI end point</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GET</td>
+      <td>/nouns</td>
+      <td>This returns a list of the noun items. By default items in the list are a minimal representation of a noun entity</td>
+    </tr>
+    <tr>
+      <td>GET</td>
+      <td>/nouns/{key}</td>
+      <td>This returns the full content of the nouns identified by the given key</td>
+    </tr>
+    <tr>
+      <td>POST</td>
+      <td>/nouns</td>
+      <td>This creates a new ticket</td>
+    </tr>
+    <tr>
+      <td>PUT</td>
+      <td>/nouns/{key}</td>
+      <td>This updates noun identified by the given key</td>
+    </tr>
+    <tr>
+      <td>PATCH</td>
+      <td>/nouns/{key}</td>
+      <td>Partially update noun identified by the given key</td>
+    </tr>
+    <tr>
+      <td>DELTE</td>
+      <td>/nouns/{key}</td>
+      <td>Delete noun identified by the given key</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Response should provide href to the api path full qualified canonical reference</p>
+
+<p>Reference Expansion (or materialised)
+Expand to include additional information form a single requests
+Use parameters to “expand”
+Limit through “fields”</p>
+
+<h4 id="versioning">Versioning</h4>
+
+<p>The version number refers to a major release of the API as to a resource.</p>
+
+<p>Versioning should be included in the url. An API is never going to be completely stable. Change is inevitable. What’s important is how that change is managed.</p>
+
+<p><code class="highlighter-rouge">GET /v1/orders</code></p>
+
+<h4 id="endpoint-stability">Endpoint stability</h4>
+
+<p>When a third-party software application integrates a government API, then it may become dependent on the continued availability of that API for the software to function correctly. The software package must also depend on the stability of the API so that changes can be planned to fit within a normal software product release cycle.</p>
+
+<h4 id="average-granularity">Average Granularity</h4>
+
+<p>A common misconception is that there is a one-to-one mapping between a service in the paper world and a corresponding API. In reality, this is almost never the case. APIs should be designed at the lowest practical level of granularity because this makes each service simpler and allows them to be combined in ways that suit the consumer. The key principle is to design services that can be re-used and combined in different ways.</p>
+
+<h2 id="relationships">Relationships</h2>
+
+<h3 id="one-to-many-relationships">One to many relationships</h3>
+<p>If Relationships exist within the resource, extend the endpoint.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>URI end point</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GET</td>
+      <td>/nouns/{key}/relationship</td>
+      <td>Retrieves list of relationships for ticket {key}</td>
+    </tr>
+    <tr>
+      <td>GET</td>
+      <td>/nouns/{key}/relationship/{key}</td>
+      <td>Retrieves message {key} for ticket {key}</td>
+    </tr>
+    <tr>
+      <td>POST</td>
+      <td>/nouns/{key}/relationship</td>
+      <td>Creates a new message in ticket {key}</td>
+    </tr>
+    <tr>
+      <td>PUT</td>
+      <td>/nouns/{key}/relationship/{key}</td>
+      <td>Updates message {key} for ticket {key}</td>
+    </tr>
+    <tr>
+      <td>PATCH</td>
+      <td>/nouns/{key}/relationship/{key}</td>
+      <td>Partially updates message {key} for ticket {key}</td>
+    </tr>
+    <tr>
+      <td>DELETE</td>
+      <td>/nouns/{key}/relationship/{key}</td>
+      <td>Deletes message {key} for ticket {key}</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="many-to-many-relationships">Many to many relationships</h3>
+<p>A user can belong to many groups and groups can have many users.</p>
+
+<p>If the relationship exists external to the resource. Provide an end point for the relationship, provide a href link with the initial response to the relationship endpoint.</p>
+
+<p>A relationship can be deleted without deleting the resource</p>
+
+<h2 id="boolean-actions">Boolean Actions</h2>
+
+<p>Treat it as a sub resource</p>
+
+<p><code class="highlighter-rouge">PUT /users/765/activate</code></p>
+
+<p><code class="highlighter-rouge">DELETE /user/765/activate</code></p>
+
+<h2 id="multiple-resource">Multiple Resource</h2>
+
+<p>Usually a query such as search
+Make a new end point</p>
+
+<h2 id="security">Security</h2>
+
+<p>SSL everywhere, even corporate networks
+Do not redirected non-SSL to the SSL endpoint, provide an error.</p>
+
+<ul>
+  <li>Allows the use of web tokens, simplifying request. Else you would need to authenticate each request</li>
+</ul>
+
+<p>Avoid sessions if possible. REST is stateless
+Authenticate every request
+Authorize based on resource content, not url
+Use an existing protocol &gt; Oauth 1.0a
+Always use SSL
+Never use custom Autho protocol
+Use API Keys instead of Username/Passwords</p>
+
+<p>401 “Unauthorized” really means unauthenticated. You need valid credentials for me to respond to this request
+403 “Forbidden” really means Unauthorized. I understood your credentials, but sorry, you are not allowed</p>
+
+<h2 id="document">Document</h2>
+
+<p>Curl examples with expected JSON output</p>
+
+<p>We recommend always illustrating your API call documentation by cURL examples. Readers can simply cut-and-paste them, and they remove any ambiguity regarding call details.</p>
+
+<p>Publish API documentation, and provide a link to the documentation from the API endpont.</p>
+
+<h2 id="entry-point">Entry Point</h2>
+<p>Provide a singleton entry point at the root of the API
+Information on API version, supported features, etc.</p>
+
+<ul>
+  <li>A list of top-level collections, the web is about links</li>
+  <li>A list of singleton resources</li>
+  <li>Any other information that the API designer deemed useful
+    <ul>
+      <li>small summary of operating status</li>
+      <li>statistics, etc.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="cache">Cache</h2>
+
+<p>Save bandwidth, cache data with ETags</p>
+
+<h2 id="provide-request-ids-for-introspection">Provide Request-Ids for Introspection</h2>
+
+<p>Include a Request-Id header in each API response, populated with a UUID value. By logging these values on the client, server and any backing services, it provides a mechanism to trace, diagnose and debug requests.</p>
+
+<h2 id="pagination">Pagination</h2>
+<p>Divid large responses across requests
+Offset</p>
+
+<p>Pagination of collections
+Use Offset and Limit
+../applications?offset=50&amp;limit=25
+Offset from 0
+limit per return
+Could provide link property through links</p>
+
+<ul>
+  <li>first</li>
+  <li>previous</li>
+  <li>next</li>
+  <li>last</li>
+  <li>items array for index</li>
+</ul>
+
+<h3 id="error-messages">Error Messages</h3>
+<p>Error messages should provide a human-readable error message that is designed to be read and understood by the user.</p>
+
+<p>Error messages should include a diagnostic message that contains technical details for use by the developers/maintainers of the application that consumes the API.</p>
+
+<p>Diagnostic messages may include links to documentation and other ‘hints’ that might assist developers resolve issues that may have resulted in the error condition.</p>
+
+<p>A JSON error body should provide a few things for the developer - a useful error message, a unique error code (that can be looked up for more details in the docs) and possibly a detailed description. JSON output representation for something like this would look like:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"code"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">1234</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"message"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"Something bad happened :("</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"description"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"More details about the error here"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+</div>
+<p>Want to be as descriptive as possible
+Internal error code. provide ip path to the code
+status 409
+code (internal code) -&gt; application specific
+property: what caused the problem
+message: Your customers application end user
+developerMessage: extra information and fix
+moreInfo: application specific error link</p>
+
+<h2 id="http-status-codes">HTTP status codes</h2>
+
+<p>HTTP defines a bunch of meaningful status codes that can be returned from your API. These can be leveraged to help the API consumers route their responses accordingly. I’ve curated a short list of the ones that you definitely should be using:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Code</th>
+      <th>Status</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">200</td>
+      <td>OK</td>
+      <td>Response to a successful GET, PUT, PATCH or DELETE. Can also be used for a POST that doesn’t result in a creation</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">201</td>
+      <td>Created</td>
+      <td>Response to a POST that results in a creation. Should be combined with a Location header pointing to the location of the new resource</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">204</td>
+      <td>No Content</td>
+      <td>Response to a successful request that won’t be returning a body (like a DELETE request)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">304</td>
+      <td>Not Modified</td>
+      <td>Used when HTTP caching headers are in play</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">400</td>
+      <td>Bad Request</td>
+      <td>The request is malformed, such as if the body does not parse</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">401</td>
+      <td>Unauthorized</td>
+      <td>When no or invalid authentication details are provided. Also useful to trigger an auth popup if the API is used from a browser</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">403</td>
+      <td>Forbidden</td>
+      <td>When authentication succeeded but authenticated user doesn’t have access to the resource</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">404</td>
+      <td>Not Found</td>
+      <td>When a non-existent resource is requested</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">405</td>
+      <td>Method Not Allowed</td>
+      <td>When an HTTP method is being requested that isn’t allowed for the authenticated user</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">410</td>
+      <td>Gone</td>
+      <td>Indicates that the resource at this end point is no longer available. Useful as a blanket response for old API versions</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">415</td>
+      <td>Unsupported Media Type</td>
+      <td>If incorrect content type was provided as part of the request</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">422</td>
+      <td>Unprocessable Entity</td>
+      <td>Used for validation errors</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">429</td>
+      <td>Too Many Requests</td>
+      <td>When a request is rejected due to rate limiting</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>STATUS CODE RANGES
+The 1xx range is reserved for low-level HTTP stuff, and you’ll very likely go your entire career without manually sending one of these status codes.</p>
+
+<p>The 2xx range is reserved for successful messages where all goes as planned. Do your best to ensure your Server sends as many of these to the Consumer as possible.</p>
+
+<p>The 3xx range is reserved for traffic redirection. Most APIs do not use these requests much (not nearly as often as the SEO folks use them ;), however, the newer Hypermedia style APIs will make more use of these.</p>
+
+<p>The 4xx range is reserved for responding to errors made by the Consumer, e.g. they’re providing bad data or asking for things which don’t exist. These requests should be be idempotent, and not change the state of the server.</p>
+
+<p>The 5xx range is reserved as a response when the Server makes a mistake. Often times, these errors are thrown by low-level functions even outside of the developers hands, to ensure a Consumer gets some sort of response. The Consumer can’t possibly know the state of the server when a 5xx response is received, and so these should be avoidable.</p>
+
+<h3 id="result">Result</h3>
+
+<p>It’s best to keep the base resource URLs as lean as possible. Complex result filters, sorting requirements and advanced searching (when restricted to a single type of resource) can all be easily implemented as query parameters on top of the base URL</p>
+
+<h4 id="filtering">Filtering:</h4>
+
+<p>Use a unique query parameter for each field that implements filtering. For example, when requesting a list of tickets from the /tickets endpoint, you may want to limit these to only those in the open state. This could be accomplished with a request like GET /tickets?state=open. Here, state is a query parameter that implements a filter.</p>
+
+<h4 id="sorting">Sorting:</h4>
+
+<p>Similar to filtering, a generic parameter sort can be used to describe sorting rules. Accommodate complex sorting requirements by letting the sort parameter take in list of comma separated fields, each with a possible unary negative to imply descending sort order. Let’s look at some examples:</p>
+
+<p>GET /tickets?sort=-priority - Retrieves a list of tickets in descending order of priority
+GET /tickets?sort=-priority,created_at - Retrieves a list of tickets in descending order of priority. Within a specific priority, older tickets are ordered first</p>
+
+<h4 id="searching">Searching:</h4>
+
+<p>Sometimes basic filters aren’t enough and you need the power of full text search. Perhaps you’re already using ElasticSearch or another Lucene based search technology. When full text search is used as a mechanism of retrieving resource instances for a specific type of resource, it can be exposed on the API as a query parameter on the resource’s endpoint. Let’s say q. Search queries should be passed straight to the search engine and API output should be in the same format as a normal list result.</p>
+
+<p>Aliases for common queries</p>
+
+<p>To make the API experience more pleasant for the average consumer, consider packaging up sets of conditions into easily accessible RESTful paths.</p>
+
+<h4 id="rate-limiting">Rate Limiting</h4>
+<p>When your users begin to use your API initially, you probably don’t have to worry about performance or resource limitation.</p>
+
+<p>However, if your application is a success and thousands of users begin to integrate your API into their infrastructure and workflows, things can and will go wrong: Unexperienced developers will call your endpoint in endless loops, with incredibly high concurrency and badly configured cron jobs will request the same URL over and over again, thousands of times per hour.</p>
+
+<p>This is why you should consider implementing a rate-limit early on.</p>
+
+<h3 id="analytics">ANALYTICS</h3>
+
+<p>Keep track of the version/endpoints of your API being used by Consumers. This can be as simple as incrementing an integer in a database each time a request is made. There are many reasons that keeping track of API Analytics is a good idea, for example, the most commonly used API calls should be made efficient.</p>
+
+<h3 id="output">Output</h3>
+
+<p>Use JSON</p>
+
+<p>da</p>
+
+<h4 id="footnotes">Footnotes</h4>
+<p>[]: <a href="https://phraseapp.com/blog/posts/best-practice-10-design-tips-for-apis/"></a></p>
+<div class="footnotes">
+  <ol>
+    <li id="fn:concepts">
+      <p><a href="https://www.youtube.com/watch?v=7YcW25PHnAA">REST API concepts and examples</a>&nbsp;<a href="#fnref:concepts" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:beautiful">
+      <p><a href="https://www.youtube.com/watch?v=mZ8_QgJ5mbs">Beautiful REST &amp; JSON APIs</a>&nbsp;<a href="#fnref:beautiful" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:wikipedia">
+      <p><a href="https://en.wikipedia.org/wiki/Representational_state_transfer">Representational state transfer</a>&nbsp;<a href="#fnref:wikipedia" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:best">
+      <p><a href="http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api">best-practices-for-a-pragmatic-restful-api</a>&nbsp;<a href="#fnref:best" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+
+        </section>
+
+        <footer class="post-footer">
+            
+            <section class="share">
+  <h4>Share this post</h4>
+  <a class="share-twitter" href="http://twitter.com/share?text=The API Design Guide Original&amp;url=http://localhost:3000/programming/the-api-design-guide-original.html"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+    <i class="fa fa-twitter-square fa-lg" aria-hidden="true"></i>
+  </a>
+  <a class="share-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:3000/programming/the-api-design-guide-original.html"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+    <i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i>
+  </a>
+  <a class="share-google-plus" href="https://plus.google.com/share?url=http://localhost:3000/programming/the-api-design-guide-original.html"
+      onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+    <i class="fa fa-google-plus-square fa-lg" aria-hidden="true"></i>
+  </a>
+  <a class="share-linkedin" href="http://www.linkedin.com/shareArticle?mini=true&url=http://localhost:3000/programming/the-api-design-guide-original.html&title=&summary=One piece of software talking to another piece of software&source=http://localhost:3000/programming/the-api-design-guide-original.html"
+      onclick="window.open(this.href, 'linkedin-share', 'width=490,height=530');return false;">
+    <i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i>
+  </a>
+</section>
+
+            <!-- Add Disqus Comments -->
+            
+
+        </footer>
+
+    </article>
+
+</main>
+
+<aside class="read-next">
+
+    
+    
+        <a class="read-next-story " style="background-image: url(/assets/images/cover-old-typewriter.jpg)" href="/programming/the-api-design-guide.html">
+            <section class="post">
+                <h2>The API Design Guide</h2>
+                <p>One piece of software talking to another piece of software</p>
+            </section>
+        </a>
+    
+    
+        <a class="read-next-story prev " style="background-image: url(/assets/images/cover-turtle.jpg)" href="/management/the-turtle-mindset.html">
+            <section class="post">
+                <h2>The Turtle Mindset</h2>
+                <p>The turtle wins the race not by aiming for big (fast) wins, instead he stays...</p>
+            </section>
+        </a>
+    
+</aside>
+<!-- End _layout/post.html -->
+
+
+        <!-- Start _includes/footer.html -->
+<footer class="site-footer clearfix">
+  <section class="copyright"><a href="/">Ian Teda</a> &copy; 2017</section>
+  <section class="poweredby">Proudly published with <a href="https://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/biomadeira/jasper">Jasper</a></section>
+</footer>
+<!-- End _includes/footer.html -->
+
+    </div>
+
+    <!-- Add javascripts -->
+    <!-- Start _includes/scripts.html -->
+<!-- inject:js -->
+<script src="/assets/scripts/main.js"></script>
+<!-- endinject -->
+<!-- End _includes/scriptions.html -->
+
+
+</body>
+</html>
+<!-- end _layout/default.html -->
