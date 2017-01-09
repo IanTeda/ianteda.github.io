@@ -4,7 +4,7 @@ title: What am I doing right now (January 2017)!
 description: Find out what I am up to right now, now, now!
 navigation: True
 main-header: True
-logo: assets/images/ghost.png
+logo: /assets/images/logo-light.png
 cover: assets/images/cover-cat-gear.jpg
 current: now
 ---
