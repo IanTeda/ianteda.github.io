@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.0.5">Jekyll</generator><link href="https://ianteda.com/rss.xml" rel="self" type="application/atom+xml" /><link href="https://ianteda.com/" rel="alternate" type="text/html" /><updated>2016-09-28T21:04:43+10:00</updated><id>https://ianteda.com/</id><title>Ian Teda</title><subtitle>Husband, Father, Engineer, Explorer &amp; Creator</subtitle><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><entry><title>The Habit Loop</title><link href="https://ianteda.com/creativity/the-habit-loop.html" rel="alternate" type="text/html" title="The Habit Loop" /><published>2016-09-27T00:00:00+10:00</published><updated>2016-09-27T00:00:00+10:00</updated><id>https://ianteda.com/creativity/the-habit-loop</id><content type="html" xml:base="https://ianteda.com/creativity/the-habit-loop.html">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="https://ianteda.com/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="https://ianteda.com/rss.xml" rel="self" type="application/atom+xml" /><link href="https://ianteda.com/" rel="alternate" type="text/html" /><updated>2017-01-09T21:47:57+11:00</updated><id>https://ianteda.com//</id><title type="html">Ian Teda</title><subtitle>Husband, Father, Engineer, Explorer &amp; Creator</subtitle><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><entry><title type="html">The Habit Loop</title><link href="https://ianteda.com/creativity/the-habit-loop.html" rel="alternate" type="text/html" title="The Habit Loop" /><published>2016-09-27T00:00:00+10:00</published><updated>2016-09-27T00:00:00+10:00</updated><id>https://ianteda.com/creativity/the-habit-loop</id><content type="html" xml:base="https://ianteda.com/creativity/the-habit-loop.html">&lt;blockquote&gt;
   &lt;p&gt;Your beliefs become your thoughts; Your thoughts become your words; Your words become your actions; Your actions become your habits; Your habits become your values; Your values become your destiny.
 &lt;cite&gt; Mahatma Ghandi.&lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -54,7 +54,7 @@
 &lt;blockquote&gt;
   &lt;p&gt;Men’s natures are alike; it is their habits that separate them.
 &lt;cite&gt; Confucius, Analects.&lt;/cite&gt;&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><category term="creativity" /><category term="self-help" /><summary>Your beliefs become your thoughts; Your thoughts become your words; Your words become your actions; Your actions become your habits; Your habits become your values; Your values become your destiny.
+&lt;/blockquote&gt;</content><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><category term="creativity" /><category term="self-help" /><summary type="html">Your beliefs become your thoughts; Your thoughts become your words; Your words become your actions; Your actions become your habits; Your habits become your values; Your values become your destiny.
  Mahatma Ghandi.
 
 
@@ -108,7 +108,7 @@ Like a sheet of paper that has been folded, forever it will fall to that fold. H
 
 
   Men’s natures are alike; it is their habits that separate them.
- Confucius, Analects.</summary></entry><entry><title>The API Design Guide</title><link href="https://ianteda.com/programming/the-api-design-guide.html" rel="alternate" type="text/html" title="The API Design Guide" /><published>2016-08-26T00:00:00+10:00</published><updated>2016-08-26T00:00:00+10:00</updated><id>https://ianteda.com/programming/the-api-design-guide</id><content type="html" xml:base="https://ianteda.com/programming/the-api-design-guide.html">&lt;blockquote&gt;
+ Confucius, Analects.</summary></entry><entry><title type="html">The API Design Guide</title><link href="https://ianteda.com/programming/the-api-design-guide.html" rel="alternate" type="text/html" title="The API Design Guide" /><published>2016-08-26T00:00:00+10:00</published><updated>2016-08-26T00:00:00+10:00</updated><id>https://ianteda.com/programming/the-api-design-guide</id><content type="html" xml:base="https://ianteda.com/programming/the-api-design-guide.html">&lt;blockquote&gt;
   &lt;p&gt;An API allows one piece of software talking to another piece of software&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -523,7 +523,7 @@ Content-Type: application/com.ianteda.app-v3+json
   &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=7YcW25PHnAA&quot; target=&quot;_blank&quot;&gt;REST API concepts and examples&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://restful-api-design.readthedocs.io/en/latest/&quot; target=&quot;_blank&quot;&gt;Thoughts on RESTful API Design&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/671118/what-exactly-is-restful-programming&quot; target=&quot;_blank&quot;&gt;What Exactly is RESTful Programming&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><category term="programming" /><category term="API" /><summary>An API allows one piece of software talking to another piece of software
+&lt;/ul&gt;</content><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><category term="programming" /><category term="API" /><summary type="html">An API allows one piece of software talking to another piece of software
 
 
 Definitions
@@ -936,7 +936,7 @@ References
   REST API Design - Resource Modeling
   REST API concepts and examples
   Thoughts on RESTful API Design
-  What Exactly is RESTful Programming</summary></entry><entry><title>The Turtle Mindset</title><link href="https://ianteda.com/management/the-turtle-mindset.html" rel="alternate" type="text/html" title="The Turtle Mindset" /><published>2016-07-01T00:00:00+10:00</published><updated>2016-07-01T00:00:00+10:00</updated><id>https://ianteda.com/management/the-turtle-mindset</id><content type="html" xml:base="https://ianteda.com/management/the-turtle-mindset.html">&lt;blockquote&gt;
+  What Exactly is RESTful Programming</summary></entry><entry><title type="html">The Turtle Mindset</title><link href="https://ianteda.com/management/the-turtle-mindset.html" rel="alternate" type="text/html" title="The Turtle Mindset" /><published>2016-07-01T00:00:00+10:00</published><updated>2016-07-01T00:00:00+10:00</updated><id>https://ianteda.com/management/the-turtle-mindset</id><content type="html" xml:base="https://ianteda.com/management/the-turtle-mindset.html">&lt;blockquote&gt;
   &lt;p&gt;“Turtles carry their homes on their backs.” Running her finger over the tattoo, she tells him what her dad told her: “They’re exposed and hidden at the same time. They’re a symbol of strength and perseverance.”
 &lt;cite&gt; – Christina Baker Kline&lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1032,19 +1032,19 @@ References
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:great&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/pulse/great-investors-win-losing-daniel-crosby-ph-d-&quot; target=&quot;_blank&quot;&gt;Great Investors Win by Not Losing&lt;/a&gt; &lt;a href=&quot;#fnref:great&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/pulse/great-investors-win-losing-daniel-crosby-ph-d-&quot; target=&quot;_blank&quot;&gt;Great Investors Win by Not Losing&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:great&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:reckoning&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;http://www.dailyreckoning.com.au/investment-principles-winning-losing/2014/08/13/&quot; target=&quot;_blank&quot;&gt;The Investment Principles of Winning by not Losing&lt;/a&gt; &lt;a href=&quot;#fnref:reckoning&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;http://www.dailyreckoning.com.au/investment-principles-winning-losing/2014/08/13/&quot; target=&quot;_blank&quot;&gt;The Investment Principles of Winning by not Losing&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:reckoning&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:branson&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;http://www.forbes.com/sites/alisoncoleman/2014/05/11/risk-reward-and-worst-case-scenarios-how-entrepreneurs-like-richard-branson-and-tony-hsieh-call-it/#279756b3c28c&quot; target=&quot;_blank&quot;&gt;Risk, Reward And Worst Case Scenarios&lt;/a&gt; &lt;a href=&quot;#fnref:branson&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;http://www.forbes.com/sites/alisoncoleman/2014/05/11/risk-reward-and-worst-case-scenarios-how-entrepreneurs-like-richard-branson-and-tony-hsieh-call-it/#279756b3c28c&quot; target=&quot;_blank&quot;&gt;Risk, Reward And Worst Case Scenarios&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:branson&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:TIP&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://www.theinvestorspodcast.com/the-intelligent-investor-benjamin-graham/&quot; target=&quot;_blank&quot;&gt;The Intelligent Investor By Benjamin Graham&lt;/a&gt; &lt;a href=&quot;#fnref:TIP&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;https://www.theinvestorspodcast.com/the-intelligent-investor-benjamin-graham/&quot; target=&quot;_blank&quot;&gt;The Intelligent Investor By Benjamin Graham&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:TIP&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><category term="management" /><category term="Leadership" /><category term="Business" /><summary>“Turtles carry their homes on their backs.” Running her finger over the tattoo, she tells him what her dad told her: “They’re exposed and hidden at the same time. They’re a symbol of strength and perseverance.”
+&lt;/div&gt;</content><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><category term="management" /><category term="Leadership" /><category term="Business" /><summary type="html">“Turtles carry their homes on their backs.” Running her finger over the tattoo, she tells him what her dad told her: “They’re exposed and hidden at the same time. They’re a symbol of strength and perseverance.”
  – Christina Baker Kline
 
 
@@ -1139,16 +1139,16 @@ Cover Photo Credit: Wexor Tmg
 
   
     
-      Great Investors Win by Not Losing &amp;#8617;
+      Great Investors Win by Not Losing&amp;nbsp;&amp;#8617;
     
     
-      The Investment Principles of Winning by not Losing &amp;#8617;
+      The Investment Principles of Winning by not Losing&amp;nbsp;&amp;#8617;
     
     
-      Risk, Reward And Worst Case Scenarios &amp;#8617;
+      Risk, Reward And Worst Case Scenarios&amp;nbsp;&amp;#8617;
     
     
-      The Intelligent Investor By Benjamin Graham &amp;#8617;</summary></entry><entry><title>The Passion Falsity</title><link href="https://ianteda.com/creativity/the-passion-falsity.html" rel="alternate" type="text/html" title="The Passion Falsity" /><published>2016-06-09T00:00:00+10:00</published><updated>2016-06-09T00:00:00+10:00</updated><id>https://ianteda.com/creativity/the-passion-falsity</id><content type="html" xml:base="https://ianteda.com/creativity/the-passion-falsity.html">&lt;blockquote&gt;
+      The Intelligent Investor By Benjamin Graham&amp;nbsp;&amp;#8617;</summary></entry><entry><title type="html">The Passion Falsity</title><link href="https://ianteda.com/creativity/the-passion-falsity.html" rel="alternate" type="text/html" title="The Passion Falsity" /><published>2016-06-09T00:00:00+10:00</published><updated>2016-06-09T00:00:00+10:00</updated><id>https://ianteda.com/creativity/the-passion-falsity</id><content type="html" xml:base="https://ianteda.com/creativity/the-passion-falsity.html">&lt;blockquote&gt;
   &lt;p&gt;Life isn’t about finding yourself. Life is about creating yourself.
 &lt;cite&gt; – GEORGE BERNHARD SHAW&lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1164,7 +1164,7 @@ Cover Photo Credit: Wexor Tmg
 
 &lt;p&gt;Life doesn’t owe you happiness. It doesn’t owe you a successful, meaningful and rewarding career. You have to work for it, you need to earn it. By refining your craft, becoming a master craftsman. Being so good they can’t ignore you. Put aside the question of a true passion and focus on becoming good. It isn’t about you, it’s about what you can do for the world. The passion, satisfaction and enjoyment will follow.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://amzn.to/1reowPn&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/images/book-so-good.jpg&quot; alt=&quot;So Good They Can&#39;t Ignore You - Book Cover&quot; title=&quot;So Good They Can&#39;t Ignore You - Book Cover&quot; class=&quot;book-cover&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://amzn.to/1reowPn&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/images/book-so-good.jpg&quot; alt=&quot;So Good They Can't Ignore You - Book Cover&quot; title=&quot;So Good They Can't Ignore You - Book Cover&quot; class=&quot;book-cover&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;“So Good They Can’t Ignore You” by &lt;a href=&quot;http://calnewport.com/&quot;&gt;Cal Newport&lt;/a&gt; defines people who have meaningful careers as having the following traits in there work&lt;sup id=&quot;fnref:so-good&quot;&gt;&lt;a href=&quot;#fn:so-good&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; :&lt;/p&gt;
 
@@ -1189,25 +1189,25 @@ Cover Photo Credit: Wexor Tmg
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:tim-ferris&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;http://fourhourworkweek.com/2016/06/05/kevin-kelly-ai-virtual-reality-and-the-inevitable/&quot;&gt;Tim Ferris podcast 166: with Kevin Kelly&lt;/a&gt; &lt;a href=&quot;#fnref:tim-ferris&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;http://fourhourworkweek.com/2016/06/05/kevin-kelly-ai-virtual-reality-and-the-inevitable/&quot;&gt;Tim Ferris podcast 166: with Kevin Kelly&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:tim-ferris&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:so-good&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;http://amzn.to/1reowPn&quot;&gt;Amazon: Be So Good They Can’t Ignore You&lt;/a&gt; &lt;a href=&quot;#fnref:so-good&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;http://amzn.to/1reowPn&quot;&gt;Amazon: Be So Good They Can’t Ignore You&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:so-good&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:mental&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://ianteda.com/creativity/the-mental-model-definition.html&quot;&gt;The Mental Model Definition&lt;/a&gt; &lt;a href=&quot;#fnref:mental&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;https://ianteda.com/creativity/the-mental-model-definition.html&quot;&gt;The Mental Model Definition&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:mental&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:youtube&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=qwOdU02SE0w&quot;&gt;Cal Newport: So Good They Can’t Ignore You&lt;/a&gt; &lt;a href=&quot;#fnref:youtube&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=qwOdU02SE0w&quot;&gt;Cal Newport: So Good They Can’t Ignore You&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:youtube&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:seal&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://www.theinvestorspodcast.com/tip92-billionaire-lives-w-navy-seal-nba-atlanta-hawks-owner-jesse-itzler/&quot;&gt;Billionaire Lives W/ Navy Seal for 31 Days&lt;/a&gt; &lt;a href=&quot;#fnref:seal&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;https://www.theinvestorspodcast.com/tip92-billionaire-lives-w-navy-seal-nba-atlanta-hawks-owner-jesse-itzler/&quot;&gt;Billionaire Lives W/ Navy Seal for 31 Days&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:seal&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:mind&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://ianteda.com/management/the-mastermind-brief.html&quot;&gt;The Mastermind Brief&lt;/a&gt; &lt;a href=&quot;#fnref:mind&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;https://ianteda.com/management/the-mastermind-brief.html&quot;&gt;The Mastermind Brief&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:mind&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><category term="creativity" /><category term="Passion" /><summary>Life isn’t about finding yourself. Life is about creating yourself.
+&lt;/div&gt;</content><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><category term="creativity" /><category term="Passion" /><summary type="html">Life isn’t about finding yourself. Life is about creating yourself.
  – GEORGE BERNHARD SHAW
 
 
@@ -1247,22 +1247,22 @@ This post builds on the ideas and thoughts of Cal Newport and his book “Be So 
 
   
     
-      Tim Ferris podcast 166: with Kevin Kelly &amp;#8617;
+      Tim Ferris podcast 166: with Kevin Kelly&amp;nbsp;&amp;#8617;
     
     
-      Amazon: Be So Good They Can’t Ignore You &amp;#8617;
+      Amazon: Be So Good They Can’t Ignore You&amp;nbsp;&amp;#8617;
     
     
-      The Mental Model Definition &amp;#8617;
+      The Mental Model Definition&amp;nbsp;&amp;#8617;
     
     
-      Cal Newport: So Good They Can’t Ignore You &amp;#8617;
+      Cal Newport: So Good They Can’t Ignore You&amp;nbsp;&amp;#8617;
     
     
-      Billionaire Lives W/ Navy Seal for 31 Days &amp;#8617;
+      Billionaire Lives W/ Navy Seal for 31 Days&amp;nbsp;&amp;#8617;
     
     
-      The Mastermind Brief &amp;#8617;</summary></entry><entry><title>The Personal Branding Defence</title><link href="https://ianteda.com/management/the-personal-branding-defence.html" rel="alternate" type="text/html" title="The Personal Branding Defence" /><published>2016-05-08T00:00:00+10:00</published><updated>2016-05-08T00:00:00+10:00</updated><id>https://ianteda.com/management/the-personal-branding-defence</id><content type="html" xml:base="https://ianteda.com/management/the-personal-branding-defence.html">&lt;blockquote&gt;
+      The Mastermind Brief&amp;nbsp;&amp;#8617;</summary></entry><entry><title type="html">The Personal Branding Defence</title><link href="https://ianteda.com/management/the-personal-branding-defence.html" rel="alternate" type="text/html" title="The Personal Branding Defence" /><published>2016-05-08T00:00:00+10:00</published><updated>2016-05-08T00:00:00+10:00</updated><id>https://ianteda.com/management/the-personal-branding-defence</id><content type="html" xml:base="https://ianteda.com/management/the-personal-branding-defence.html">&lt;blockquote&gt;
   &lt;p&gt;Start by knowing what you want and who you are, build credibility around it and deliver it online in a compelling way.
 &lt;cite&gt; — Krista Neher&lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1273,7 +1273,7 @@ This post builds on the ideas and thoughts of Cal Newport and his book “Be So 
 
 &lt;p&gt;Personal branding is about telling your story (1), letting the world know what you stand for (2) and building credibility (trust) around it (3). Think of your personal brand as what people say about you when you leave the room&lt;sup id=&quot;fnref:dorie-clark&quot;&gt;&lt;a href=&quot;#fn:dorie-clark&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 
-&lt;h3 id=&quot;your-story&quot;&gt;1 - Your Story&lt;/h3&gt;
+&lt;h3 id=&quot;1---your-story&quot;&gt;1 - Your Story&lt;/h3&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;If people like you they will listen to you, but if they trust you, they’ll do business with you.
@@ -1282,7 +1282,7 @@ This post builds on the ideas and thoughts of Cal Newport and his book “Be So 
 
 &lt;p&gt;Your story is the proof, the walk behind your talk. It demonstrates who you are and what you believe in. When telling your story don’t create two worlds be authentic, it is easier to remember. People will see through your false world, discard what you say and not trust you.&lt;/p&gt;
 
-&lt;h3 id=&quot;your-values&quot;&gt;2 - Your Values&lt;/h3&gt;
+&lt;h3 id=&quot;2---your-values&quot;&gt;2 - Your Values&lt;/h3&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;If people believe they share values with a company, they will stay loyal to the brand.
@@ -1291,7 +1291,7 @@ This post builds on the ideas and thoughts of Cal Newport and his book “Be So 
 
 &lt;p&gt;People buy the brand not the product. In the same way people will buy into you, not what you say. &lt;sup id=&quot;fnref:start-with-why&quot;&gt;&lt;a href=&quot;#fn:start-with-why&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;. Why should someone trust you? What code to you live by?&lt;/p&gt;
 
-&lt;h3 id=&quot;build-credibility&quot;&gt;3 - Build Credibility&lt;/h3&gt;
+&lt;h3 id=&quot;3---build-credibility&quot;&gt;3 - Build Credibility&lt;/h3&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;A brand is the set of expectations, memories, stories and relationships that, taken together, account for a consumer’s decision to choose one product or service over another.
@@ -1304,7 +1304,7 @@ This post builds on the ideas and thoughts of Cal Newport and his book “Be So 
 
 &lt;p&gt;The key to effective thinking is asking the right questions. Below is a list of questions to help develop your personal brand. I used the questions below to develop my &lt;a href=&quot;https://ianteda.com&quot;&gt;landing page&lt;/a&gt; and develop content for my blog.&lt;/p&gt;
 
-&lt;h3 id=&quot;your-story-1&quot;&gt;Your Story&lt;/h3&gt;
+&lt;h3 id=&quot;your-story&quot;&gt;Your Story&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;What aspects of your life have been rewarding or you are proud to tell your mum?&lt;/li&gt;
@@ -1313,7 +1313,7 @@ This post builds on the ideas and thoughts of Cal Newport and his book “Be So 
   &lt;li&gt;What tagline summaries your story?&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;your-values-1&quot;&gt;Your Values&lt;/h3&gt;
+&lt;h3 id=&quot;your-values&quot;&gt;Your Values&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;What values do you live by? What priority do you put on those values?&lt;/li&gt;
@@ -1337,19 +1337,19 @@ This post builds on the ideas and thoughts of Cal Newport and his book “Be So 
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:tim-ferriss&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;http://fourhourworkweek.com/2008/01/28/tips-for-personal-branding-in-the-digital-age-google-insurance-cache-flow-and-more/&quot; target=&quot;_blank&quot;&gt;Tips for Personal Branding in the Digital Age&lt;/a&gt; &lt;a href=&quot;#fnref:tim-ferriss&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;http://fourhourworkweek.com/2008/01/28/tips-for-personal-branding-in-the-digital-age-google-insurance-cache-flow-and-more/&quot; target=&quot;_blank&quot;&gt;Tips for Personal Branding in the Digital Age&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:tim-ferriss&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:fast-company&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;http://www.fastcompany.com/28905/brand-called-you&quot; target=&quot;_blank&quot;&gt;The Brand Called You&lt;/a&gt; &lt;a href=&quot;#fnref:fast-company&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;http://www.fastcompany.com/28905/brand-called-you&quot; target=&quot;_blank&quot;&gt;The Brand Called You&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:fast-company&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:dorie-clark&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;http://www.businessinnovationfactory.com/summit/story/what-do-people-say-about-you-when-you-leave-room&quot; target=&quot;_blank&quot;&gt;What do people say about your when you leave the room&lt;/a&gt; &lt;a href=&quot;#fnref:dorie-clark&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;http://www.businessinnovationfactory.com/summit/story/what-do-people-say-about-you-when-you-leave-room&quot; target=&quot;_blank&quot;&gt;What do people say about your when you leave the room&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:dorie-clark&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:start-with-why&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=u4ZoJKF_VuA&quot; target=&quot;_blank&quot;&gt;Start With Why - Simon Sinek TED talk&lt;/a&gt; &lt;a href=&quot;#fnref:start-with-why&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=u4ZoJKF_VuA&quot; target=&quot;_blank&quot;&gt;Start With Why - Simon Sinek TED talk&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:start-with-why&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><category term="management" /><category term="Branding" /><summary>Start by knowing what you want and who you are, build credibility around it and deliver it online in a compelling way.
+&lt;/div&gt;</content><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><category term="management" /><category term="Branding" /><summary type="html">Start by knowing what you want and who you are, build credibility around it and deliver it online in a compelling way.
  — Krista Neher
 
 
@@ -1423,16 +1423,16 @@ Footnotes
 
   
     
-      Tips for Personal Branding in the Digital Age &amp;#8617;
+      Tips for Personal Branding in the Digital Age&amp;nbsp;&amp;#8617;
     
     
-      The Brand Called You &amp;#8617;
+      The Brand Called You&amp;nbsp;&amp;#8617;
     
     
-      What do people say about your when you leave the room &amp;#8617;
+      What do people say about your when you leave the room&amp;nbsp;&amp;#8617;
     
     
-      Start With Why - Simon Sinek TED talk &amp;#8617;</summary></entry><entry><title>The Mental Model Definition</title><link href="https://ianteda.com/creativity/the-mental-model-definition.html" rel="alternate" type="text/html" title="The Mental Model Definition" /><published>2016-04-13T00:00:00+10:00</published><updated>2016-04-13T00:00:00+10:00</updated><id>https://ianteda.com/creativity/the-mental-model-definition</id><content type="html" xml:base="https://ianteda.com/creativity/the-mental-model-definition.html">&lt;blockquote&gt;
+      Start With Why - Simon Sinek TED talk&amp;nbsp;&amp;#8617;</summary></entry><entry><title type="html">The Mental Model Definition</title><link href="https://ianteda.com/creativity/the-mental-model-definition.html" rel="alternate" type="text/html" title="The Mental Model Definition" /><published>2016-04-13T00:00:00+10:00</published><updated>2016-04-13T00:00:00+10:00</updated><id>https://ianteda.com/creativity/the-mental-model-definition</id><content type="html" xml:base="https://ianteda.com/creativity/the-mental-model-definition.html">&lt;blockquote&gt;
   &lt;p&gt;Man seeks for himself a simplified and lucid image of the world.
 &lt;cite&gt; – Albert Einstein&lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1473,10 +1473,10 @@ Footnotes
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:creative-advatage&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;http://www.createadvantage.com/glossary/mental-model&quot;&gt;Mental Model&lt;/a&gt; &lt;a href=&quot;#fnref:creative-advatage&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;http://www.createadvantage.com/glossary/mental-model&quot;&gt;Mental Model&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:creative-advatage&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><category term="creativity" /><category term="mental model" /><summary>Man seeks for himself a simplified and lucid image of the world.
+&lt;/div&gt;</content><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><category term="creativity" /><category term="mental model" /><summary type="html">Man seeks for himself a simplified and lucid image of the world.
  – Albert Einstein
 
 
@@ -1516,7 +1516,7 @@ Footnotes
 
   
     
-      Mental Model &amp;#8617;</summary></entry><entry><title>Gulp Jekyll Workflow - Part 1 Design Pattern</title><link href="https://ianteda.com/programming/gulp-jekyll-workflow-1.html" rel="alternate" type="text/html" title="Gulp Jekyll Workflow - Part 1 Design Pattern" /><published>2016-03-24T00:00:00+11:00</published><updated>2016-03-24T00:00:00+11:00</updated><id>https://ianteda.com/programming/gulp-jekyll-workflow-1</id><content type="html" xml:base="https://ianteda.com/programming/gulp-jekyll-workflow-1.html">&lt;blockquote&gt;
+      Mental Model&amp;nbsp;&amp;#8617;</summary></entry><entry><title type="html">Gulp Jekyll Workflow - Part 1 Design Pattern</title><link href="https://ianteda.com/programming/gulp-jekyll-workflow-1.html" rel="alternate" type="text/html" title="Gulp Jekyll Workflow - Part 1 Design Pattern" /><published>2016-03-24T00:00:00+11:00</published><updated>2016-03-24T00:00:00+11:00</updated><id>https://ianteda.com/programming/gulp-jekyll-workflow-1</id><content type="html" xml:base="https://ianteda.com/programming/gulp-jekyll-workflow-1.html">&lt;blockquote&gt;
   &lt;p&gt;Always start with the end in mind. So you know what direction to travel&lt;br /&gt;
 &lt;cite&gt; — Ian Teda &lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1532,7 +1532,7 @@ Footnotes
   &lt;li&gt;Modulised Gulp tasks: Why? Makes for more readable, easier to reuse and maintainable code.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&quot;use-es2015httpwwwecma-internationalorgecma-26260-with-gulphttpgulpjscom&quot;&gt;1 - Use &lt;a href=&quot;http://www.ecma-international.org/ecma-262/6.0/&quot;&gt;ES2015&lt;/a&gt; with &lt;a href=&quot;http://gulpjs.com/&quot;&gt;Gulp&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;1---use-es2015-with-gulp&quot;&gt;1 - Use &lt;a href=&quot;http://www.ecma-international.org/ecma-262/6.0/&quot;&gt;ES2015&lt;/a&gt; with &lt;a href=&quot;http://gulpjs.com/&quot;&gt;Gulp&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;To paraphrase the Babel tagline. Use next generation JavaScript, today with &lt;a href=&quot;https://babeljs.io/&quot;&gt;Babel&lt;/a&gt;. Since the release of Gulp (gulp-cli) version +3.9 &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp -v&lt;/code&gt; it is as easy as 1-2-3 to use ES2015 while writting Gulp tasks &lt;sup id=&quot;fnref:using-es6-with-gulp&quot;&gt;&lt;a href=&quot;#fn:using-es6-with-gulp&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 
@@ -1556,7 +1556,7 @@ Footnotes
 
 &lt;p&gt;Done. See, as easy as 1-2-3.&lt;/p&gt;
 
-&lt;h2 id=&quot;command-line-interface-with-yargshttpyargsjsorg&quot;&gt;2 - Command Line Interface with &lt;a href=&quot;http://yargs.js.org/&quot;&gt;Yargs&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;2---command-line-interface-with-yargs&quot;&gt;2 - Command Line Interface with &lt;a href=&quot;http://yargs.js.org/&quot;&gt;Yargs&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;Paraphrasing the &lt;a href=&quot;http://yargs.js.org/&quot;&gt;Yargs&lt;/a&gt; tagline. Build interactive command line tools by parsing arguments and generating an elegant user interface. Keeping with my design criteria, I refractored the Yargs configuration into a seperate config file &lt;code class=&quot;highlighter-rouge&quot;&gt;yargs.config.js&lt;/code&gt;. Which is then required from within the &lt;code class=&quot;highlighter-rouge&quot;&gt;gulpfile.babel.js&lt;/code&gt;. Keeping things neat and tidy.&lt;/p&gt;
 
@@ -1586,7 +1586,7 @@ Footnotes
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&quot;gulp-configuration-file&quot;&gt;3 - Gulp Configuration File&lt;/h2&gt;
+&lt;h2 id=&quot;3---gulp-configuration-file&quot;&gt;3 - Gulp Configuration File&lt;/h2&gt;
 
 &lt;p&gt;Make changes in one place, watch them permiate. Which equals easier to read and maintain code.&lt;/p&gt;
 
@@ -1612,7 +1612,7 @@ Footnotes
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&quot;modulise-gulp-tasks&quot;&gt;4 - Modulise Gulp Tasks&lt;/h2&gt;
+&lt;h2 id=&quot;4---modulise-gulp-tasks&quot;&gt;4 - Modulise Gulp Tasks&lt;/h2&gt;
 
 &lt;p&gt;Modulisation of Gulp tasks makes for more readable, easier to reuse and maintain code.&lt;/p&gt;
 
@@ -1676,23 +1676,23 @@ Footnotes
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&quot;just-show-me-the-repository-already&quot;&gt;5 - Just Show Me the Repository Already&lt;/h2&gt;
+&lt;h2 id=&quot;5---just-show-me-the-repository-already&quot;&gt;5 - Just Show Me the Repository Already&lt;/h2&gt;
 &lt;p&gt;If you would like to see it in action, check out the repositry for this website at &lt;a href=&quot;https://github.com/IanTeda/IanTeda.github.io&quot;&gt;https://github.com/IanTeda/IanTeda.github.io&lt;/a&gt;&lt;/p&gt;
 
 &lt;h5 id=&quot;footnotes&quot;&gt;Footnotes&lt;/h5&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:using-es6-with-gulp&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://markgoodyear.com/2015/06/using-es6-with-gulp/&quot;&gt;Using ES6 with gulp&lt;/a&gt; &lt;a href=&quot;#fnref:using-es6-with-gulp&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;https://markgoodyear.com/2015/06/using-es6-with-gulp/&quot;&gt;Using ES6 with gulp&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:using-es6-with-gulp&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:node-command-args&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;http://reverentgeek.com/ahoy-parse-ye-node-js-command-args-with-yargs/&quot;&gt;Parse ye Node.js command args with yargs!&lt;/a&gt; &lt;a href=&quot;#fnref:node-command-args&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;http://reverentgeek.com/ahoy-parse-ye-node-js-command-args-with-yargs/&quot;&gt;Parse ye Node.js command args with yargs!&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:node-command-args&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:module-gulp-tasks&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;http://macr.ae/article/splitting-gulpfile-multiple-files.html&quot;&gt;Splitting a gulpfile into multiple files&lt;/a&gt; &lt;a href=&quot;#fnref:module-gulp-tasks&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;http://macr.ae/article/splitting-gulpfile-multiple-files.html&quot;&gt;Splitting a gulpfile into multiple files&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:module-gulp-tasks&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><category term="programming" /><category term="gulp" /><category term="jekyll" /><category term="workflow" /><category term="design pattern" /><summary>Always start with the end in mind. So you know what direction to travel
+&lt;/div&gt;</content><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><category term="programming" /><category term="gulp" /><category term="jekyll" /><category term="workflow" /><category term="design pattern" /><summary type="html">Always start with the end in mind. So you know what direction to travel
  — Ian Teda 
 
 
@@ -1858,13 +1858,13 @@ Footnotes
 
   
     
-      Using ES6 with gulp &amp;#8617;
+      Using ES6 with gulp&amp;nbsp;&amp;#8617;
     
     
-      Parse ye Node.js command args with yargs! &amp;#8617;
+      Parse ye Node.js command args with yargs!&amp;nbsp;&amp;#8617;
     
     
-      Splitting a gulpfile into multiple files &amp;#8617;</summary></entry><entry><title>The Gulp, Jekyll, Github Pages &amp;amp; Cloudflare Mixture</title><link href="https://ianteda.com/programming/the-gulp-jekyll-github-pages-cloudflare-mixture.html" rel="alternate" type="text/html" title="The Gulp, Jekyll, Github Pages &amp; Cloudflare Mixture" /><published>2016-03-15T00:00:00+11:00</published><updated>2016-03-15T00:00:00+11:00</updated><id>https://ianteda.com/programming/the-gulp-jekyll-github-pages-cloudflare-mixture</id><content type="html" xml:base="https://ianteda.com/programming/the-gulp-jekyll-github-pages-cloudflare-mixture.html">&lt;blockquote&gt;
+      Splitting a gulpfile into multiple files&amp;nbsp;&amp;#8617;</summary></entry><entry><title type="html">The Gulp, Jekyll, Github Pages &amp;amp; Cloudflare Mixture</title><link href="https://ianteda.com/programming/the-gulp-jekyll-github-pages-cloudflare-mixture.html" rel="alternate" type="text/html" title="The Gulp, Jekyll, Github Pages &amp; Cloudflare Mixture" /><published>2016-03-15T00:00:00+11:00</published><updated>2016-03-15T00:00:00+11:00</updated><id>https://ianteda.com/programming/the-gulp-jekyll-github-pages-cloudflare-mixture</id><content type="html" xml:base="https://ianteda.com/programming/the-gulp-jekyll-github-pages-cloudflare-mixture.html">&lt;blockquote&gt;
   &lt;p&gt;Flexible, simple, fast, secure &amp;amp; https. Total cost, $15AUD for domain registration.&lt;br /&gt;
 &lt;cite&gt; — Ian Teda &lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1877,7 +1877,7 @@ Footnotes
 
 &lt;p&gt;In the end, the technology stack I chose for my &lt;a href=&quot;https://en.wikipedia.org/wiki/Quiver&quot; target=&quot;_blank&quot;&gt;quiver&lt;/a&gt; includes &lt;a href=&quot;http://gulpjs.com/&quot; target=&quot;_blank&quot;&gt;Gulp&lt;/a&gt; for development, &lt;a href=&quot;http://jekyllrb.com/&quot; target=&quot;_blank&quot;&gt;Jekyll&lt;/a&gt; as the web platform, &lt;a href=&quot;https://pages.github.com/&quot; target=&quot;_blank&quot;&gt;Github Pages&lt;/a&gt; for the hosting, and &lt;a href=&quot;https://www.cloudflare.com/&quot; target=&quot;_blank&quot;&gt;Cloudfare&lt;/a&gt; for CDN and HTTPS. Total cost, $15AUD for domain registration. Tick &lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;.&lt;/p&gt;
 
-&lt;h2 id=&quot;gulphttpgulpjscom-development&quot;&gt;&lt;a href=&quot;http://gulpjs.com/&quot;&gt;Gulp&lt;/a&gt; (Development)&lt;/h2&gt;
+&lt;h2 id=&quot;gulp-development&quot;&gt;&lt;a href=&quot;http://gulpjs.com/&quot;&gt;Gulp&lt;/a&gt; (Development)&lt;/h2&gt;
 &lt;p&gt;Jekyll comes with tooling out of the box to help with development, such as server reload on file change and SASS transpiling. But I wanted more flexibility (options) with my development workflow, so I piped in Gulp (did you see what I did there, Gulp joke). Using Gulp opened up my workflow to the Gulp &lt;a href=&quot;http://gulpjs.com/plugins/&quot; target=&quot;_blank&quot;&gt;ecosystem&lt;/a&gt; and 2,251 plugins in it.&lt;/p&gt;
 
 &lt;p&gt;Below is a list of the plugins in alphabetical order that I use:&lt;/p&gt;
@@ -1899,19 +1899,19 @@ Footnotes
   &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-sass/&quot; target=&quot;_blank&quot;&gt;SASS&lt;/a&gt;: Transpile SASS into CSS&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;jekyllhttpjekyllrbcomtargetblank-website&quot;&gt;&lt;a href=&quot;http://jekyllrb.com/&quot; target=&quot;_blank&quot;&gt;Jekyll&lt;/a&gt; (Website)&lt;/h3&gt;
+&lt;h3 id=&quot;jekyll-website&quot;&gt;&lt;a href=&quot;http://jekyllrb.com/&quot; target=&quot;_blank&quot;&gt;Jekyll&lt;/a&gt; (Website)&lt;/h3&gt;
 &lt;p&gt;I decided to use Jekyll when it dawned on me that to have a fast content management system (CMS) it needs a cache system. And what is a cache system? A static webpage generator - aka Jekyll. Since I don’t need access for multiple authors – which could still be done with Jekyll and Github, but would require more technical knowledge from the author – lets skip the whole database thing and go straight to generating the webpages on my local machine and uploading the build.&lt;/p&gt;
 
 &lt;p&gt;By removing the database I reduced my cyber attack profile – no database calls – and simplifies hosting requirements. Opening up cheaper hosting options.&lt;/p&gt;
 
 &lt;p&gt;Jekyll is easy to setup on Mac and Linux machines but is a little bit more work on Windows&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;github-pageshttpjekyllrbcom-hosting&quot;&gt;&lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Github Pages&lt;/a&gt; (Hosting)&lt;/h3&gt;
+&lt;h3 id=&quot;github-pages-hosting&quot;&gt;&lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Github Pages&lt;/a&gt; (Hosting)&lt;/h3&gt;
 &lt;p&gt;Jekyll was written by &lt;a href=&quot;https://en.wikipedia.org/wiki/Tom_Preston-Werner&quot; target=&quot;_blank&quot;&gt;Tom Preston-Werner&lt;/a&gt;, the co-founder of Github. So it isn’t surprising that Github supports hosting of Jekyll websites – known as &lt;a href=&quot;https://pages.github.com&quot; target=&quot;_blank&quot;&gt;Github Pages&lt;/a&gt;, which removes the need to generate webpages locally. However, Github Pages only allows a few Jekyll Gems (plugins) to run on their server. So I decided to develop locally and upload the build to GitHub Pages. I can do what ever I like now, it is my machine.&lt;/p&gt;
 
 &lt;p&gt;GitHub Pages also offers CDN and domain redirects&lt;sup id=&quot;fnref:4&quot;&gt;&lt;a href=&quot;#fn:4&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;, meaning speed and your own domain name. On top of all that the price is right, free.&lt;/p&gt;
 
-&lt;h3 id=&quot;cloudfarehttpswwwcloudflarecomtargetblank-httpscdn&quot;&gt;&lt;a href=&quot;https://www.cloudflare.com/&quot; target=&quot;_blank&quot;&gt;Cloudfare&lt;/a&gt; (HTTPS/CDN)&lt;/h3&gt;
+&lt;h3 id=&quot;cloudfare-httpscdn&quot;&gt;&lt;a href=&quot;https://www.cloudflare.com/&quot; target=&quot;_blank&quot;&gt;Cloudfare&lt;/a&gt; (HTTPS/CDN)&lt;/h3&gt;
 &lt;p&gt;Cloudfare makes your website faster and safer by offering DOS protection, shared SSL and CDN cache. They believe so deeply about a secure internet, they have a free tier plan&lt;sup id=&quot;fnref:5&quot;&gt;&lt;a href=&quot;#fn:5&quot; class=&quot;footnote&quot;&gt;5&lt;/a&gt;&lt;/sup&gt;. Tick, tick and tick. They use a Universal SSL to secure the connection between your users and CloudFlare&lt;sup id=&quot;fnref:6&quot;&gt;&lt;a href=&quot;#fn:6&quot; class=&quot;footnote&quot;&gt;6&lt;/a&gt;&lt;/sup&gt;. Giving your website a https address.&lt;/p&gt;
 
 &lt;p&gt;I used the linked guide for setting up my Jekyll / GitHub website with Clodflare&lt;sup id=&quot;fnref:7&quot;&gt;&lt;a href=&quot;#fn:7&quot; class=&quot;footnote&quot;&gt;7&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
@@ -1921,28 +1921,28 @@ Footnotes
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://github.com/IanTeda/IanTeda.github.io&quot; target=&quot;_blank&quot;&gt;GitHub Repository for ianteda.com source code&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;https://github.com/IanTeda/IanTeda.github.io&quot; target=&quot;_blank&quot;&gt;GitHub Repository for ianteda.com source code&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:2&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;http://w3techs.com/technologies/overview/content_management/all&quot; target=&quot;_blank&quot;&gt;Usage of content management systems for websites&lt;/a&gt; &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;http://w3techs.com/technologies/overview/content_management/all&quot; target=&quot;_blank&quot;&gt;Usage of content management systems for websites&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:3&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;http://jekyll-windows.juthilo.com/&quot; target=&quot;_blank&quot;&gt;Setting up Jekyll on Windows&lt;/a&gt; &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jekyll-windows.juthilo.com/&quot; target=&quot;_blank&quot;&gt;Setting up Jekyll on Windows&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:4&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://help.github.com/articles/using-a-custom-domain-with-github-pages/&quot; target=&quot;_blank&quot;&gt;Set up subdomain Github&lt;/a&gt; &lt;a href=&quot;#fnref:4&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;https://help.github.com/articles/using-a-custom-domain-with-github-pages/&quot; target=&quot;_blank&quot;&gt;Set up subdomain Github&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:4&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:5&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://www.cloudflare.com/plans/&quot; target=&quot;_blank&quot;&gt;CloudFlare Plans&lt;/a&gt; &lt;a href=&quot;#fnref:5&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;https://www.cloudflare.com/plans/&quot; target=&quot;_blank&quot;&gt;CloudFlare Plans&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:5&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:6&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://www.cloudflare.com/ssl/&quot; target=&quot;_blank&quot;&gt;CloudFlare one-click SSL&lt;/a&gt; &lt;a href=&quot;#fnref:6&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;https://www.cloudflare.com/ssl/&quot; target=&quot;_blank&quot;&gt;CloudFlare one-click SSL&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:6&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:7&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://sheharyar.me/blog/free-ssl-for-github-pages-with-custom-domains/&quot; target=&quot;_blank&quot;&gt;Free SSL for GitHub Pages with Custom Domains&lt;/a&gt; &lt;a href=&quot;#fnref:7&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;https://sheharyar.me/blog/free-ssl-for-github-pages-with-custom-domains/&quot; target=&quot;_blank&quot;&gt;Free SSL for GitHub Pages with Custom Domains&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:7&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><category term="programming" /><category term="Gulp" /><category term="Jekyll" /><category term="Github" /><category term="Github Pages" /><category term="Cloudflare" /><summary>Flexible, simple, fast, secure &amp;amp; https. Total cost, $15AUD for domain registration.
+&lt;/div&gt;</content><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><category term="programming" /><category term="Gulp" /><category term="Jekyll" /><category term="Github" /><category term="Github Pages" /><category term="Cloudflare" /><summary type="html">Flexible, simple, fast, secure &amp;amp; https. Total cost, $15AUD for domain registration.
  — Ian Teda 
 
 
@@ -1998,37 +1998,37 @@ Footnotes
 
   
     
-      GitHub Repository for ianteda.com source code &amp;#8617;
+      GitHub Repository for ianteda.com source code&amp;nbsp;&amp;#8617;
     
     
-      Usage of content management systems for websites &amp;#8617;
+      Usage of content management systems for websites&amp;nbsp;&amp;#8617;
     
     
-      Setting up Jekyll on Windows &amp;#8617;
+      Setting up Jekyll on Windows&amp;nbsp;&amp;#8617;
     
     
-      Set up subdomain Github &amp;#8617;
+      Set up subdomain Github&amp;nbsp;&amp;#8617;
     
     
-      CloudFlare Plans &amp;#8617;
+      CloudFlare Plans&amp;nbsp;&amp;#8617;
     
     
-      CloudFlare one-click SSL &amp;#8617;
+      CloudFlare one-click SSL&amp;nbsp;&amp;#8617;
     
     
-      Free SSL for GitHub Pages with Custom Domains &amp;#8617;</summary></entry><entry><title>Video - The Cotter Dam Intake Tower Explanation</title><link href="https://ianteda.com/engineering/the-cotter-dam-intake-tower-explanation.html" rel="alternate" type="text/html" title="Video - The Cotter Dam Intake Tower Explanation" /><published>2016-03-02T00:00:00+11:00</published><updated>2016-03-02T00:00:00+11:00</updated><id>https://ianteda.com/engineering/the-cotter-dam-intake-tower-explanation</id><content type="html" xml:base="https://ianteda.com/engineering/the-cotter-dam-intake-tower-explanation.html">&lt;p&gt;A short video featuring yours truly, and the construction of the intake tower on the Cotter Dam project.&lt;/p&gt;
+      Free SSL for GitHub Pages with Custom Domains&amp;nbsp;&amp;#8617;</summary></entry><entry><title type="html">Video - The Cotter Dam Intake Tower Explanation</title><link href="https://ianteda.com/engineering/the-cotter-dam-intake-tower-explanation.html" rel="alternate" type="text/html" title="Video - The Cotter Dam Intake Tower Explanation" /><published>2016-03-02T00:00:00+11:00</published><updated>2016-03-02T00:00:00+11:00</updated><id>https://ianteda.com/engineering/the-cotter-dam-intake-tower-explanation</id><content type="html" xml:base="https://ianteda.com/engineering/the-cotter-dam-intake-tower-explanation.html">&lt;p&gt;A short video featuring yours truly, and the construction of the intake tower on the Cotter Dam project.&lt;/p&gt;
 
 &lt;div class=&quot;video-wrapper&quot;&gt;
   &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/6MZ0eRckO34&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Video &amp;amp; Cover Image Credit: &lt;a href=&quot;https://www.iconwater.com.au/&quot; target=&quot;_blank&quot;&gt;Icon Water&lt;/a&gt; &amp;amp; &lt;a href=&quot;http://www.richardsnashall.net/&quot; target=&quot;_blank&quot;&gt;Richard Snashall&lt;/a&gt;&lt;/p&gt;</content><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><category term="engineering" /><category term="Dams" /><summary>A short video featuring yours truly, and the construction of the intake tower on the Cotter Dam project.
+&lt;p&gt;Video &amp;amp; Cover Image Credit: &lt;a href=&quot;https://www.iconwater.com.au/&quot; target=&quot;_blank&quot;&gt;Icon Water&lt;/a&gt; &amp;amp; &lt;a href=&quot;http://www.richardsnashall.net/&quot; target=&quot;_blank&quot;&gt;Richard Snashall&lt;/a&gt;&lt;/p&gt;</content><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><category term="engineering" /><category term="Dams" /><summary type="html">A short video featuring yours truly, and the construction of the intake tower on the Cotter Dam project.
 
 
   
 
 
-Video &amp;amp; Cover Image Credit: Icon Water &amp;amp; Richard Snashall</summary></entry><entry><title>The Idea Value Proposition</title><link href="https://ianteda.com/management/the-idea-value-proposition.html" rel="alternate" type="text/html" title="The Idea Value Proposition" /><published>2016-02-26T00:00:00+11:00</published><updated>2016-02-26T00:00:00+11:00</updated><id>https://ianteda.com/management/the-idea-value-proposition</id><content type="html" xml:base="https://ianteda.com/management/the-idea-value-proposition.html">&lt;blockquote&gt;
+Video &amp;amp; Cover Image Credit: Icon Water &amp;amp; Richard Snashall</summary></entry><entry><title type="html">The Idea Value Proposition</title><link href="https://ianteda.com/management/the-idea-value-proposition.html" rel="alternate" type="text/html" title="The Idea Value Proposition" /><published>2016-02-26T00:00:00+11:00</published><updated>2016-02-26T00:00:00+11:00</updated><id>https://ianteda.com/management/the-idea-value-proposition</id><content type="html" xml:base="https://ianteda.com/management/the-idea-value-proposition.html">&lt;blockquote&gt;
   &lt;p&gt;“Daring ideas are like chessmen moved forward. They may be beaten, but they may start a winning game.”
 &lt;cite&gt; – Johann Wolfgang von Goethe&lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2078,16 +2078,16 @@ Product Value = -1 x 100,000 = -100,000 of Value
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:not-a-business&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://medium.com/the-1-blog-series/ideas-are-cheap-execution-is-worth-millions-e203efbcaa49#.u9b3zzspk&quot; target=&quot;_blank&quot;&gt;Ideas Are Cheap, Execution is Worth Millions – Sathyvelu Kunashegaran&lt;/a&gt; &lt;a href=&quot;#fnref:not-a-business&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt; &lt;a href=&quot;#fnref:not-a-business:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;https://medium.com/the-1-blog-series/ideas-are-cheap-execution-is-worth-millions-e203efbcaa49#.u9b3zzspk&quot; target=&quot;_blank&quot;&gt;Ideas Are Cheap, Execution is Worth Millions – Sathyvelu Kunashegaran&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:not-a-business&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:not-a-business:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:sivers&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://sivers.org/multiply&quot; target=&quot;_blank&quot;&gt;Ideas are just a multiplier of execution – Derek Sivers&lt;/a&gt; &lt;a href=&quot;#fnref:sivers&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;https://sivers.org/multiply&quot; target=&quot;_blank&quot;&gt;Ideas are just a multiplier of execution – Derek Sivers&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:sivers&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:dim-dozen&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;http://www.forbes.com/sites/amyanderson/2013/03/14/ideas-are-a-dime-a-dozen-people-who-implement-them-are-priceless/#57e07877304b&quot; target=&quot;_blank&quot;&gt;Ideas are a Dime a Dozen&lt;/a&gt; &lt;a href=&quot;#fnref:dim-dozen&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;http://www.forbes.com/sites/amyanderson/2013/03/14/ideas-are-a-dime-a-dozen-people-who-implement-them-are-priceless/#57e07877304b&quot; target=&quot;_blank&quot;&gt;Ideas are a Dime a Dozen&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:dim-dozen&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><category term="management" /><category term="Entrepreneurial" /><summary>“Daring ideas are like chessmen moved forward. They may be beaten, but they may start a winning game.”
+&lt;/div&gt;</content><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><category term="management" /><category term="Entrepreneurial" /><summary type="html">“Daring ideas are like chessmen moved forward. They may be beaten, but they may start a winning game.”
  – Johann Wolfgang von Goethe
 
 
@@ -2136,10 +2136,10 @@ Photo cover credit: Larry Myhre
 
   
     
-      Ideas Are Cheap, Execution is Worth Millions – Sathyvelu Kunashegaran &amp;#8617; &amp;#8617;2
+      Ideas Are Cheap, Execution is Worth Millions – Sathyvelu Kunashegaran&amp;nbsp;&amp;#8617;&amp;nbsp;&amp;#8617;2
     
     
-      Ideas are just a multiplier of execution – Derek Sivers &amp;#8617;
+      Ideas are just a multiplier of execution – Derek Sivers&amp;nbsp;&amp;#8617;
     
     
-      Ideas are a Dime a Dozen &amp;#8617;</summary></entry></feed>
+      Ideas are a Dime a Dozen&amp;nbsp;&amp;#8617;</summary></entry></feed>
