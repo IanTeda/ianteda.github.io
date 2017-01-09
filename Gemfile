@@ -1,8 +1,8 @@
 source "http://rubygems.org"
 
-gem 'jekyll', '~> 3.0.1'
-gem "rdiscount", "~> 2.1.8"
-gem "pygments.rb", "~> 0.6.3"
+gem 'jekyll'
+gem "rdiscount"
+gem "pygments.rb"
 gem 'redcarpet'
 gem 'classifier-reborn'
 
@@ -14,4 +14,4 @@ gem 'jekyll-paginate'
 gem 'jekyll-sitemap'
 
 # octopress
-gem 'octopress', '~> 3.0'
+gem 'octopress'

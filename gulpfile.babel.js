@@ -5,9 +5,9 @@ import gulp from "gulp";
 // BrowserSync is used to live-reload your website
 import browserSync from "browser-sync";
 // Command line (CLI) argument
-var argv = require("./gulp/yargs.config");
+var argv = require("./yargs.config");
 // Configuration file for gulp tasks
-const config = require("./gulp/gulp.config");
+const config = require("./gulp.config");
 // Lazy load plugins, save on var declaration
 var plugins = require("gulp-load-plugins")(config.gulpLoadPlugins.options);
 
@@ -18,7 +18,7 @@ var plugins = require("gulp-load-plugins")(config.gulpLoadPlugins.options);
  */
 function requireTask(task) {
   // Require Gulp task module, passing in Gulp, config, argv and plugin objects
-  return require("./gulp/tasks/" + task + ".task.js")(
+  return require("./tasks/" + task + ".js")(
     gulp,
     config,
     argv,
@@ -33,7 +33,7 @@ function requireTask(task) {
  */
 function requireCleanTask(directory) {
   // Require gulp task module
-  return require("./gulp/tasks/clean.task")(
+  return require("./tasks/clean")(
     directory,
     plugins
   );
@@ -48,7 +48,7 @@ function requireCleanTask(directory) {
  */
 function requireInjectTask(target, references, destination) {
   // Require gulp task module
-  return require("./gulp/tasks/inject.task")(
+  return require("./tasks/inject")(
     target,
     references,
     destination,
@@ -66,7 +66,7 @@ function requireInjectTask(target, references, destination) {
  */
 function requireCopyTask(source, destination) {
   // Require gulp task module
-  return require("./gulp/tasks/copy.task")(
+  return require("./tasks/copy")(
     source,
     destination,
     gulp,

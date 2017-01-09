@@ -1,6 +1,6 @@
 ---
 layout: page
-title: What am I doing right now!
+title: What am I doing right now (January 2017)!
 description: Find out what I am up to right now, now, now!
 navigation: True
 main-header: True
@@ -10,9 +10,9 @@ current: now
 ---
 ### Now
 
-_Last updated 5th July 2016_
+_Last updated 6th January 2017_
 
-Just moved into a rental house in [Sydney](https://en.wikipedia.org/wiki/Sydney){:target="_blank"}, still trying to fit a square peg (stuff) into a round hole (different house). Working on Sydney Light Rail for [GHD](http://www.ghd.com/ghd-australia/){:target="_blank"}, managing the Construction Phase Services for the design. Enjoying learning more about design (consultancy) side.
+Hanging out with the Wife and Boys in Sydney, while working on the [Sydney Light Rail](http://sydneylightrail.transport.nsw.gov.au/) Design with [GHD](http://www.ghd.com/ghd-australia/){:target="_blank"}.
 
 ### Books
 *Books I'm reading and why:*
