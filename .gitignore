@@ -69,3 +69,7 @@ tmp
 # hide the AWS and Rsync credentials file
 aws-credentials.json
 rsync-credentials.json
+
+src/_includes/scripts.html
+
+src/_includes/styles.html
