@@ -1,4 +1,212 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:3000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="http://localhost:3000/rss.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:3000/" rel="alternate" type="text/html" /><updated>2017-01-09T21:52:06+11:00</updated><id>http://localhost:3000//</id><title type="html">Ian Teda</title><subtitle>Husband, Father, Engineer, Explorer &amp; Creator</subtitle><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><entry><title type="html">The Habit Loop</title><link href="http://localhost:3000/creativity/the-habit-loop.html" rel="alternate" type="text/html" title="The Habit Loop" /><published>2016-09-27T00:00:00+10:00</published><updated>2016-09-27T00:00:00+10:00</updated><id>http://localhost:3000/creativity/the-habit-loop</id><content type="html" xml:base="http://localhost:3000/creativity/the-habit-loop.html">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="https://ianteda.com/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="https://ianteda.com/rss.xml" rel="self" type="application/atom+xml" /><link href="https://ianteda.com/" rel="alternate" type="text/html" /><updated>2017-02-18T15:09:12+11:00</updated><id>https://ianteda.com//</id><title type="html">Ian Teda</title><subtitle>Husband, Father, Engineer, Explorer &amp; Creator</subtitle><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><entry><title type="html">The Habit Modification Framework</title><link href="https://ianteda.com/creativity/the-habit-modification.html" rel="alternate" type="text/html" title="The Habit Modification Framework" /><published>2016-09-27T00:00:00+10:00</published><updated>2016-09-27T00:00:00+10:00</updated><id>https://ianteda.com/creativity/the-habit-modification</id><content type="html" xml:base="https://ianteda.com/creativity/the-habit-modification.html">&lt;blockquote&gt;
+  &lt;p&gt;Your beliefs become your thoughts; Your thoughts become your words; Your words become your actions; Your actions become your habits; Your habits become your values; Your values become your destiny.
+&lt;cite&gt; Mahatma Ghandi.&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It is our habits that influence our actions, and it is our actions that define our character. It is what we do, our habits, not what we say that people judge use on.&lt;/p&gt;
+
+&lt;p&gt;Good habits are hard to form, and take continuous effort to maintain. While bad habits sneak up on us by surprise, forming easily and fast. And once created habits are hard to remove, because they become hard wired into our brains by cravings. These cravings – addictions – for the reward drive the routine. Habits are like a folded piece of paper that always wants to return to the fold it knows. Habits can be your making or your undoing.&lt;/p&gt;
+
+&lt;p&gt;I explored what habits are and how they work in a previous post, &lt;a href=&quot;https://ianteda.com/creativity/the-habit-loop.html&quot;&gt;The Habit Loop&lt;/a&gt;. Pause here and give it a read.&lt;/p&gt;
+
+&lt;h2 id=&quot;creating-habits&quot;&gt;Creating Habits&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/habit-loop.jpg&quot; alt=&quot;The Habit Loop&quot; title=&quot;The Habit Loop&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Most habits sneak up on use by surprise, because we are not aware of the cues and rewards. But habits can be intentionally formed by putting together a cue, routine, and reward. To form a new habit spend time cultivating the craving for the reward that the routine provides. This in turn will drive the habit loop and hard wire in the craving.&lt;/p&gt;
+
+&lt;p&gt;Want to exercise more? Choose a cue, such as going to the gym as soon as you wake up, and a reward, such as a smoothie after each workout. Then think about that smoothie, or about the endorphin rush you’ll feel.&lt;/p&gt;
+
+&lt;p&gt;However for must of us, we already have a lifetime of habits. And these existing cues and rewards will be in direct competition with the new habits we want to form. So it is not new habits that we should concentrate on, but the modification of old ones. And this requires a different approach, an indirect one. One where we use the existing hard wired craving, but insert a new routine or habit.&lt;/p&gt;
+
+&lt;h2 id=&quot;changing-habits&quot;&gt;Changing Habits&lt;/h2&gt;
+
+&lt;p&gt;Most of our habits have occurred for so long that we pay little attention to them. Often not recognizing the habit loop as it forms. It seems simple, but once you understand how habits works and can recognize the cues and rewards. You are halfway to changing them.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-habit-modification-framework&quot;&gt;The Habit Modification Framework&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://amzn.com/081298160X&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/images/book-power-of-habit.jpg&quot; alt=&quot;The Power of Habit - Why we do what we do in life and business Book Cover&quot; title=&quot;The Power of Habit - Why we do what we do in life and business&quot; class=&quot;book-cover&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In his book “&lt;a href=&quot;https://amzn.com/081298160X&quot;&gt;The Power of Habit - Why we do what we do in life and business&lt;/a&gt;” Charles Duhigg proposes a framework&lt;sup id=&quot;fnref:framework&quot;&gt;&lt;a href=&quot;#fn:framework&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; for changing habits. I have modified it slightly into the framework below.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 1: Awareness&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Isolate the Cue&lt;/li&gt;
+  &lt;li&gt;Experiment with Rewards&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 2: Modification&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Insert a Routine&lt;/li&gt;
+  &lt;li&gt;Have a plan (You Only have so Much Will Power)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;step-1-awareness&quot;&gt;Step 1: Awareness&lt;/h4&gt;
+
+&lt;p&gt;Most habits sneak up on use by surprise, operating in the background while we live in the future. So the first step is to increase our awareness around the habit we want to change. To better understand who we are and why we behave the way we do, start by isolating the cue and then experimenting with rewards. Through this we build up our awareness and understanding of self and why we behave the way we do.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Isolate the cue&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Cues fit into one of five categories: time; location; emotional state; other people; or immediately preceding an action or event. To help identify the specific cue that initiates the habit, ask yourself the following questions:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;What time is it?&lt;/li&gt;
+  &lt;li&gt;Where am I?&lt;/li&gt;
+  &lt;li&gt;What emotion am I feeling?&lt;/li&gt;
+  &lt;li&gt;Who else is around?&lt;/li&gt;
+  &lt;li&gt;What did I just do or happen?&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Keep a log of the answers to each of these questions, even if it feels meaningless. There is a lot information bombarding us as our behaviors unfold, making it hard to isolate the cue. By keeping a log it forces momentary awareness, letting you reflect on the present and what just happened. Look for patterns within your answers, because the cue is within the answer to one of the five questions.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Experiment with Rewards&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;It is likely that the reward your habit provides and is craving is not what you think it is. The best way to identify the reward you are graving is by substituting rewards. When you observer the habit cue, substitute a reward. Is the graving gone? No! Then substitute the opposite reward. Is the graving gone? Yes! Awesome, that is what you are graving. By experimenting with different rewards, you can narrow down what you are actually craving.&lt;/p&gt;
+
+&lt;p&gt;Is it hunger? Boredom? Low blood sugar? or is it the reward of taking a break before starting another task?  Is it the cookie itself? The change of scenery? The temporary distraction? or perhaps it is the socializing with colleagues? It might appear that the reward is the chocolate bar, but its not. It is getting up from your desk to take a break or socialise around the water bubbler that is the reward and what you are craving at 3pm in the afternoon. And going to get a chocolate bar is a way of doing that.&lt;/p&gt;
+
+&lt;p&gt;As you test four or five different rewards, look for patterns. After each activity, log the first three things that come to mind when you get back to your desk. Test different hypotheses through substatution to determine which craving is driving your routine.&lt;/p&gt;
+
+&lt;h4 id=&quot;stage-2-modification&quot;&gt;Stage 2: Modification&lt;/h4&gt;
+
+&lt;p&gt;Once we have developed a good awareness of the cue and reward of the habit you want to change, the next step is to change the routine.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Insert a Routine&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The routine or behavior is usually the most obvious part of the habit, because it is the behaviour we would like to change. A good approach is to insert an opposing behavior, one that can be done for longer than a couple of minutes and is unnoticeable to others.&lt;/p&gt;
+
+&lt;p&gt;Taking the chocolate bar example. Recognising it is the break from your work that you are graving, get up and go for a walk around the block. Is it the socialising, get up and go for a walk around the block with a friend.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Have a Plan&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Awareness, understanding and desire isn’t enough. The will power that drives your desire for change is like a muscle. It has limited strength and endurance. But like a muscle your will power can be trained, practiced, and increased. Will power is a skill, a skill you can learn.&lt;/p&gt;
+
+&lt;p&gt;Because we have a limit supply of will power, it is important to develop a plan, a strategy to help limit your need for willpower, increase your will power and coping mechanisms when the will power tank gets low.&lt;/p&gt;
+
+&lt;p&gt;Here are a few ideas:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;100 percent&lt;/em&gt;: it is easier to say no 100% of the time then 99% of the time. Just this once, will start the old habit back up again. Be conscious of your cues and rewards and keep with the routine substitution.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Change it up&lt;/em&gt;: temptation is hard to resists, so if possible remove the craving by removing the cue.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;The donut&lt;/em&gt;: &lt;a href=&quot;http://jockopodcast2.com/&quot;&gt;Jocko Willink&lt;/a&gt; offers a good mental trick to increase your mental toughness, will power. When you observe the cue, say to yourself “me will power is greater than that of the donut”. Meaning if you eat the donut, you are saying that the donut an inanimate object is stronger than you.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Internalise&lt;/em&gt;: don’t make your goal finite, make it systems orientated. Your goal shouldn’t be to drop X kilograms, but to learn systems, processes and behaviours that will allow your body to lose weight. So even if you don’t drop X kilograms within Y months you have achieved your goal of learning more about what works for you and how you body works.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Keystone&lt;/em&gt;: build habits of other habits. Break things down to small wins. Want to exercise more, work on the habit of getting up early. Then build on that by exercising first thing in the morning.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Keep a log&lt;/em&gt;: writing down a few words helps later when recalling what you were thinking, feeling or doing. Our brains don’t remember the whole story. They remember key events and build out the rest with our understanding of reality. That is why a smell or a place can bring up memories.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Watch your thoughts, they become your WORDS. Watch your words, they become you ACTIONS. Watch your actions, they become your HABITS. Watch your habits, they become your CHARACTER. Watch your character, it becomes your DESTINY.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:framework&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;http://charlesduhigg.com/how-habits-work/&quot; target=&quot;_blank&quot;&gt;How Habits Work&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:framework&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Ian Teda</name><email>ian@teda.id.au</email></author><category term="creativity" /><category term="self-help" /><summary type="html">Your beliefs become your thoughts; Your thoughts become your words; Your words become your actions; Your actions become your habits; Your habits become your values; Your values become your destiny.
+ Mahatma Ghandi.
+
+
+It is our habits that influence our actions, and it is our actions that define our character. It is what we do, our habits, not what we say that people judge use on.
+
+Good habits are hard to form, and take continuous effort to maintain. While bad habits sneak up on us by surprise, forming easily and fast. And once created habits are hard to remove, because they become hard wired into our brains by cravings. These cravings – addictions – for the reward drive the routine. Habits are like a folded piece of paper that always wants to return to the fold it knows. Habits can be your making or your undoing.
+
+I explored what habits are and how they work in a previous post, The Habit Loop. Pause here and give it a read.
+
+Creating Habits
+
+
+
+Most habits sneak up on use by surprise, because we are not aware of the cues and rewards. But habits can be intentionally formed by putting together a cue, routine, and reward. To form a new habit spend time cultivating the craving for the reward that the routine provides. This in turn will drive the habit loop and hard wire in the craving.
+
+Want to exercise more? Choose a cue, such as going to the gym as soon as you wake up, and a reward, such as a smoothie after each workout. Then think about that smoothie, or about the endorphin rush you’ll feel.
+
+However for must of us, we already have a lifetime of habits. And these existing cues and rewards will be in direct competition with the new habits we want to form. So it is not new habits that we should concentrate on, but the modification of old ones. And this requires a different approach, an indirect one. One where we use the existing hard wired craving, but insert a new routine or habit.
+
+Changing Habits
+
+Most of our habits have occurred for so long that we pay little attention to them. Often not recognizing the habit loop as it forms. It seems simple, but once you understand how habits works and can recognize the cues and rewards. You are halfway to changing them.
+
+The Habit Modification Framework
+
+
+
+In his book “The Power of Habit - Why we do what we do in life and business” Charles Duhigg proposes a framework1 for changing habits. I have modified it slightly into the framework below.
+
+Step 1: Awareness
+
+  Isolate the Cue
+  Experiment with Rewards
+
+
+Step 2: Modification
+
+  Insert a Routine
+  Have a plan (You Only have so Much Will Power)
+
+
+Step 1: Awareness
+
+Most habits sneak up on use by surprise, operating in the background while we live in the future. So the first step is to increase our awareness around the habit we want to change. To better understand who we are and why we behave the way we do, start by isolating the cue and then experimenting with rewards. Through this we build up our awareness and understanding of self and why we behave the way we do.
+
+Isolate the cue
+
+Cues fit into one of five categories: time; location; emotional state; other people; or immediately preceding an action or event. To help identify the specific cue that initiates the habit, ask yourself the following questions:
+
+
+  What time is it?
+  Where am I?
+  What emotion am I feeling?
+  Who else is around?
+  What did I just do or happen?
+
+
+Keep a log of the answers to each of these questions, even if it feels meaningless. There is a lot information bombarding us as our behaviors unfold, making it hard to isolate the cue. By keeping a log it forces momentary awareness, letting you reflect on the present and what just happened. Look for patterns within your answers, because the cue is within the answer to one of the five questions.
+
+Experiment with Rewards
+
+It is likely that the reward your habit provides and is craving is not what you think it is. The best way to identify the reward you are graving is by substituting rewards. When you observer the habit cue, substitute a reward. Is the graving gone? No! Then substitute the opposite reward. Is the graving gone? Yes! Awesome, that is what you are graving. By experimenting with different rewards, you can narrow down what you are actually craving.
+
+Is it hunger? Boredom? Low blood sugar? or is it the reward of taking a break before starting another task?  Is it the cookie itself? The change of scenery? The temporary distraction? or perhaps it is the socializing with colleagues? It might appear that the reward is the chocolate bar, but its not. It is getting up from your desk to take a break or socialise around the water bubbler that is the reward and what you are craving at 3pm in the afternoon. And going to get a chocolate bar is a way of doing that.
+
+As you test four or five different rewards, look for patterns. After each activity, log the first three things that come to mind when you get back to your desk. Test different hypotheses through substatution to determine which craving is driving your routine.
+
+Stage 2: Modification
+
+Once we have developed a good awareness of the cue and reward of the habit you want to change, the next step is to change the routine.
+
+Insert a Routine
+
+The routine or behavior is usually the most obvious part of the habit, because it is the behaviour we would like to change. A good approach is to insert an opposing behavior, one that can be done for longer than a couple of minutes and is unnoticeable to others.
+
+Taking the chocolate bar example. Recognising it is the break from your work that you are graving, get up and go for a walk around the block. Is it the socialising, get up and go for a walk around the block with a friend.
+
+Have a Plan
+
+Awareness, understanding and desire isn’t enough. The will power that drives your desire for change is like a muscle. It has limited strength and endurance. But like a muscle your will power can be trained, practiced, and increased. Will power is a skill, a skill you can learn.
+
+Because we have a limit supply of will power, it is important to develop a plan, a strategy to help limit your need for willpower, increase your will power and coping mechanisms when the will power tank gets low.
+
+Here are a few ideas:
+
+
+  100 percent: it is easier to say no 100% of the time then 99% of the time. Just this once, will start the old habit back up again. Be conscious of your cues and rewards and keep with the routine substitution.
+  Change it up: temptation is hard to resists, so if possible remove the craving by removing the cue.
+  The donut: Jocko Willink offers a good mental trick to increase your mental toughness, will power. When you observe the cue, say to yourself “me will power is greater than that of the donut”. Meaning if you eat the donut, you are saying that the donut an inanimate object is stronger than you.
+  Internalise: don’t make your goal finite, make it systems orientated. Your goal shouldn’t be to drop X kilograms, but to learn systems, processes and behaviours that will allow your body to lose weight. So even if you don’t drop X kilograms within Y months you have achieved your goal of learning more about what works for you and how you body works.
+  Keystone: build habits of other habits. Break things down to small wins. Want to exercise more, work on the habit of getting up early. Then build on that by exercising first thing in the morning.
+  Keep a log: writing down a few words helps later when recalling what you were thinking, feeling or doing. Our brains don’t remember the whole story. They remember key events and build out the rest with our understanding of reality. That is why a smell or a place can bring up memories.
+
+
+
+  Watch your thoughts, they become your WORDS. Watch your words, they become you ACTIONS. Watch your actions, they become your HABITS. Watch your habits, they become your CHARACTER. Watch your character, it becomes your DESTINY.
+
+
+
+  
+    
+      How Habits Work&amp;nbsp;&amp;#8617;</summary></entry><entry><title type="html">The Habit Loop</title><link href="https://ianteda.com/creativity/the-habit-loop.html" rel="alternate" type="text/html" title="The Habit Loop" /><published>2016-09-27T00:00:00+10:00</published><updated>2016-09-27T00:00:00+10:00</updated><id>https://ianteda.com/creativity/the-habit-loop</id><content type="html" xml:base="https://ianteda.com/creativity/the-habit-loop.html">&lt;blockquote&gt;
   &lt;p&gt;Your beliefs become your thoughts; Your thoughts become your words; Your words become your actions; Your actions become your habits; Your habits become your values; Your values become your destiny.
 &lt;cite&gt; Mahatma Ghandi.&lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -108,7 +316,7 @@ Like a sheet of paper that has been folded, forever it will fall to that fold. H
 
 
   Men’s natures are alike; it is their habits that separate them.
- Confucius, Analects.</summary></entry><entry><title type="html">The API Design Guide</title><link href="http://localhost:3000/programming/the-api-design-guide.html" rel="alternate" type="text/html" title="The API Design Guide" /><published>2016-08-26T00:00:00+10:00</published><updated>2016-08-26T00:00:00+10:00</updated><id>http://localhost:3000/programming/the-api-design-guide</id><content type="html" xml:base="http://localhost:3000/programming/the-api-design-guide.html">&lt;blockquote&gt;
+ Confucius, Analects.</summary></entry><entry><title type="html">The API Design Guide</title><link href="https://ianteda.com/programming/the-api-design-guide.html" rel="alternate" type="text/html" title="The API Design Guide" /><published>2016-08-26T00:00:00+10:00</published><updated>2016-08-26T00:00:00+10:00</updated><id>https://ianteda.com/programming/the-api-design-guide</id><content type="html" xml:base="https://ianteda.com/programming/the-api-design-guide.html">&lt;blockquote&gt;
   &lt;p&gt;An API allows one piece of software talking to another piece of software&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -936,7 +1144,7 @@ References
   REST API Design - Resource Modeling
   REST API concepts and examples
   Thoughts on RESTful API Design
-  What Exactly is RESTful Programming</summary></entry><entry><title type="html">The Turtle Mindset</title><link href="http://localhost:3000/management/the-turtle-mindset.html" rel="alternate" type="text/html" title="The Turtle Mindset" /><published>2016-07-01T00:00:00+10:00</published><updated>2016-07-01T00:00:00+10:00</updated><id>http://localhost:3000/management/the-turtle-mindset</id><content type="html" xml:base="http://localhost:3000/management/the-turtle-mindset.html">&lt;blockquote&gt;
+  What Exactly is RESTful Programming</summary></entry><entry><title type="html">The Turtle Mindset</title><link href="https://ianteda.com/management/the-turtle-mindset.html" rel="alternate" type="text/html" title="The Turtle Mindset" /><published>2016-07-01T00:00:00+10:00</published><updated>2016-07-01T00:00:00+10:00</updated><id>https://ianteda.com/management/the-turtle-mindset</id><content type="html" xml:base="https://ianteda.com/management/the-turtle-mindset.html">&lt;blockquote&gt;
   &lt;p&gt;“Turtles carry their homes on their backs.” Running her finger over the tattoo, she tells him what her dad told her: “They’re exposed and hidden at the same time. They’re a symbol of strength and perseverance.”
 &lt;cite&gt; – Christina Baker Kline&lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1148,7 +1356,7 @@ Cover Photo Credit: Wexor Tmg
       Risk, Reward And Worst Case Scenarios&amp;nbsp;&amp;#8617;
     
     
-      The Intelligent Investor By Benjamin Graham&amp;nbsp;&amp;#8617;</summary></entry><entry><title type="html">The Passion Falsity</title><link href="http://localhost:3000/creativity/the-passion-falsity.html" rel="alternate" type="text/html" title="The Passion Falsity" /><published>2016-06-09T00:00:00+10:00</published><updated>2016-06-09T00:00:00+10:00</updated><id>http://localhost:3000/creativity/the-passion-falsity</id><content type="html" xml:base="http://localhost:3000/creativity/the-passion-falsity.html">&lt;blockquote&gt;
+      The Intelligent Investor By Benjamin Graham&amp;nbsp;&amp;#8617;</summary></entry><entry><title type="html">The Passion Falsity</title><link href="https://ianteda.com/creativity/the-passion-falsity.html" rel="alternate" type="text/html" title="The Passion Falsity" /><published>2016-06-09T00:00:00+10:00</published><updated>2016-06-09T00:00:00+10:00</updated><id>https://ianteda.com/creativity/the-passion-falsity</id><content type="html" xml:base="https://ianteda.com/creativity/the-passion-falsity.html">&lt;blockquote&gt;
   &lt;p&gt;Life isn’t about finding yourself. Life is about creating yourself.
 &lt;cite&gt; – GEORGE BERNHARD SHAW&lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1262,7 +1470,7 @@ This post builds on the ideas and thoughts of Cal Newport and his book “Be So 
       Billionaire Lives W/ Navy Seal for 31 Days&amp;nbsp;&amp;#8617;
     
     
-      The Mastermind Brief&amp;nbsp;&amp;#8617;</summary></entry><entry><title type="html">The Personal Branding Defence</title><link href="http://localhost:3000/management/the-personal-branding-defence.html" rel="alternate" type="text/html" title="The Personal Branding Defence" /><published>2016-05-08T00:00:00+10:00</published><updated>2016-05-08T00:00:00+10:00</updated><id>http://localhost:3000/management/the-personal-branding-defence</id><content type="html" xml:base="http://localhost:3000/management/the-personal-branding-defence.html">&lt;blockquote&gt;
+      The Mastermind Brief&amp;nbsp;&amp;#8617;</summary></entry><entry><title type="html">The Personal Branding Defence</title><link href="https://ianteda.com/management/the-personal-branding-defence.html" rel="alternate" type="text/html" title="The Personal Branding Defence" /><published>2016-05-08T00:00:00+10:00</published><updated>2016-05-08T00:00:00+10:00</updated><id>https://ianteda.com/management/the-personal-branding-defence</id><content type="html" xml:base="https://ianteda.com/management/the-personal-branding-defence.html">&lt;blockquote&gt;
   &lt;p&gt;Start by knowing what you want and who you are, build credibility around it and deliver it online in a compelling way.
 &lt;cite&gt; — Krista Neher&lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1432,7 +1640,7 @@ Footnotes
       What do people say about your when you leave the room&amp;nbsp;&amp;#8617;
     
     
-      Start With Why - Simon Sinek TED talk&amp;nbsp;&amp;#8617;</summary></entry><entry><title type="html">The Mental Model Definition</title><link href="http://localhost:3000/creativity/the-mental-model-definition.html" rel="alternate" type="text/html" title="The Mental Model Definition" /><published>2016-04-13T00:00:00+10:00</published><updated>2016-04-13T00:00:00+10:00</updated><id>http://localhost:3000/creativity/the-mental-model-definition</id><content type="html" xml:base="http://localhost:3000/creativity/the-mental-model-definition.html">&lt;blockquote&gt;
+      Start With Why - Simon Sinek TED talk&amp;nbsp;&amp;#8617;</summary></entry><entry><title type="html">The Mental Model Definition</title><link href="https://ianteda.com/creativity/the-mental-model-definition.html" rel="alternate" type="text/html" title="The Mental Model Definition" /><published>2016-04-13T00:00:00+10:00</published><updated>2016-04-13T00:00:00+10:00</updated><id>https://ianteda.com/creativity/the-mental-model-definition</id><content type="html" xml:base="https://ianteda.com/creativity/the-mental-model-definition.html">&lt;blockquote&gt;
   &lt;p&gt;Man seeks for himself a simplified and lucid image of the world.
 &lt;cite&gt; – Albert Einstein&lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1516,7 +1724,7 @@ Footnotes
 
   
     
-      Mental Model&amp;nbsp;&amp;#8617;</summary></entry><entry><title type="html">Gulp Jekyll Workflow - Part 1 Design Pattern</title><link href="http://localhost:3000/programming/gulp-jekyll-workflow-1.html" rel="alternate" type="text/html" title="Gulp Jekyll Workflow - Part 1 Design Pattern" /><published>2016-03-24T00:00:00+11:00</published><updated>2016-03-24T00:00:00+11:00</updated><id>http://localhost:3000/programming/gulp-jekyll-workflow-1</id><content type="html" xml:base="http://localhost:3000/programming/gulp-jekyll-workflow-1.html">&lt;blockquote&gt;
+      Mental Model&amp;nbsp;&amp;#8617;</summary></entry><entry><title type="html">Gulp Jekyll Workflow - Part 1 Design Pattern</title><link href="https://ianteda.com/programming/gulp-jekyll-workflow-1.html" rel="alternate" type="text/html" title="Gulp Jekyll Workflow - Part 1 Design Pattern" /><published>2016-03-24T00:00:00+11:00</published><updated>2016-03-24T00:00:00+11:00</updated><id>https://ianteda.com/programming/gulp-jekyll-workflow-1</id><content type="html" xml:base="https://ianteda.com/programming/gulp-jekyll-workflow-1.html">&lt;blockquote&gt;
   &lt;p&gt;Always start with the end in mind. So you know what direction to travel&lt;br /&gt;
 &lt;cite&gt; — Ian Teda &lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1864,7 +2072,7 @@ Footnotes
       Parse ye Node.js command args with yargs!&amp;nbsp;&amp;#8617;
     
     
-      Splitting a gulpfile into multiple files&amp;nbsp;&amp;#8617;</summary></entry><entry><title type="html">The Gulp, Jekyll, Github Pages &amp;amp; Cloudflare Mixture</title><link href="http://localhost:3000/programming/the-gulp-jekyll-github-pages-cloudflare-mixture.html" rel="alternate" type="text/html" title="The Gulp, Jekyll, Github Pages &amp; Cloudflare Mixture" /><published>2016-03-15T00:00:00+11:00</published><updated>2016-03-15T00:00:00+11:00</updated><id>http://localhost:3000/programming/the-gulp-jekyll-github-pages-cloudflare-mixture</id><content type="html" xml:base="http://localhost:3000/programming/the-gulp-jekyll-github-pages-cloudflare-mixture.html">&lt;blockquote&gt;
+      Splitting a gulpfile into multiple files&amp;nbsp;&amp;#8617;</summary></entry><entry><title type="html">The Gulp, Jekyll, Github Pages &amp;amp; Cloudflare Mixture</title><link href="https://ianteda.com/programming/the-gulp-jekyll-github-pages-cloudflare-mixture.html" rel="alternate" type="text/html" title="The Gulp, Jekyll, Github Pages &amp; Cloudflare Mixture" /><published>2016-03-15T00:00:00+11:00</published><updated>2016-03-15T00:00:00+11:00</updated><id>https://ianteda.com/programming/the-gulp-jekyll-github-pages-cloudflare-mixture</id><content type="html" xml:base="https://ianteda.com/programming/the-gulp-jekyll-github-pages-cloudflare-mixture.html">&lt;blockquote&gt;
   &lt;p&gt;Flexible, simple, fast, secure &amp;amp; https. Total cost, $15AUD for domain registration.&lt;br /&gt;
 &lt;cite&gt; — Ian Teda &lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2016,7 +2224,7 @@ Footnotes
       CloudFlare one-click SSL&amp;nbsp;&amp;#8617;
     
     
-      Free SSL for GitHub Pages with Custom Domains&amp;nbsp;&amp;#8617;</summary></entry><entry><title type="html">Video - The Cotter Dam Intake Tower Explanation</title><link href="http://localhost:3000/engineering/the-cotter-dam-intake-tower-explanation.html" rel="alternate" type="text/html" title="Video - The Cotter Dam Intake Tower Explanation" /><published>2016-03-02T00:00:00+11:00</published><updated>2016-03-02T00:00:00+11:00</updated><id>http://localhost:3000/engineering/the-cotter-dam-intake-tower-explanation</id><content type="html" xml:base="http://localhost:3000/engineering/the-cotter-dam-intake-tower-explanation.html">&lt;p&gt;A short video featuring yours truly, and the construction of the intake tower on the Cotter Dam project.&lt;/p&gt;
+      Free SSL for GitHub Pages with Custom Domains&amp;nbsp;&amp;#8617;</summary></entry><entry><title type="html">Video - The Cotter Dam Intake Tower Explanation</title><link href="https://ianteda.com/engineering/the-cotter-dam-intake-tower-explanation.html" rel="alternate" type="text/html" title="Video - The Cotter Dam Intake Tower Explanation" /><published>2016-03-02T00:00:00+11:00</published><updated>2016-03-02T00:00:00+11:00</updated><id>https://ianteda.com/engineering/the-cotter-dam-intake-tower-explanation</id><content type="html" xml:base="https://ianteda.com/engineering/the-cotter-dam-intake-tower-explanation.html">&lt;p&gt;A short video featuring yours truly, and the construction of the intake tower on the Cotter Dam project.&lt;/p&gt;
 
 &lt;div class=&quot;video-wrapper&quot;&gt;
   &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/6MZ0eRckO34&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
