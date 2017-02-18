@@ -22,6 +22,9 @@ I explored what habits are and how they work in a previous post, [The Habit Loop
 
 ## Creating Habits
 
+> Men's natures are alike; it is their habits that separate them.
+> <cite> Confucius, Analects.</cite>
+
 ![The Habit Loop](/assets/images/habit-loop.jpg "The Habit Loop")
 
 Most habits sneak up on use by surprise, because we are not aware of the cues and rewards. But habits can be intentionally formed by putting together a cue, routine, and reward. To form a new habit spend time cultivating the craving for the reward that the routine provides. This in turn will drive the habit loop and hard wire in the craving.
