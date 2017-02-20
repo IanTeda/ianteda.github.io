@@ -1,6 +1,6 @@
 ---
 title: The Habit Loop
-description: We are, for the most part a collection of habits
+description: The chains of habit are generally too small to be felt until they are too strong to be broken.
 date: 2016-09-27
 tags: [self-help]
 layout: post
@@ -8,7 +8,7 @@ category: creativity
 featured: true
 navigation: true
 main-header: true
-cover: /assets/images/cover-train-tracks.jpg
+cover: /assets/images/cover-locks.jpg
 logo: /assets/images/logo-light.png
 ---
 > A habit is something you can do without thinking — which is why most of us have so many of them.
