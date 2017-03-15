@@ -1,5 +1,5 @@
 ---
-title: Rule 1 - What is your job?
+title: Rule 1 - Your job is to make money. By building it safely, building it once and leaving a positive legacy.
 description: As a construction engineer, what is your job?
 date: 2017-03-06
 layout: post
@@ -12,13 +12,13 @@ cover: /assets/images/cover-hb-walkway.jpg
 logo: /assets/images/logo-light.png
 ---
 
-> Rule 1: As a construction engineer, what is your job?
+> Rule 1 - Your job is to make money. By building it safely, building it once and leaving a positive legacy.
 
-I like to ask this question of graduate engineers that are starting in construction, because it helps to orientate them. It is also true for people starting in any career.
+I like to ask graduate engineers when they are starting in construction "What do think your job is?", because it helps to orientate there thinking. It is also true for people starting in any career.
 
 What is your job? Your job as a construction engineer is to make money for your employer, XYZ Constructions. You are not there for practice and you are not working for XYZ Construction Charities. XYZ Constructions is paying your salary of $X with intention that you return $(X+1). They are looking for a return on their investment.
 
-With that reality understood, it is important highlight that the best way to make money in construction is by being safe, building it once (quality) and leaving behind a legacy.
+With that reality understood, it is important highlight that the best way to make money in construction is by building it safely, building it once (quality) and leaving a positive legacy.
 
 ## Safety
 
