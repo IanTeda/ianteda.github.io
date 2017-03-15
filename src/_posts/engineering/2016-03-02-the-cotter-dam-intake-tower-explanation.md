@@ -3,7 +3,7 @@ title: Video - The Cotter Dam Intake Tower Explanation
 description: A video about the construction of Cotter Dam intake tower
 date: 2016-03-02
 layout: post
-tags: [Dams]
+tags: [construction]
 category: engineering
 navigation: true
 main-header: true
