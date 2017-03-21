@@ -16,9 +16,11 @@ logo: /assets/images/logo-light.png
 
 I like to ask graduate engineers when they are starting in construction "What do think your job is?", because it helps to orientate there thinking. It is also true for people starting in any career.
 
-What is your job? Your job as a construction engineer is to make money for your employer, XYZ Constructions. You are not there for practice and you are not working for XYZ Construction Charities. XYZ Constructions is paying your salary of $X with the intention that you return $(X+1). They are looking for a return on their investment.
+What is your job? Your job as a construction engineer is to make money for your employer, XYZ Constructions. You are not there for practice and you are not working for XYZ Construction Charities. XYZ Constructions is paying you a salary of $X with the intention that you return $(X+1). They are looking for a return on their investment.
 
-With that reality understood, it is important to highlight that the best way to make money in construction is by building it safely, building it once (quality) and leaving a positive legacy.
+With that reality understood, it is important to highlight that the best way to make money in construction is by building it safely, building it once (quality) and leaving a positive legacy. 
+
+Say you have two identical projects and on one project someone gets hurt, they have to build it twice and they allow pollution into a local river. Which project will make more money?
 
 ## Safety
 
