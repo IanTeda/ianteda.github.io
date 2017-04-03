@@ -1,7 +1,7 @@
 ---
-title: Rule 1 - Your job is to make money. By building it safely, building it once and leaving a positive legacy.
+title: Rule 1 - Your job is to make money. By building it safely, building it once and leaving a positive legacy
 description: As a construction engineer, what is your job?
-date: 2017-03-06
+date: 2017-03-01
 layout: post
 tags: [construction]
 category: engineering

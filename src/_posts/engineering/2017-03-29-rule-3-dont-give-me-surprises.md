@@ -1,7 +1,7 @@
 ---
 title: Rule 3 - Give me good news, give bad news. Just don't give me surprises
 description: Be in control of your destiny, by getting out in front of issues and avoiding suprises.
-date: 2017-03-25
+date: 2017-03-29
 layout: post
 tags: [construction, rule-book]
 category: engineering
@@ -20,6 +20,8 @@ This rule is no better illustrated then in cost forecasting. If your quantities,
 
 Things go wrong, everyone understands that. But there is a difference between bad news and surprises. Bad news is owning your mistakes, owning the unknowns and having a plan to mitigate any loses. Having a plan to stop the bleeding. Telling someone bad news and this is the plan, is a whole lot better then surprise we are losing money and I have no idea how much or how to mitigate it.
 
-When bringing bad news about the costs, have an understanding why your quaities increased or why the rate changed. That this is the worst case if we keep going unchanged -- understanding the problem -- and these are the changes we are making to bring the cost blow out back in -- getting in front of the issue and controlling your destiny.
+When bringing bad news about the costs, have an understanding why your quaities increased or why the rate changed. Know what the worst case is if thins are kept the sameπ -- understanding the problem -- and these are the changes we are making to bring the cost blow out back in -- getting in front of the issue and controlling your destiny.
 
 Give me good news, give me bad news. Just don't give me surprises. No one likes surprises. Make your mistakes ones of ambition, not sloth -- [The Bold Mistake Instruction](https://ianteda.com/creativity/the-bold-mistake-instruction.html).
+
+> Rule 3 - Give me good news, give bad news. Just don't give me surprises
