@@ -70,7 +70,7 @@
 </url>
 <url>
 <loc>https://ianteda.com/engineering/rule-1-what-is-your-job.html</loc>
-<lastmod>2017-03-06T00:00:00+11:00</lastmod>
+<lastmod>2017-03-01T00:00:00+11:00</lastmod>
 </url>
 <url>
 <loc>https://ianteda.com/engineering/rule-2-opposing-views.html</loc>
@@ -78,7 +78,11 @@
 </url>
 <url>
 <loc>https://ianteda.com/engineering/rule-3-dont-give-me-surprises.html</loc>
-<lastmod>2017-03-25T00:00:00+11:00</lastmod>
+<lastmod>2017-03-29T00:00:00+11:00</lastmod>
+</url>
+<url>
+<loc>https://ianteda.com/engineering/rule-4-relationships-success.html</loc>
+<lastmod>2017-04-03T00:00:00+10:00</lastmod>
 </url>
 <url>
 <loc>https://ianteda.com/404.html</loc>
@@ -178,5 +182,8 @@
 </url>
 <url>
 <loc>https://ianteda.com/blog/page-2/</loc>
+</url>
+<url>
+<loc>https://ianteda.com/blog/page-3/</loc>
 </url>
 </urlset>
