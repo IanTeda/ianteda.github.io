@@ -19,6 +19,8 @@ From construction of the project to your career, success — however you measure
 
 It does matter who you know, as it is often through the 2nd and 3rd levels of relationships that you find work opportunities, get promoted, grow outside your prejudices — you will always find people to reinforce your views when [birds of a feather flock together](http://www.urbandictionary.com/define.php?term=Birds%20of%20a%20feather%20flock%20together) — or even meet your significant other.
 
+> If you want to make everyone happy, don't be a leader - seal ice cream.
+
 The [rule 2](https://ianteda.com/engineering/rule-2-opposing-views.html) here — the flip side, the other side of the coin — is that it isn’t a popularity contest and that you are not there to make friends. That often you will need to say no, making people upset. The easy answer is "Yes", but don’t let yourself be pressured into a yes or avoid a hard truth because you don’t want to upset someone.
 
 > Rule 4 - Relationships, say hello because success is largely a result of those around you
