@@ -1,6 +1,6 @@
 ---
-title: Rule 2 - When faced with opposing views, often the answer is both
-description: Much of life is a dichotomy, a contradiction and construction life is no different
+title: Rule 2 - When faced with opposing views, often the answer is both.
+description: Much of life is a dichotomy, a contradiction and construction life is no different.
 date: 2017-03-25
 layout: post
 tags: [construction, rule-book]

@@ -1,6 +1,6 @@
 ---
-title: Rule 7 - Do Not Walk Past It
-description: The standard you walk past, is the standard you accept
+title: Rule 7 - Do not walk past it.
+description: The standard you walk past, is the standard you accept.
 date: 2017-04-25
 layout: post
 tags: [construction, rule-book]

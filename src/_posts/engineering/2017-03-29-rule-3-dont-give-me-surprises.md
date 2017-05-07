@@ -1,6 +1,6 @@
 ---
-title: Rule 3 - Give me good news, give bad news. Just don't give me surprises
-description: Be in control of your destiny, by getting out in front of issues and avoiding suprises.
+title: Rule 3 - Give me good news, give bad news. Just don't give me surprises.
+description: Be in control of your destiny, by getting out in front of issues and avoiding surprises.
 date: 2017-03-29
 layout: post
 tags: [construction, rule-book]

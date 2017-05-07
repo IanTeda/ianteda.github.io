@@ -1,5 +1,5 @@
 ---
-title: Rule 5 - The early bird catches the worm, and enjoys the fruits of its labor
+title: Rule 5 - The early bird catches the worm, and enjoys the fruits of its labor.
 description: Early mornings, late evenings, weekends and night shifts. Why?
 date: 2017-04-14
 layout: post
