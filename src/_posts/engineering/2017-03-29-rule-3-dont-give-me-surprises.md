@@ -25,3 +25,5 @@ When bringing bad news about the costs, have an understanding why your quaities 
 Give me good news, give me bad news. Just don't give me surprises. No one likes surprises. Make your mistakes ones of ambition, not sloth -- [The Bold Mistake Instruction](https://ianteda.com/creativity/the-bold-mistake-instruction.html).
 
 > Rule 3 - Give me good news, give bad news. Just don't give me surprises
+
+_Check out the [Engineering Rule Book](https://ianteda.com/engineering/rule-book.html) for the other rules._

@@ -43,3 +43,5 @@ Legacy is about leaving things better than the way you found them. And the legac
 Leaving behind a negative legacy for those that work for you, the clients that pay the bills and the community that will use what you build -- which is often the case with construction projects -- you will soon discover that: no one will want to work for you and you are only as good as the people that work for you; clients will not engage you and without clients there will be no money coming in; and your project will be known as the one. The one that polluted, the one that churned through employees, or the one that is going to fall apart.
 
 The best way to make money is to leave behind a positive legacy. It is through that legacy that you add value. And if your client sees the value they will be happy to have you build something else (for the right price).
+
+_Check out the [Engineering Rule Book](https://ianteda.com/engineering/rule-book.html) for the other rules._

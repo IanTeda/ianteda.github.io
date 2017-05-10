@@ -19,3 +19,5 @@ Be it a safety concern, poor workmanship or bad behaviour if you close your eyes
 To live by this rule means difficult conversations, extra work and extra responsibility. Not everyone goes looking for or wants these things. But ignoring this rule leads to regret, disappointment and mediocrity.
 
 Big problems can often be avoid by addressing small problems that come past you. So don't ignore the small problems, by walking past them. Instead get out in front of them and avoid the big ones.
+
+_Check out the [Engineering Rule Book](https://ianteda.com/engineering/rule-book.html) for the other rules._

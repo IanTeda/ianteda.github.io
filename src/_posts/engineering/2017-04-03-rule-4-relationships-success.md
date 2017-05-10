@@ -24,3 +24,5 @@ It does matter who you know, as it is often through the 2nd and 3rd levels of re
 The [rule 2](https://ianteda.com/engineering/rule-2-opposing-views.html) here — the flip side, the other side of the coin — is that it isn’t a popularity contest and that you are not there to make friends. That often you will need to say no, making people upset. The easy answer is "Yes", but don’t let yourself be pressured into a yes or avoid a hard truth because you don’t want to upset someone.
 
 > Rule 4 - Relationships, say hello because success is largely a result of those around you
+
+_Check out the [Engineering Rule Book](https://ianteda.com/engineering/rule-book.html) for the other rules._

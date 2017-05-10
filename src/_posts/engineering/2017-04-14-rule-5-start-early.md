@@ -27,3 +27,4 @@ Construction work demands a lot of hours from you. Early mornings, late evenings
 
 Slowly, little by little the project gets built. Untill finally it is born and you get to say "I had a part in building that". That this town has better water, sewer, safer roads, better infrastructure because of the hours I put in. That during the hard times, and all projects have them, that there is a light at the end of the tunnel. An end and it is something you can tell your kids about. You get to see the fruits of your labour.
 
+_Check out the [Engineering Rule Book](https://ianteda.com/engineering/rule-book.html) for the other rules._

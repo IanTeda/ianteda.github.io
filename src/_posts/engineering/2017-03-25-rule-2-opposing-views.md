@@ -27,3 +27,5 @@ Should I be good cop or bad cop? The answer is both. You must be able to go to t
 When faced with opposing views, often the answer is both.
 
 > Rule 2 - When faced with opposing views, often the answer is both
+
+_Check out the [Engineering Rule Book](https://ianteda.com/engineering/rule-book.html) for the other rules._

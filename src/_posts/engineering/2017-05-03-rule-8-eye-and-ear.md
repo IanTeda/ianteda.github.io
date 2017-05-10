@@ -21,3 +21,5 @@ With that in mind, take the long slow way around site. Keeping one eye open, obs
 By doing this you are able to answer more questions, know the right person to ask your question and where to find that stock N16 bar when you under order.
 
 > Rule 8 - Keep One Eye Open and Your Ear to the Ground
+
+_Check out the [Engineering Rule Book](https://ianteda.com/engineering/rule-book.html) for the other rules._
