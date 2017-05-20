@@ -1,0 +1,36 @@
+---
+layout: default
+logo: /assets/images/logo-light.png
+---
+<!-- Start _layout/page.html -->
+{% if page.url contains 'creativity' %}
+   {% assign page_title = 'Creative' %}
+   {% assign page_description = 'A spirit for creativity, imagination and adventure' %}
+   {% assign page_cover = '/assets/images/cover-sunrise-grass.jpg' %}
+{% elsif page.url contains 'engineering' %}
+   {% assign page_title = 'Engineering' %}
+   {% assign page_description = 'Be curious, ask why, learn and reflect' %}
+   {% assign page_cover = '/assets/images/cover-intake-tower.jpg' %}
+{% elsif page.url contains 'management' %}
+   {% assign page_title = 'Project Management' %}
+   {% assign page_description = 'Be authentic through honesty, integrity and transparency' %}
+   {% assign page_cover = '/assets/images/cover-water-riples.jpg' %}
+{% elsif page.url contains 'programming' %}
+   {% assign page_title = 'Programming' %}
+   {% assign page_description = 'Be useful by adding value' %}
+   {% assign page_cover = '/assets/images/cover-code-gulp.jpg' %}
+{% endif %}
+
+{% include header.html %}
+
+<main class="content" role="main">
+    <article class="post">
+
+        <section class="post-content">
+          {{content}}
+        </section>
+
+    </article>
+
+</main>
+<!-- End _layout/page.html -->

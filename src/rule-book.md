@@ -22,3 +22,4 @@ A list of rules for construction engineers:
 * [Rule 7 - Do not walk past it.](https://ianteda.com/engineering/rule-7-do-not-walk-past-it.html)
 * [Rule 8 - Keep one eye open and your ear to the ground.](https://ianteda.com/engineering/rule-8-eye-and-ear.html)
 * [Rule 9 - Always start with the end in mind.](https://ianteda.com/engineering/rule-9-always-start-with-the-end-in-mind.html)
+* [Rule 10 - Pop quiz, what is the number?](https://ianteda.com/engineering/rule-10-pop-quiz.html)

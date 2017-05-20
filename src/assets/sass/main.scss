@@ -5,6 +5,21 @@ main.scss
 Add extra styles here
 */
 
+/* Instagram Feed */
+    #ig-wrapper {
+        background: #242629;
+    }
+
+    #ig-main .ig-thumb {
+        -moz-transition-delay: 2.525s;
+        -webkit-transition-delay: 2.525s;
+        -ms-transition-delay: 2.525s;
+        transition-delay: 2.525s;
+        height: calc(40vh - 2em);
+        min-height: 20em;
+        width: 25%;
+    }
+
 /* Turn a square image into a circle */
 .img-circle {
     border-radius: 50%;

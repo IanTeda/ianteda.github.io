@@ -16,7 +16,7 @@ logo: /assets/images/logo-light.png
 
 When faced with what seem like mutually exclusive and opposing views, often the answer is both. Much of life is a dichotomy, a contradiction and construction life is no different. The skill comes in first realizing this, being comfortable with the contradictions and knowing how to find the balance.
 
-Rule 2, is a little bit of an abstract concept. But it is important as it adds context and framing to a lot of the other rules -- I.e. a rule may be highlighting an extreme, but they doesn't mean you should live there.
+Rule 2, is a little bit of an abstract concept. But it is important as it adds context and framing to a lot of the other rules -- i.e. a rule may be highlighting an extreme, but they doesn't mean you should live at the extreme.
 
 The safest way to build something is not to build it at all. But that doesn't get things built. The answer is you need to do both. It needs to be built and it needs to be built safe.
 
