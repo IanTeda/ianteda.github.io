@@ -116,13 +116,10 @@
 <loc>https://ianteda.com/404.html</loc>
 </url>
 <url>
-<loc>https://ianteda.com/</loc>
-</url>
-<url>
 <loc>https://ianteda.com/blog/</loc>
 </url>
 <url>
-<loc>https://ianteda.com/instagram-feed.html</loc>
+<loc>https://ianteda.com/</loc>
 </url>
 <url>
 <loc>https://ianteda.com/now.html</loc>
@@ -216,8 +213,5 @@
 </url>
 <url>
 <loc>https://ianteda.com/blog/page-2/</loc>
-</url>
-<url>
-<loc>https://ianteda.com/blog/page-3/</loc>
 </url>
 </urlset>
