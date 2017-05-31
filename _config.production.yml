@@ -7,9 +7,9 @@ show_drafts: false
 # Gives you more accurate related posts
 lsi: true
 # Removes the upper limit for posts generated
-limit_posts: 0
+limit_posts: 10
 # Number of posts per index page
-paginate: 10
+paginate: 6
 
 google_analytics: UA-71253711-1
 
