@@ -1,6 +1,6 @@
 ---
 title: Rule 11 - Finding Time
-description: Routine, discipline, prioritision, execution, measurement and adaption.
+description: Routine, discipline, prioritisation, execution, measurement and adaption.
 date: 2017-05-18
 layout: post
 tags: [construction, rule-book]
@@ -43,3 +43,5 @@ _Answer:_ Take control of your time, to find time.
 [^pareto]: [The Pareto Principle]
 
 > Time is, time was, but time shall be no more. <br/><cite>- James Joyce</cite>
+
+_Check out the [Engineering Rule Book](https://ianteda.com/engineering/rule-book.html) for the other rules._
