@@ -24,3 +24,5 @@ A list of rules for construction engineers:
 * [Rule 9 - Always start with the end in mind.](https://ianteda.com/engineering/rule-9-always-start-with-the-end-in-mind.html)
 * [Rule 10 - Pop quiz, what is the number?](https://ianteda.com/engineering/rule-10-pop-quiz.html)
 * [Rule 11 - Finding Time](https://ianteda.com/engineering/rule-11-finding-time.html)
+* [Rule 12 - When you have the choice, always start with the hardest part.](https://ianteda.com/engineering/rule-12-hard-things.html)
+* [Rule 13 - Learn to ask good questions.](https://ianteda.com/engineering/rule-13-good-questions.html)
