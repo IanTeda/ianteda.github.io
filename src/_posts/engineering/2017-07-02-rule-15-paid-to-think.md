@@ -1,6 +1,6 @@
 ---
 title: Rule 15 - We Are All Paid To Think
-description: It doesn't take a four year degree to think
+description: It does not take a four year degree to think
 date: 2017-07-02
 layout: post
 tags: [construction, rule-book]
@@ -24,7 +24,7 @@ It is something I bring up in my own way when talking to the guys and girls buil
 
 > If everyone is thinking alike, then somebody isn't thinking.<br/><cite>-- George S. Patton</cite>
 
-We all have a unique view — perspective — and we are all paid to think for ourselves. Some people don’t want to think, some do not believe they are smart enough.  As a manager you need to create an environment where thinking is acknowledged and rewarded. It is hard to get free thinking out of mindless robots, out of people that are micro managed. So take the time to explain why the task they are doing is important, how it fits into the big picture and take every opportunity up-skill and reward people that are self motivated, consciousness and want to be there.
+We all have a unique view — perspective — and we are all paid to think for ourselves. Some people do not want to think, some do not believe they are smart enough.  As a manager you need to create an environment where thinking is acknowledged and rewarded. It is hard to get free thinking out of mindless robots, out of people that are micro managed. So take the time to explain why the task they are doing is important, how it fits into the big picture and take every opportunity up-skill and reward people that are self motivated, consciousness and want to be there.
 
 > I have always found that the man whose second thoughts are good is worth watching.<br/><cite>James M. Barrie</cite>
 
