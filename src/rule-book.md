@@ -26,3 +26,5 @@ A list of rules for construction engineers:
 * [Rule 11 - Finding Time](https://ianteda.com/engineering/rule-11-finding-time.html)
 * [Rule 12 - When you have the choice, always start with the hardest part.](https://ianteda.com/engineering/rule-12-hard-things.html)
 * [Rule 13 - Learn to ask good questions.](https://ianteda.com/engineering/rule-13-good-questions.html)
+* [Rule 14 - The KISS Principle.](https://ianteda.com/engineering/rule-14-kiss-principle.html)
+* [Rule 15 - We Are All Paid To Think](https://ianteda.com/engineering/rule-15-paid-to-think.html)
