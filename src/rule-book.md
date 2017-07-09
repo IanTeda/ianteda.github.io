@@ -28,3 +28,4 @@ A list of rules for construction engineers:
 * [Rule 13 - Learn to ask good questions.](https://ianteda.com/engineering/rule-13-good-questions.html)
 * [Rule 14 - The KISS Principle.](https://ianteda.com/engineering/rule-14-kiss-principle.html)
 * [Rule 15 - We Are All Paid To Think](https://ianteda.com/engineering/rule-15-paid-to-think.html)
+* [Rule 16 - The Professional Engineer](https://ianteda.com/engineering/rule-16-professional-engineer.html)
